@@ -24,13 +24,55 @@ description: >- # this means to ignore newlines until "baseurl:"
   Experience the future of gaming today with our AI and blockchain-powered video games. Explore dynamic game environments and truly own your in-game assets.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: hippopenny
+logo: "/assets/images/hippopenny-about.png"
+
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+
+include: ["_pages"]
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+    # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+    # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/hippopenny"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/mmistakes"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/mmistakes"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,10 @@
+main:
+  - title: "About"
+    url: /About/
+  - title: "Privacy"
+    url: /crypthesiaprivacypolicy/
+  - title: "Support"
+    url: /crypthesiasupport/
+
+  # - title: "Specials"
+  #   url: /Specials/
