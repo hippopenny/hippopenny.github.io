@@ -1,6 +1,6 @@
 main:
   - title: "About"
-    url: /About/
+    url: /about/
   - title: "Privacy"
     url: /crypthesiaprivacypolicy/
   - title: "Support"

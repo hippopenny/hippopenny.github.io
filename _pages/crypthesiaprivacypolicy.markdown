@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-permalink: /crypthesiaprivacypolicy
+permalink: /crypthesiaprivacypolicy/
 ---
 
 At our app, we prioritize the privacy of our users. We do not collect any personal information from our users, nor do we request or require any personal information in order for the app to function. As a result, we do not share any personal information with third parties. However, it's important to note that our advertising network may collect anonymous data to serve ads.

@@ -1,5 +1,5 @@
 ---
-title: About
+title: Hi there!
 permalink: /about/
 ---
 
