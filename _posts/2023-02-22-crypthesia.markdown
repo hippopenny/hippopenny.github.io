@@ -7,6 +7,9 @@ layout: single
 
 ![Crypthesia](/assets/images/banner_crypthesia_app.png)
 
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apple.co/3IsgVqc) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.crypthesia.app)
+
 Looking for an app that offers a super fun way to explore the world of crypto without any hassles? Look no further than the Diagon1 app!
 
 With its noncustodial wallet, you can keep all your private keys on your phone, ensuring complete control over your funds. And, with only Polygon available for now, you can play with a more economic chain than other options.
