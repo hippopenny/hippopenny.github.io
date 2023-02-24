@@ -25,17 +25,37 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hippopenny
-logo: "/assets/images/hippopenny-about.png"
+logo: "/assets/images/hippo-ghost.png"
 
+minimal_mistakes_skin: default
+search: true
 
 # Build settings
 # theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: mmistakes/minimal-mistakes
+# Plugins (previously gems:)
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
-include: ["_pages"]
+include: 
+  - _pages
+
+author:
+  name   : "HippoPenny"
+  avatar : "/assets/images/hippo-ghost.png"
+  bio    : "Pushing boundaries and delivering top-notch gaming experiences with AI and blockchain technology."
+  links:  
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/hippopenny"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -51,10 +71,11 @@ defaults:
       related: true
     # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
+      author_profile: true
     # _foo
   - scope:
       path: ""
