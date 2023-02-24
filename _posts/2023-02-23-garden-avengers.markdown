@@ -1,7 +1,7 @@
 ---
 title:  "Garden Avengers: The Ultimate Battle!"
 date:   2023-02-23 12:29:44 -0800
-categories: GameReview Specials
+categories: Specials GameReview
 layout: single
 ---
 
