@@ -10,12 +10,13 @@ tags:
 
 Super Mario is one of Nintendo's most popular and beloved franchises, and the release of each new Mario game is always highly anticipated by fans. One of the most interesting aspects of the Super Mario franchise is how it has evolved over the years, with each new game introducing new gameplay mechanics, power-ups, and worlds to explore.
 
+
+![Super Mario Bros. 2](/assets/images/Super_Mario_Bros_2.jpg)
+
+
 One of the most controversial moments in the history of the Super Mario franchise was the release of "Super Mario Bros. 2" in 1988. The game was originally developed in Japan as a sequel to the original "Super Mario Bros.," but was deemed too difficult for Western audiences and was instead replaced with a version of the game called "Super Mario Bros. 2 USA."
 
 I protest!!!
-
-
-![Super Mario Bros. 2](/assets/images/Super_Mario_Bros_2.jpg)
 
 
 The game was actually a re-skinned version of a Japanese game called "Doki Doki Panic," which was modified to feature Mario characters and elements.
