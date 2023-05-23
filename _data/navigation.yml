@@ -1,10 +1,11 @@
 main:
-  - title: "About"
-    url: /about/
-  - title: "Privacy"
-    url: /crypthesiaprivacypolicy/
+  - title: "Game Review"
+    url: /game-review/
+  - title: "Product"
+    url: /
+  - title: "Company"
+    url: /company/
   - title: "Support"
     url: /crypthesiasupport/
-
-  # - title: "Specials"
-  #   url: /Specials/
+  - title: "Privacy"
+    url: /crypthesiaprivacypolicy/
