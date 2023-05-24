@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 hidden: true
-title: "HippoPenny"
+title: "Mariby"
 header:
 
   # video:
