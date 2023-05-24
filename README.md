@@ -30,3 +30,9 @@ Pages: are configured under _data/navigation.yml
 
 Embed any videos:
 https://github.com/nathancy/jekyll-embed-video/blob/master/example.md
+
+
+## Build and Deploy Github Page
+
+Configure github action at https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site 
+
