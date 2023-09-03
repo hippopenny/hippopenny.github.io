@@ -34,9 +34,8 @@ Each level in Garden Avengers is a visual spectacle. The team behind the game ha
 
 Embark on this extraordinary adventure by downloading Garden Avengers now. Step into a world brimming with lovable characters, unexpected twists, and thrilling gameplay. Unleash your strategic prowess and defend your gardens from impending doom. The ultimate battle awaits—will you rise to the challenge? 
 
-There is already some funny videos being made out of the game play by fan.
 
-{% include instagram-player.html id="CqVapuhNp6H" %}
-
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apple.co/3Y13ROv) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.GardenAvengers)
 
 
