@@ -36,3 +36,9 @@ https://github.com/nathancy/jekyll-embed-video/blob/master/example.md
 
 Configure github action at https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site 
 
+## Steps to add a new game review
+
+1. add page to _posts, naming starts with yyyy-mm-dd. A page won't be published if the date is into the future.
+
+2. include the new post to _pages/home.md
+
