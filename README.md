@@ -42,3 +42,6 @@ Configure github action at https://docs.github.com/en/pages/getting-started-with
 
 2. include the new post to _pages/home.md
 
+3. push pages to github. A build action will be triggered automatically to release the page https://github.com/hippopenny/hippopenny.github.io/actions
+
+
