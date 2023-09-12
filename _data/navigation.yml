@@ -3,6 +3,8 @@ main:
     url: /game-review/
   - title: "Product"
     url: /
+  - title: "QR Art"
+    url: /qr-code/
   - title: "Company"
     url: /company/
   - title: "Support"
