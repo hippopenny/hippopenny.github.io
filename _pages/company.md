@@ -5,7 +5,7 @@ permalink: /company/
 
 <!-- Welcome to Hippo Penny, where we combine our expertise in game development, artificial intelligence (AI), and blockchain technology to create exceptional mobile games. We are a team of highly skilled and passionate individuals who are dedicated to crafting innovative and immersive gaming experiences with extensive experience from companies like Adobe and Google, as well as prestigious academic universities. -->
 
-**Hippo Penny** works to push boundaries and deliver top-notch gaming experiences with AI -- AI for art, music, map, and game play, and with blockchain technology for increasing cross game experiences. We are a team of highly skilled and passionate individuals who are dedicated to crafting innovative and immersive gaming experiences with extensive experience from companies like Adobe and Google, as well as prestigious academic universities.
+**Hippo Penny** is on a mission to redefine the gaming landscape, fueled by an unyielding commitment to innovation. With a focus on AI, we are pushing the boundaries of art, music, map design, gameplay, and the underlying tools and ecosystem. Simultaneously, we harness the power of blockchain technology to elevate cross-game experiences. Our extraordinary team, composed of industry veterans from Silicon Valley and distinguished academics, is passionately dedicated to crafting groundbreaking and immersive gaming adventures.
 
 <figure style="width: 300px" class="align-right">
   <img src="/assets/images/company/3.png" alt="">
@@ -33,10 +33,3 @@ permalink: /company/
 
 > Email: biz@hippopenny.com to do business with us.
  
-<!-- <form action="https://formspree.io/f/{form_id}" method="post">
-  <label for="email">Your Email</label>
-  <input name="Email" id="email" type="email">
-  <button type="submit">Submit</button>
-</form> -->
-
-<!-- ![Hippo Penny](/assets/images/hippopenny-about.png) -->

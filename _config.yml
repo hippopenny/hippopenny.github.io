@@ -97,7 +97,7 @@ analytics:
 author:
   name   : "HippoPenny"
   avatar : "/assets/images/hippo-ghost.png"
-  bio    : "Pushing boundaries and delivering top-notch gaming experiences with AI and blockchain technology."
+  bio    : "We're on a mission to change the game. We're using AI to rewrite the rules of mobile gaming, from content and gameplay to the very tools and ecosystem that power it. Our goal is to deliver an unparalleled gaming experience that redefines the industry."
   links:  
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -201,6 +201,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      related: true
   # _portfolio
   - scope:
       path: ""
@@ -209,6 +210,7 @@ defaults:
       layout: collection
       author_profile: false
       share: true
+      related: true
 
 
 # Sass/SCSS
