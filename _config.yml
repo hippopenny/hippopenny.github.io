@@ -61,9 +61,9 @@ algolia:
 
 # SEO Related
 google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
-bing_site_verification   :
+bing_site_verification   : "C2A4F8314A20DE6E08F8068F84E59FC3"
 naver_site_verification  :
-yandex_site_verification :
+yandex_site_verification : "d62a5a09e783567b"
 baidu_site_verification  :
 
 # Social Sharing
