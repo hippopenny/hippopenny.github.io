@@ -43,23 +43,23 @@ gallery4:
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.SkellyRun)
 
 
-Skelly Run is the new 2D endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! 
+Skelly Run is the new 2D endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff. All while rocking some seriously stylish dresses!! 
 
-Just in time for a Halloween challenge with your party!
+Just in time for a Halloween challenge with your party friends! Run in your style!
 
 <!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
 
 {% include gallery id="gallery2" caption="Skeleton in style!" %}
 
-🏃 Endless Running Adventure: Prepare to be captivated by the exhilarating endless running adventure. You will just need to run and enjoy the beautiful, though somewhat adventurous landscape, while simply avoiding rocks, bats etc. Don't forget your pickaxe, it is a useful tool to smash those bats. The secret is you want to smash them; it feels good. A hint is to time your hit.
-
-🦴 Fearless Skeleton Protagonist: Step into the bony shoes of a badass skeleton, a character that oozes charisma and a determination to overcome all odds. Note that everything must be in style! 
-
-⚔️ Cool Weapons: What's an adventure without the right tools? In Skelly Run, you'll have a full weapon box for you to play with. And especially dresses that match your styles on the run; Guarantees you will love that. Collect coins and pick the one that looks the best and get into action!
-
-🏆 Competitive Fun: The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
+🏃 Endless Runner: Simply need to run and enjoy the beautiful, yet thrilling landscape, while avoiding rocks, and those naughty nightly creatures. Don't forget your pickaxe, it is a useful tool to smash those bats. The secret is you want to smash them; it feels good. A hint is to time your hit. Just don't fall down!
 
 {% include gallery id="gallery3" caption="Just don't fall down!" %}
+
+🦴 Badass Skeleton: Step into the bony shoes of a badass skeleton, a character that oozes charisma and a determination to overcome all odds. Remember everything must be in style! 
+
+⚔️ Cool Weapons: What's an adventure without the right tools? You'll have a full weapon box for you to play with. And certainly you are badass, you want weapons that match your dress; Guarantees you will love that. Collect coins and pick the one that makes you look cool and get into action!
+
+🏆 Competitive Fun: The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
 
 {% include gallery id="gallery4" caption="Guarantee fun for everyone!" %}
 
