@@ -2,12 +2,16 @@
 layout: splash
 permalink: /
 hidden: true
-title: "Time Twin"
+title: "Hippo Penny"
 header:
+  overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
+  actions:
+  - label: "Skelly Run"
+    url: /skellyrun/
 
-  video:
-    id: aR5jUDr-NdU
-    provider: youtube
+  # video:
+  #   id: aR5jUDr-NdU
+  #   provider: youtube
 
   # overlay_color: "#5e616c"
 
@@ -21,6 +25,14 @@ header:
 
 
 feature_row:
+  - image_path: /assets/images/skellyrun/mkthalloween.png
+    alt: "skelly run at hippopenny"
+    title: "Skelly Run: A Stylish Run Through Spooky Terrain and Epic Outfits"
+    excerpt: "Skelly Run is the new 2D endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!!"
+    url:  /skellyrun/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"  
+
   - image_path: /assets/images/timetwin/4.1.png
     alt: "timetwin at hippopenny"
     title: "Unlock the Secrets of Time Twin"
