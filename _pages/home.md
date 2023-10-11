@@ -33,6 +33,14 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"  
 
+  - image_path: /assets/images/hopheck/1.png
+    alt: "hop heck at hippo penny"
+    title: "Hop Heck: Can You Take the Leap?"
+    excerpt: "Hopping onto moonlit rooftops, skillfully jumping through an array of peculiar obstacles. Feel the heart-pounding rush of excitement as you guide Hop on this hecking thrilling adventure. Get prepared to hop, jump, and burst into laughter like never before!"
+    url:  /hopheck/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"  
+
   - image_path: /assets/images/timetwin/4.1.png
     alt: "timetwin at hippopenny"
     title: "Unlock the Secrets of Time Twin"
