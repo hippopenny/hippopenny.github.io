@@ -36,7 +36,7 @@ feature_row:
   - image_path: /assets/images/hopheck/1.png
     alt: "hop heck at hippo penny"
     title: "Hop Heck: Can You Take the Leap?"
-    excerpt: "Hopping onto moonlit rooftops, skillfully jumping through an array of peculiar obstacles. Feel the heart-pounding rush of excitement as you guide Hop on this hecking thrilling adventure. Get prepared to hop, jump, and burst into laughter like never before!"
+    excerpt: "Hopping onto moonlit rooftops, jumping through cart, bike, trash can, banana peels, etc. Feel the heart-pounding rush of excitement as you guide Hop on this hecking thrilling adventure. My challenge for you: not to die for 5 minutes!"
     url:  /hopheck/
     btn_class: "btn--primary"
     btn_label: "Learn more"  
@@ -44,7 +44,7 @@ feature_row:
   - image_path: /assets/images/timetwin/4.1.png
     alt: "timetwin at hippopenny"
     title: "Unlock the Secrets of Time Twin"
-    excerpt: "Time Twin: A Journey Through Time and Collaborate With Yourself! Have you ever thought about what it's like to work with your past-self to open dream doors?"
+    excerpt: "Time Twin: A Journey Through Time and Collaborate With Yourself! Have you ever thought about what it's like to work with your past-self to open dream doors? My challenge for you: remember your way through dream 20."
     url:  /timetwin/
     btn_class: "btn--primary"
     btn_label: "Learn more"  

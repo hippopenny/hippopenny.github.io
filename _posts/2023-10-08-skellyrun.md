@@ -47,6 +47,8 @@ Skelly Run is the new 2D endless runner game where you're a badass skeleton with
 
 Just in time for a Halloween challenge with your party friends! Run in your style!
 
+My challenge for you: 4k points.
+
 <!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
 
 {% include gallery id="gallery2" caption="Skeleton in style!" %}
