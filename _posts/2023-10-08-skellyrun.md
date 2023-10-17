@@ -1,6 +1,6 @@
 ---
 title: "Skelly Run"
-excerpt: "A Stylish Run Through Spooky Terrain and Epic Outfits! ⏳🔑🌟"
+excerpt: "Run for Your Life but Must in Style"
 header:
   video:
     id: K3hfbVvo2MY
@@ -39,11 +39,11 @@ gallery4:
 
 
 ---
-<!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apple.co/3Y13ROv)  -->
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.SkellyRun)
 
 
-Skelly Run is the new 2D endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff. All while rocking some seriously stylish dresses!! 
+We had Sonic, Subway Surfers, and now, there is Skelly. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! 
 
 Just in time for a Halloween challenge with your party friends! Run in your style!
 
@@ -68,7 +68,7 @@ My challenge for you: 4k points.
 {% include video id="K3hfbVvo2MY" provider="youtube" %}
 
 
-<!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apple.co/3Y13ROv)  -->
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.SkellyRun)
 
 
