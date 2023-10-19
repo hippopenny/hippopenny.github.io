@@ -106,7 +106,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/hippopenny"
-
+    - label: "facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://facebook.com/hippopenny"
 
 
 # Site Footer
