@@ -1,6 +1,6 @@
 ---
 title: "Skelly Run"
-excerpt: "Run for Your Life but Must in Style"
+excerpt: "Run for Your Life but Must Be in Style"
 header:
   video:
     id: K3hfbVvo2MY
