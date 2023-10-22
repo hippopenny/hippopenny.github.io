@@ -76,4 +76,5 @@ On the other hand, if you're looking for a different take on the endless runner 
 
 So, whether you're a fan of the classic endless runner experience offered by Subway Surfers or you're seeking a fresh and visually stunning alternative in  [Skelly Run](/skellyrun), there's no shortage of endless running fun to be had on your mobile device. Give both games a try and see which one suits your style best!
 
-{% include video id="fGy-x3H-nxU" provider="youtube" %}
+Here is a fun duet between #subwaysurfers and #skellyrun thanks to this Adobe cool Primrose interactive dress
+{% include video id="rOH_YYtCC-o" provider="youtube" %}
