@@ -48,13 +48,13 @@ The demarcation of a mobile game has changed rapidly over the past few years, ye
 
 An easy way to describe Subway Surfers is as yet another version of an endless runner that plays just like Temple Run, but with some major twists that actually make the game a much more entertaining experience in many ways.
 
-{% include gallery id="gallery" caption="Skeleton in style!" %}
+{% include gallery id="gallery" caption="Surfers" %}
 
 **Endless Thrills on the Subway Tracks**
 
 The core of the game has you running along a set of subway tracks for as long as you can away from the screen, collecting coins and other power-ups on the path ahead while avoiding a series of obstacles like actual trains, light posts, wooden barricades, tunnels, and more. You'll be able to swipe your finger left or right on the screen to make your character switch between one of the three vertical tracks, but you'll always keep moving forward. Consistently awesome controls bolster this.
 
-{% include gallery id="gallery3" caption="Skeleton in style!" %}
+{% include gallery id="gallery3" caption="Train track" %}
 
 **Power-Ups Galore**
 
@@ -66,7 +66,7 @@ Any of these power-ups, along with a few additional one-time use items like the 
 
 While Surfers already has its entertainment value going for it, it's also technically great. The characters have a cute look to them, the environments are colorful and bright, and the animation is fluid without any noticeable hitches.
 
-{% include gallery id="gallery4" caption="Skeleton in style!" %}
+{% include gallery id="gallery4" caption="Collect coins" %}
 
 **A Familiar Concept, Elevated**
 
