@@ -27,8 +27,8 @@ header:
 feature_row:
   - image_path: /assets/images/skellyrun/mkthalloween.png
     alt: "skelly run at hippopenny"
-    title: "Skelly Run: Run for Your Life but Must in Style"
-    excerpt: "We had Sonic, Subway Surfers, and now, there is Skelly.. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! Are you ready to score 4K?"
+    title: "Skelly Run: Run for Your Life but Must Be in Style"
+    excerpt: "From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there's a new endless runner on the block that's poised to make you bust into laughter. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! Unlike other runner games, this game is easy to challenge buddies, make fun, and laugh out loud. Are you ready to score 4K?"
     url:  /skellyrun/
     btn_class: "btn--primary"
     btn_label: "Learn more"  
