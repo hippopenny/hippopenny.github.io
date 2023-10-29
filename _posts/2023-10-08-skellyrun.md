@@ -3,11 +3,10 @@ title: "Skelly Run"
 excerpt: "Run for Your Life but Must Be in Style"
 header:
   video:
-    id: __Rbm1nJooQ
+    id: vk8zdJoD-GU
     provider: youtube
   # overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
   teaser: /assets/images/skellyrun/mkthalloween.png
-  
   # video:
   #   id: K3hfbVvo2MY
   #   provider: youtube
