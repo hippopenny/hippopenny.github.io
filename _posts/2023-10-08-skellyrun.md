@@ -44,7 +44,7 @@ gallery4:
 
 From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there's a new endless runner on the block that's poised to make you bust into laughter. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! Unlike other runner games, this game is easy to challenge buddies, make fun, and laugh out loud.
 
-My challenge for you: 4k points. Run in your style!
+My challenge for you: 4k points. Run in your style! [Join The Halloween Challenge](skellyrun://StartMenu)
 
 {% include gallery id="gallery" caption="Halloween with friends." %}
 
