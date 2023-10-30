@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.hippopenny.skellyrun",
+        "sha256_cert_fingerprints": [
+          "4A:D9:48:70:3D:BC:F4:4A:F2:DB:F1:0C:38:83:26:CA:F8:FD:EA:B3:6A:5E:8D:1C:68:57:A9:DE:F1:E0:40:1E"
+        ]
+      }
+    }
+  ]
