@@ -78,11 +78,10 @@ What's an adventure without the right tools? You'll have a full weapon box for y
 
 **🏆 Competitive Fun** 
 
+[Join The Halloween Challenge](skellyrun://StartMenu)
+
 The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
 
-[Join The Halloween Challenge Start](skellyrun://StartMenu)
-[Join The Halloween Challenge Game](skellyrun://GameScene)
-[Join The Halloween Challenge HippoPenny](hippopenny://skellyrun?scene=GameScene)
 
 
 {% include gallery id="gallery4" caption="Guarantee fun for everyone!" %}
