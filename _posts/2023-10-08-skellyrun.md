@@ -1,6 +1,6 @@
 ---
 title: "Skelly Run"
-excerpt: "Run for Your Life but Must Be in Style"
+excerpt: "Run for Your Life but Do It in Style"
 header:
   video:
     id: vk8zdJoD-GU
@@ -54,7 +54,7 @@ Can you get a better style than this Adobe cool primrose dress?
 
 Skelly Run is a fresh take on the endless runner genre, leaving behind the intense 3D landscapes found in games like Subway Surfers and replacing them with stunning 2D artwork. The game mechanics are refreshingly simple. You'll swipe left and right to control Skelly, a charming skeleton character, as you navigate through a world filled with mountains, bones, and menacing monsters, all while collecting coins. 
 
-What sets Skelly Run apart is the delightful twist that allows you to be carried by an owl, enabling you to fly by physically moving your phone left and right. It's a super fun way to collect lots of coins and adds a unique dimension to the endless runner experience. The motto of Skelly Run is simple: "Run for your life but must be in style." You can use the coins you collect to dress up your character and even add cool sticks to smash those pesky bats.
+What sets Skelly Run apart is the delightful twist that allows you to be carried by the raven, enabling you to fly by physically moving your phone left and right. It's a super fun way to collect lots of coins and adds a unique dimension to the endless runner experience. The motto of Skelly Run is simple: "Run for your life but must be in style." You can use the coins you collect to dress up your character and even add cool sticks to smash those pesky bats.
 
 
 <!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
@@ -67,9 +67,9 @@ Skelly Run takes a different approach from traditional endless runners. This cha
 
 {% include gallery id="gallery3" caption="Just don't fall down!" %}
 
-**🦉 Fly High with an Owl Companion** 
+**🦅 Fly High with the Raven Companion** 
 
-What sets Skelly Run apart is its delightful twist – Skelly can be carried by an owl, allowing you to take to the skies by physically moving your phone left and right. This adds an entirely new level of enjoyment to the endless runner experience, making it incredibly fun to collect loads of coins while soaring above the landscape. The game's motto is crystal clear: "Run for your life but must be in style."
+What sets Skelly Run apart is its delightful twist – Skelly can be carried by a raven, allowing you to take to the skies by physically tilting your phone left and right. This adds an entirely new level of enjoyment to the endless runner experience, making it incredibly fun to collect loads of coins while soaring above the landscape. The game's motto is crystal clear: "Run for your life but must be in style."
 
 
 **⚔️ Cool Weapons** 
