@@ -4,7 +4,7 @@ backend:
   name: github
   repo: hippopenny/hippopenny.github.io
   branch: main # Branch to update (optional; defaults to master)
-media_folder: 'assets/image'
+media_folder: 'assets/images'
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -12,7 +12,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
