@@ -82,8 +82,6 @@ What's an adventure without the right tools? You'll have a full weapon box for y
 
 The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
 
-Happy
-
 {% include gallery id="gallery4" caption="Guarantee fun for everyone!" %}
 
 
