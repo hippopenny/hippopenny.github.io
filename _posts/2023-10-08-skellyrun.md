@@ -1,74 +1,90 @@
 ---
-title: "Top 5 Running Games You Need to Play Right Now"
+title: "Skelly Run"
 excerpt: "Run for Your Life but Do It in Style"
 header:
-  # overlay_image: /assets/images/skellyrun/main1.png
-  teaser: /assets/images/skellyrun/main1.png
+  video:
+    id: vk8zdJoD-GU
+    provider: youtube
+  # overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
+  teaser: /assets/images/skellyrun/mkthalloween.png
+  # video:
+  #   id: K3hfbVvo2MY
+  #   provider: youtube
 
+# sidebar:
+#   - title: "Download"
+#     # image: /assets/images/garden-avengers/2.png
+#     # image_alt: "download"
+#     text: "Wait list"
 
 gallery:
-  - url: /assets/images/skellyrun/subwaysurfers.jpg
-    image_path: /assets/images/skellyrun/subwaysurfers.jpg
-    alt: "subwaysurfers"
+  - url: /assets/images/skellyrun/mkthalloween.png
+    image_path: /assets/images/skellyrun/mkthalloween.png
+    alt: "Halloween"
 
 gallery2:
-  - url: /assets/images/skellyrun/templerun.jpg
-    image_path: /assets/images/skellyrun/templerun.jpg
-    alt: "templerun"
+  - url: /assets/images/skellyrun/1.png
+    image_path: /assets/images/skellyrun/1.png
+    alt: "style"
 
 gallery3:
-  - url: /assets/images/skellyrun/jetpack.jpg
-    image_path: /assets/images/skellyrun/jetpack.jpg
-    alt: "jetback"
+  - url: /assets/images/skellyrun/2.png
+    image_path: /assets/images/skellyrun/2.png
+    alt: "danger"
 gallery4:
-  - url: /assets/images/skellyrun/intothedead.png
-    image_path: /assets/images/skellyrun/intothedead.png
-    alt: "intothedead"
-gallery5:
-  - url: /assets/images/skellyrun/skellyrunnoel.png
-    image_path: /assets/images/skellyrun/skellyrunnoel.png
-    alt: "skellyrun"
+  - url: /assets/images/skellyrun/3.png
+    image_path: /assets/images/skellyrun/3.png
+    alt: "captain turtle"
+
 
 ---
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.SkellyRun)
 
 
-Get ready to pump up your adrenaline and unleash your inner speed demon! In the thrilling world of gaming, the "Endless Runner" genre reigns supreme as a masterclass in non-stop action and heart-pounding excitement. These games throw you headfirst into dynamically generated environments, challenging your reflexes and decision-making skills as you navigate treacherous paths, dodge obstacles, and collect precious loot. Buckle up, because we're about to dive into the top 5 endless runners that will leave you breathless and begging for more!
+From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there's a new endless runner on the block that's poised to make you bust into laughter. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! Unlike other runner games, this game is easy to challenge buddies, make fun, and laugh out loud.
+
+My challenge for you: 4k points. Run in your style! [Join The Halloween Challenge](skellyrun://StartMenu)
+
+{% include gallery id="gallery" caption="Halloween with friends." %}
+
+{% include video id="55gioyo4WAo" provider="youtube" %}
+Can you get a better style than this Adobe cool primrose dress?
 
 
-**🏃 Temple Run: The Original Thrill Ride** 
+Skelly Run is a fresh take on the endless runner genre, leaving behind the intense 3D landscapes found in games like Subway Surfers and replacing them with stunning 2D artwork. The game mechanics are refreshingly simple. You'll swipe left and right to control Skelly, a charming skeleton character, as you navigate through a world filled with mountains, bones, and menacing monsters, all while collecting coins. 
 
-Temple Run, along with its sequels, is a true pioneer of the genre, capturing the hearts of millions with its Indiana Jones-inspired adventures. Plunge into perilous temple ruins, outrun ancient curses, and navigate treacherous paths as you collect gleaming coins and unlock powerful upgrades. Smooth controls, ever-changing environments, and addictive power-ups make this series a timeless classic.
+What sets Skelly Run apart is the delightful twist that allows you to be carried by the raven, enabling you to fly by physically moving your phone left and right. It's a super fun way to collect lots of coins and adds a unique dimension to the endless runner experience. The motto of Skelly Run is simple: "Run for your life but must be in style." You can use the coins you collect to dress up your character and even add cool sticks to smash those pesky bats.
 
-{% include gallery id="gallery2" caption="Temple Run" %}
 
-**🏃 Subway Surfers: A Joyride of Urban Escapades** 
+<!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
 
-Join the rebellious Jake and his crew in Subway Surfers as they paint the town red (or rather, blue) with their graffiti-fueled escapades! Dash through vibrant cityscapes, dodge oncoming trains, and collect coins in this endlessly fun game. Regular updates introduce exciting new locations and unlockable characters, keeping the action fresh and the fun endless. The colorful graphics and fast-paced gameplay are sure to keep you hooked!
+{% include gallery id="gallery2" caption="Skeleton in style!" %}
 
-{% include gallery id="gallery" caption=" Subway Surfers" %}
+**🏃 A New 2D Endless Runner Experience** 
 
-**🏃 Jetpack Joyride: Soar to New Heights of Exhilaration** 
+Skelly Run takes a different approach from traditional endless runners. This charming 2D game features Skelly, a lovable skeleton character, and offers simple yet engaging game mechanics. Swipe left and right to guide Skelly as you navigate through a captivating world filled with mountains, bones, and menacing monsters, all while collecting precious coins. Don't forget your pickaxe, it is a useful tool to smash those bats. The secret is you want to smash them; it feels good. A hint is to time your hit. Just don't fall down!
 
-Jetpack Joyride takes the endless runner concept to stratospheric heights (literally!). Strap on a jetpack powered by stolen cash and blast through a wacky laboratory filled with zany hazards and unpredictable challenges. Quirky humor, inventive power-ups, and an addictive progression system make this game a true standout in the genre. So, prepare to unleash your inner daredevil and take to the skies!
+{% include gallery id="gallery3" caption="Just don't fall down!" %}
 
-{% include gallery id="gallery3" caption=" Jetpack Joyride" %}
+**🦅 Fly High with the Raven Companion** 
 
-**🏃 Into the Dead: Run for Your Life (and Maybe From the Dead)** 
+What sets Skelly Run apart is its delightful twist – Skelly can be carried by a raven, allowing you to take to the skies by physically tilting your phone left and right. This adds an entirely new level of enjoyment to the endless runner experience, making it incredibly fun to collect loads of coins while soaring above the landscape. The game's motto is crystal clear: "Run for your life but must be in style."
 
-For those who crave a dose of horror with their endless running, Into the Dead delivers a chilling experience. Plunge into a post-apocalyptic world overrun by zombies and race through hordes of the undead, collecting weapons and supplies to survive. The game's atmospheric graphics and intense gameplay create a unique and terrifying take on the genre. Prepare to test your courage and outrun the apocalypse!
 
-{% include gallery id="gallery4" caption="Into the Dead" %}
+**⚔️ Cool Weapons** 
 
-**🏃 Skelly Run: Dash, Dress, and Smash Your Way to Survival!** 
+What's an adventure without the right tools? You'll have a full weapon box for you to play with. And certainly you are badass, you want weapons that match your dress; Guarantees you will love that. Collect coins and pick the one that makes you look cool and get into action!
 
-Get ready to rock and roll (or rather, rattle and roll!) your bones in Skelly Run, the endless runner that's as stylish as it is thrilling. This game throws you headfirst into a beautifully spooky world where you'll need to dash, jump, tilt, and smash your way to victory.
-Skelly Run is an addictive blend of action, style, and challenge, perfect for anyone who wants to add a little  to their gaming experience. So, what are you waiting for? Download Skelly Run today and show the world that even a skeleton can be a fashion icon and a champion runner!
+**🏆 Competitive Fun** 
 
-{% include gallery id="gallery5" caption="Skelly Run" %}
+[Join The Halloween Challenge](skellyrun://StartMenu)
+
+The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
+
+{% include gallery id="gallery4" caption="Guarantee fun for everyone!" %}
+
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.SkellyRun)
-
 
