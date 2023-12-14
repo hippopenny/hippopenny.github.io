@@ -2,14 +2,8 @@
 title: "Top 5 Running Games You Need to Play Right Now"
 excerpt: "Run for Your Life but Do It in Style"
 header:
-  video:
-    id: vk8zdJoD-GU
-    provider: youtube
-  # overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
-  teaser: /assets/images/skellyrun/mkthalloween.png
-  # video:
-  #   id: K3hfbVvo2MY
-  #   provider: youtube
+  # overlay_image: /assets/images/skellyrun/main1.png
+  teaser: /assets/images/skellyrun/main1.png
 
 # sidebar:
 #   - title: "Download"
