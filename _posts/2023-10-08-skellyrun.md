@@ -36,8 +36,8 @@ gallery4:
     image_path: /assets/images/skellyrun/intothedead.png
     alt: "intothedead"
 gallery5:
-  - url: /assets/images/skellyrun/1.png
-    image_path: /assets/images/skellyrun/1.png
+  - url: /assets/images/skellyrun/skellyrunnoel.png
+    image_path: /assets/images/skellyrun/skellyrunnoel.png
     alt: "skellyrun"
 
 ---
