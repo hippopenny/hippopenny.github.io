@@ -5,11 +5,6 @@ header:
   # overlay_image: /assets/images/skellyrun/main1.png
   teaser: /assets/images/skellyrun/main1.png
 
-# sidebar:
-#   - title: "Download"
-#     # image: /assets/images/garden-avengers/2.png
-#     # image_alt: "download"
-#     text: "Wait list"
 
 gallery:
   - url: /assets/images/skellyrun/subwaysurfers.jpg
