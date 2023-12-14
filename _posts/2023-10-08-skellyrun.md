@@ -52,13 +52,13 @@ Get ready to pump up your adrenaline and unleash your inner speed demon! In the 
 
 Temple Run, along with its sequels, is a true pioneer of the genre, capturing the hearts of millions with its Indiana Jones-inspired adventures. Plunge into perilous temple ruins, outrun ancient curses, and navigate treacherous paths as you collect gleaming coins and unlock powerful upgrades. Smooth controls, ever-changing environments, and addictive power-ups make this series a timeless classic.
 
-{% include gallery id="gallery1" caption="Temple Run" %}
+{% include gallery id="gallery2" caption="Temple Run" %}
 
 **🏃 Subway Surfers: A Joyride of Urban Escapades** 
 
 Join the rebellious Jake and his crew in Subway Surfers as they paint the town red (or rather, blue) with their graffiti-fueled escapades! Dash through vibrant cityscapes, dodge oncoming trains, and collect coins in this endlessly fun game. Regular updates introduce exciting new locations and unlockable characters, keeping the action fresh and the fun endless. The colorful graphics and fast-paced gameplay are sure to keep you hooked!
 
-{% include gallery id="gallery2" caption=" Subway Surfers" %}
+{% include gallery id="gallery" caption=" Subway Surfers" %}
 
 **🏃 Jetpack Joyride: Soar to New Heights of Exhilaration** 
 
