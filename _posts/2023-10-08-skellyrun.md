@@ -52,7 +52,7 @@ Get ready to pump up your adrenaline and unleash your inner speed demon! In the 
 
 Temple Run, along with its sequels, is a true pioneer of the genre, capturing the hearts of millions with its Indiana Jones-inspired adventures. Plunge into perilous temple ruins, outrun ancient curses, and navigate treacherous paths as you collect gleaming coins and unlock powerful upgrades. Smooth controls, ever-changing environments, and addictive power-ups make this series a timeless classic.
 
-{% include gallery id="gallery1" caption="Temple Run!" %}
+{% include gallery id="gallery1" caption="Temple Run" %}
 
 **🏃 Subway Surfers: A Joyride of Urban Escapades** 
 
