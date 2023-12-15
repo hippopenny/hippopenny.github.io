@@ -88,4 +88,3 @@ The endless adventure of Skelly Run isn't just about surviving — it's about yo
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.HippoPenny.SkellyRun)
 
-
