@@ -25,6 +25,14 @@ header:
 
 
 feature_row:
+- image_path: /assets/images/skellyrun/main1.png
+    alt: "skelly run at hippopenny"
+    title: "Top 5 Running Games You Need to Play Right Now"
+    excerpt: "Get ready to pump up your adrenaline and unleash your inner speed demon! In the thrilling world of gaming, the "Endless Runner" genre reigns supreme as a masterclass in non-stop action and heart-pounding excitement. These games throw you headfirst into dynamically generated environments, challenging your reflexes and decision-making skills as you navigate treacherous paths, dodge obstacles, and collect precious loot. Buckle up, because we're about to dive into the top 5 endless runners that will leave you breathless and begging for more!"
+    url:  /skellyrun/
+    btn_class: "btn--primary"
+    btn_label: "Learn more" 
+
   - image_path: /assets/images/skellyrun/mkthalloween.png
     alt: "skelly run at hippopenny"
     title: "Skelly Run: Run for Your Life but Must Be in Style"
