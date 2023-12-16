@@ -5,8 +5,8 @@ header:
   video:
     id: vk8zdJoD-GU
     provider: youtube
-  # overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
-  teaser: /assets/images/skellyrun/mkthalloween.png
+  # overlay_image: /assets/images/skellyrun/1600x1600.png
+  teaser: /assets/images/skellyrun/1600x1600.png
   # video:
   #   id: K3hfbVvo2MY
   #   provider: youtube
