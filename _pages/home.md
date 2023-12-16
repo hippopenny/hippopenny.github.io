@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 title: "Hippo Penny"
 header:
-  overlay_image: /assets/images/skellyrun/2778x1284fix.png
+  overlay_image: /assets/images/2778x1284fix.png
   actions:
   - label: "Skelly Run"
     url: /skellyrun/
