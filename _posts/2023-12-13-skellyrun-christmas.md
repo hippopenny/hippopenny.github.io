@@ -1,5 +1,5 @@
 ---
-title: "Skelly Run Christmas Edition"
+title: "Don't miss out on playing Skelly Run this Christmas!"
 excerpt: "Run for Your Life but Do It in Style"
 header:
   video:
