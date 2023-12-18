@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 title: "Hippo Penny"
 header:
-  overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
+  overlay_image: /assets/images/2778x1284fix.png
   actions:
   - label: "Skelly Run"
     url: /skellyrun/
@@ -25,13 +25,22 @@ header:
 
 
 feature_row:
+
+  - image_path: /assets/images/skellyrun/main1.png
+    alt: "skelly run at hippopenny"
+    title: "Top 5 Running Games You Need to Play Right Now"
+    excerpt: "Get ready to pump up your adrenaline and unleash your inner speed demon! In the thrilling world of gaming, the \"Endless Runner\" genre reigns supreme as a masterclass in non-stop action and heart-pounding excitement. These games throw you headfirst into dynamically generated environments, challenging your reflexes and decision-making skills as you navigate treacherous paths, dodge obstacles, and collect precious loot. Buckle up, because we're about to dive into the top 5 endless runners that will leave you breathless and begging for more!"
+    url:  /Top5games/
+    btn_class: "btn--primary"
+    btn_label: "Learn more" 
+    
   - image_path: /assets/images/skellyrun/mkthalloween.png
     alt: "skelly run at hippopenny"
     title: "Skelly Run: Run for Your Life but Must Be in Style"
     excerpt: "From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there's a new endless runner on the block that's poised to make you bust into laughter. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! Unlike other runner games, this game is easy to challenge buddies, make fun, and laugh out loud. Are you ready to score 4K?"
     url:  /skellyrun/
     btn_class: "btn--primary"
-    btn_label: "Learn more"  
+    btn_label: "Learn more"
 
   - image_path: /assets/images/hopheck/1.png
     alt: "hop heck at hippo penny"
