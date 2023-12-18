@@ -51,8 +51,6 @@ Swap your beach gear for winter wear because Skelly Run is getting decked out fo
 
 Our beloved Skelly is spreading holiday cheer dressed as jolly old Saint Nick himself! Sporting his iconic red suit and hat, he's prepared to dash through the snow in pursuit of gifts and joy.
 
-{% include gallery id="gallery3" caption="Just don't fall down!" %}
-
 **🦅 Limited Time Event: Win Big with Snowflake Challenges!**
 
 Show off your skills and compete with friends to win exclusive prizes! Accumulate enough snowflakes by completing objectives and trade them in for rare awards like Frosty's Ice Staff, Rudolph's Red Nose Helmet, and Holly's Wreath Cape!
@@ -64,21 +62,13 @@ Equip Santa hats, scarves, mittens, and earmuffs to warm up Skelly's bare bones!
 
 **❄️ Explore the Winter Wilderness!** 
 
-[Join The Halloween Challenge](skellyrun://StartMenu)
-
 Enjoy the breathtaking beauty of snow-capped terrain as you race past glimmering trees and frozen lakes. Watch out for hidden traps and sneaky ice patches threatening to trip you up!
 
-{% include gallery id="gallery4" caption="Guarantee fun for everyone!" %}
-
 **🧸 Combat Evil Yetis!** 
-
-[Join The Halloween Challenge](skellyrun://StartMenu)
 
 Faceoff against hoards of angry yetis guarding presents strewn across the land! Hurl snowballs back at them or deploy candy cane bludgeons to teach those furry bullies a lesson!
 
 **❄️ Ready to Embark on a Yuletide Odyssey?!** 
-
-[Join The Halloween Challenge](skellyrun://StartMenu)
 
 Don't miss out on this limited time opportunity to spread cheer and rack up incredible bonuses! Impress family and friends alike with your extraordinary accomplishments and climb to the top of the leaderboards!
 
