@@ -22,20 +22,20 @@ gallery:
     image_path: /assets/images/skellyrun/christmas-11.png
     alt: "Christmas"
 
-gallery2:
-  - url: /assets/images/skellyrun/1.png
-    image_path: /assets/images/skellyrun/1.png
-    alt: "style"
-
 gallery3:
-  - url: /assets/images/skellyrun/2.png
-    image_path: /assets/images/skellyrun/2.png
+  - url: /assets/images/skellyrun/s3.png
+    image_path: /assets/images/skellyrun/s3.png
     alt: "danger"
+
 gallery4:
+  - url: /assets/images/skellyrun/s4.png
+    image_path: /assets/images/skellyrun/s4.png
+    alt: "fly"
+
+gallery5:
   - url: /assets/images/skellyrun/3.png
     image_path: /assets/images/skellyrun/3.png
-    alt: "captain turtle"
-
+    alt: "aladin"
 
 ---
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
@@ -45,15 +45,18 @@ gallery4:
 
 Embrace the festive season with Santa Skeleton in Skelly Run's Winter Wonderland! Trade your beach attire for cozy winter wear as Skelly Run transforms into a holiday spectacle. Traverse snow-covered peaks and valleys, navigate challenging obstacles, and eliminate bothersome bats while gleefully collecting presents. Jingle all the way through this wintry adventure!
 
-{% include gallery id="gallery" caption="Christmas skin's Skelly" %}
+{% include gallery id="gallery" caption="Jingle All The Way." %}
 
-**🎅 Introducing Santasaurus Skeleton - The Merriest Skeleton Around!** 
+**🎅 Introducing Santasaurus Skeleton - Jingle All The Way!** 
 
 Our beloved Skelly is spreading holiday cheer dressed as jolly old Saint Nick himself! Sporting his iconic red suit and hat, he's prepared to dash through the snow in pursuit of gifts and joy.
 
-**🎄 Limited Time Event: Win Big with Snowflake Challenges!**
+**🎄 Limited Time Event: Run in the Snow Challenge!**
 
-Show off your skills and compete with friends to win exclusive prizes! Accumulate enough coins by collecting in this addictive game and trade them in for rare awards like Frosty's Ice Staff, Rudolph's Red Nose Helmet, and Holly's Wreath Cape!
+Show off your skills and compete with friends to win exclusive prizes! Accumulate enough coins by collecting in this addictive game and trade them in for rare awards like Frosty's Ice Staff, Rudolph's Red Nose Helmet, and Holly's Wreath Cape! 
+
+My challenge for you: 4k points. Run in your style! [Join The Challenge](skellyrun://StartMenu)
+
 
 **☃️ Holiday Magic Abounds in this Winter Edition!** 
 
@@ -67,6 +70,9 @@ Zoom through a landscape bursting with towering mountains, where you'll dash pas
 **⚔️ Combat Evil Yetis!** 
 
 Confront menacing monsters head-on! Smash bothersome bats or wield candy cane bludgeons for a lesson in style against those furry foes in Skelly Run's Winter Wonderland.
+
+{% include gallery id="gallery3" caption="All the fun!" %}
+
 
 **👻 Ready to Embark on a Yuletide Odyssey?!** 
 

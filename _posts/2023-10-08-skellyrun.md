@@ -27,19 +27,25 @@ gallery:
   #   image_path: /assets/images/skellyrun/mkthalloween.png
   #   alt: "Halloween"
 
-gallery2:
-  - url: /assets/images/skellyrun/1.png
-    image_path: /assets/images/skellyrun/1.png
-    alt: "style"
+# gallery2:
+#   - url: /assets/images/skellyrun/1.png
+#     image_path: /assets/images/skellyrun/1.png
+#     alt: "style"
 
 gallery3:
-  - url: /assets/images/skellyrun/2.png
-    image_path: /assets/images/skellyrun/2.png
+  - url: /assets/images/skellyrun/s3.png
+    image_path: /assets/images/skellyrun/s3.png
     alt: "danger"
+
 gallery4:
+  - url: /assets/images/skellyrun/s4.png
+    image_path: /assets/images/skellyrun/s4.png
+    alt: "fly"
+
+gallery5:
   - url: /assets/images/skellyrun/3.png
     image_path: /assets/images/skellyrun/3.png
-    alt: "captain turtle"
+    alt: "aladin"
 
 
 ---
@@ -51,7 +57,6 @@ From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there
 
 My challenge for you: 4k points. Run in your style! [Join The Challenge](skellyrun://StartMenu)
 
-{% include gallery id="gallery" caption="Run in the snow with friends." %}
 
 {% include video id="55gioyo4WAo" provider="youtube" %}
 Can you get a better style than this Adobe cool primrose dress?
@@ -64,7 +69,9 @@ What sets Skelly Run apart is the delightful twist that allows you to be carried
 
 <!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
 
-{% include gallery id="gallery2" caption="Skeleton in style!" %}
+{% include gallery id="gallery" caption="Run in the snow with friends." %}
+
+<!-- {% include gallery id="gallery2" caption="Skeleton in style!" %} -->
 
 **🏃 A New 2D Endless Runner Experience** 
 
@@ -76,6 +83,7 @@ Skelly Run takes a different approach from traditional endless runners. This cha
 
 What sets Skelly Run apart is its delightful twist – Skelly can be carried by a raven, allowing you to take to the skies by physically tilting your phone left and right. This adds an entirely new level of enjoyment to the endless runner experience, making it incredibly fun to collect loads of coins while soaring above the landscape. The game's motto is crystal clear: "Run for your life but must be in style."
 
+{% include gallery id="gallery4" caption="Tilt your phone to fly!" %}
 
 **⚔️ Cool Weapons** 
 
