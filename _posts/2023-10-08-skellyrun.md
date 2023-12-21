@@ -83,7 +83,7 @@ Skelly Run takes a different approach from traditional endless runners. This cha
 
 What sets Skelly Run apart is its delightful twist – Skelly can be carried by a raven, allowing you to take to the skies by physically tilting your phone left and right. This adds an entirely new level of enjoyment to the endless runner experience, making it incredibly fun to collect loads of coins while soaring above the landscape. The game's motto is crystal clear: "Run for your life but must be in style."
 
-{% include gallery id="gallery4" caption="Tilt your phone to fly!" %}
+{% include gallery id="gallery4" caption="Tilt your phone to fly!" style="width:50%;" %}
 
 **⚔️ Cool Weapons** 
 
@@ -95,7 +95,7 @@ What's an adventure without the right tools? You'll have a full weapon box for y
 
 The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
 
-{% include gallery id="gallery4" caption="Guarantee fun for everyone!" %}
+{% include gallery id="gallery5" caption="Guarantee fun for everyone!" %}
 
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/skelly-run/id6467491691) 
