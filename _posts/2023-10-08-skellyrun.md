@@ -51,7 +51,7 @@ From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there
 
 My challenge for you: 4k points. Run in your style! [Join The Challenge](skellyrun://StartMenu)
 
-{% include gallery id="gallery" caption="Run in snow with friends." %}
+{% include gallery id="gallery" caption="Run in the snow with friends." %}
 
 {% include video id="55gioyo4WAo" provider="youtube" %}
 Can you get a better style than this Adobe cool primrose dress?

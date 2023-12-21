@@ -18,9 +18,9 @@ header:
 #     text: "Wait list"
 
 gallery:
-  - url: /assets/images/skellyrun/1600x1600.png
-    image_path: /assets/images/skellyrun/1600x1600.png
-    alt: "Halloween"
+  - url: /assets/images/skellyrun/christmas-11.png
+    image_path: /assets/images/skellyrun/christmas-11.png
+    alt: "Christmas"
 
 gallery2:
   - url: /assets/images/skellyrun/1.png
