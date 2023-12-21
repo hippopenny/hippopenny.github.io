@@ -6,7 +6,7 @@ header:
     id: vk8zdJoD-GU
     provider: youtube
   # overlay_image: /assets/images/skellyrun/1600x1600.png
-  teaser: /assets/images/skellyrun/1600x1600.png
+  teaser: /assets/images/skellyrun/christmas-11.png
   # video:
   #   id: K3hfbVvo2MY
   #   provider: youtube

@@ -18,9 +18,14 @@ header:
 #     text: "Wait list"
 
 gallery:
-  - url: /assets/images/skellyrun/mkthalloween.png
-    image_path: /assets/images/skellyrun/mkthalloween.png
-    alt: "Halloween"
+
+  - url: /assets/images/skellyrun/christmas-11.png
+    image_path: /assets/images/skellyrun/christmas-11.png
+    alt: "Christmas"
+
+  # - url: /assets/images/skellyrun/mkthalloween.png
+  #   image_path: /assets/images/skellyrun/mkthalloween.png
+  #   alt: "Halloween"
 
 gallery2:
   - url: /assets/images/skellyrun/1.png
@@ -44,9 +49,9 @@ gallery4:
 
 From Sonic to Subway Surfers, and now to the exciting world of Skelly Run, there's a new endless runner on the block that's poised to make you bust into laughter. Skelly Run is the new endless runner game where you're a badass skeleton with cool weapons, running through crazy challenges and stuff, all while sporting some seriously stylish dresses!! Unlike other runner games, this game is easy to challenge buddies, make fun, and laugh out loud.
 
-My challenge for you: 4k points. Run in your style! [Join The Halloween Challenge](skellyrun://StartMenu)
+My challenge for you: 4k points. Run in your style! [Join The Challenge](skellyrun://StartMenu)
 
-{% include gallery id="gallery" caption="Halloween with friends." %}
+{% include gallery id="gallery" caption="Run in snow with friends." %}
 
 {% include video id="55gioyo4WAo" provider="youtube" %}
 Can you get a better style than this Adobe cool primrose dress?
@@ -78,7 +83,7 @@ What's an adventure without the right tools? You'll have a full weapon box for y
 
 **🏆 Competitive Fun** 
 
-[Join The Halloween Challenge](skellyrun://StartMenu)
+[Join The Challenge](skellyrun://StartMenu)
 
 The endless adventure of Skelly Run isn't just about surviving — it's about you and your friends. It is fun but challenging — very difficult to get over scores of 4k!
 
