@@ -19,8 +19,8 @@ header:
 
 gallery:
 
-  - url: /assets/images/skellyrun/christmas-11.png
-    image_path: /assets/images/skellyrun/christmas-11.png
+  - url: /assets/images/skellyrun/christmas11.png
+    image_path: /assets/images/skellyrun/christmas11.png
     alt: "Christmas"
 
   # - url: /assets/images/skellyrun/mkthalloween.png

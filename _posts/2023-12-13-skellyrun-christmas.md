@@ -6,7 +6,7 @@ header:
     id: vk8zdJoD-GU
     provider: youtube
   # overlay_image: /assets/images/skellyrun/1600x1600.png
-  teaser: /assets/images/skellyrun/christmas-11.png
+  teaser: /assets/images/skellyrun/christmas11.png
   # video:
   #   id: K3hfbVvo2MY
   #   provider: youtube
@@ -18,8 +18,8 @@ header:
 #     text: "Wait list"
 
 gallery:
-  - url: /assets/images/skellyrun/christmas-11.png
-    image_path: /assets/images/skellyrun/christmas-11.png
+  - url: /assets/images/skellyrun/christmas11.png
+    image_path: /assets/images/skellyrun/christmas11.png
     alt: "Christmas"
 
 gallery3:

@@ -26,7 +26,7 @@ header:
 
 feature_row:
     
-  - image_path: /assets/images/skellyrun/christmas-11.png
+  - image_path: /assets/images/skellyrun/christmas11.png
   # /assets/images/skellyrun/mkthalloween.png
     alt: "skelly run at hippopenny"
     title: "Skelly Run: Run for Your Life but Must Be in Style"
