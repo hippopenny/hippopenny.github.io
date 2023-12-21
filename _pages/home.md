@@ -52,6 +52,9 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
+
+    
+feature_row2:
   - image_path: /assets/images/mariby-main.png
     alt: "mariby at hippopenny"
     title: "Mariby"
@@ -59,7 +62,7 @@ feature_row:
     url:  /mariby/
     btn_class: "btn--primary"
     btn_label: "Learn more" 
-    
+
   - image_path: /assets/images/hopheck/1.png
     alt: "hop heck at hippo penny"
     title: "Hop Heck: Can You Take the Leap?"
@@ -68,7 +71,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"  
 
-feature_row2:
+feature_row3:
   - image_path: /assets/images/crypthesia/1.png
     alt: "crypthesia at hippopenny"
     title: "Hippo Crypthesia"
@@ -81,8 +84,9 @@ feature_row2:
 
 {% include feature_row type="left" %}
 
+{% include video id="jtfOkVV6Alo" provider="youtube" %}
+
 {% include feature_row id="feature_row2" type="left" %}
 
 {% include feature_row id="feature_row3" type="left" %}
 
-{% include video id="jtfOkVV6Alo" provider="youtube" %}
