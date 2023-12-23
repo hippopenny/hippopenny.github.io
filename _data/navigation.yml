@@ -1,4 +1,6 @@
 main:
+  - title: "Meta Score"
+    url: /meta-score/
   - title: "Game Review"
     url: /game-review/
   - title: "Product"
