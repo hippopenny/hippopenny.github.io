@@ -186,6 +186,17 @@ collections:
 
 # Defaults
 defaults:
+ # _scores
+  - scope:
+      path: ""
+      type: scores
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: true
+      share: true
+      related: true
   # _posts
   - scope:
       path: ""
@@ -237,6 +248,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-jsonify
 
 # mimic GitHub Pages with --safe
 whitelist:

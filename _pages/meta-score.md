@@ -1,146 +1,72 @@
 ---
-title: Rank game
-layout: archive
+title: HippoPenny Score
+layout: scores
 permalink: /meta-score/
 show_excerpts: true
 sort_order: reverse
 sort_by: date
 author_profile: false
 ---
+
 <style>
+ .gallery-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    width: 20%;
 
-    .archive{
-       width: 100%; 
-       padding: 0 0;
-       margin: 0 0;
-    }
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        box-sizing: border-box;
-    }
+}
 
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        width: 14%; /* 30% - margin */
-        margin: 8px 5px;
-        box-sizing: border-box;
-    }
+.gallery-item img {
+    
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
 
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
 
-    .container {
-        padding: 4px;
-    }
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
 
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-      b {
-        font-size: 14px; /* Điều chỉnh kích thước chữ theo mong muốn */
-    }
-
-    p {
-        font-size: 12px; /* Điều chỉnh kích thước chữ theo mong muốn */
-    }
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+  a{
+    color :black;
+    text-decoration:none;
+  }
 </style>
-<body>
 
-<div class="card-container">
-     <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-          <div class="card">
-            <img src="/assets/images/company/3.png" alt="Avatar">
-            <div class="container">
-                <b>John Doe</b>
-                <p>Architect & Engineer</p>
-            </div>
-        </div>
-        
+<script src="{{ '/assets/lightbox2/lightbox.js' | relative_url }}"></script>
+<link href="{{ '/assets/lightbox2/lightbox.css' | relative_url }}" rel="stylesheet" />
 
+
+<div class="gallery">
+  {% for file in site.static_files %}
+    {% if file.path contains '/scores/' and file.path contains '.png' %}
+        <div class="gallery-item">
+          <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}">
+            <img src="{{ file.path }}" alt="{{ file.name | remove: '.png' | replace: '-', ' ' }}"/>
+          </a>
+          <div class="caption">
+         <a href="{{ file.name | remove: '.png' | remove: '.jpg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">{{ file.name | remove: '.png' | remove: '.jpg' | replace: '-', ' '| slice: 11, page.name.size   }}</a>
+         </div>
+        </div>
+    {% endif %}
+  {% endfor %}
 </div>
-
-</body>

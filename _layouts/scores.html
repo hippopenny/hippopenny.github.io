@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign scoresByYear = site.scores | where_exp: "item", "item.hidden != true" | group_by_exp: 'score', 'score.date | date: "%Y"' %}
+{% for year in scoresByYear %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <div class="entries-{{ entries_layout }}">
+      {% for score in year.items %}
+        {% include archive-single.html type=grid %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
