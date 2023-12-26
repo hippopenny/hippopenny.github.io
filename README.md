@@ -47,3 +47,13 @@ Configure github action at https://docs.github.com/en/pages/getting-started-with
 3. push pages to github. A build action will be triggered automatically to release the page https://github.com/hippopenny/hippopenny.github.io/actions
 
 
+### hippo score
+
+1 Vào thư mục score thêm hình ảnh, file md và file json, chú ý định dạng đặt tên và đuôi file.
+2 Các file md sẽ tương tự nhau chú: ý phần permalink: /meta-score/advance-wars  (advance-wars tùy vào tên game)
+![image](/assets/images/score/i.png)
+![image](/assets/images/score/ii.png)
+![image](/assets/images/score/iii.png)
+
+
+
