@@ -1,10 +1,10 @@
 main:
-  - title: "HippoPenny Score"
-    url: /meta-score/
-  - title: "Game Review"
-    url: /game-review/
   - title: "Product"
     url: /
+  - title: "HippoPenny Score"
+    url: /meta-score/
+  - title: "Top picks"
+    url: /game-review/
   - title: "QR Art"
     url: /qr-code/
   - title: "Company"
