@@ -112,7 +112,7 @@ layout: single
         <div class="caption-container">
           <div id="score-box" class="score-box">
             {{ jsonData.meta-review.score | round }}
-          </div>
+          </div> <div style="font-size: 16px;">{{ jsonData.meta-review.rating}}</div>
         </div>
         <div class="critic-score-container">
           <div class="comment-box">{{jsonData.meta-review.comment}}</div>
