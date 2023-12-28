@@ -47,6 +47,13 @@ Configure github action at https://docs.github.com/en/pages/getting-started-with
 3. push pages to github. A build action will be triggered automatically to release the page https://github.com/hippopenny/hippopenny.github.io/actions
 
 
+## add hippo
++ Thêm file json vào ./_data đinh dạng tương tự
++ Thêm file image.png vào ./assets/imgages/scores
++ Thêm file .md vào ./scores định dạng tương tự
++ Chú ý tên file, file .md đổi tên theo tên game vd: permalink: /meta-score/alan-wake-ii (tên game)
+
+
 
 
 

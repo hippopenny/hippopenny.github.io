@@ -1,0 +1,151 @@
+---
+layout: single
+---
+<style>
+  .top{
+    margin-bottom: 5%
+  }
+  .left {
+    box-sizing: border-box;
+
+  }
+  .left img{
+    width: 100%;
+  }
+  
+
+  .right {
+    flex: 1;
+    text-align: left;
+    align-self: flex-start;
+    font-size: 16px;
+  }
+
+  .critic-score-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  .namegame {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  #critic-box {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    padding: 4px;
+  }
+
+  .score-box {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #00ff7c;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .comment-box {
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .caption-container {
+    display: flex;
+  }
+
+  #score-box1 {
+    color: black;
+    font-size: 22px;
+    margin-left: 5px;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .namegame {
+    font-size: 16px;
+}
+
+}
+
+/* CSS cho máy tính: */
+@media only screen and (min-width: 768px) {
+.page__related{
+  width: 180%;
+    padding-left: 40%;
+}
+.grid__wrapper{
+
+}
+}
+
+
+ 
+</style>
+
+{% capture dataFileName %}{{ page.name | replace: '.md', '' | slice: 11, page.name.size }}{% endcapture %}
+{% assign jsonData = site.data[dataFileName] %}
+
+<div>
+  <div class="">
+    <div class="top">
+      <div class="left">
+        <img src="/assets/images/scores/{{ page.name | replace: '.md', '.png' }}" alt="{{ file.name | remove: '.png' | replace: '-', ' ' }}"/>
+      </div>
+      <div class="right">
+        <div class="flex-container">
+          <div class="namegame">
+            {{ page.name | replace: '.md', '' | slice: 11, page.name.size | replace: '-', ' ' }}
+          </div>
+          <div id="critic-box">{{jsonData.meta-review.review-date}}</div>
+        </div>
+        <div class="caption-container">
+          <div id="score-box" class="score-box">
+            {{ jsonData.meta-review.score | round }}
+          </div>
+        </div>
+        <div class="critic-score-container">
+          <div class="comment-box">{{jsonData.meta-review.comment}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=hippopenny&amp;text=Enhanced+Visuals+and+Fixes%3A+GTA+Trilogy%27s+Definitive+Edition+Shines+on+Mobile%20http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+
+  <div class="page__related">
+    <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+    <div class="grid__wrapper">
+      {% for post in site.posts limit:4 %}
+        {% if post.id == page.id %}
+          {% continue %}
+        {% endif %}
+        {% include archive-single.html type="grid" %}
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+      
+

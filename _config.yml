@@ -186,17 +186,6 @@ collections:
 
 # Defaults
 defaults:
- # _scores
-  - scope:
-      path: ""
-      type: scores
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: true
-      share: true
-      related: true
   # _posts
   - scope:
       path: ""
