@@ -108,8 +108,8 @@ layout: archive
     </a> 
 </div> 
  <div class="caption-container">
-    <p id="caption1-{{index}}" class="caption1">{{ score }}</p>
-    <p id="caption1.2-{{index}}" style="
+    <p id="caption1" class="caption1">{{ score }}</p>
+    <p  style="
     color: black;
     font-size: 14px; margin-left:5px;
 " >{{jsonData.meta-review.rating  | slice: 0, 360}}</p>
@@ -125,5 +125,21 @@ layout: archive
 
 </div> 
 
+<script>
+  const score = document.getElementById("caption1");
+  const scoreValue = parseInt(score.innerHTML); // Parse the innerHTML as an integer
+  
+  if (scoreValue > 80) {
+    score.style.backgroundColor = "#00ff7c";
+  } else if (scoreValue > 70) {
+    score.style.backgroundColor = "yellow";
+  } else if (scoreValue > 0) {
+    score.style.backgroundColor = "red";
+  }
+  
+  
+    console.log(score)
+  </script>
+  
 
 

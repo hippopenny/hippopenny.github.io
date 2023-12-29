@@ -69,11 +69,28 @@ layout: single
     font-size: 22px;
     margin-left: 5px;
   }
+  .line {
+  width: 300px; /* Độ dài của đường thẳng */
+  height: 6px; /* Độ rộng của đường thẳng */
+  background-color: lightgray; /* Màu của đường thẳng */
+  position: relative;
+  margin-bottom: 20px; /* Khoảng cách với phần khác */
+}
+
+.divider {
+  width: 0;
+  height: 100%;
+  background-color:#00ff7c; 
+  position: absolute;
+}
 
 
   @media only screen and (max-width: 767px) {
     .namegame {
     font-size: 16px;
+}
+.line{
+  margin: -4% 0 0 13%;
 }
 
 }
@@ -84,8 +101,8 @@ layout: single
   width: 180%;
     padding-left: 40%;
 }
-.grid__wrapper{
-
+.line{
+  margin: -2% 0 0 8%;
 }
 }
 
@@ -114,6 +131,9 @@ layout: single
             {{ jsonData.meta-review.score | round }}
           </div> <div style="font-size: 16px;">{{ jsonData.meta-review.rating}}</div>
         </div>
+        <div class="line">
+          <div class="divider" id="divider"></div>
+        </div>
         <div class="critic-score-container">
           <div class="comment-box">{{jsonData.meta-review.comment}}</div>
         </div>
@@ -121,6 +141,33 @@ layout: single
     </div>
   </div>
 </div>
+
+<script>
+const score = document.getElementById("score-box");
+const scoreValue = parseInt(score.innerHTML); // Parse the innerHTML as an integer
+
+if (scoreValue > 80) {
+  score.style.backgroundColor = "#00ff7c";
+} else if (scoreValue > 70) {
+  score.style.backgroundColor = "yellow";
+} else if (scoreValue > 0) {
+  score.style.backgroundColor = "red";
+}
+
+const maxScore = 100; // Giả sử điểm tối đa là 100
+const line = document.querySelector('.line');
+const divider = document.getElementById('divider');
+const portion = (scoreValue / maxScore) * line.offsetWidth; // Tính phần chiều dài của phần xanh
+
+// Áp dụng chiều dài cho phần màu xanh
+divider.style.width = `${portion}px`;
+
+
+  console.log(divider)
+</script>
+
+
+<!--  -->
 <section class="page__share">
   
 
@@ -130,9 +177,6 @@ layout: single
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
-
-
-
   <div class="page__related">
     <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
     <div class="grid__wrapper">

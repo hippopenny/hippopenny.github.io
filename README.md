@@ -48,10 +48,10 @@ Configure github action at https://docs.github.com/en/pages/getting-started-with
 
 
 ## add hippo
-+ Thêm file json vào ./_data đinh dạng tương tự
-+ Thêm file image.png vào ./assets/imgages/scores
-+ Thêm file .md vào ./scores định dạng tương tự
-+ Chú ý tên file, file .md đổi tên theo tên game vd: permalink: /meta-score/alan-wake-ii (tên game)
++ Add json file to ./_data in similar format
++ Add image.png file to ./assets/imgages/scores
++ Add .md file to ./scores in similar format
++ Pay attention to the file name, the .md file is renamed according to the game name eg: permalink: /meta-score/alan-wake-ii (game name)
 
 
 
