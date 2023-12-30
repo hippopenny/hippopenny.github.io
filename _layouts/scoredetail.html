@@ -162,8 +162,15 @@ const portion = (scoreValue / maxScore) * line.offsetWidth; // Tính phần chi�
 // Áp dụng chiều dài cho phần màu xanh
 divider.style.width = `${portion}px`;
 
+if (scoreValue > 80) {
+  divider.style.backgroundColor = "#00ff7c";
+} else if (scoreValue > 70) {
+  divider.style.backgroundColor = "yellow";
+} else if (scoreValue > 0) {
+  divider.style.backgroundColor = "red";
+}
 
-  console.log(divider)
+
 </script>
 
 
