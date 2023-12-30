@@ -1,0 +1,145 @@
+---
+layout: archive
+---
+<style>
+  .gallery-item{
+    margin: 4% 0 4% 0;
+  }
+  .left-gallery{
+    min-width: 50%;
+  }
+  .left-gallery img{
+    width: 100%;
+
+  }
+  .caption{
+    margin-left:2%;
+    margin-top: 1%;
+  }
+
+ 
+ .top-caption {
+   display: flex;
+   justify-content: space-between;
+   
+ }
+ 
+ .caption-container {
+    display: flex;
+ }
+ 
+ 
+ 
+ .caption-container p {
+   order: 2; /* Đặt phần tử <p> xuống dưới */
+ }
+ 
+ .caption1 {
+  font-size: 12px;
+     color: black;
+     background-color: #00f20d;
+     border-radius: 3px;
+     padding: 5px 5px;
+   
+   
+ }
+ 
+ .caption2 {
+   font-size: 12px;
+   color: black;
+ }
+   .underline{
+    text-decoration: underline; /* Thêm gạch chân dưới cho class "v" */
+   text-decoration-thickness: 0.5px; /* Độ dày của đường gạch chân dưới */
+   }
+ 
+   a{
+     color :black;
+   
+   }
+   .top-caption{
+     display:flex;
+   }
+
+   @media only screen and (max-width: 767px) {
+    .gallery-item{
+    display: block;
+  }
+
+}
+
+/* CSS cho máy tính: */
+@media only screen and (min-width: 768px) {
+  .gallery-item{
+    display: flex;
+  }
+  .archive{
+    width: 100%;
+    padding:0 0 0 15%;
+  }
+}
+
+ </style>
+
+{{ content }}
+
+<script src="{{ '/assets/lightbox2/lightbox.js' | relative_url }}"></script>
+<link href="{{ '/assets/lightbox2/lightbox.css' | relative_url }}" rel="stylesheet" />
+
+
+
+<div class="gallery">
+{% assign index = 0 %}
+  {% for file in site.static_files %}
+    {% if file.path contains '/assets/images/scores/' and file.path contains '.png' %}
+        <div class="gallery-item">
+          <div class="left-gallery">
+            <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}">
+              <img src="{{ file.path }}" alt="{{ file.name | remove: '.png' | replace: '-', ' ' }}"/>
+            </a>
+          </div>
+             {% capture dataFileName %}{{ file.name | remove: '.png' | slice: 11, file.name.size }}{% endcapture %}
+             {% assign jsonData = site.data[dataFileName] %}
+             {% assign score = jsonData.meta-review.score | round %}
+          <div class="caption">
+               <div class="top-caption">
+    <a href="{{ file.name | remove: '.png' | remove: '.jpg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
+      {{ file.name | remove: '.png' | remove: '.jpg'| slice: 11, page.name.size | replace: '-', ' '  }}
+    </a> 
+</div> 
+ <div class="caption-container">
+    <p id="caption1" class="caption1">{{ score }}</p>
+    <p  style="
+    color: black;
+    font-size: 14px; margin-left:5px;
+" >{{jsonData.meta-review.rating  | slice: 0, 360}}</p>
+  </div>
+          <p class="caption2">{{jsonData.meta-review.comment  | slice: 0, 360}}...</p>
+         </div>
+        </div>
+     {% assign index = index | plus: 1 %}
+
+    {% endif %}
+  {% endfor %}
+        <p id="indexx" style="display:none;">{{index}}</p>
+
+</div> 
+
+<script>
+  const score = document.getElementById("caption1");
+  const scoreValue = parseInt(score.innerHTML); // Parse the innerHTML as an integer
+  
+  if (scoreValue > 80) {
+    score.style.backgroundColor = "#00ff7c";
+  } else if (scoreValue > 70) {
+    score.style.backgroundColor = "yellow";
+  } else if (scoreValue > 0) {
+    score.style.backgroundColor = "red";
+  }
+  
+  
+    console.log(score)
+  </script>
+  
+
+
