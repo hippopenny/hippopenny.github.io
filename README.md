@@ -42,12 +42,18 @@ Configure github action at https://docs.github.com/en/pages/getting-started-with
 
 2. include the new post to _pages/home.md
 
-2.1 index pages for search, must use admin key ALGOLIA_API_KEY= bundle exec jekyll algolia 
+2.1 index pages for search, must use admin key ALGOLIA_API_KEY= bundle exec jekyll algolia. We can use github action to execute this step; see below.
 
 3. push pages to github. A build action will be triggered automatically to release the page https://github.com/hippopenny/hippopenny.github.io/actions
 
+    Define the Secret in GitHub: Go to your GitHub repository. Click on "Settings" in the top navigation bar. Navigate to "Secrets" in the left sidebar.Click on "New repository secret." Name your secret (e.g., ALGOLIA_API_KEY) and enter the actual API key as the value. Click on "Add secret."
 
-## add hippo
+    We can then add this line to github action
+
+    - name: Exec jekyll algolia
+        run: ALGOLIA_API_KEY=${{ secrets.ALGOLIA_API_KEY }} bundle exec jekyll algolia
+
+## Add Review
 + Add json file to ./_data in similar format
 + Add image.png file to ./assets/imgages/scores
 + Add .md file to ./scores in similar format
