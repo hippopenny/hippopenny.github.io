@@ -71,6 +71,4 @@ jobs:
           bundle lock --add-platform x86_64-linux
           bundle install --jobs 4 --retry 3
       - name: Exec jekyll algolia
-        run: ALGOLIA_API_KEY=472155ed19377040a4c2a73a92d1cb78 bundle exec jekyll algolia
-        env:
-          ALGOLIA_API_KEY: '${{ secrets.ALGOLIA_API_KEY }}'
+        run: ALGOLIA_API_KEY=${{ secrets.ALGOLIA_API_KEY }} bundle exec jekyll algolia
