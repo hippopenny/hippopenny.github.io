@@ -73,4 +73,4 @@ jobs:
       - name: Exec jekyll algolia
         run: bundle exec jekyll algolia
         env:
-          APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
+          ALGOLIA_API_KEY: '${{ secrets.ALGOLIA_API_KEY }}'
