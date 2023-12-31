@@ -69,6 +69,7 @@ jobs:
       - name: Bundle install
         run: |
           bundle config path vendor/bundle
+          bundle lock --add-platform x86_64-linux
           bundle install --jobs 4 --retry 
       - name: Exec jekyll algolia
         run: bundle exec jekyll algolia
