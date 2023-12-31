@@ -53,10 +53,10 @@ jobs:
   # Search
   algolia-search:
     runs-on: ubuntu-latest
+    needs: deploy
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3        
-      - name: Exec jekyll algolia
-        run: bundle exec jekyll algolia
-        env:
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+      - uses: actions/checkout@v3
+      - name: Algolia Jekyll Action
+        uses: dieghernan/algolia-jekyll-action@main
+        with:
+          APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
