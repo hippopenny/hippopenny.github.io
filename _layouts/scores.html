@@ -103,20 +103,19 @@ layout: archive
              {% assign score = jsonData.meta-review.score | round %}
           <div class="caption">
                <div class="top-caption">
-    <a href="{{ file.name | remove: '.png' | remove: '.jpg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
-      {{ file.name | remove: '.png' | remove: '.jpg'| slice: 11, page.name.size | replace: '-', ' '  }}
-    </a> 
-</div> 
- <div class="caption-container">
-    <p id="caption1" class="caption1">{{ score }}</p>
-    <p  style="
-    color: black;
-    font-size: 14px; margin-left:5px;
-" >{{jsonData.meta-review.rating  | slice: 0, 360}}</p>
-  </div>
-          <p class="caption2">{{jsonData.meta-review.comment  | slice: 0, 360}}...</p>
-         </div>
+                <a href="{{ file.name | remove: '.png' | remove: '.jpg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
+                {{ file.name | remove: '.png' | remove: '.jpg'| slice: 11, file.name.size | replace: '-', ' '  }}
+                </a> 
+                </div> 
+        <div class="caption-container">
+          <p id="caption1" class="caption1">{{ score }}</p>
+          <p  style="
+          color: black;
+          font-size: 14px; margin-left:5px;" >{{jsonData.meta-review.rating  | slice: 0, 360}}</p>
         </div>
+          <p class="caption2">{{jsonData.meta-review.comment  | slice: 0, 360}}...</p>
+        </div>
+      </div>
      {% assign index = index | plus: 1 %}
 
     {% endif %}
