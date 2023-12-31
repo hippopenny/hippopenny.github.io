@@ -24,14 +24,17 @@ layout: single
   .critic-score-container {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-top: 20px;
+    /* border-bottom: 1px solid #ccc; */
+    /* padding-bottom: 5px; */
+    /* margin-bottom: 5px; */
   }
 
   .namegame {
     font-size: 26px;
     text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #critic-box {
@@ -129,7 +132,8 @@ layout: single
         <div class="caption-container">
           <div id="score-box" class="score-box">
             {{ jsonData.meta-review.score | round }}
-          </div> <div style="font-size: 16px;">{{ jsonData.meta-review.rating}}</div>
+          </div> 
+          <div style="font-size: 16px; padding-left: 15px;" >{{ jsonData.meta-review.rating}}</div>
         </div>
         <div class="line">
           <div class="divider" id="divider"></div>
@@ -174,27 +178,36 @@ if (scoreValue > 80) {
 </script>
 
 
-<!--  -->
-<section class="page__share">
-  
+<div id="main">
+  <div class="page__inner-wrap" style="padding-bottom:30px;">
+    {% include social-share.html %}
 
-  <a href="https://twitter.com/intent/tweet?via=hippopenny&amp;text=Enhanced+Visuals+and+Fixes%3A+GTA+Trilogy%27s+Definitive+Edition+Shines+on+Mobile%20http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2FGTA%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-  <div class="page__related">
-    <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-    <div class="grid__wrapper">
-      {% for post in site.posts limit:4 %}
-        {% if post.id == page.id %}
-          {% continue %}
-        {% endif %}
-        {% include archive-single.html type="grid" %}
-      {% endfor %}
-    </div>
+    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+    {% include comments.html %}
+    {% endif %}
+    {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   </div>
+
+  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+  <div class="grid__wrapper">
+    {% for post in site.posts limit:4 %}
+      {% if post.id == page.id %}
+        {% continue %}
+      {% endif %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+ 
+  <div align="center" style="margin: 1em 0;">
+    <ins class="adsbygoogle"
+          style="display:block; border-bottom: initial;"
+          data-ad-client="ca-pub-7328585512091257"
+          data-ad-slot="3049671934"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
 
 
 
