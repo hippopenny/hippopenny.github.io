@@ -116,11 +116,27 @@ layout: single
 {% capture dataFileName %}{{ page.name | replace: '.md', '' | slice: 11, page.name.size }}{% endcapture %}
 {% assign jsonData = site.data[dataFileName] %}
 
+<!--  -->
+{% assign image_formats = "png,jpg,jpeg,gif,bmp" | split: "," %}
+{% assign image_path = '' %}
+
+{% for format in image_formats %}
+    {% assign temp_image_path = '/assets/images/scores/' | append: page.name | replace: '.md', '' | append: '.' | append: format %}
+    {% capture file_exists %}{{ site.static_files | where: "path", temp_image_path }}{% endcapture %}
+    {% if file_exists != blank %}
+        {% assign image_path = temp_image_path %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+<!--  -->
+
+
+
 <div>
   <div class="">
     <div class="top">
       <div class="left">
-        <img src="/assets/images/scores/{{ page.name | replace: '.md', '.png' }}" alt="{{ file.name | remove: '.png' | replace: '-', ' ' }}"/>
+            <img src="{{ image_path }}" />
       </div>
       <div class="right">
         <div class="flex-container">

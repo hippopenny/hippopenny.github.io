@@ -36,12 +36,11 @@ layout: archive
    order: 2; /* Đặt phần tử <p> xuống dưới */
  }
  
- .caption1 {
+ #caption1 {
   font-size: 12px;
-     color: black;
-     background-color: #00f20d;
-     border-radius: 3px;
-     padding: 5px 5px;
+  color: black;
+  border-radius: 3px;
+  padding: 5px 5px;
    
    
  }
@@ -67,11 +66,7 @@ layout: archive
     .gallery-item{
     display: block;
   }
-  .left-gallery img{
-    
-    height: 370px;
 
-  }
 
 }
 
@@ -84,11 +79,7 @@ layout: archive
     width: 100%;
     padding:0 0 0 15%;
   }
-  .left-gallery img{
-    
-    height: 500px;
-
-  }
+ 
 }
 
  </style>
@@ -103,30 +94,31 @@ layout: archive
 <div class="gallery">
 {% assign index = 0 %}
   {% for file in site.static_files %}
-    {% if file.path contains '/assets/images/scores/' and file.path contains '.png' %}
+    {% if file.path contains '/assets/images/scores/' %}
         <div class="gallery-item">
           <div class="left-gallery">
             <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}">
-              <img src="{{ file.path }}" alt="{{ file.name | remove: '.png' | replace: '-', ' ' }}"/>
+              <img src="{{ file.path }}" />
             </a>
           </div>
-             {% capture dataFileName %}{{ file.name | remove: '.png' | slice: 11, file.name.size }}{% endcapture %}
+             {% capture dataFileName %}{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' |remove: '.gif' |remove: '.bmp' | slice: 11, file.name.size }}{% endcapture %}
              {% assign jsonData = site.data[dataFileName] %}
              {% assign score = jsonData.meta-review.score | round %}
           <div class="caption">
                <div class="top-caption">
-                <a href="{{ file.name | remove: '.png' | remove: '.jpg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
-                {{ file.name | remove: '.png' | remove: '.jpg'| slice: 11, file.name.size | replace: '-', ' '  }}
+                <a href="{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
+                {{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' |remove: '.gif' |remove: '.bmp' | slice: 11, file.name.size | replace: '-', ' '  }}
                 </a> 
                 </div> 
         <div class="caption-container">
-          <p id="caption1" class="caption1">{{ score }}</p>
+          <p id="caption1-{{ index }}" >{{ score }}</p>
           <p  style="
           color: black;
           font-size: 14px; margin-left:5px;" >{{jsonData.meta-review.rating  | slice: 0, 360}}</p>
         </div>
           <p class="caption2">{{jsonData.meta-review.comment  | slice: 0, 360}}...</p>
         </div>
+        
       </div>
      {% assign index = index | plus: 1 %}
 
@@ -135,22 +127,28 @@ layout: archive
         <p id="indexx" style="display:none;">{{index}}</p>
 
 </div> 
-
 <script>
-  const score = document.getElementById("caption1");
-  const scoreValue = parseInt(score.innerHTML); // Parse the innerHTML as an integer
-  
+  let i = 0;
+let index = parseInt(document.getElementById("indexx").innerHTML);
+
+while (i < index) {
+  let score = document.getElementById(`caption1-${i}`);
+  score.style.fontSize = "12px";
+  score.style.color = "black";
+  score.style.borderRadius = "3px"; 
+  score.style.padding = "5px 5px"; 
+
+  let scoreValue = parseInt(score.innerHTML);
   if (scoreValue > 80) {
     score.style.backgroundColor = "#00ff7c";
-  } else if (scoreValue > 70) {
+  } else if (scoreValue > 69) {
     score.style.backgroundColor = "yellow";
   } else if (scoreValue > 0) {
     score.style.backgroundColor = "red";
   }
-  
-  
-    console.log(score)
-  </script>
-  
+  i++;
+}
+</script>
+
 
 
