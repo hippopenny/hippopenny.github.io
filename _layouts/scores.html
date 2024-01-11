@@ -93,7 +93,8 @@ layout: archive
 
 <div class="gallery">
 {% assign index = 0 %}
-  {% for file in site.static_files %}
+{% assign files = site.static_files | reverse %}
+{% for file in files %}
     {% if file.path contains '/assets/images/scores/' %}
         <div class="gallery-item">
           <div class="left-gallery">
@@ -124,7 +125,7 @@ layout: archive
 
     {% endif %}
   {% endfor %}
-        <p id="indexx" style="display:none;">{{index}}</p>
+<p id="indexx" style="display:none;">{{index}}</p>
 
 </div> 
 <script>
