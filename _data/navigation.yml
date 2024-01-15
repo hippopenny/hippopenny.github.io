@@ -1,7 +1,7 @@
 main:
   - title: "Product"
     url: /
-  - title: "HippoPenny Score"
+  - title: Game ratings
     url: /meta-score/
   - title: "Top picks"
     url: /game-review/

@@ -1,5 +1,5 @@
 ---
-title: HippoPenny Score
+title: HippoPenny Game Ratings
 layout: scores
 permalink: /meta-score/
 show_excerpts: true
