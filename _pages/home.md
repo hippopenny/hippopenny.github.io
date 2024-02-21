@@ -4,10 +4,10 @@ permalink: /
 hidden: true
 title: "Hippo Penny"
 header:
-  overlay_image: /assets/images/skellyrun/christmas21.png
+  overlay_image: /assets/images/grand-theft-bank/banner.png
   actions:
-  - label: "Skelly Run"
-    url: /skellyrun/
+  - label: "Grand Theft Bank"
+    url: /grand-theft-bank/
 
   # video:
   #   id: aR5jUDr-NdU
@@ -26,6 +26,15 @@ header:
 
 feature_row:
     
+  - image_path: /assets/images/grand-theft-bank/banner.png
+  # /assets/images/skellyrun/mkthalloween.png
+    alt: "grand theft bank at hippopenny"
+    title: "Grand Theft Bank: Race, Steal, and Escape in Endless Excitement"
+    excerpt: "Gear up for the ultimate adrenaline rush in 'Grand Theft Bank'! Race through city streets, outsmart the police and master grand theft genre. Control the stolen bank safe, transform it into a powerful weapon and experience fast, furious car racing like never before. Get ready for high-speed thrills, daring getaways and leave an unforgettable mark in the world of grand theft excitement!"
+    url:  /grand-theft-bank/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
   - image_path: /assets/images/skellyrun/christmas11.png
   # /assets/images/skellyrun/mkthalloween.png
     alt: "skelly run at hippopenny"
