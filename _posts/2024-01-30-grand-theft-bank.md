@@ -29,6 +29,11 @@ gallery:
 #     image_path: /assets/images/skellyrun/1.png
 #     alt: "style"
 
+gallery2:
+  - url: /assets/images/grand-theft-bank/balance_building_game.png
+    image_path: /assets/images/grand-theft-bank/balance_building_game.png
+    alt: "icon"
+
 gallery3:
   - url: /assets/images/grand-theft-bank/icon.png
     image_path: /assets/images/grand-theft-bank/icon.png
@@ -50,14 +55,17 @@ gallery5:
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.grandtheftbank)
 
 
-Gear up for the ultimate adrenaline rush in 'Grand Theft Bank'! Race through city streets, outsmart the police and master grand theft genre. Control the stolen bank safe, transform it into a powerful weapon and experience fast, furious car racing like never before. Get ready for high-speed thrills, daring getaways and leave an unforgettable mark in the world of grand theft excitement!
 
+Welcome to an unparalleled gaming experience, where innovation takes center stage in shaping the virtual realms you're about to explore. In this exceptional journey, we present a game that stands out for its groundbreaking approach – a meticulous process where prompts are intricately crafted to task ChatGPT with intricately weaving the mechanics of the game. What sets this adventure apart is the seamless fusion of two distinct worlds: the high-octane thrill of Fast and Furious, seamlessly blended with the strategic depth of chain balance. Prepare yourself for a gaming odyssey that challenges conventions and invites you to witness the emergence of a truly unique and captivating adventure.
 
 <!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
 
-{% include gallery id="gallery" caption="Race by you style." %}
+{% include video id="uLpoPVLpG9E" provider="youtube" %}
 
-<!-- {% include gallery id="gallery2" caption="Skeleton in style!" %} -->
+{% include gallery id="gallery2" caption="Keep everything in balance!" %}
+
+{% include video id="9wDqk_LUXLA" provider="youtube" %}
+
 
 **🏃 High-Speed Safe Racing** 
 
@@ -76,8 +84,8 @@ Take charge of the heist like never before! Control the stolen bank safe in the 
 Immerse yourself in the world of fast and furious grand theft auto in "Grand Theft Bank." Showcase exceptional driving prowess in high-stakes car chases that push your limits. Evade the relentless police force, outmaneuver their pursuit and demonstrate why you're the master of daring getaways. Get ready for an endless thrill as you race through bustling streets, earning coins from heisted vaults to unlock levels and assets. It's time to embrace your inner thief and leave your mark on the high-speed world of bank robberies!
 
 Gear up for a pulse-pounding chase in "City Runaway" – where daring escapes meet high-speed racing! Outrun the law, navigate bustling streets, and become the ultimate legend of the city's underground. Get ready for an adrenaline-fueled adventure!
+{% include gallery id="gallery" caption="Race by you style." %}
 
-{% include video id="9wDqk_LUXLA" provider="youtube" %}
 
 **🏆 Competitive Fun** 
 
