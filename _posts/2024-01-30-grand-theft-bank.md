@@ -58,20 +58,15 @@ gallery5:
 
 Welcome to an unparalleled gaming experience, where innovation takes center stage in shaping the virtual realms you're about to explore. In this exceptional journey, we present a game that stands out for its groundbreaking approach – a meticulous process where prompts are intricately crafted to task ChatGPT with intricately weaving the mechanics of the game. What sets this adventure apart is the seamless fusion of two distinct worlds: the high-octane thrill of Fast and Furious, seamlessly blended with the strategic depth of chain balance. Prepare yourself for a gaming odyssey that challenges conventions and invites you to witness the emergence of a truly unique and captivating adventure.
 
-<!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
-
 {% include video id="uLpoPVLpG9E" provider="youtube" %}
 
 {% include gallery id="gallery2" caption="Keep everything in balance!" %}
-
-{% include video id="9wDqk_LUXLA" provider="youtube" %}
-
 
 **🏃 High-Speed Safe Racing** 
 
 Rev up your engines and race against the relentless pursuit of the police through crowded city streets. In "Grand Theft Bank," experience the thrill of high-speed chases as you skillfully navigate through blocks, outsmarting the police and leaving a trail of excitement in your wake. Can you pull off the ultimate bank safe getaway and prove you're more than just a regular thief?
 
-{% include gallery id="gallery3" caption="Just don't get caught!" %}
+{% include video id="9wDqk_LUXLA" provider="youtube" %}
 
 **🦅 Dynamic Safe Control** 
 
@@ -84,7 +79,8 @@ Take charge of the heist like never before! Control the stolen bank safe in the 
 Immerse yourself in the world of fast and furious grand theft auto in "Grand Theft Bank." Showcase exceptional driving prowess in high-stakes car chases that push your limits. Evade the relentless police force, outmaneuver their pursuit and demonstrate why you're the master of daring getaways. Get ready for an endless thrill as you race through bustling streets, earning coins from heisted vaults to unlock levels and assets. It's time to embrace your inner thief and leave your mark on the high-speed world of bank robberies!
 
 Gear up for a pulse-pounding chase in "City Runaway" – where daring escapes meet high-speed racing! Outrun the law, navigate bustling streets, and become the ultimate legend of the city's underground. Get ready for an adrenaline-fueled adventure!
-{% include gallery id="gallery" caption="Race by you style." %}
+
+{% include gallery id="gallery3" caption="Just don't get caught!" %}
 
 
 **🏆 Competitive Fun** 
