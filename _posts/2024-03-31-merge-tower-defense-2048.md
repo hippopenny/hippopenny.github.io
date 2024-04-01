@@ -3,7 +3,7 @@ title: "Merge Tower Defense: 2048"
 date:   2024-03-31 12:29:44 -0800
 excerpt: "Ready for an epic fusion of brain-teasing"
 header:
-  # overlay_image: /assets/images/td2048/banner.png
+  image: /assets/images/td2048/banner.png
   teaser: /assets/images/td2048/banner.png
 
 # sidebar:
