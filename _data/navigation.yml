@@ -10,6 +10,4 @@ main:
   - title: "Company"
     url: /company/
   - title: "Support"
-    url: /crypthesiasupport/
-  - title: "Privacy"
-    url: /crypthesiaprivacypolicy/
+    url: /support/

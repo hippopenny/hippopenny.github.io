@@ -82,8 +82,6 @@ Do you have what it takes to conquer the battlefield with a fusion of brainpower
 
 Ready to embark on this unique fusion of 2048 puzzles and exhilarating tower defense action? If you ever need support, you can reach out to us at support@hippopenny.com.
 
-For more information, please review our Terms of Service at https://www.hippopenny.com/termsofservice/ and Privacy Policy at https://www.hippopenny.com/crypthesiaprivacypolicy/
-
 
 <!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/td2048/id6466251387) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.grandtheftbank)
