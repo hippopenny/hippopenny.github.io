@@ -174,7 +174,8 @@ layout: single
           <div class="divider" id="divider"></div>
         </div>
         <div class="critic-score-container">
-          <div class="comment-box">{{jsonData.meta-review.comment}}</div>
+          <div class="comment-box">{{jsonData.meta-review.comment.split('\n').join('<br>')}}
+          </div>
         </div>
       </div>
     </div>
