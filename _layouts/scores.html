@@ -98,7 +98,8 @@ layout: archive
     {% if file.path contains '/assets/images/scores/' %}
         <div class="gallery-item">
           <div class="left-gallery">
-            <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}">
+            <!-- <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}"> -->
+            <a href="{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
               <img src="{{ file.path }}" />
             </a>
           </div>
