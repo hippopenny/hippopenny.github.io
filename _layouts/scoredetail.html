@@ -233,7 +233,7 @@ if (scoreValue > 80) {
           {% assign count = count | plus: 1 %}
           <div class="gallery-item" style="flex: 0 0 24%; padding: 10px;">
             <div class="left-gallery">
-              <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}">
+              <a href="{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}" style="color: #000000; text-transform: uppercase;">
                 <img class="image-detail" src="{{ file.path }}"  />
               </a>
             </div>
