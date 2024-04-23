@@ -225,7 +225,8 @@ if (scoreValue > 80) {
 
   <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
   <div class="grid__wrapper">
-  {% assign files = site.static_files | reverse %}
+  {% assign allfiles = site.static_files | reverse %}
+  {% assign files = allfiles | sample: 100 %}
   {% assign count = 0 %}
   {% for file in files %}
       {% if count < 2 and file.path contains '/assets/images/scores/' %}
