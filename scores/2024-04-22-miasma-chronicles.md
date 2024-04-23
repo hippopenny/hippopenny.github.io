@@ -1,6 +1,6 @@
 ---
         
-title: miasma-chronicles
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/miasma-chronicles
 ---

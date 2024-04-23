@@ -1,6 +1,6 @@
 ---
         
-title: blood-bowl-iii
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/blood-bowl-iii
 ---

@@ -1,6 +1,6 @@
 ---
         
-title: lego-worlds
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/lego-worlds
 ---

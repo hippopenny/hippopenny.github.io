@@ -1,6 +1,6 @@
 ---
         
-title: helldivers-2
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/helldivers-2
 ---

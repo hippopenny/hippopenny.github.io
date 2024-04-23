@@ -1,6 +1,6 @@
 ---
         
-title: deliver-us-mars
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/deliver-us-mars
 ---

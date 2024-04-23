@@ -1,5 +1,5 @@
 ---
-title: assassins-creed-ii
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/assassins-creed-ii
 ---

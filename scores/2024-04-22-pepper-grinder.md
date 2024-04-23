@@ -1,6 +1,6 @@
 ---
         
-title: pepper-grinder
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/pepper-grinder
 ---

@@ -1,5 +1,5 @@
 ---
-title: batman-arkham-asylum
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/batman-arkham-asylum
 ---

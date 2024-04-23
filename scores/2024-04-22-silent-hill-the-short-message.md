@@ -1,6 +1,6 @@
 ---
         
-title: silent-hill-the-short-message
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/silent-hill-the-short-message
 ---

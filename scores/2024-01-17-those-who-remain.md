@@ -1,6 +1,6 @@
 ---
         
-title: those-who-remain
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/those-who-remain
 ---

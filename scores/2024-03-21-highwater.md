@@ -1,6 +1,6 @@
 ---
         
-title: highwater
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/highwater
 ---

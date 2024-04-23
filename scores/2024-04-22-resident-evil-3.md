@@ -1,6 +1,6 @@
 ---
         
-title: resident-evil-3
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/resident-evil-3
 ---

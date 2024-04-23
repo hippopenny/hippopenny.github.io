@@ -1,6 +1,6 @@
 ---
         
-title: solium-infernum
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/solium-infernum
 ---

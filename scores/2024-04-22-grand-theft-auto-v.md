@@ -1,6 +1,6 @@
 ---
         
-title: grand-theft-auto-v
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/grand-theft-auto-v
 ---

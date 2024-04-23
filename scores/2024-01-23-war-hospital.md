@@ -1,6 +1,6 @@
 ---
         
-title: war-hospital
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/war-hospital
 ---

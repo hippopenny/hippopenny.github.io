@@ -1,6 +1,6 @@
 ---
         
-title: animal-crossing-new-horizons
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/animal-crossing-new-horizons
 ---

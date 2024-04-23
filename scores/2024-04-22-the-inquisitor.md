@@ -1,6 +1,6 @@
 ---
         
-title: the-inquisitor
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/the-inquisitor
 ---

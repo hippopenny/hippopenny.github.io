@@ -1,6 +1,6 @@
 ---
         
-title: lightyear-frontier
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/lightyear-frontier
 ---

@@ -1,6 +1,6 @@
 ---
         
-title: go-mecha-ball
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/go-mecha-ball
 ---

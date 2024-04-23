@@ -1,6 +1,6 @@
 ---
         
-title: session-skate-sim
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/session-skate-sim
 ---

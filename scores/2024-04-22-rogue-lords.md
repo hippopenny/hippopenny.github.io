@@ -1,6 +1,6 @@
 ---
         
-title: rogue-lords
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/rogue-lords
 ---

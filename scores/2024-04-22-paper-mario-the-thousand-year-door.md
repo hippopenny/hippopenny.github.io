@@ -1,6 +1,6 @@
 ---
         
-title: paper-mario-the-thousand-year-door
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/paper-mario-the-thousand-year-door
 ---

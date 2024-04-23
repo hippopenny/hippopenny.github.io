@@ -1,6 +1,6 @@
 ---
         
-title: headquarters-world-war-ii
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/headquarters-world-war-ii
 ---

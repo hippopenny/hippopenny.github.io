@@ -1,6 +1,6 @@
 ---
         
-title: like-a-dragon-infinite-wealth
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/like-a-dragon-infinite-wealth
 ---

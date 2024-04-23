@@ -1,5 +1,5 @@
 ---
-title: raccoo-venture
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/raccoo-venture
 ---

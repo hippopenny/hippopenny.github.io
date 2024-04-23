@@ -1,6 +1,6 @@
 ---
         
-title: the-talos-principle-2
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/the-talos-principle-2
 ---

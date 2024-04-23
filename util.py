@@ -25,6 +25,34 @@ def delete_duplicates(directory):
                 print('delete', file)
                 os.remove(os.path.join(directory, file))
 
+def replace_titles(directory, new_title):
+    files = os.listdir(directory)
+    files_dict = {}
+
+    # Create a dictionary where the key is the filename without the date
+    # and the value is the full filename
+    for file in files:
+        replace_title(os.path.join(directory, file), new_title)
+
+def replace_title(filename, new_title):
+    # Read the file
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+    # Find and replace the line starting with 'title:'
+    for i, line in enumerate(lines):
+        if line.startswith('title:'):
+            lines[i] = f'title: {new_title}\n'
+            break
+
+    # Write the modified content back to the file
+    with open(filename, 'w') as file:
+        file.writelines(lines)
+
+
+
 # Example usage
-directory_path = "assets/images/scores"
-delete_duplicates(directory_path)
+# directory_path = "assets/images/scores"
+# delete_duplicates(directory_path)
+
+replace_titles("scores", "Hippo Penny Game Score")

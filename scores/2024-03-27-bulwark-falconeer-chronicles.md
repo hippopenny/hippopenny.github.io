@@ -1,6 +1,6 @@
 ---
         
-title: bulwark-falconeer-chronicles
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/bulwark-falconeer-chronicles
 ---

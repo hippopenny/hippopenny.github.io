@@ -1,6 +1,6 @@
 ---
         
-title: close-to-the-sun
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/close-to-the-sun
 ---

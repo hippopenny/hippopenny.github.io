@@ -1,6 +1,6 @@
 ---
         
-title: princess-peach-showtime
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/princess-peach-showtime
 ---

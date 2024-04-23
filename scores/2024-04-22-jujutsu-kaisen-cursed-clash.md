@@ -1,6 +1,6 @@
 ---
         
-title: jujutsu-kaisen-cursed-clash
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/jujutsu-kaisen-cursed-clash
 ---

@@ -1,6 +1,6 @@
 ---
         
-title: metro-quester
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/metro-quester
 ---

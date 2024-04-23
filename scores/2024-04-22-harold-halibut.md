@@ -1,6 +1,6 @@
 ---
         
-title: harold-halibut
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/harold-halibut
 ---

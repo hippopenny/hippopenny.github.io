@@ -1,6 +1,6 @@
 ---
         
-title: tales-of-kenzera-zau
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/tales-of-kenzera-zau
 ---

@@ -1,5 +1,5 @@
 ---
-title: ready-or-not
+title: Hippo Penny Game Score
 layout: scoredetail
 permalink: /meta-score/ready-or-not
 ---
