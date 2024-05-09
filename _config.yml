@@ -14,7 +14,7 @@ locale                   : "en-US"
 title                    : "HippoPenny"
 name                     : &name "Hippo Penny" # &name is a YAML anchor which can be *referenced later
 description              : &description "Experience the future of gaming today with our AI and blockchain-powered video games. Explore dynamic game environments and truly own your in-game assets."
-url                      : "https://www.hippopenny.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://www.hippopenny.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 og_image                 : "/assets/images/hippo-ghost.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
