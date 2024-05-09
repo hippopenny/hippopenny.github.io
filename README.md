@@ -60,6 +60,9 @@ Configure github action at https://docs.github.com/en/pages/getting-started-with
 + Pay attention to the file name, the .md file is renamed according to the game name eg: permalink: /meta-score/alan-wake-ii (game name)
 
 
+## About favicon
+
+Using http://realfavicongenerator.net/ to generate all of the sized icons from a single file, placed them in assets/images and then added the html it spit out to the _includes/head/custom.html
 
 
 
