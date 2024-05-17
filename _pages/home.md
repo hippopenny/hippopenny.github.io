@@ -2,12 +2,12 @@
 layout: splash
 permalink: /
 hidden: true
-title: "Hippo Penny"
+title: "O_o"
 header:
-  overlay_image: /assets/images/grand-theft-bank/banner.png
+  overlay_image: /assets/images/offrail/banner.png
   actions:
-  - label: "Grand Theft Bank"
-    url: /grand-theft-bank/
+  - label: "Just Want To Be Silly?"
+    url: /offrail/
 
   # video:
   #   id: aR5jUDr-NdU
