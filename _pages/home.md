@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 title: "O_o"
 header:
-  overlay_image: /assets/images/offrail/banner.png
+  overlay_image: /assets/images/offrail/bannerfixlongsize.png
   actions:
   - label: "Just Want To Be Silly?"
     url: /offrail/
