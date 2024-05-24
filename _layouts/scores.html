@@ -38,7 +38,7 @@ layout: archive
  
  #caption1 {
   font-size: 12px;
-  color: black;
+  color: white;
   border-radius: 3px;
   padding: 5px 5px;
    
@@ -47,7 +47,7 @@ layout: archive
  
  .caption2 {
    font-size: 12px;
-   color: black;
+   color: white;
  }
    .underline{
     text-decoration: underline; /* Thêm gạch chân dưới cho class "v" */
@@ -55,7 +55,7 @@ layout: archive
    }
  
    a{
-     color :black;
+     color :white;
    
    }
    .top-caption{
@@ -99,7 +99,7 @@ layout: archive
         <div class="gallery-item">
           <div class="left-gallery">
             <!-- <a href="{{ file.path }}" data-lightbox="image-set" data-title="{{ file.name | remove: '.png' | replace: '-', ' ' }}"> -->
-            <a href="{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
+            <a href="{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' | '' | slice: 11, file.name.size }}" style="color: #fe0772fb;text-transform: uppercase;">
               <img src="{{ file.path }}" />
             </a>
           </div>
@@ -108,14 +108,14 @@ layout: archive
              {% assign score = jsonData.meta-review.score | round %}
           <div class="caption">
                <div class="top-caption">
-                <a href="{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' | '' | slice: 11, file.name.size }}" style="color: #000000;text-transform: uppercase;">
+                <a href="{{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' | '' | slice: 11, file.name.size }}" style="color: #fe0772fb;text-transform: uppercase;">
                 {{ file.name | remove: '.png' |remove: '.jpg' |remove: '.jpeg' |remove: '.gif' |remove: '.bmp' | slice: 11, file.name.size | replace: '-', ' '  }}
                 </a> 
                 </div> 
         <div class="caption-container">
           <p id="caption1-{{ index }}" >{{ score }}</p>
           <p  style="
-          color: black;
+          color: white;
           font-size: 14px; margin-left:5px;" >{{jsonData.meta-review.rating  | slice: 0, 360}}</p>
         </div>
           <p class="caption2">{{jsonData.meta-review.comment  | slice: 0, 360}}...</p>
@@ -136,7 +136,7 @@ let index = parseInt(document.getElementById("indexx").innerHTML);
 while (i < index) {
   let score = document.getElementById(`caption1-${i}`);
   score.style.fontSize = "12px";
-  score.style.color = "black";
+  score.style.color = "white";
   score.style.borderRadius = "3px"; 
   score.style.padding = "5px 5px"; 
 
