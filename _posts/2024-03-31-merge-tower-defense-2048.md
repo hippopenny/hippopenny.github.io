@@ -52,9 +52,9 @@ gallery6:
     alt: "action"
 
 ---
-<!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/td2048/id6466251387) 
-[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.grandtheftbank)
- -->
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/merge-tower-defense-2048/id6479580755) 
+<!-- [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.grandtheftbank) -->
+
 
 Get ready for an epic fusion of brain-teasing 2048 mechanics and exhilarating tower defense action in 2048TD!
 
@@ -83,6 +83,6 @@ Do you have what it takes to conquer the battlefield with a fusion of brainpower
 Ready to embark on this unique fusion of 2048 puzzles and exhilarating tower defense action? If you ever need support, you can reach out to us at support@hippopenny.com.
 
 
-<!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/td2048/id6466251387) 
-[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.grandtheftbank)
- -->
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/merge-tower-defense-2048/id6479580755) 
+<!-- [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.grandtheftbank) -->
+
