@@ -1,13 +1,13 @@
 main:
-  - title: "Product"
+  - title: "News"
     url: /
-  - title: Game ratings
+  - title: "Reviews"
     url: /meta-score/
-  - title: "Top picks"
-    url: /game-review/
-  - title: "QR Art"
-    url: /qr-code/
+  # - title: "Top picks"
+  #   url: /game-review/
+  # - title: "QR Art"
+  #   url: /qr-code/
   - title: "Company"
     url: /company/
-  - title: "Support"
-    url: /support/
+  # - title: "Support"
+  #   url: /support/

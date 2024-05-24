@@ -7,7 +7,7 @@
 
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -18,8 +18,8 @@ url                      : "https://www.hippopenny.com" # the base hostname & pr
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 og_image                 : "/assets/images/hippo-ghost.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/images/hippo-ghost.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -50,14 +50,14 @@ atom_feed:
 
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia
-algolia:
-  application_id         : Y3512MWAKR # YOUR_APPLICATION_ID
-  index_name             : HippoPenny # YOUR_INDEX_NAME
-  search_only_api_key    : 459539ddec4313c44ec5d4115d7b51fc # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : true # true (default), false
-  files_to_exclude:
-    - _posts/2017-11-28-post-exclude-search.md
+# search_provider          : algolia # lunr (default), algolia
+# algolia:
+#   application_id         : Y3512MWAKR # YOUR_APPLICATION_ID
+#   index_name             : HippoPenny # YOUR_INDEX_NAME
+#   search_only_api_key    : 459539ddec4313c44ec5d4115d7b51fc # YOUR_SEARCH_ONLY_API_KEY
+#   powered_by             : true # true (default), false
+#   files_to_exclude:
+#     - _posts/2017-11-28-post-exclude-search.md
 
 
 # SEO Related
@@ -90,15 +90,15 @@ social:
 analytics:
   provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "UA-2011187-3" # Replace this with your ID, or delete
-    anonymize_ip         : true
+    tracking_id          : "G-DJJY2NEZTG" # Replace this with your ID, or delete
+    anonymize_ip         : false
 
 
 # Site Author
 author:
-  name   : "HippoPenny"
+  name   : "Hippo Penny"
   avatar : "/assets/images/hippo-ghost.png"
-  bio    : "We're on a mission to change the game. We're using AI to rewrite the rules of mobile gaming, from content and gameplay to the very tools and ecosystem that power it. Our goal is to deliver an unparalleled gaming experience that redefines the industry."
+  bio    : "where the fun begins: video games with AI and blockchain. We develop LLM bots, image and audio genAI systems to power our games, and business."
   links:  
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
