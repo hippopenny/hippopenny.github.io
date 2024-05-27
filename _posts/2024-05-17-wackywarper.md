@@ -7,11 +7,11 @@ header:
 
 ---
 
-** Join the Fun Early & Get Rewarded!
+**🏃 Join the Fun Early & Get Rewarded!**
 
 Exciting news! Leading up to the game release, we're giving the first 100 members who share cool memes a special Creator Pack. This program ends on 2024/05/31, so don't miss out! Tell your friends to join the fun too!"
 
-Meet us on Discord [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN) to chat about the game. 
+Meet us on Discord [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN) to wait for the game with others. 
 
 Wacky Warper! What a wacky silly honkai!
 
