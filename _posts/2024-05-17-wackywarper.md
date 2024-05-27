@@ -1,5 +1,5 @@
 ---
-title: "Just want to be silly? Add your email."
+title: "Just want to be silly?"
 excerpt: "Ready for something silly? "
 header:
   image: /assets/images/offrail/banner.png
