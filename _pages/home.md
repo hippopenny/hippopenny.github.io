@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/offrail/bannerfixlongsize.png
   actions:
   - label: "Just Want To Be Silly?"
-    url: /offrail/
+    url: /wackywarper/
 
   # video:
   #   id: aR5jUDr-NdU
