@@ -2,7 +2,7 @@
 title: "Just want to be silly?"
 excerpt: "Ready for something silly? "
 header:
-  image: /assets/images/offrail/banner.png
+  image: /assets/images/offrail/2x4banner.png
   teaser: /assets/images/offrail/banner.png
 
 ---
