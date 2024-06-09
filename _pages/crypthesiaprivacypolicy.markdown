@@ -15,9 +15,6 @@ Data Sharing
 
 Third-Party Advertising: While we do not collect personal information, please note that our advertising network may collect anonymous data for the purpose of serving ads within our games with ads. This data is used for targeted advertising and analytics, and it does not include personally identifiable information.
 
-Crypto Wallet Transactions
-
-Blockchain Transactions: Be aware that transactions made with your crypto wallet will be recorded on associated blockchains, potentially accessible to the public. This is a fundamental characteristic of blockchain technology, and we cannot control the public visibility of these transactions.
 Your Consent
 
 By using our services, you agree to the collection and use of information as outlined in this Privacy Policy. 
