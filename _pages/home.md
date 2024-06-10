@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 hidden: true
-title: "O_o"
+title: "Wacky Warper"
 header:
   overlay_image: /assets/images/offrail/bannerfixlongsize.png
   actions:
