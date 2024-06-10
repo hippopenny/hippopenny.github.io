@@ -51,10 +51,17 @@ gallery6:
     image_path: /assets/images/td2048/screen (4).png
     alt: "action"
 
+gallery7:
+  - url: /assets/images/td2048/top3.png
+    image_path: /assets/images/td2048/top3.png
+    alt: "action"
+
 ---
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/merge-tower-defense-2048/id6479580755) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.td2048)
 
+
+<span style='color: yellow; font-weight: bold;'>Top 3 in Board Games in South Korea!</span>
 
 Get ready for an epic fusion of brain-teasing 2048 mechanics and exhilarating tower defense action in 2048TD!
 
@@ -78,6 +85,10 @@ Feel the thrill of combat as you strategically deploy your upgraded towers, watc
 {% include gallery id="gallery6" caption="" %}
 
 Do you have what it takes to conquer the battlefield with a fusion of brainpower and tactical skill? Step into the world of 2048TD and prove your strategic prowess!
+
+We are honored to be ranked Top 3 in Board Games in South Korea by AppBrain. 
+
+{% include gallery id="gallery7" caption="2048TD Top 3 in Board Games." %}
 
 
 Ready to embark on this unique fusion of 2048 puzzles and exhilarating tower defense action? If you ever need support, you can reach out to us at support@hippopenny.com.
