@@ -3,7 +3,7 @@ title: "Just want to be silly?"
 excerpt: "Ready for something silly? "
 header:
   # image: /assets/images/offrail/2x4banner.png
-  teaser: /assets/images/offrail/banner.png
+  teaser: /assets/images/offrail/2x4banner.png
   video:
     id: 2Wd0FAWuOSU
     provider: youtube
