@@ -6,7 +6,7 @@ title: "O_o"
 header:
   overlay_image: /assets/images/offrail/bannerfixlongsize.png
   actions:
-  - label: "Just Want To Be Silly?"
+  - label: "Download Game"
     url: /wackywarper/
 
   # video:
