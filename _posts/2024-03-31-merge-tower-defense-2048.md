@@ -86,12 +86,12 @@ Feel the thrill of combat as you strategically deploy your upgraded towers, watc
 
 Do you have what it takes to conquer the battlefield with a fusion of brainpower and tactical skill? Step into the world of 2048TD and prove your strategic prowess!
 
-We are honored to be ranked Top 3 in Board Games in South Korea by AppBrain. 
+We are honored to be ranked Top 3 in Board Games in South Korea by AppBrain. Honestly, we can't still believe it. Maybe it is top 3 in new board games, that would make more sense. But regardless, we hope you enjoy the game. 
 
 {% include gallery id="gallery7" caption="2048TD Top 3 in Board Games." %}
 
 
-Ready to embark on this unique fusion of 2048 puzzles and exhilarating tower defense action? If you ever need support, you can reach out to us at support@hippopenny.com.
+Ready to embark on this unique fusion of 2048 puzzles and exhilarating tower defense action? Download the game! 
 
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/merge-tower-defense-2048/id6479580755) 
