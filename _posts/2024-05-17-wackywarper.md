@@ -64,7 +64,7 @@ Note: Wacky Warper is purely for entertainment and is not affiliated with Honkai
 
 {% include gallery id="gallery" caption="Get on the traaaaain!" %}
 
-Wacky Warper! What a wacky silly honkai!
+Wacky Warper! What a wacky silly honkai! Download game!
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
