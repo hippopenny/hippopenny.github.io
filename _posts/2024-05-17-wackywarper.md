@@ -1,6 +1,6 @@
 ---
-title: "Just want to be silly?"
-excerpt: "Ready for something silly? "
+title: "Wacky Warper - Silly Honkai Star Rail."
+excerpt: "Top chart silly wisher game for honkai star rail. Meme art. Dress your character uniquely. Gift items and see character emotions."
 header:
   # image: /assets/images/offrail/2x4banner.png
   teaser: /assets/images/offrail/2x4banner.png
@@ -11,22 +11,27 @@ header:
 gallery:
   - url: /assets/images/offrail/2x4banner.png
     image_path: /assets/images/offrail/2x4banner.png
-    alt: "train"
+    alt: "wacky warper. gacha, character, warper, dress characters, chats, emotion. Top charts in casual game."
 
 gallery1:
   - url: /assets/images/offrail/demo2.png
     image_path: /assets/images/offrail/demo2.png
-    alt: "train"
+    alt: "wacky warper for honkai star rail, genshin impact silly wishers. anime."
 
 gallery2:
   - url: /assets/images/offrail/b1.jpg
     image_path: /assets/images/offrail/b1.jpg
-    alt: "train"
+    alt: "wacky warper, silly wisher for honkai star rail. fanime"
 
 gallery3:
   - url: /assets/images/offrail/creator1.jpg
     image_path: /assets/images/offrail/creator1.jpg
-    alt: "dragon"
+    alt: "Wacky Warper, Creator, Honkai Star Rail Silly Wishers"
+
+gallery4:
+  - url: /assets/images/offrail/ruanmei.JPG
+    image_path: /assets/images/offrail/ruanmei.JPG
+    alt: "Ruan Mei, firefly, honkai star rail."
 ---
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
@@ -39,6 +44,8 @@ gallery3:
 Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this wacky app myself. 
 
 Designed to tickle your funny bone and brighten your day with its quirky art style and endless fun. If you're a fan of Honkai: Star Rail, you'll definitely love the meme-inspired twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts!
+
+{% include gallery id="gallery4" caption="Ruan Mei aka Rumy, Mama Scientist." %}
 
 {% include gallery id="gallery3" caption="Do I look like a dragon? Everyone? Say yes!" %}
 
