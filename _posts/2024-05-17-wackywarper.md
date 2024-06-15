@@ -16,7 +16,7 @@ gallery:
 gallery1:
   - url: /assets/images/offrail/demo2.png
     image_path: /assets/images/offrail/demo2.png
-    alt: "wacky warper for honkai star rail, genshin impact silly wishers. anime."
+    alt: "wacky warper for honkai star rail, genshin impact silly wisher. anime."
 
 gallery2:
   - url: /assets/images/offrail/b1.jpg
@@ -26,7 +26,7 @@ gallery2:
 gallery3:
   - url: /assets/images/offrail/creator1.jpg
     image_path: /assets/images/offrail/creator1.jpg
-    alt: "Wacky Warper, Creator, Honkai Star Rail Silly Wishers"
+    alt: "Wacky Warper, Creator, Honkai Star Rail Silly Wisher"
 
 gallery4:
   - url: /assets/images/offrail/ruanmei.JPG
@@ -41,9 +41,9 @@ gallery4:
 
 **🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
 
-Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this wacky app myself. 
+Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself. Quick update: Wacky Warper has been honored to be on several top casual game charts since launch early this week.
 
-Designed to tickle your funny bone and brighten your day with its quirky art style and endless fun. If you're a fan of Honkai: Star Rail, you'll definitely love the meme-inspired twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts!
+Wacky Warper, not just a silly wisher for Honkai Star Rail, features a quirky meme art style and endless outfits and items for you to dress up your characters in unique ways, and interact with them to see priceless emotions! If you're a fan of Honkai: Star Rail, you'll definitely love the silly wacky twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts emotionally!
 
 {% include gallery id="gallery4" caption="Ruan Mei aka Rumy, Mama Scientist." %}
 
