@@ -1,5 +1,5 @@
 ---
-title: "Wacky Warper - Silly Honkai Star Rail."
+title: "Wacky Warper - Silly Honkai Star Rail"
 excerpt: "Top chart silly wisher game for honkai star rail. Meme art. Dress your character uniquely. Gift items and see character emotions."
 header:
   # image: /assets/images/offrail/2x4banner.png
