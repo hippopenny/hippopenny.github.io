@@ -32,6 +32,11 @@ gallery4:
   - url: /assets/images/offrail/ruanmei.JPG
     image_path: /assets/images/offrail/ruanmei.JPG
     alt: "Ruan Mei, firefly, honkai star rail."
+
+gallery5:
+  - url: /assets/images/offrail/firefly.png
+    image_path: /assets/images/offrail/firefly.png
+    alt: "Ruan Mei, firefly, honkai star rail."
 ---
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
@@ -47,6 +52,8 @@ gallery4:
 - One more thing, some of you will also receive the `code` to use and share. Check your `User` panel. yay!!!  
 
 🌟Quick update: Wacky Warper has been honored to be on several top casual game charts since launch early this week.🌟
+
+{% include gallery id="gallery5" caption="1 2 3 Transform!" %}
 
 
 **🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
