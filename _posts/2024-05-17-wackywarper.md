@@ -1,6 +1,6 @@
 ---
-title: "Wacky Warper - Silly Honkai Star Rail"
-excerpt: "Top chart silly wisher game for honkai star rail. Meme art. Dress your character uniquely. Gift items and see character emotions."
+title: "Wacky Warper - Honkai Star Rail Wisher"
+excerpt: "Top chart Honkai Star Rail silly wisher game. Meme. Gacha. Dress. Gift. Emotions."
 header:
   # image: /assets/images/offrail/2x4banner.png
   teaser: /assets/images/offrail/2x4banner.png
@@ -39,11 +39,21 @@ gallery4:
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
 
 
+**🚀 Release for Honkai Star Rail HSR 2.3**
+
+- *Firefly* will be released to Wacky Warper **24h** after Honkai: Star Rail Version 2.3!
+- More clothes to dress up characters, and more funny animations for you to share and laugh
+- Two beautiful lordly trash can costume
+- One more thing, some of you will also receive the `code` to use and share. Check your `User` panel. yay!!!  
+
+🌟Quick update: Wacky Warper has been honored to be on several top casual game charts since launch early this week.🌟
+
+
 **🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
 
-Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself. Quick update: Wacky Warper has been honored to be on several top casual game charts since launch early this week.
+Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself.  
 
-Wacky Warper, not just a silly wisher for Honkai Star Rail, features a quirky meme art style and endless outfits and items for you to dress up your characters in unique ways, and interact with them to see priceless emotions! If you're a fan of Honkai: Star Rail, you'll definitely love the silly wacky twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts emotionally!
+Wacky Warper, not just the Honkai Star Rail silly wisher, features a quirky meme art style and endless outfits and items for you to dress up your characters in unique ways, and interact with them to see priceless emotions! If you're a fan of Honkai: Star Rail or even Genshin Impact maybe, you'll definitely love the silly wacky twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts emotionally!
 
 {% include gallery id="gallery4" caption="Ruan Mei aka Rumy, Mama Scientist." %}
 
@@ -55,15 +65,16 @@ Main Features:
 
 🎭 Silly Banners: Pull banners - new and past limited banners. Updated frequently!
 
-🎎 Lots of Characters & Items: Collect a wide array of unique characters and items, all with a playful nod to the Honkai: Star Rail universe
+🎎 Big collection of Characters & Clothes: Collect a wide array of unique characters and items, all with a playful nod to the Honkai: Star Rail universe
 
 🎁 Free daily Gacha to gain your characters 
 
-👀 Character Panel: Collect all the characters, items, and costumes. Show off your collection!
-
-👒 Dress: Customize your characters with cute and unique costumes. Make it unique! Create your own hilarious fashion statements!
+👒 Dress: Customize your characters with cool outfits. Make them unique! Create your own hilarious fashion statements!
 
 ✨ Priceless Emotions: Your characters have emotions. Gift them something, treat them well and see their priceless reactions!
+
+👀 Character Panel: Collect all the characters, items, and costumes. Show off your collection!
+
 
 Join Wacky Warper and enjoy the silly charm it brings. Download now and let the laughter begin!
 
