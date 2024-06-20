@@ -11,43 +11,43 @@ header:
 gallery:
   - url: /assets/images/offrail/2x4banner.png
     image_path: /assets/images/offrail/2x4banner.png
-    alt: "wacky warper. gacha, character, warper, dress characters, chats, emotion. Top charts in casual game."
+    alt: "wacky warper. gacha, gacha life, character, warper, dress characters, chats, emotion. Top 10 casual games."
 
 gallery1:
   - url: /assets/images/offrail/demo2.png
     image_path: /assets/images/offrail/demo2.png
-    alt: "wacky warper for honkai star rail, genshin impact silly wisher. anime."
+    alt: "silly wisher honkai star rail, genshin impact. gacha, dress. wacky warper. Top 10 simulator games."
 
 gallery2:
   - url: /assets/images/offrail/b1.jpg
     image_path: /assets/images/offrail/b1.jpg
-    alt: "wacky warper, silly wisher for honkai star rail. fanime"
+    alt: "silly wisher honkai star rail wacky warper."
 
 gallery3:
   - url: /assets/images/offrail/creator1.jpg
     image_path: /assets/images/offrail/creator1.jpg
-    alt: "Wacky Warper, Creator, Honkai Star Rail Silly Wisher"
+    alt: "Honkai Star Rail Silly Wisher. Wacky Warper Creator."
 
 gallery4:
   - url: /assets/images/offrail/ruanmei.JPG
     image_path: /assets/images/offrail/ruanmei.JPG
-    alt: "Ruan Mei, firefly, honkai star rail."
+    alt: "hsr silly wisher, wacky warper"
 
 gallery5:
   - url: /assets/images/offrail/firefly.png
     image_path: /assets/images/offrail/firefly.png
-    alt: "Ruan Mei, firefly, honkai star rail."
+    alt: "hsr, firefly, honkai star rail."
 ---
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
-[**Creator Partner**](/creator/)
+[**Partner Program**](/creator/)
 
 
 **🚀 Release for Honkai Star Rail HSR 2.3**
 
-- *Firefly* will be released to Wacky Warper **24h** after Honkai: Star Rail Version 2.3!
+- *Firefly* will be released to Wacky Warper **24h** after Honkai: Star Rail hsr version 2.3!
 - More clothes to dress up characters, and more funny animations for you to share and laugh
 - Two beautiful lordly trash can costume
 - One more thing, some of you will also receive the `code` to use and share. Check your `User` panel. yay!!!  
@@ -84,7 +84,7 @@ Main Features:
 👀 Character Panel: Collect all the characters, items, and costumes. Show off your collection!
 
 
-Join Wacky Warper and enjoy the silly charm it brings. Download now and let the laughter begin!
+Join Wacky Warper and enjoy the silly wisher honkai star rail. Download now and let the laughter begin!
 
 Note: Wacky Warper is purely for entertainment and is not affiliated with Honkai: Star Rail. It's all about having a blast!
 
