@@ -24,6 +24,8 @@ We leverage blockchain technology to enhance cross-game experiences and ensure s
   <img src="/assets/images/company/2.png" alt="Blockchain in Gaming">
 </figure> 
 
+### Become a Hippo Penny Creator Partner
+Help us pread more laughter from Wacky Warper to our friends, the Honkai Star Rail community, and earn a significant share of IAP revenues. Learn more [**Partner Program**](/creator/).
 
 ### Join Us
 Join us as we innovate using AI and blockchain to create extraordinary mobile games. We seek individuals with exceptional coding and artistic skills who are ambitious and eager to redefine the gaming landscape.

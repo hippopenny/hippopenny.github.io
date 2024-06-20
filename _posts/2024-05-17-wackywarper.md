@@ -42,6 +42,7 @@ gallery5:
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
+[**Creator Partner**](/creator/)
 
 
 **🚀 Release for Honkai Star Rail HSR 2.3**
