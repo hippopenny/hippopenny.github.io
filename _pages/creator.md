@@ -21,7 +21,7 @@ gallery1:
 
 **Wacky Warper** - Honkai Star Rail gacha, dress, gift, emotions, meme, laughter. We are thrilled to launch a global creator partner program to spread more laughter from Wacky Warper to our friends, the Honkai Star Rail community, and beyond. 
 
-**What do you do?** Keep doing what you do — playing and sharing your awesome, silly creations, whether they are memes, videos, or screenshots of your cool Wacky Warper characters. Players using your code will enjoy cool in-game items, and you'll earn a significant share of IAP revenues based on the number of your referrals. Yup, you and I are players ourselves too. Our players love your sharing, so let's share our excitement for Wacky Warper with more players and more laughs together! Cheers! For now, payments are available for the US and VN only.
+**What do you do?** Keep doing what you do — playing and sharing your awesome, silly creations, whether they are memes, videos, or screenshots of your cool Wacky Warper characters. Players using your code will enjoy cool in-game items, and you'll earn a significant share of IAP revenues based on the number of your referrals. Yup, you and I are players ourselves too. Our players love your sharing, so let's share our excitement for Wacky Warper with more players and more laughs together! Cheers! For now, payments are available for the US and VN only. Your contribution level is recorded in your (to-be) dashboard regardless.
 
 <section class="creator-partner-hero">
   <div class="container">

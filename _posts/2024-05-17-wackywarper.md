@@ -1,6 +1,6 @@
 ---
-title: "Wacky Warper - Honkai Star Rail Wisher"
-excerpt: "Top chart Honkai Star Rail silly wisher game. Meme. Gacha. Dress. Gift. Emotions."
+title: "Wacky Warper - Honkai Star Rail: Gacha, Meme, Dress Up, Emotions"
+excerpt: "Best meme Honkai Star Rail gacha game with outfits for you to dress up, gift characters and see their priceless emotions."
 header:
   # image: /assets/images/offrail/2x4banner.png
   teaser: /assets/images/offrail/2x4banner.png
@@ -52,7 +52,7 @@ gallery5:
 - Two beautiful lordly trash can costume
 - One more thing, some of you will also receive the `code` to use and share. Check your `User` panel. yay!!!  
 
-🌟Quick update: Wacky Warper has been honored to be on several top casual game charts since launch early this week.🌟
+🌟Exciting update: Since its recent launch, Wacky Warper has risen to the top of multiple charts, aspiring to be recognized as one of the best gacha games.🌟
 
 {% include gallery id="gallery5" caption="1 2 3 Transform!" %}
 
