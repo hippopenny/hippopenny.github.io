@@ -99,7 +99,7 @@ layout: single
 
 }
 
-/* CSS cho máy tính: */
+/* CSS desktop */
 @media only screen and (min-width: 768px) {
 .page__related{
   width: 180%;
@@ -135,34 +135,15 @@ layout: single
 {% capture dataFileName %}{{ page.name | replace: '.md', '' | slice: 11, page.name.size }}{% endcapture %}
 {% assign jsonData = site.data[dataFileName] %}
 
-<!--  -->
-{% assign image_formats = "png,jpg,jpeg,gif,bmp" | split: "," %}
-{% assign image_path = '' %}
-
-{% for format in image_formats %}
-    {% assign temp_image_path = '/assets/images/scores/' | append: page.name | replace: '.md', '' | append: '.' | append: format %}
-    {% capture file_exists %}{{ site.static_files | where: "path", temp_image_path }}{% endcapture %}
-    {% if file_exists != blank %}
-        {% assign image_path = temp_image_path %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-<!--  -->
-
-
-
 <div>
   <div class="">
     <div class="top">
-      <div class="left">
-            <img src="{{ image_path }}" />
-      </div>
       <div class="right">
         <div class="flex-container">
           <div class="namegame">
             {{ page.name | replace: '.md', '' | slice: 11, page.name.size | replace: '-', ' ' }}
           </div>
-          <div id="critic-box">{{jsonData.meta-review.review-date}}</div>
+          <!-- <div id="critic-box">{{jsonData.meta-review.review-date}}</div> -->
         </div>
         <div class="caption-container">
           <div id="score-box" class="score-box">
@@ -187,8 +168,8 @@ const scoreValue = parseInt(score.innerHTML); // Parse the innerHTML as an integ
 
 if (scoreValue > 80) {
   score.style.backgroundColor = "#00ff7c";
-} else if (scoreValue > 70) {
-  score.style.backgroundColor = "yellow";
+} else if (scoreValue > 69) {
+  score.style.backgroundColor = "#ffc107";
 } else if (scoreValue > 0) {
   score.style.backgroundColor = "red";
 }
@@ -203,8 +184,8 @@ divider.style.width = `${portion}px`;
 
 if (scoreValue > 80) {
   divider.style.backgroundColor = "#00ff7c";
-} else if (scoreValue > 70) {
-  divider.style.backgroundColor = "yellow";
+} else if (scoreValue > 69) {
+  divider.style.backgroundColor = "#ffc107";
 } else if (scoreValue > 0) {
   divider.style.backgroundColor = "red";
 }
