@@ -21,7 +21,7 @@ gallery1:
 
 **Wacky Warper** - Honkai Star Rail gacha, dress, gift, emotions, meme, laughter. We are thrilled to launch a global creator partner program to spread more laughter from Wacky Warper to our friends, the Honkai Star Rail community, and beyond. 
 
-**What do you do?** Keep doing what you do — playing and sharing your awesome, silly creations, whether they are memes, videos, or screenshots of your cool Wacky Warper characters. Players using your code will enjoy cool in-game items, and you'll earn a significant share of IAP revenues based on the number of your referrals. Yup, you and I are players ourselves too. Our players love your sharing, so let's share our excitement for Wacky Warper with more players and more laughs together! Cheers! For now, payments are available for the US and VN only. Your contribution level is recorded in your (to-be) dashboard regardless.
+**What do you do?** Keep doing what you do — playing and sharing your awesome, silly creations, whether they are memes, videos, or screenshots of your cool Wacky Warper characters so more people will also know and have some fun with Wacky Warper. 
 
 <section class="creator-partner-hero">
   <div class="container">
@@ -36,12 +36,13 @@ gallery1:
 {% include gallery id="gallery" caption="Gacha. Dress. Gift. Chat. Emotion. Meme. Laughter Spreader." %}
 
 ## How It Works
-As a Hippo Penny creator partner, you will have a unique code to share with people. Make sure your friends and followers are logged in when making purchases to ensure you get the credit! Here’s how you can get started:
+We want more people to play and laugh with Wacky Warper. As a Hippo Penny creator partner, you will have a unique code to share with friends; and both of your friends and you will get a few cool in-game items to dress up characters. Furthermore, this is totally up to you if you desire, as a token of appreciation for you to spread the words, we are gladly to share a significant share of IAP revenues from your referrals. Our goal is to have more friends to join us in Wacky Warper, and have fun, not much of the IAP. For now, payments are available for the US and VN only if you decide to receive the appreciation token. Your contribution level is recorded in your (to-be) dashboard regardless.
     
 - Apply to become a creator partner by filling out the form below, or try to get a creator pack in-game.
 - Receive your unique referral code. The code will show up in your user profile.
 - Share your code with your network—TikTok, Instagram, YouTube, etc.
-- Earn 15-35% commissions whenever your code is used for in-app purchases, and other players will receive free cool items.
+- Earn 15-35% commissions (if you want) whenever your code is used for in-app purchases, and your friends will receive free cool items.
+- If your referrals become creators and recognize some commisions. We will double their amounts and share that bonus between both of you in their first 3 months. 
 
 {% include gallery id="gallery1" caption="Laughter Spreader." %}
 
@@ -56,7 +57,7 @@ As a Hippo Penny creator partner, you will have a unique code to share with peop
 </section>
 
 ## Join the Global Community
-Connect with friends and fellow players worldwide. Play, laugh, and share your fun moments to maximize your earnings and, more importantly, help our community grow. It’s not just about earning money; it’s about sharing laughter with our friends. Meme, gacha, dress, gift, emotion reactions.
+Connect with friends and fellow players worldwide. Play, laugh, and share your fun moments to help us build a vibrant community for Wacky Warper, for Honkai Star Rail. It’s not just about earning money; it’s about sharing laughter with our friends. Meme, gacha, dress, gift, emotion reactions.
 
 
 <section id="apply" class="creator-partner-apply">
