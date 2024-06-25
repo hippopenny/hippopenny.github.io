@@ -16,7 +16,7 @@ gallery:
 gallery1:
   - url: /assets/images/offrail/demo2.png
     image_path: /assets/images/offrail/demo2.png
-    alt: "silly wisher honkai star rail, genshin impact. gacha, dress. wacky warper. Top 10 simulator games."
+    alt: "wacky wisher honkai star rail, genshin impact. gacha, dress. wacky warper. Top 10 simulator games."
 
 gallery2:
   - url: /assets/images/offrail/b1.jpg
@@ -90,7 +90,7 @@ Note: Wacky Warper is purely for entertainment and is not affiliated with Honkai
 
 {% include gallery id="gallery" caption="Get on the traaaaain!" %}
 
-Wacky Warper! What a wacky silly honkai! Download game!
+Wacky Warper! What a wacky honkai wacky wisher! Download game!
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
