@@ -5,7 +5,7 @@ header:
   # image: /assets/images/offrail/2x4banner.png
   teaser: /assets/images/offrail/2x4banner.png
   video:
-    id: 2Wd0FAWuOSU
+    id: 0IxmduZ2eFA
     provider: youtube
 
 gallery:
