@@ -29,8 +29,8 @@ feature_row:
   # /assets/images/skellyrun/mkthalloween.png
     alt: "Merge Tower Defense: 2048 at Hippo Penny"
     title: "Merge Tower Defense: 2048"
-    excerpt: "<span style='color: yellow; font-weight: bold;'> Top 3 in Board Games in South Korea </span>In Merge Tower Defense: 2048, you’ll experience a groundbreaking blend of strategic tower defense gameplay with the addictive challenge of the classic 2048 puzzle. But this isn't just any tower defense game – here, you don't just purchase towers; you evolve them using the mesmerizing 2048 game rules. Merge two lower-tier towers to create a more advanced, unstoppable defense on the battlefield! It is ranked top 3 board games in South Korea."
-    url:  /merge-tower-defense-2048/
+    excerpt: "<span style='color: yellow; font-weight: bold;'> Top 3 in Board Games in South Korea </span>In 2048TD: Merge Tower Defense, you’ll experience a groundbreaking blend of strategic tower defense gameplay with the addictive challenge of the classic 2048 puzzle, the big skill set to upgrade, and an addictive gacha system. This isn't just any tower defense game."
+    url:  /2048td/
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
