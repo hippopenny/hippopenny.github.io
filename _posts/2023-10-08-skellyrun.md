@@ -6,7 +6,7 @@ header:
     id: vk8zdJoD-GU
     provider: youtube
   # overlay_image: /assets/images/skellyrun/mkthalloween-banner.png
-  teaser: /assets/images/skellyrun/mkthalloween.png
+  teaser: /assets/images/skellyrun/iconfixmau.png
   # video:
   #   id: K3hfbVvo2MY
   #   provider: youtube
@@ -22,6 +22,12 @@ gallery:
   - url: /assets/images/skellyrun/christmas11.png
     image_path: /assets/images/skellyrun/christmas11.png
     alt: "Christmas"
+
+gallery1:
+
+  - url: /assets/images/skellyrun/iconfixmau.png
+    image_path: /assets/images/skellyrun/iconfixmau.png
+    alt: "Run"
 
   # - url: /assets/images/skellyrun/mkthalloween.png
   #   image_path: /assets/images/skellyrun/mkthalloween.png
@@ -69,7 +75,7 @@ What sets Skelly Run apart is the delightful twist that allows you to be carried
 
 <!-- {% include gallery id="gallery" caption="Just in time for Halloween challenge with your party!" %} -->
 
-{% include gallery id="gallery" caption="Run in the snow with friends." %}
+{% include gallery id="gallery1" caption="Run and Fly." %}
 
 <!-- {% include gallery id="gallery2" caption="Skeleton in style!" %} -->
 
