@@ -36,7 +36,9 @@ gallery1:
 {% include gallery id="gallery" caption="Gacha. Dress. Gift. Chat. Emotion. Meme. Laughter Spreader." %}
 
 ## How It Works
-We want more people to play and laugh with Wacky Warper. As a Hippo Penny creator partner, you will have a unique code to share with friends; and both of your friends and you will get a few cool in-game items to dress up characters. Furthermore, this is totally up to you if you desire, as a token of appreciation for you to spread the words, we are gladly to share a significant share of IAP revenues from your referrals. Our goal is to have more friends to join us in Wacky Warper, and have fun, not much of the IAP. For now, payments are available for the US and VN only if you decide to receive the appreciation token. Your contribution level is recorded in your (to-be) dashboard regardless.
+We want more people to play and laugh with Wacky Warper. As a Hippo Penny creator partner, you will have a unique code to share with friends; and both of your friends and you will get a few cool in-game items to dress up characters. Furthermore, this is totally up to you if you desire, as a token of appreciation for you to spread the words, we are gladly to share a significant share of IAP revenues from your referrals. Our goal is to have more friends to join us in Wacky Warper, and have fun, not much of the IAP. For now, payments are available for the US and VN only if you decide to receive the appreciation token. Your contribution level is recorded in your (to-be) dashboard regardless. 
+
+Here is how it works <sup style="font-size: small;">**</sup>
     
 - Apply to become a creator partner by filling out the form below, or try to get a creator pack in-game.
 - Receive your unique referral code. The code will show up in your user profile.
@@ -66,3 +68,8 @@ Connect with friends and fellow players worldwide. Play, laugh, and share your f
     <iframe src="https://forms.gle/WQ389Fp2oafWV5RP8" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </div>
 </section>
+  
+<br><br><br> 
+  
+<span style="font-size: small;">** From time to time, we may run general special programs or promotions that may provide all or some partners the opportunity to earn additional or alternative commission. Hippo Penny reserves the right to discontinue or modify all or part of this partnership program or promotion at any time.</span>
+
