@@ -3,7 +3,7 @@ title: "Silly Wisher - Wish Simulator for Genshin Impact"
 excerpt: "Beloved meme Genshin gacha game with cursed combinations of characters."
 header:
   image: /assets/images/sillywisher/1.webp
-  # teaser: /assets/images/sillywisher/1.webp
+  teaser: /assets/images/sillywisher/1.webp
   # video:
   #   id: 0IxmduZ2eFA
   #   provider: youtube
@@ -34,7 +34,7 @@ gallery4:
     alt: "wish"
 ---
 
-Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession. This game takes the beloved wish system from Genshin Impact and drenches it in meme sauce. 
+Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession. This game takes the beloved wish system from Genshin Impact and drenches it in meme sauce. miHoYo has been highly successful with their gacha systems; Honkai Star Rail proved to be another success following the footsteps of Genshin Impact. I recommend you try the very funny [Wacky Warper](/wackywarper), affectionately dubbed Silly Wisher Honkai, but it's actually more than that - more on this another day. Now, back to the business of Silly Wisher.
 
 **Gameplay and Mechanics**
 
