@@ -143,7 +143,7 @@ layout: single
           <div class="namegame">
             {{ page.name | replace: '.md', '' | slice: 11, page.name.size | replace: '-', ' ' }}
           </div>
-          <!-- <div id="critic-box">{{jsonData.meta-review.review-date}}</div> -->
+          <div id="critic-box">{{jsonData.meta-review.review-date}}</div>
         </div>
         <div class="caption-container">
           <div id="score-box" class="score-box">
@@ -196,7 +196,9 @@ if (scoreValue > 80) {
 
 <div class="bottom" >
   <div class="page__inner-wrap" style="padding-bottom:30px;">
-    {% include social-share.html %}
+    <!-- {% include social-share.html %} -->
+    {% include subscription-form.html %}
+
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
     {% include comments.html %}
@@ -206,50 +208,53 @@ if (scoreValue > 80) {
 
   <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
   <div class="grid__wrapper">
-  {% assign allfiles = site.static_files | reverse %}
-  {% assign files = allfiles | sample: 100 %}
-  {% assign count = 0 %}
-  {% for file in files %}
-      {% if count < 2 and file.path contains '/assets/images/scores/' %}
-          {% assign count = count | plus: 1 %}
-          <div class="gallery-item" style="flex: 0 0 24%; padding: 10px;">
-            <div class="left-gallery">
-              <a href="{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}" style="color: #000000; text-transform: uppercase;">
-                <img class="image-detail" src="{{ file.path }}"  />
-              </a>
-            </div>
-            {% capture dataFileName %}{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}{% endcapture %}
-            {% assign jsonData = site.data[dataFileName] %}
-            {% assign score = jsonData.meta-review.score | round %}
-            <div class="caption" style="text-align: left;">
-              <div style="font-size: 20px;">
-                <a href="{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}" style="color: #000000; text-transform: uppercase;">
-                  {{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size | replace: '-', ' ' }}
-                </a> 
-              </div> 
-              <p style="font-size: 12px;">{{ jsonData.meta-review.comment | slice: 0, 50 }}...</p>
-            </div>
-          </div>
-      {% endif %}
-  {% endfor %}
-  {% for post in site.posts limit:2 %}
-  {% if post.id == page.id %}
-    {% continue %}  
-  {% endif %}
-  {% include archive-single.html type="grid" %}
-{% endfor %}
 
-</div>
+    {% for post in site.posts limit:2 %}
+      {% if post.id == page.id %}
+        {% continue %}  
+      {% endif %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+
+    {% assign allfiles = site.static_files | reverse %}
+    {% assign files = allfiles | sample: 100 %}
+    {% assign count = 0 %}
+    {% for file in files %}
+        {% if count < 2 and file.path contains '/assets/images/scores/' %}
+            {% assign count = count | plus: 1 %}
+            <div class="gallery-item" style="flex: 0 0 24%; padding: 10px;">
+              <div class="left-gallery">
+                <a href="{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}" style="color: #000000; text-transform: uppercase;">
+                  <img class="image-detail" src="{{ file.path }}"  />
+                </a>
+              </div>
+              {% capture dataFileName %}{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}{% endcapture %}
+              {% assign jsonData = site.data[dataFileName] %}
+              {% assign score = jsonData.meta-review.score | round %}
+              <div class="caption" style="text-align: left;">
+                <div style="font-size: 20px;">
+                  <a href="{{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size }}" style="color: #000000; text-transform: uppercase;">
+                    {{ file.name | remove: '.png' | remove: '.jpg' | remove: '.jpeg' | remove: '.gif' | remove: '.bmp' | slice: 11, file.name.size | replace: '-', ' ' }}
+                  </a> 
+                </div> 
+                <p style="font-size: 12px;">{{ jsonData.meta-review.comment | slice: 0, 50 }}...</p>
+              </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+
+  </div>
 
  
-  <div align="center" style="margin: 1em 0;">
+  <!-- <div align="center" style="margin: 1em 0;">
     <ins class="adsbygoogle"
           style="display:block; border-bottom: initial;"
           data-ad-client="ca-pub-7328585512091257"
           data-ad-slot="3049671934"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-  </div>
+  </div> -->
 </div>
 
 
