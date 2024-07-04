@@ -68,10 +68,12 @@ layout: default
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
-    {% include subscription-form.html %}
 
     <div class="page__related">
+      {% include subscription-form.html %}
+
       <div align="center" style="margin: 1em 0;">
+
         <!-- <ins class="adsbygoogle"
               style="display:block; border-bottom: initial;"
               data-ad-client="ca-pub-7328585512091257"
