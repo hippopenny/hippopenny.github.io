@@ -5,7 +5,7 @@ header:
   # image: /assets/images/offrail/2x4banner.png
   teaser: /assets/images/offrail/2x4banner.png
   video:
-    id: 0IxmduZ2eFA
+    id: 2Wd0FAWuOSU
     provider: youtube
 
 gallery:
@@ -34,9 +34,24 @@ gallery4:
     alt: "hsr silly wisher, wacky warper"
 
 gallery5:
-  - url: /assets/images/offrail/firefly.png
-    image_path: /assets/images/offrail/firefly.png
+  - url: /assets/images/offrail/firefly-2.png
+    image_path: /assets/images/offrail/firefly-2.png
     alt: "hsr, firefly, honkai star rail."
+
+gallery6:
+  - url: /assets/images/offrail/gacha1.jpg
+    image_path: /assets/images/offrail/gacha1.jpg
+    alt: "Honkai Star Rail Silly Wisher. Wacky Warper Gacha."
+
+gallery7:
+  - url: /assets/images/offrail/suika.png
+    image_path: /assets/images/offrail/suika.png
+    alt: "Suika Game, Bird Clan."
+
+gallery8:
+  - url: /assets/images/offrail/suika-kafka.png
+    image_path: /assets/images/offrail/suika-kafka.png
+    alt: "Suika Game, Bird Clan."
 ---
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
@@ -44,26 +59,38 @@ gallery5:
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
 [**Partner Program**](/creator/)
 
+**🎉Welcome to Wacky Warper! 🎉**
 
-**🚀 Release for Honkai Star Rail HSR 2.3**
+**🚀 Coming This Tuesday 07/09 with Honkai Star Rail HSR 2.4**
 
-- *Firefly* will be released to Wacky Warper **24h** after Honkai: Star Rail hsr version 2.3!
-- More clothes to dress up characters, and more funny animations for you to share and laugh
-- Two beautiful lordly trash can costume
-- One more thing, some of you will also receive the `code` to use and share. Check your `User` panel. yay!!!  
+- Stunning wacky banners for you to pull of course
+- Nurse outfit! I know! it's getting you crazy.
+- One more thing, absolutely addictive mini games: Betting House! Suika Game! Free! 
+
+{% include gallery id="gallery7" caption="Suika Game, Bird Clan! Funniest and Free!" %}
+
+{% include gallery id="gallery8" caption="Pom Pom! Kafka!! That circle of order!" %}
+
+{% include video id="nBtQGII81HE" provider="youtube" %}
+
 
 🌟Exciting update: Since its recent launch, Wacky Warper has risen to the top of multiple charts, aspiring to be recognized as one of the best gacha games.🌟
 
-{% include gallery id="gallery5" caption="1 2 3 Transform!" %}
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 
 
 **🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
 
-Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself.  
+<!-- Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself.   -->
 
-Wacky Warper, not just the Honkai Star Rail silly wisher, features a quirky meme art style and endless outfits and items for you to dress up your characters in unique ways, and interact with them to see priceless emotions! If you're a fan of Honkai: Star Rail or even Genshin Impact maybe, you'll definitely love the silly wacky twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts emotionally!
+Wacky Warper, not just the Honkai Star Rail silly wisher, features a quirky meme art style, accurate gacha, and special outfits and items for you to dress up your beloved characters in unique ways, and interact with them and see their priceless emotions! If you're a fan of Honkai: Star Rail, Genshin Impact, or Wuthering Waves, you'll definitely love the silly wacky twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts emotionally! 
 
-{% include gallery id="gallery4" caption="Ruan Mei aka Rumy, Mama Scientist." %}
+Wacky Warper, the only place where you can imagine, and build your beloved characters in special outfits! the funniest gacha simulator!
+
+{% include gallery id="gallery5" caption="1 2 3 Transform!" %}
+
+{% include gallery id="gallery6" caption="Dressing up HSR! Only at Wacky warper." %}
 
 {% include gallery id="gallery3" caption="Do I look like a dragon? Everyone? Say yes!" %}
 
@@ -98,6 +125,17 @@ Download game!
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 
 
+
+
+<!-- **🚀 Release for Honkai Star Rail HSR 2.4**
+- *Firefly* will be released to Wacky Warper **24h** after Honkai: Star Rail hsr version 2.3!
+- More clothes to dress up characters, and more funny animations for you to share and laugh
+- Two beautiful lordly trash can costume
+- One more thing, some of you will also receive the `code` to use and share. Check your `User` panel. yay!!!  
+
+🌟Exciting update: Since its recent launch, Wacky Warper has risen to the top of multiple charts, aspiring to be recognized as one of the best gacha games.🌟
+
+{% include gallery id="gallery5" caption="1 2 3 Transform!" %} -->
 
 <!-- **🚀 Are you ready to get on board Wacky train**
 
