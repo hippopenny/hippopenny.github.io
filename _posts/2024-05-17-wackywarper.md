@@ -61,7 +61,7 @@ gallery8:
 
 **🎉Welcome to Wacky Warper! 🎉**
 
-**🚀 Coming This Tuesday 07/09 with Honkai Star Rail HSR 2.4**
+**🚀 Coming This Tuesday 07/09 with Honkai Star Rail Snek Mama**
 
 - Stunning wacky banners for you to pull of course
 - Nurse outfit! I know! it's getting you crazy.
@@ -127,7 +127,7 @@ Download game!
 
 
 
-<!-- **🚀 Release for Honkai Star Rail HSR 2.4**
+<!-- **🚀 Release for Honkai Star Rail HSR 2.3**
 - *Firefly* will be released to Wacky Warper **24h** after Honkai: Star Rail hsr version 2.3!
 - More clothes to dress up characters, and more funny animations for you to share and laugh
 - Two beautiful lordly trash can costume
