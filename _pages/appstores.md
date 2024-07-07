@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Redirect
-permalink: /redirect/
+title: App Store Redirect
+permalink: /appstores/
 ---
 
 <html lang="en">
