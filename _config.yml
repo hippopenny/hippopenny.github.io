@@ -50,14 +50,15 @@ atom_feed:
 
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-# search_provider          : algolia # lunr (default), algolia
-# algolia:
-#   application_id         : Y3512MWAKR # YOUR_APPLICATION_ID
-#   index_name             : HippoPenny # YOUR_INDEX_NAME
-#   search_only_api_key    : 459539ddec4313c44ec5d4115d7b51fc # YOUR_SEARCH_ONLY_API_KEY
-#   powered_by             : true # true (default), false
-#   files_to_exclude:
-#     - _posts/2017-11-28-post-exclude-search.md
+search_provider          : algolia # lunr (default), algolia
+
+algolia:                                                                       
+  application_id: Y3512MWAKR
+  index_name             : HippoPenny # YOUR_INDEX_NAME
+  search_only_api_key    : 459539ddec4313c44ec5d4115d7b51fc # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
+  files_to_exclude:
+    - _posts/2017-11-28-post-exclude-search.md
 
 
 # SEO Related
