@@ -1,6 +1,6 @@
 ---
 layout: default
-title: App Store Redirect
+title: Wacky Warper Game
 permalink: /appstores/
 ---
 
