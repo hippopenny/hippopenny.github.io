@@ -58,6 +58,7 @@ gallery8:
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
 [**Partner Program**](/creator/)
+[**vTuber Models**](/vtuber/)
 
 **🎉Welcome to Wacky Warper! 🎉**
 
