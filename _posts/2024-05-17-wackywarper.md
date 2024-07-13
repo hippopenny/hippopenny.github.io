@@ -49,8 +49,8 @@ gallery7:
     alt: "Suika Game, Bird Clan."
 
 gallery8:
-  - url: /assets/images/offrail/suika-kafka.png
-    image_path: /assets/images/offrail/suika-kafka.png
+  - url: /assets/images/offrail/suika1.png
+    image_path: /assets/images/offrail/suika1.png
     alt: "Suika Game, Bird Clan."
 ---
 
@@ -63,15 +63,19 @@ gallery8:
 
 **🚀 Coming This Tuesday 07/09 with Honkai Star Rail Snek Mama**
 
-- Stunning wacky banners for you to pull of course
+- Snek Mama!
 - Nurse outfit! I know! it's getting you crazy.
-- One more thing, absolutely addictive mini games: Betting House! Suika Game! Free! 
+- Pom Pom wants to get rich with a slot machine.
+- Suika Game with Origami Birds and sexy HSR characters! All Free!! 
 
 {% include gallery id="gallery7" caption="Suika Game, Bird Clan! Funniest and Free!" %}
 
-{% include gallery id="gallery8" caption="Pom Pom! Kafka!! That circle of order!" %}
+{% include gallery id="gallery8" caption="Pom Pom! Why is that circle of order?" %}
 
 {% include video id="nBtQGII81HE" provider="youtube" %}
+
+Feeling pretty confident, Pom Pom is willing to bet Golden Trash and very rare nurse costume.
+Do you feel lucky?
 
 
 🌟Exciting update: Since its recent launch, Wacky Warper has risen to the top of multiple charts, aspiring to be recognized as one of the best gacha games.🌟
