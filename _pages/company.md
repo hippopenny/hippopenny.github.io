@@ -1,10 +1,9 @@
 ---
-# title: Hi there!
 permalink: /company/
 ---
 
 
-**Hippo Penny** is on a mission to redefine the gaming landscape through innovation. We focus on artificial intelligence (AI) and blockchain technology to create groundbreaking mobile games. Our team, consisting of industry veterans from Silicon Valley and renowned academics, is dedicated to crafting immersive gaming experiences.
+**Hippo Penny** is on a mission to develop the best gaming experience with artificial intelligence (AI) and blockchain. Our team, consisting of industry veterans from Silicon Valley and renowned academics, is dedicated to create fun, engaging games for everyone to relax, and connect with friends.
 
 <figure style="width: 300px" class="align-right">
   <img src="/assets/images/company/3.png" alt="Hippo Penny Team">

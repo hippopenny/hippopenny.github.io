@@ -60,13 +60,27 @@ gallery8:
 [**Partner Program**](/creator/)
 [**vTuber Models**](/vtuber/)
 
-**🎉Welcome to Wacky Warper! 🎉**
+**🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
 
-**🚀 Coming This Tuesday 07/09 with Honkai Star Rail Snek Mama**
+<!-- Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself.   -->
 
-- Snek Mama!
-- Nurse outfit! I know! it's getting you crazy.
+Wacky Warper — not just the Honkai Star Rail silly wisher — Gacha. Meme. Dress. Gift. Emotional Chat. Mini-games. With a quirky meme art style, an accurate gacha system, and a variety of special outfits and items, you can dress up your favorite characters in unique ways. Interact with them and witness their priceless emotional reactions! If you’re a fan of Honkai: Star Rail, Genshin Impact, or Wuthering Waves, you’ll love the silly wacky twist we've brought to the gacha experience!
+
+Wacky Warper is the only place where you can imagine, create, and dress your beloved characters in special outfits—the funniest gacha simulator around!
+
+{% include gallery id="gallery5" caption="1 2 3 Transform!" %}
+
+{% include gallery id="gallery6" caption="Dressing up HSR! Only at Wacky warper." %}
+
+{% include gallery id="gallery3" caption="Do I look like a dragon? Everyone? Say yes!" %}
+
+{% include gallery id="gallery2" caption="HuHu the Rock!" %}
+
+
+And laugh your ass off with frequently added mini games - all free!
+
 - Pom Pom wants to get rich with a slot machine.
+
 - Suika Game with Origami Birds and sexy HSR characters! All Free!! 
 
 {% include gallery id="gallery7" caption="Suika Game, Bird Clan! Funniest and Free!" %}
@@ -78,28 +92,12 @@ gallery8:
 Feeling pretty confident, Pom Pom is willing to bet Golden Trash and very rare nurse costume.
 Do you feel lucky?
 
-
 🌟Exciting update: Since its recent launch, Wacky Warper has risen to the top of multiple charts, aspiring to be recognized as one of the best gacha games.🌟
+
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 
-
-**🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
-
-<!-- Get ready to hop on the train of the most hilarious and entertaining meme extravaganza ever! We're thrilled to announce the release of Wacky Warper, the app you never knew you needed until now; Honestly, I didn't know I wanted this silly app myself.   -->
-
-Wacky Warper, not just the Honkai Star Rail silly wisher, features a quirky meme art style, accurate gacha, and special outfits and items for you to dress up your beloved characters in unique ways, and interact with them and see their priceless emotions! If you're a fan of Honkai: Star Rail, Genshin Impact, or Wuthering Waves, you'll definitely love the silly wacky twist we've brought to the gacha experience! Gacha. Meme. Dress. Gift. And your character reacts emotionally! 
-
-Wacky Warper, the only place where you can imagine, and build your beloved characters in special outfits! the funniest gacha simulator!
-
-{% include gallery id="gallery5" caption="1 2 3 Transform!" %}
-
-{% include gallery id="gallery6" caption="Dressing up HSR! Only at Wacky warper." %}
-
-{% include gallery id="gallery3" caption="Do I look like a dragon? Everyone? Say yes!" %}
-
-{% include gallery id="gallery2" caption="HuHu the Rock!" %}
 
 Main Features:
 

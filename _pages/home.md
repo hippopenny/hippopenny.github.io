@@ -6,7 +6,7 @@ title: "Wacky Warper"
 header:
   overlay_image: /assets/images/offrail/bannerfixlongsize.png
   actions:
-  - label: "Download Game"
+  - label: "Learn more"
     url: /wackywarper/
 
   # video:
