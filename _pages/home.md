@@ -42,6 +42,14 @@ feature_row:
     url:  /skellyrun/
     btn_class: "btn--primary"
     btn_label: "Learn more"
+  
+  - image_path: /assets/images/offrail/firefly-2.png
+    alt: "Wacky Warper at Hippo Penny Honkai Star Rail Silly Wisher"
+    title: "Wacky Warper"
+    excerpt: "Wacky Warper — not just the Honkai Star Rail silly wisher — Gacha. Meme. Dress. Gift. Emotional Chat. Mini-games. With a meme art style, an accurate gacha system, and a variety of special outfits and items, you can dress up your favorite characters in your ways. If you’re a fan of Honkai: Star Rail, Genshin Impact, or Wuthering Waves, you can't miss this silly wacky twist we've brought to the gacha experience!"
+    url:  /wackywarper/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 
   - image_path: /assets/images/garden-avengers/3.png
     alt: "Garden Avengers at hippo penny"
@@ -126,6 +134,14 @@ feature_row3:
     title: "Hippo Crypthesia"
     excerpt: "A super wallet that provides a hassle-free crypto exploration experience, with noncustodial wallets, auto-compound interest, low-risk tokens, high APY, and blockchain games to play while you invest in the constantly-evolving platform."
     url: "/crypthesia/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  
+  - image_path: /assets/images/offrail/gacha1.jpg
+    alt: "Wacky Warper at Hippo Penny Honkai Star Rail Silly Wisher"
+    title: "Wacky Warper"
+    excerpt: "Wacky Warper — not just the Honkai Star Rail silly wisher — Gacha. Meme. Dress. Gift. Emotional Chat. Mini-games. With a meme art style, an accurate gacha system, and a variety of special outfits and items, you can dress up your favorite characters in your ways. If you’re a fan of Honkai: Star Rail, Genshin Impact, or Wuthering Waves, you can't miss this silly wacky twist we've brought to the gacha experience!"
+    url:  /wackywarper/
     btn_class: "btn--primary"
     btn_label: "Learn more"
     
