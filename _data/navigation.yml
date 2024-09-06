@@ -1,7 +1,7 @@
 main:
   - title: "News"
     url: /
-  - title: "Reviews"
+  - title: "Scores"
     url: /meta-score/
   # - title: "Top picks"
   #   url: /game-review/

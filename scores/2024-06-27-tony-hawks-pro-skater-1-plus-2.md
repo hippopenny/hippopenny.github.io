@@ -1,5 +1,5 @@
 ---
-title: Hippo Penny Game Reviews
+title: Game Scores By Hippo Penny AI
 layout: scoredetail
 permalink: /meta-score/tony-hawks-pro-skater-1-plus-2
 header:

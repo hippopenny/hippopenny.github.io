@@ -78,7 +78,7 @@ feature_row:
 
 feature_row2:
   - image_path: /assets/images/sillywisher/1.webp
-    alt: "HippoPenny Review Silly Wisher"
+    alt: "HippoPenny Silly Wisher"
     title: "Silly Wisher - Wish Simulator for Genshin Impact"
     excerpt: "Beloved meme Genshin gacha game with cursed combinations of characters."
     url:  /silly-wisher/

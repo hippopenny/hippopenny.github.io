@@ -34,7 +34,7 @@ gallery4:
     alt: "wish"
 ---
 
-Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession. This game takes the beloved wish system from Genshin Impact and drenches it in meme sauce. miHoYo has been highly successful with their gacha systems; Honkai Star Rail proved to be another success following the footsteps of Genshin Impact. I recommend you try the very funny [Wacky Warper](/wackywarper), affectionately dubbed Silly Wisher Honkai, but it's actually more than that - more on this another day. Now, back to the business of Silly Wisher.
+Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by 10x. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to keep an eye on. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
 
 **Gameplay and Mechanics**
 
@@ -76,12 +76,14 @@ And if you love this kind of wacky fun, hop over to [Wacky Warper](/wackywarper)
 
 {% include video id="0IxmduZ2eFA" provider="youtube" %}
 
+Download  Silly Wisher
+
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/silly-wisher/id6444465724) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.sketchi.sillywisher)
+
 Download Wacky Warper
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 
-Download  Silly Wisher
-
-[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/silly-wisher/id6444465724) 
-[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.sketchi.sillywisher)
+*Disclosure: Hippo Penny is the developer of [Wacky Warper](/wackywarper).*

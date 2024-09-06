@@ -1,5 +1,5 @@
 ---
-title: Hippo Penny Game Reviews
+title: Game Scores By Hippo Penny AI
 layout: scoredetail
 permalink: /meta-score/star-wars-hunters
 header:
