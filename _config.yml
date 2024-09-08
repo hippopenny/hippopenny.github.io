@@ -99,17 +99,17 @@ analytics:
 author:
   name   : "Hippo Penny"
   avatar : "/assets/images/hippo-ghost.png"
-  bio    : "where the fun begins: video games with AI and blockchain. We finetune LLM and build language, image and audio genAI systems to power our games, and business."
+  bio    : "where the fun begins: personalized AI agents, animated and gamified."
   links:  
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/hippopenny"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/hippopenny"
-    - label: "facebook"
-      icon: "fab fa-fw fa-facebook"
-      url: "https://facebook.com/hippopenny"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/hippopenny"
+    # - label: "facebook"
+    #   icon: "fab fa-fw fa-facebook"
+    #   url: "https://facebook.com/hippopenny"
 
 
 # Site Footer
@@ -118,12 +118,12 @@ footer:
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/hippopenny"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/hippopenny"
-    - label: "facebook"
-      icon: "fab fa-fw fa-facebook"
-      url: "https://facebook.com/hippopenny"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/hippopenny"
+    # - label: "facebook"
+    #   icon: "fab fa-fw fa-facebook"
+    #   url: "https://facebook.com/hippopenny"
 
 
 # Reading Files
