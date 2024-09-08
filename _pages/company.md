@@ -6,7 +6,7 @@ permalink: /company/
 **Hippo Penny** *creates personalized AI characters with distinct personalities and customizable, animated appearances that express emotions and engage users through gamified experiences.* 
 
 ### Proof of Concept
-[Wacky Warper](/wackywarper) is our proof-of-concept game that showcases the power of Hippo Penny’s AI characters. In Wacky Warper, players can design and share characters that not only chat but also dress up, receive gifts, and express a range of emotions. These characters are dynamically animated, providing a visually engaging and interactive experience as they respond to player interactions. The game encourages players to share and interact with their creations, turning individual experiences into community-driven stories and networks. 
+[Wacky Warper](/wackywarper) is our proof-of-concept game that showcases the power of Hippo Penny’s AI characters. In the meme art style of Wacky Warper, players can design and share characters that not only chat but also dress up, receive gifts, and express a range of emotions. These characters are dynamically animated, providing a visually engaging and interactive experience as they respond to player interactions. The game encourages players to share and interact with their creations, turning individual experiences into community-driven stories and networks. 
 
 With millions of interactions in the first few weeks of soft launch, our game demonstrates the potential for significant user engagement even without marketing. 
 
