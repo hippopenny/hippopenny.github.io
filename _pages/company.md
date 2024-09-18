@@ -7,7 +7,8 @@ permalink: /company/
 We envision a world where humans and AI characters interact seamlessly, emotionally, and visually, blurring the lines between human and digital interaction.
 
 ### Mission
-We enable everyone to create and share personalized, customizable, animated AI characters that evolve emotionally, transforming how people connect and play through gamified experiences.
+Enables everyone to create and share personalized, animated AI characters that grow and engage through gamified experiences.
+
 
 ### Proof of Concept
 [Wacky Warper](/wackywarper) is our proof-of-concept game that showcases the power of Hippo Penny’s AI characters. Set in a playful, meme-inspired art style, Wacky Warper lets players create and share characters that not only chat but also dress up, receive gifts, and express a wide range of emotions. These characters are dynamically animated, providing an engaging, interactive experience that responds to player input in real-time.
