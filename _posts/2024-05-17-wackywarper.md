@@ -52,6 +52,11 @@ gallery8:
   - url: /assets/images/offrail/suika1.png
     image_path: /assets/images/offrail/suika1.png
     alt: "Suika Game, Bird Clan."
+
+gallery9:
+  - url: /assets/images/offrail/5.png
+    image_path: /assets/images/offrail/5.png
+    alt: "tailor"
 ---
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
@@ -59,6 +64,18 @@ gallery8:
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
 [**Partner Program**](/creator/)
 [**vTuber Models**](/vtuber/)
+
+
+
+**🎉 Update 🎉**
+
+For the first time ever, you can now express yourself, design your own dress as easily as typing a few words --- in English, Chinese, VNmese or any language. Words not enough to bring your vision to life? Too lazy to type? No problem! Simply upload a reference image, and watch the magic happen --- you'll be surprised!
+
+{% include gallery id="gallery9" caption="Tailor your own outfits." %}
+
+But that’s not all. Your creations can be shared and monetized in Pom pom's showroom. For every sale, you'll earn *70 Pumpum coins*.
+
+Express yourself, start designing, and show off your style to the world! and earn!
 
 **🎉 The Wait is Finally Over – Welcome to Wacky Warper! 🎉**
 
