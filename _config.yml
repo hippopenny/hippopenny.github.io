@@ -13,7 +13,7 @@ minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark"
 locale                   : "en-US"
 title                    : "HippoPenny"
 name                     : &name "Hippo Penny" # &name is a YAML anchor which can be *referenced later
-description              : &description "where the fun begins: best games with AI and blockchain."
+description              : &description "where the fun begins - create and connect with gamified, emotional characters"
 url                      : "https://www.hippopenny.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 og_image                 : "/assets/images/hippo-ghost.png"
@@ -99,7 +99,7 @@ analytics:
 author:
   name   : "Hippo Penny"
   avatar : "/assets/images/hippo-ghost.png"
-  bio    : "where the fun begins: personalized AI agents, animated and gamified."
+  bio    : "where the fun begins - create and connect with gamified, emotional characters"
   links:  
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
