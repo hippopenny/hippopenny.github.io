@@ -34,7 +34,11 @@ gallery4:
     alt: "wish"
 ---
 
-Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by 10x. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to keep an eye on. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
+Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by *10x*. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to check out. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
+
+News: please check out our kickstarter project   [![Kickstarter](/assets/images/kickstarter-bw.png){: width="30"}](https://www.kickstarter.com/projects/hippopenny/skelly-run-a-new-endless-runner-game)
+
+
 
 **Gameplay and Mechanics**
 
@@ -87,3 +91,4 @@ Download Wacky Warper
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 
 *Disclosure: Hippo Penny is the developer of [Wacky Warper](/wackywarper).*
+
