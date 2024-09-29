@@ -13,7 +13,7 @@ permalink: /wackyww/
         document.addEventListener("DOMContentLoaded", function() {
             const APP_STORE_URL = "https://apps.apple.com/us/app/wacky-warper/id6502666713";
             const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.hippopenny.offrail";
-            const WEBSITE_URL = "https://www.hippopenny.com/wackywarper";
+            const WEBSITE_URL = "https://www.hippopenny.com/wackywuwa";
 
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
