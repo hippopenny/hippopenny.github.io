@@ -36,7 +36,11 @@ gallery4:
 
 Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by *10x*. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to check out. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
 
-News: please check out our kickstarter project   [![Kickstarter](/assets/images/kickstarter-bw.png){: width="30"}](https://www.kickstarter.com/projects/hippopenny/skelly-run-a-new-endless-runner-game)
+News: 
+
+- Coming soon [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
+
+- please check out our kickstarter project   [![Kickstarter](/assets/images/kickstarter-bw.png){: width="30"}](https://www.kickstarter.com/projects/hippopenny/skelly-run-a-new-endless-runner-game)
 
 
 

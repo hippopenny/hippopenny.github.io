@@ -25,6 +25,14 @@ header:
 
 
 feature_row:    
+  - image_path: /assets/images/wackywuwa/1.png
+    alt: "Wacky Wuwa at Hippo Penny Wuthering Waves Silly Wisher Wacky Warper"
+    title: "Wacky Wuwa"
+    excerpt: "Never seen before, chat emoji 😉❤️🌹😎😂!! Gacha, create your own characters, dress them up for others to play with, to gift and to see their priceless emotions. If you’re a fan of Wuthering Waves, Honkai: Star Rail, Genshin Impact, you can't miss this silly wacky twist we've brought to the gacha experience!"
+    url:  /wackywuwa/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
   - image_path: /assets/images/td2048/banner.png
   # /assets/images/skellyrun/mkthalloween.png
     alt: "Merge Tower Defense: 2048 at Hippo Penny"

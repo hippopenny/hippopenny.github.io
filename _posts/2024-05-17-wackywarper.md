@@ -67,6 +67,8 @@ gallery9:
 
 
 
+News: Coming soon [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
+
 **🎉 Update 🎉**
 
 For the first time ever, you can now express yourself, design your own dress as easily as typing a few words --- in English, Chinese, VNmese or any language. Words not enough to bring your vision to life? Too lazy to type? No problem! Simply upload a reference image, and watch the magic happen --- you'll be surprised!
