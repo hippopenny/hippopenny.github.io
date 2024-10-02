@@ -27,6 +27,11 @@ gallery3:
   - url: /assets/images/wackywuwa/chat.webp
     image_path: /assets/images/wackywuwa/chat.webp
     alt: "wacky wuwa, wisher wuthering waves, genshin impact. gacha, dress. wacky warper. Top 5 simulator games."
+
+gallery4:
+  - url: /assets/images/wackywuwa/chat2.webp
+    image_path: /assets/images/wackywuwa/chat2.webp
+    alt: "wacky wuwa, wisher wuthering waves, genshin impact. gacha, dress. wacky warper. Top 5 simulator games."
 # gallery2:
 #   - url: /assets/images/wackywuwa/b1.jpg
 #     image_path: /assets/images/wackywuwa/b1.jpg
@@ -75,6 +80,8 @@ gallery3:
 **🎉 The Wait is Almost Over – Welcome to Wacky Wuwa! 🎉**
 
 {% include gallery id="gallery2" caption="Pull to your heart's content" %}
+
+{% include gallery id="gallery4" caption="Chat Emoji. Only at Wacky Wuwa! You can create your own character too." %}
 
 {% include gallery id="gallery3" caption="Chat Emoji. Only at Wacky Wuwa! You can create your own character too." %}
 
