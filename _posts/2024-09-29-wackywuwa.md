@@ -79,6 +79,9 @@ gallery4:
 
 **🎉 The Wait is Almost Over – Welcome to Wacky Wuwa! 🎉**
 
+**🥳🔥 Release Date: November, 13th 🥳🔥**
+
+
 {% include gallery id="gallery2" caption="Pull to your heart's content" %}
 
 {% include gallery id="gallery4" caption="Chat Emoji. Only at Wacky Wuwa! You can create your own character too." %}
