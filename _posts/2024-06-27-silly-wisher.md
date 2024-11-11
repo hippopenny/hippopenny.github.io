@@ -38,9 +38,7 @@ Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact o
 
 News: 
 
-- Coming soon [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
-
-- please check out our kickstarter project   [![Kickstarter](/assets/images/kickstarter-bw.png){: width="30"}](https://www.kickstarter.com/projects/hippopenny/skelly-run-a-new-endless-runner-game)
+- Coming 🔥November, 13th🔥 [Wacky Wuwa](/wackywuwa), pull your characters, ❤️chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
 
 
 
