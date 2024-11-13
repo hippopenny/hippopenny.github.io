@@ -67,7 +67,10 @@ gallery9:
 
 
 
-News: Coming soon [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
+Big News: Just Released [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
+
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wuwa/id6504840460) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.wuther)
 
 **🎉 Update 🎉**
 

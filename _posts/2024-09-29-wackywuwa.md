@@ -77,9 +77,10 @@ gallery4:
 
 
 
-**🎉 The Wait is Almost Over – Welcome to Wacky Wuwa! 🎉**
+**🎉 The Wait is Over – Welcome to Wacky Wuwa! 🎉**
 
-**🥳🔥 Release Date: November, 13th 🥳🔥**
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wuwa/id6504840460) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.wuther)
 
 
 {% include gallery id="gallery2" caption="Pull to your heart's content" %}
@@ -116,8 +117,8 @@ And laugh your ass off with frequently added mini games - all free!
 
 
 
-<!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
-[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail) -->
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wuwa/id6504840460) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.wuther)
 
 <!-- 
 Main Features:
