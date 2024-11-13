@@ -145,13 +145,14 @@ Main Features:
 Wacky Wuwa! What a wacky wuthering waves wacky wisher! 
 
 
-Join our Discord, or Play with Wacky Warper while waiting for Wacky Wuwa --- all credits are shared between games!
+Want to try your luck with Honkai Star Rail, play  [Wacky Warper](/wackywarper). Importantly, all credits are shared between games!
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
 
 
 Note: Wacky Wuwa is purely for entertainment and is not affiliated with Wuthering Waves. It's all about having a blast!
+
 
 
 <!-- **🚀 Release for Honkai Star Rail HSR 2.3**
