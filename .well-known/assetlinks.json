@@ -10,5 +10,17 @@
           "4A:D9:48:70:3D:BC:F4:4A:F2:DB:F1:0C:38:83:26:CA:F8:FD:EA:B3:6A:5E:8D:1C:68:57:A9:DE:F1:E0:40:1E"
         ]
       }
+    },
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.hippopenny.offrail",
+        "sha256_cert_fingerprints": [
+          "00:AC:65:E4:17:DC:EE:6E:8B:89:E1:C1:1B:66:79:59:C0:2C:14:D2:70:CF:31:84:18:AA:67:47:4F:76:C9:CC"
+        ]
+      }
     }
   ]
