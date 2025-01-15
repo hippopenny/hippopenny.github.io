@@ -11,9 +11,9 @@ permalink: /wacky-wisher-stores/
     <title>{{ page.title }}</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const APP_STORE_URL = "https://apps.apple.com/us/app/wacky-warper/id6502666713";
-            const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.hippopenny.offrail";
-            const WEBSITE_URL = "https://www.hippopenny.com/wackywarper";
+            const APP_STORE_URL = "https://www.hippopenny.com/wackywisher"; //"https://apps.apple.com/us/app/wacky-warper/id6502666713";
+            const PLAY_STORE_URL = "https://www.hippopenny.com/wackywisher"; //"https://play.google.com/store/apps/details?id=com.hippopenny.offrail";
+            const WEBSITE_URL = "https://www.hippopenny.com/wackywisher";
 
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
@@ -36,6 +36,6 @@ permalink: /wacky-wisher-stores/
 </head>
 <body>
     <p>Redirecting...</p>
-    <p>If you are not redirected automatically, <a href="https://www.hippopenny.com">click here</a>.</p>
+    <p>If you are not redirected automatically, <a href="https://www.hippopenny.com/wackywisher">click here</a>.</p>
 </body>
 </html>
