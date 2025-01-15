@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Wacky Wuwa App Store
-permalink: /wacky-wuwa-stores/
+title: Wacky Warper App Store
+permalink: /ww/
 ---
 
 <html lang="en">
@@ -11,9 +11,9 @@ permalink: /wacky-wuwa-stores/
     <title>{{ page.title }}</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const APP_STORE_URL = "https://apps.apple.com/us/app/wacky-wuwa/id6504840460";
-            const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.hippopenny.wuther";
-            const WEBSITE_URL = "https://www.hippopenny.com/wackywuwa";
+            const APP_STORE_URL = "https://apps.apple.com/us/app/wacky-warper/id6502666713";
+            const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.hippopenny.offrail";
+            const WEBSITE_URL = "https://www.hippopenny.com/wackywarper";
 
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
