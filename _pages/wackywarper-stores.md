@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Wacky Warper App Store
-permalink: /ww/
+permalink: /wacky-warper-stores/
 ---
 
 <html lang="en">
