@@ -35,14 +35,22 @@ gallery4:
 ---
 
 
-Check out the all **new Genshin Wisher** here [Wacky Wisher](/wackywisher)
+🔥🔥🔥 New Silly Wisher: [Wacky Wisher](/wackywisher) 🔥🔥🔥
+
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)
 
 
-Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by *10x*. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to check out. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
+Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by *10x*. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to check out for Honkai Star Rail, or [Wacky Wuwa](/wackywuwa) for Wuthering Waves fan. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
 
-News: 
 
-- Just Released 🔥November, 13th🔥 [Wacky Wuwa](/wackywuwa), pull your characters, ❤️chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
+Download New Silly Wisher
+
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)
+
+
+Download Silly Wisher
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wuwa/id6504840460) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.wuther)
