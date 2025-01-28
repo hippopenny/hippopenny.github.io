@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Legend Of Heroes Trails Through Daybreak by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-legend-of-heroes-trails-through-daybreak
 header:

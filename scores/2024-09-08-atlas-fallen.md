@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Atlas Fallen by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/atlas-fallen
 header:

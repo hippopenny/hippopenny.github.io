@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Teenage Mutant Ninja Turtles Splintered Fate by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/teenage-mutant-ninja-turtles-splintered-fate
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Rogue Legacy 2 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/rogue-legacy-2
 header:

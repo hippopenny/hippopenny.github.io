@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Evotinction by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/evotinction
 header:

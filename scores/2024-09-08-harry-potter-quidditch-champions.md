@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Harry Potter Quidditch Champions by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/harry-potter-quidditch-champions
 header:

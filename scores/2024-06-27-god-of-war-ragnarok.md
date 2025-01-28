@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: God Of War Ragnarok by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/god-of-war-ragnarok
 header:

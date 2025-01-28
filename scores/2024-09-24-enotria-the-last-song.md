@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Enotria The Last Song by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/enotria-the-last-song
 header:

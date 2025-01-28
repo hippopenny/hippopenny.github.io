@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Beyond Good And Evil 20Th Anniversary Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/beyond-good-and-evil-20th-anniversary-edition
 header:

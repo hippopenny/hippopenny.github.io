@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Case Of The Golden Idol by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-case-of-the-golden-idol
 header:

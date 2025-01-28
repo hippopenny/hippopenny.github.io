@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Xenoblade Chronicles Definitive Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/xenoblade-chronicles-definitive-edition
 header:

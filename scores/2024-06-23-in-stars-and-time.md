@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: In Stars And Time by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/in-stars-and-time
 header:

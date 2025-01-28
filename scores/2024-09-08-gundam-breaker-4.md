@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Gundam Breaker 4 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/gundam-breaker-4
 header:

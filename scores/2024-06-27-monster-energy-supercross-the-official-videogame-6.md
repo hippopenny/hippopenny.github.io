@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Monster Energy Supercross The Official Videogame 6 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/monster-energy-supercross-the-official-videogame-6
 header:

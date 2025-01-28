@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Elden Ring Shadow Of The Erdtree by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/elden-ring-shadow-of-the-erdtree
 header:

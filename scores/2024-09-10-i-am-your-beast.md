@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: I Am Your Beast by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/i-am-your-beast
 header:

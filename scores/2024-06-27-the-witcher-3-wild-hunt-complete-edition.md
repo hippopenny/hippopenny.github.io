@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Witcher 3 Wild Hunt Complete Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-witcher-3-wild-hunt-complete-edition
 header:

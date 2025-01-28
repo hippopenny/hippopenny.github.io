@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Gestalt Steam And Cinder by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/gestalt-steam-and-cinder
 header:

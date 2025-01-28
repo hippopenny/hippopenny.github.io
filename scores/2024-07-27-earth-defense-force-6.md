@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Earth Defense Force 6 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/earth-defense-force-6
 header:

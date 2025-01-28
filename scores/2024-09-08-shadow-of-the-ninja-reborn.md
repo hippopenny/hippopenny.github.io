@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Shadow Of The Ninja Reborn by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/shadow-of-the-ninja-reborn
 header:

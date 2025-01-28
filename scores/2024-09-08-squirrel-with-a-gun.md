@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Squirrel With A Gun by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/squirrel-with-a-gun
 header:

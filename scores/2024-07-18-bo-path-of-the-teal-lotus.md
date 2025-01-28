@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Bo Path Of The Teal Lotus by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/bo-path-of-the-teal-lotus
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Creatures Of Ava by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/creatures-of-ava
 header:

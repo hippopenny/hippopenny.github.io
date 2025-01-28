@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Space Run Galaxy by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/space-run-galaxy
 header:

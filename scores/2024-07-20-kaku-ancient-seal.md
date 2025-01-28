@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Kaku Ancient Seal by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/kaku-ancient-seal
 header:

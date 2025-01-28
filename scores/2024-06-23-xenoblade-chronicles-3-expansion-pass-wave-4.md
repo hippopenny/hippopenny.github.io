@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Xenoblade Chronicles 3 Expansion Pass Wave 4 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/xenoblade-chronicles-3-expansion-pass-wave-4
 header:

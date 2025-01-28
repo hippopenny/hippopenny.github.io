@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Wild Hearts by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/wild-hearts
 header:

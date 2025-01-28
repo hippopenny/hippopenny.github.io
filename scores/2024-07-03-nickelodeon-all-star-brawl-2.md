@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Nickelodeon All Star Brawl 2 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/nickelodeon-all-star-brawl-2
 header:

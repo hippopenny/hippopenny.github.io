@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Football Manager 2024 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/football-manager-2024
 header:

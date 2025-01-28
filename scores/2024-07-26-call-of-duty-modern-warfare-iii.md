@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Call Of Duty Modern Warfare Iii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/call-of-duty-modern-warfare-iii
 header:

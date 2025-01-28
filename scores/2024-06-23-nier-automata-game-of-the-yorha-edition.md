@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Nier Automata Game Of The Yorha Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/nier-automata-game-of-the-yorha-edition
 header:

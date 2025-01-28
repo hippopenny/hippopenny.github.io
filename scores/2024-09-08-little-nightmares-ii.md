@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Little Nightmares Ii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/little-nightmares-ii
 header:

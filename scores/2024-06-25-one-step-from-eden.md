@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: One Step From Eden by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/one-step-from-eden
 header:

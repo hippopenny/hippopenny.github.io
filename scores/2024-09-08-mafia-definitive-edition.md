@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Mafia Definitive Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/mafia-definitive-edition
 header:

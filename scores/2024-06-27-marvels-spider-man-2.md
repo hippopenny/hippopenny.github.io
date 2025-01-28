@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Marvels Spider Man 2 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/marvels-spider-man-2
 header:

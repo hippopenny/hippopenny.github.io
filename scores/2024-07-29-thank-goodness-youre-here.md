@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Thank Goodness Youre Here by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/thank-goodness-youre-here
 header:

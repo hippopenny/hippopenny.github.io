@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Dungeons Of Hinterberg by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/dungeons-of-hinterberg
 header:

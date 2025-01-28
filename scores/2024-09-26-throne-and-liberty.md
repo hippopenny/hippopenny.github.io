@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Throne And Liberty by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/throne-and-liberty
 header:

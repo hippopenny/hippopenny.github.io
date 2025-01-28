@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Vagrant Story by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/vagrant-story
 header:

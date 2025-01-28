@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Ara History Untold by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/ara-history-untold
 header:

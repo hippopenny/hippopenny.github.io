@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Age Of Mythology Retold by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/age-of-mythology-retold
 header:

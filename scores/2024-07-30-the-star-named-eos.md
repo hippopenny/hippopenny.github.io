@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Star Named Eos by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-star-named-eos
 header:

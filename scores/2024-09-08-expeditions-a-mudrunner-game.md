@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Expeditions A Mudrunner Game by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/expeditions-a-mudrunner-game
 header:

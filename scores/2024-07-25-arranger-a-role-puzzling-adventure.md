@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Arranger A Role Puzzling Adventure by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/arranger-a-role-puzzling-adventure
 header:

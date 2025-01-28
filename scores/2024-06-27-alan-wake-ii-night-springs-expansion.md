@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Alan Wake Ii Night Springs Expansion by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/alan-wake-ii-night-springs-expansion
 header:

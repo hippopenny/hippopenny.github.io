@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Diablo Iii Ultimate Evil Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/diablo-iii-ultimate-evil-edition
 header:

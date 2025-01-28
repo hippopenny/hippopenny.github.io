@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Anno 1800 Console Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/anno-1800-console-edition
 header:

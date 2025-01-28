@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: The Jackbox Naughty Pack by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-jackbox-naughty-pack
 header:

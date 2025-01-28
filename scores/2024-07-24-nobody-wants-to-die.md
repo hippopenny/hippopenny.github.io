@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Nobody Wants To Die by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/nobody-wants-to-die
 header:

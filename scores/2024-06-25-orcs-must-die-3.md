@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Orcs Must Die 3 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/orcs-must-die-3
 header:

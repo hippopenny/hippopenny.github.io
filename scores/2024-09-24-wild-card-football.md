@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Wild Card Football by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/wild-card-football
 header:

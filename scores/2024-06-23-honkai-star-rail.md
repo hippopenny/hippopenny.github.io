@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Honkai Star Rail by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/honkai-star-rail
 header:

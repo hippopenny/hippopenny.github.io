@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Pathfinder Wrath Of The Righteous by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/pathfinder-wrath-of-the-righteous
 header:

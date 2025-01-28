@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Wild Bastards by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/wild-bastards
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Symphony Of War The Nephilim Saga by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/symphony-of-war-the-nephilim-saga
 header:

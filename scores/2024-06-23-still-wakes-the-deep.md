@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Still Wakes The Deep by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/still-wakes-the-deep
 header:

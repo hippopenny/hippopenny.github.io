@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Phantasy Star Online by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/phantasy-star-online
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Monster Hunter World by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/monster-hunter-world
 header:

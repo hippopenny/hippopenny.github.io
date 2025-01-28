@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Satisfactory by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/satisfactory
 header:
