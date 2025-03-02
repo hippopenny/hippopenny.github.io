@@ -302,7 +302,7 @@ function toggleMinimap() {
     }
 }
 
-let socket = new WebSocket('ws://hippopenny.com/snake');
+let socket = new WebSocket('wss://hippopenny.com/snake');
 
 socket.onopen = () => {
     playerId = Date.now().toString();
