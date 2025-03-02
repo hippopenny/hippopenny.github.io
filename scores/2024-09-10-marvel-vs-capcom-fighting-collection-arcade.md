@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Marvel Vs Capcom Fighting Collection Arcade by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/marvel-vs-capcom-fighting-collection-arcade
 header:

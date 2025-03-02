@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Darkest Dungeon by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/darkest-dungeon
 header:

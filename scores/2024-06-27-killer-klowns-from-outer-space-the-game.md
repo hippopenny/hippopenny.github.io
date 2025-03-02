@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Killer Klowns From Outer Space The Game by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/killer-klowns-from-outer-space-the-game
 header:

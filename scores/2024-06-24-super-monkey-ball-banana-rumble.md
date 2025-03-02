@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Super Monkey Ball Banana Rumble by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/super-monkey-ball-banana-rumble
 header:

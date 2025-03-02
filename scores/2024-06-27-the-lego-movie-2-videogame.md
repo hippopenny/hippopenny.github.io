@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Lego Movie 2 Videogame by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-lego-movie-2-videogame
 header:

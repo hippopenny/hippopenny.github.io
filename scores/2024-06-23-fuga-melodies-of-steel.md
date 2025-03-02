@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Fuga Melodies Of Steel by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/fuga-melodies-of-steel
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Sword Art Online Last Recollection by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/sword-art-online-last-recollection
 header:

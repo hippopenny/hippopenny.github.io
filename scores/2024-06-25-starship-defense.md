@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Starship Defense by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/starship-defense
 header:

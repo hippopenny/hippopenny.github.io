@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Core Keeper by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/core-keeper
 header:

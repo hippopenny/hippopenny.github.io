@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Final Fantasy Vii Rebirth by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/final-fantasy-vii-rebirth
 header:

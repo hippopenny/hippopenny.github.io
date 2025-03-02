@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Zenless Zone Zero by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/zenless-zone-zero
 header:

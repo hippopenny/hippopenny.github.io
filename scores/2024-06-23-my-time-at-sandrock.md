@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: My Time At Sandrock by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/my-time-at-sandrock
 header:

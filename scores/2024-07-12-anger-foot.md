@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Anger Foot by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/anger-foot
 header:

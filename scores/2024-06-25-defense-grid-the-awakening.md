@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Defense Grid The Awakening by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/defense-grid-the-awakening
 header:

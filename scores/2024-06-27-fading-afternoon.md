@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Fading Afternoon by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/fading-afternoon
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Stardew Valley by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/stardew-valley
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Emio The Smiling Man Famicom Detective Club by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/emio-the-smiling-man-famicom-detective-club
 header:

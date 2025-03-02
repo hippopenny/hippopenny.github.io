@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Ea Sports College Football 25 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/ea-sports-college-football-25
 header:

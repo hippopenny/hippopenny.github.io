@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Star Trucker by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/star-trucker
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Moss Book Ii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/moss-book-ii
 header:

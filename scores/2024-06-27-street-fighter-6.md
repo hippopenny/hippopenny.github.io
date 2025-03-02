@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Street Fighter 6 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/street-fighter-6
 header:

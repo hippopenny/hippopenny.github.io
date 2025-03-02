@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Sword Art Online Hollow Realization by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/sword-art-online-hollow-realization
 header:

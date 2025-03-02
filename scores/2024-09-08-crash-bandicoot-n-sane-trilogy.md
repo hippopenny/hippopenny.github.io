@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Crash Bandicoot N Sane Trilogy by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/crash-bandicoot-n-sane-trilogy
 header:

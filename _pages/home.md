@@ -27,8 +27,8 @@ header:
 feature_row:    
   - image_path: /assets/images/wackywisher/1.png
     alt: "Wacky Wisher all new Silly Wisher for Genshin Impact plus Genlatro Balatro"
-    title: "Wacky Wisher: All New Genshin Wisher with Balatro"
-    excerpt: "The new silly Genshin wisher packed with fresh memes, a new weapon collector mode, character dress-up, and the arrival of **Genlatro** — a Genshin **Balatro** — this wild experience will have you laughing, customizing, and wishing like never before."
+    title: "Wacky Wisher: New Silly Genshin Wisher plus Free Balatro"
+    excerpt: "The new silly Genshin wisher packed with fresh memes, a new weapon collector mode, character dress-up, and the arrival of free **Balatro** inspired card game — this CRAZY experience will have you laughing, customizing, and wishing like never before."
     url:  /wackywisher/
     btn_class: "btn--primary"
     btn_label: "Learn more"

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Nier Automata Become As Gods Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/nier-automata-become-as-gods-edition
 header:

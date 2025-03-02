@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Minds Beneath Us by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/minds-beneath-us
 header:

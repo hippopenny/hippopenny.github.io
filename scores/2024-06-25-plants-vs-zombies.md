@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Plants Vs Zombies by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/plants-vs-zombies
 header:

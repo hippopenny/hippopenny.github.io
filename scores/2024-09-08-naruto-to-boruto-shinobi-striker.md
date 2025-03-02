@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Naruto To Boruto Shinobi Striker by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/naruto-to-boruto-shinobi-striker
 header:

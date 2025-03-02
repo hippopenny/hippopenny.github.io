@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The First Descendant by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-first-descendant
 header:

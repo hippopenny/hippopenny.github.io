@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Crusader Kings Iii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/crusader-kings-iii
 header:

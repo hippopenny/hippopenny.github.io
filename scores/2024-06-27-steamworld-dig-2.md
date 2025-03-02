@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Steamworld Dig 2 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/steamworld-dig-2
 header:

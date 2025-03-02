@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Umamusume Pretty Derby Party Dash by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/umamusume-pretty-derby-party-dash
 header:

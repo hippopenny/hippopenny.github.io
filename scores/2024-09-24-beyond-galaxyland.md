@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Beyond Galaxyland by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/beyond-galaxyland
 header:

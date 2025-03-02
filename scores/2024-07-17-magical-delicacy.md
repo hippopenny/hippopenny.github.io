@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Magical Delicacy by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/magical-delicacy
 header:

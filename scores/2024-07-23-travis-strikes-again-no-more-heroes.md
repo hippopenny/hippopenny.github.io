@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Travis Strikes Again No More Heroes by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/travis-strikes-again-no-more-heroes
 header:

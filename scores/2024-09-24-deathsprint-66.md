@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Deathsprint 66 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/deathsprint-66
 header:

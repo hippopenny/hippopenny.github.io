@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Visions Of Mana by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/visions-of-mana
 header:

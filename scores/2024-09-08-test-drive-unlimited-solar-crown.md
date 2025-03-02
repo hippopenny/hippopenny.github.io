@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Test Drive Unlimited Solar Crown by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/test-drive-unlimited-solar-crown
 header:

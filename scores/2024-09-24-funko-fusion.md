@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Funko Fusion by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/funko-fusion
 header:

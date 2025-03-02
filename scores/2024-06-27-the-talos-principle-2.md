@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Talos Principle 2 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-talos-principle-2
 header:

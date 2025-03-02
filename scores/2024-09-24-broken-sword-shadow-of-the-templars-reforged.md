@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Broken Sword Shadow Of The Templars Reforged by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/broken-sword-shadow-of-the-templars-reforged
 header:

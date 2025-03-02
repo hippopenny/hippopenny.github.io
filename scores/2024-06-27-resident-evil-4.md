@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Resident Evil 4 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/resident-evil-4
 header:

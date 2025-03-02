@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: The Casting Of Frank Stone by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-casting-of-frank-stone
 header:

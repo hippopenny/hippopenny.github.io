@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Persona 3 Reload Episode Aigis The Answer by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/persona-3-reload-episode-aigis-the-answer
 header:

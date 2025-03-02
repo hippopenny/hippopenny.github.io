@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Pixeljunk Monsters Encore by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/pixeljunk-monsters-encore
 header:

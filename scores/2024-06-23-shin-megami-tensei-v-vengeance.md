@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Shin Megami Tensei V Vengeance by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/shin-megami-tensei-v-vengeance
 header:

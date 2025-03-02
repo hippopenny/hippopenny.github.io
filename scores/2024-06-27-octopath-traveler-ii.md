@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Octopath Traveler Ii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/octopath-traveler-ii
 header:

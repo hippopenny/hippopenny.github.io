@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Little Goody Two Shoes by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/little-goody-two-shoes
 header:

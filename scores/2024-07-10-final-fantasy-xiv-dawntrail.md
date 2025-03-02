@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Final Fantasy Xiv Dawntrail by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/final-fantasy-xiv-dawntrail
 header:

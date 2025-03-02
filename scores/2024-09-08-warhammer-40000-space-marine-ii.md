@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Warhammer 40000 Space Marine Ii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/warhammer-40000-space-marine-ii
 header:

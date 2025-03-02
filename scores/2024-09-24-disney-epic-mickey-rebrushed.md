@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Disney Epic Mickey Rebrushed by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/disney-epic-mickey-rebrushed
 header:

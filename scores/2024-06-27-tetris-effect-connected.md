@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Tetris Effect Connected by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/tetris-effect-connected
 header:

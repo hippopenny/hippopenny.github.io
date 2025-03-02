@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: South Park The Stick Of Truth by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/south-park-the-stick-of-truth
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Spyxanya Operation Memories by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/spyxanya-operation-memories
 header:

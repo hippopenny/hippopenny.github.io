@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Luigis Mansion 2 Hd by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/luigis-mansion-2-hd
 header:

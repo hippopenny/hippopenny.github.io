@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Legend Of Mana Remastered by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/legend-of-mana-remastered
 header:

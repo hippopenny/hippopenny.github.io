@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Dave The Diver by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/dave-the-diver
 header:

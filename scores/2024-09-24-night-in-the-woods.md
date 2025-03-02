@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Night In The Woods by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/night-in-the-woods
 header:

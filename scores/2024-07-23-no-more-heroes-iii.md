@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: No More Heroes Iii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/no-more-heroes-iii
 header:

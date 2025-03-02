@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Jackbox Party Pack 9 by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-jackbox-party-pack-9
 header:

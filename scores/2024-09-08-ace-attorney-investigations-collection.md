@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Ace Attorney Investigations Collection by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/ace-attorney-investigations-collection
 header:

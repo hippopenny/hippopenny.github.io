@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Freedom Force by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/freedom-force
 header:

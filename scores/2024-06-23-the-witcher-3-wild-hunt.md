@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: The Witcher 3 Wild Hunt by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-witcher-3-wild-hunt
 header:

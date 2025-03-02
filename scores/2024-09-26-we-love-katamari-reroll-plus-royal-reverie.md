@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: We Love Katamari Reroll Plus Royal Reverie by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/we-love-katamari-reroll-plus-royal-reverie
 header:

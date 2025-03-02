@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Dome Keeper by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/dome-keeper
 header:

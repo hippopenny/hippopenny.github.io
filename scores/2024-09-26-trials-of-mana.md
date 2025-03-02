@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: Trials Of Mana by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/trials-of-mana
 header:

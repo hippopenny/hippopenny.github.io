@@ -1,6 +1,6 @@
 ---
-title: "Wacky Wisher - New Genshin Wisher"
-excerpt: "All new meme Genshin gacha game and Genshin Balatro - Genlatro!!"
+title: "Wacky Wisher - New Silly Genshin Wisher"
+excerpt: "New Wish Simulator for Genshin Impact plus Free Balatro!"
 header:
   image: /assets/images/wackywisher/1.png
   teaser: /assets/images/wackywisher/1.png
@@ -36,11 +36,11 @@ gallery5:
     alt: "genlatro genshin balatro"
 ---
 
-<!-- [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-warper/id6502666713) 
-[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.offrail)
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)
 [![Discord](/assets/images/discord.svg){: width="44"}](https://discord.gg/SShz2reFyN)
 [**Partner Program**](/creator/)
-[**vTuber Models**](/vtuber/) -->
+[**vTuber Models**](/vtuber/)
 
 
 <!-- 
@@ -87,3 +87,6 @@ Are you ready to take your Genshin obsession to the next level of addicts?
 
 {% include gallery id="gallery5" caption="Genshin Balatro is called Genlatro. Only in Wacky Wisher!" %}
 
+
+[![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
+[![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Wuthering Waves by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/wuthering-waves
 header:

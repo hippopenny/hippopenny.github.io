@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Remnant Ii by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/remnant-ii
 header:

@@ -1,5 +1,5 @@
 ---
-title: Game Scores By Hippo Penny AI
+title: Nintendo World Championships Nes Edition by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/nintendo-world-championships-nes-edition
 header:

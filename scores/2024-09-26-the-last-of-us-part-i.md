@@ -1,5 +1,5 @@
 ---
-title: Game Scores By HippoPenny AI
+title: The Last Of Us Part I by Hippo Penny Deep View!
 layout: scoredetail
 permalink: /meta-score/the-last-of-us-part-i
 header:
