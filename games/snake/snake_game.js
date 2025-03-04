@@ -302,7 +302,7 @@ function toggleMinimap() {
     }
 }
 
-let socket = new WebSocket('wss://snake.hippopenny.com');
+let socket = new WebSocket('ws://127.0.0.1:8080');
 
 socket.onopen = () => {
     playerId = Date.now().toString();
@@ -365,19 +365,45 @@ socket.onclose = (event) => {
 };
 
 const GRID_SIZE = 50;
-const CELL_SIZE = 10; // Size of each cell in pixels
+let CELL_SIZE = 10; // Size of each cell in pixels
 
 // Set up the game canvas
 const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext('2d');
 
-// Set canvas size based on grid size and cell size
-canvas.width = GRID_SIZE * CELL_SIZE;
-canvas.height = GRID_SIZE * CELL_SIZE;
+// Adjust the canvas size based on screen size
+function getAvailableScreenSize() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    
+    // Subtract space for UI elements if needed
+    const availableWidth = screenWidth - 40; // Adjust as needed
+    const availableHeight = screenHeight - 200; // Adjust as needed for UI elements
+    
+    return { width: availableWidth, height: availableHeight };
+}
+
+function adjustCanvasSize() {
+    const { width, height } = getAvailableScreenSize();
+    
+    // Calculate the maximum size that maintains the aspect ratio
+    const maxGridSize = Math.min(width, height);
+    
+    // Set the canvas size
+    canvas.width = maxGridSize;
+    canvas.height = maxGridSize;
+    
+    // Adjust the cell size based on the new canvas size
+    CELL_SIZE = Math.floor(maxGridSize / GRID_SIZE);
+    
+    // Update the canvas style to ensure it fits the screen
+    canvas.style.width = `${maxGridSize}px`;
+    canvas.style.height = `${maxGridSize}px`;
+}
 
 // Initialize leaderboard when the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize mini leaderboard
+    adjustCanvasSize();
     
     // Initialize heat map
     initHeatMap();
@@ -406,6 +432,11 @@ function initGame() {
     updateScoreAndLevel();
     updateSpeedDisplay();
     updateHungerBar(); // Initialize hunger bar
+    
+    // Hide leaderboard by default
+    if (bestScoresVisible) {
+        toggleBestScores();
+    }
     
     gameOverScreen.style.display = 'none';
     levelUpScreen.style.display = 'none';
@@ -1997,7 +2028,7 @@ document.addEventListener('keydown', function(e) {
         return;
     }
     
-    // Toggle mini leaderboard with 'L' key
+    // Toggle leaderboard with 'L' key
     if (e.key === 'l' || e.key === 'L') {
         toggleBestScores();
         return;
@@ -2085,62 +2116,42 @@ powerUpCountdownBar.style.width = '100%';
 powerUpCountdownBar.style.transition = 'width 0.1s linear';
 powerUpCountdownContainer.appendChild(powerUpCountdownBar);
 
-// Mobile controls
-const mobileControlsContainer = document.createElement('div');
-mobileControlsContainer.id = 'mobile-controls';
-mobileControlsContainer.style.position = 'absolute';
-mobileControlsContainer.style.bottom = '20px';
-mobileControlsContainer.style.right = '20px';
-mobileControlsContainer.style.left = 'auto';
-mobileControlsContainer.style.width = '150px';
-mobileControlsContainer.style.height = '150px';
-mobileControlsContainer.style.display = 'none'; // Hidden by default, will show on touch devices
-mobileControlsContainer.style.zIndex = '1001';
-document.body.appendChild(mobileControlsContainer);
 
-// Create D-pad buttons
-const directions = [
-    { id: 'up', symbol: '▲', x: 50, y: 0 },
-    { id: 'right', symbol: '▶', x: 100, y: 50 },
-    { id: 'down', symbol: '▼', x: 50, y: 100 },
-    { id: 'left', symbol: '◀', x: 0, y: 50 }
-];
+// Create a joystick container
+const joystickContainer = document.createElement('div');
+joystickContainer.id = 'joystick-container';
+joystickContainer.style.position = 'absolute';
+joystickContainer.style.bottom = '20px';
+joystickContainer.style.right = '20px';  // Position 20px from the right
+joystickContainer.style.width = '150px';
+joystickContainer.style.height = '150px';
+joystickContainer.style.zIndex = '1001';
+document.body.appendChild(joystickContainer);
 
-directions.forEach(dir => {
-    const button = document.createElement('div');
-    button.id = `mobile-${dir.id}`;
-    button.className = 'mobile-control-button';
-    button.innerHTML = dir.symbol;
-    button.style.position = 'absolute';
-    button.style.left = `${dir.x}px`;
-    button.style.top = `${dir.y}px`;
-    button.style.width = '50px';
-    button.style.height = '50px';
-    button.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-    button.style.color = 'white';
-    button.style.borderRadius = '50%';
-    button.style.display = 'flex';
-    button.style.justifyContent = 'center';
-    button.style.alignItems = 'center';
-    button.style.fontSize = '24px';
-    button.style.fontWeight = 'bold';
-    button.style.cursor = 'pointer';
-    button.style.userSelect = 'none';
-    button.style.border = '2px solid rgba(255, 255, 255, 0.3)';
-    
-    // Add touch event listeners
-    button.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-        button.style.backgroundColor = 'rgba(76, 175, 80, 0.7)';
-        handleMobileControl(dir.id);
-    });
-    
-    button.addEventListener('touchend', (e) => {
-        e.preventDefault();
-        button.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-    });
-    
-    mobileControlsContainer.appendChild(button);
+// Initialize the joystick
+const joystick = nipplejs.create({
+    zone: joystickContainer,
+    mode: 'static',
+    position: { left: '50%', bottom: '50%' },
+    color: 'green',
+    size: 100
+});
+
+// Map joystick movements to snake direction
+joystick.on('dir:up', () => {
+    if (direction !== 'down') nextDirection = 'up';
+});
+
+joystick.on('dir:down', () => {
+    if (direction !== 'up') nextDirection = 'down';
+});
+
+joystick.on('dir:left', () => {
+    if (direction !== 'right') nextDirection = 'left';
+});
+
+joystick.on('dir:right', () => {
+    if (direction !== 'left') nextDirection = 'right';
 });
 
 // Create mobile menu buttons container
@@ -2155,8 +2166,8 @@ document.body.appendChild(mobileMenuContainer);
 
 // Create mobile menu buttons
 const menuButtons = [
-    { id: 'minimap', symbol: 'M', title: 'Toggle Minimap' },
-    { id: 'leaderboard', symbol: 'L', title: 'Toggle Leaderboard' }
+    // { id: 'minimap', symbol: 'M', title: 'Toggle Minimap' },
+    // { id: 'leaderboard', symbol: 'L', title: 'Toggle Leaderboard' }
 ];
 
 menuButtons.forEach((btn, index) => {
@@ -2234,184 +2245,12 @@ function detectTouchDevice() {
                           navigator.msMaxTouchPoints > 0;
     
     if (isTouchDevice) {
-        mobileControlsContainer.style.display = 'block';
+        joystickContainer.style.display = 'block'; // Ensure the joystick is visible
         mobileMenuContainer.style.display = 'flex';
         mobileMenuContainer.style.flexDirection = 'column';
-        
-        // Add swipe controls for additional input method
-        setupSwipeControls();
     }
 }
 
-// Setup swipe controls for the game area
-    
-function setupSwipeControls() {
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let touchEndX = 0;
-    let touchEndY = 0;
-    let lastSwipeTime = 0;
-    const minSwipeDistance = 20; // Reduced minimum distance for easier detection
-    const swipeCooldown = 100; // Milliseconds between swipes
-    
-    // Track swipe during movement to better detect intent
-    let isTracking = false;
-    let currentDx = 0;
-    let currentDy = 0;
-    
-    // Apply swipe controls to the entire document to catch edge swipes
-    document.addEventListener('touchstart', function(e) {
-        touchStartX = e.changedTouches[0].screenX;
-        touchStartY = e.changedTouches[0].screenY;
-        isTracking = true;
-        currentDx = 0;
-        currentDy = 0;
-    }, { passive: false });
-    
-    document.addEventListener('touchmove', function(e) {
-        if (!isTracking || !gameRunning) return;
-        
-        const touchX = e.changedTouches[0].screenX;
-        const touchY = e.changedTouches[0].screenY;
-        currentDx = touchX - touchStartX;
-        currentDy = touchY - touchStartY;
-        
-        // Prevent scrolling during gameplay
-        if (gameRunning) {
-            e.preventDefault();
-        }
-    }, { passive: false });
-    
-    document.addEventListener('touchend', function(e) {
-        if (!isTracking) return;
-        isTracking = false;
-        
-        // Get current timestamp to check cooldown
-        const now = Date.now();
-        if (now - lastSwipeTime < swipeCooldown) return;
-        
-        touchEndX = e.changedTouches[0].screenX;
-        touchEndY = e.changedTouches[0].screenY;
-        
-        // Calculate horizontal and vertical distances
-        const dx = touchEndX - touchStartX;
-        const dy = touchEndY - touchStartY;
-        const absDx = Math.abs(dx);
-        const absDy = Math.abs(dy);
-        
-        // Ensure minimum distance for intentional swipe
-        if (Math.max(absDx, absDy) < minSwipeDistance) return;
-        
-        let newDirection = null;
-        
-        // Use a simpler and more forgiving approach: check which absolute distance is greater
-        if (absDx > absDy) {
-            // Horizontal swipe is dominant
-            newDirection = dx > 0 ? 'right' : 'left';
-        } else {
-            // Vertical swipe is dominant
-            newDirection = dy > 0 ? 'down' : 'up';
-        }
-        
-        // Only trigger if new direction is valid (not directly opposite current direction)
-        if ((newDirection === 'left' && direction !== 'right') ||
-            (newDirection === 'right' && direction !== 'left') ||
-            (newDirection === 'up' && direction !== 'down') ||
-            (newDirection === 'down' && direction !== 'up')) {
-            
-            nextDirection = newDirection;
-            lastSwipeTime = now;
-            
-            // Give immediate visual feedback
-            const flashIndicator = document.createElement('div');
-            flashIndicator.className = 'temp-game-element';
-            flashIndicator.style.cssText = `
-                position: fixed;
-                width: 80px;
-                height: 80px;
-                background-color: rgba(76, 175, 80, 0.3);
-                border-radius: 50%;
-                pointer-events: none;
-                z-index: 2000;
-                opacity: 0.7;
-                transform: translate(-50%, -50%);
-                box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
-                left: ${touchEndX}px;
-                top: ${touchEndY}px;
-                transition: opacity 0.3s ease, transform 0.3s ease;
-            `;
-            document.body.appendChild(flashIndicator);
-            
-            // Show directional indicator
-            showSwipeDirectionIndicator(newDirection, touchEndX, touchEndY);
-            
-            // Trigger scale animation
-            setTimeout(() => {
-                flashIndicator.style.opacity = '0';
-                flashIndicator.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            }, 10);
-            
-            // Remove after animation
-            setTimeout(() => {
-                if (document.body.contains(flashIndicator)) {
-                    document.body.removeChild(flashIndicator);
-                }
-            }, 300);
-        }
-    }, { passive: false });
-    
-    // Cancel tracking if touch is canceled
-    document.addEventListener('touchcancel', function() {
-        isTracking = false;
-    }, { passive: true });
-    
-    // Show a directional indicator to give feedback about the swipe direction
-    function showSwipeDirectionIndicator(direction, x, y) {
-        const indicator = document.createElement('div');
-        indicator.className = 'temp-game-element swipe-direction-indicator';
-        
-        // Set the arrow character based on direction
-        let arrow = '↑';
-        if (direction === 'down') arrow = '↓';
-        if (direction === 'left') arrow = '←';
-        if (direction === 'right') arrow = '→';
-        
-        indicator.style.cssText = `
-            position: fixed;
-            left: ${x}px;
-            top: ${y}px;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-            background-color: rgba(76, 175, 80, 0.7);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            pointer-events: none;
-            z-index: 2001;
-            opacity: 0;
-            transition: opacity 0.1s ease-out, transform 0.2s ease-out;
-            animation: swipe-${direction}-anim 0.5s ease-out forwards;
-        `;
-        
-        indicator.textContent = arrow;
-        document.body.appendChild(indicator);
-        
-        setTimeout(() => {
-            indicator.style.opacity = '1';
-        }, 10);
-        
-        setTimeout(() => {
-            if (document.body.contains(indicator)) {
-                document.body.removeChild(indicator);
-            }
-        }, 500);
-    }
-}
 
 // Add CSS for mobile controls
 const mobileControlsStyle = document.createElement('style');
@@ -2614,3 +2453,4 @@ function updatePowerUpStatus() {
         powerUpCountdownBar.style.animation = '';
     }
 }
+window.addEventListener('resize', adjustCanvasSize);
