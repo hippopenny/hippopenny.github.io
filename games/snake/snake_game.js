@@ -302,7 +302,7 @@ function toggleMinimap() {
     }
 }
 
-let socket = new WebSocket('ws://127.0.0.1:8080');
+let socket = new WebSocket('https://snake.hippopenny.com');
 
 socket.onopen = () => {
     playerId = Date.now().toString();
@@ -1360,12 +1360,6 @@ function gameOver(reason = 'collision') {
     
     finalScoreDisplay.textContent = `Score: ${score} (Best: ${highestScore})`;
     finalLevelDisplay.textContent = `Level: ${level}`;
-    gameOverScreen.style.display = 'block';
-    
-    // Store high scores locally
-    if (score > localStorage.getItem('snake_highest_score') || !localStorage.getItem('snake_highest_score')) {
-        localStorage.setItem('snake_highest_score', score);
-    }
     
     if (socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
@@ -2454,3 +2448,12 @@ function updatePowerUpStatus() {
     }
 }
 window.addEventListener('resize', adjustCanvasSize);
+
+// Export functions for testing
+module.exports = {
+    moveSnake,
+    checkCollisions,
+    updateScoreAndLevel,
+    deactivatePowerUp,
+    gameOver
+};
