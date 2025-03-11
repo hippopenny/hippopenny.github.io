@@ -25,6 +25,14 @@ header:
 
 
 feature_row:    
+  - image_path: /assets/images/snake/snake.png
+    alt: "Classic Snake Game With Multiplayers"
+    title: "Classic Snake Game With online players"
+    excerpt: "Remastered classic snake game, but now online, you can please alone or with massive multi players on web! Vibe coding with AI! Want to add anything to the game, send us a message; We will be happy to do so!"
+    url:  /games/snake/
+    btn_class: "btn--primary"
+    btn_label: "Play"
+
   - image_path: /assets/images/wackywisher/1.png
     alt: "Wacky Wisher all new Silly Wisher for Genshin Impact plus Genlatro Balatro"
     title: "Wacky Wisher: New Silly Genshin Wisher plus Free Balatro"
