@@ -702,16 +702,11 @@ function initGame() {
         soundManager.init();
     }
     
-    // Preload game sounds that will be needed shortly
-    soundManager.ensureLoaded('eat');
-    soundManager.ensureLoaded('move');
-    soundManager.ensureLoaded('teleport');
+    // All sounds are already preloaded during sound manager initialization
     
-    // Only play background music when not in test mode
-    if (!window.location.href.includes('test') && !window.location.href.includes('localhost:3000')) {
-        console.log("Playing background music");
-        soundManager.playBackgroundMusic();
-    }
+    // Play background music
+    console.log("Playing background music");
+    soundManager.playBackgroundMusic();
     
     // Start the snake at a reasonable position in the larger map
     const centerX = Math.floor(GRID_SIZE / 2);
@@ -2006,6 +2001,22 @@ function cleanupGame() {
         joystickContainer.style.display = 'none';
     }
     
+    // Remove any hunger warning elements that might be lingering
+    const hungerWarnings = document.querySelectorAll('div[textContent="HUNGRY!"]');
+    hungerWarnings.forEach(el => {
+        if (document.body.contains(el)) {
+            document.body.removeChild(el);
+        }
+    });
+    
+    // Remove vignette effects that might be lingering
+    const vignettes = document.querySelectorAll('div[style*="box-shadow: inset 0 0 150px rgba(244, 67, 54"]');
+    vignettes.forEach(el => {
+        if (document.body.contains(el)) {
+            document.body.removeChild(el);
+        }
+    });
+    
     // Clear any pending timeouts
     const highestId = setTimeout(() => {}, 0);
     for (let i = highestId; i >= highestId - 100; i--) {
@@ -2126,17 +2137,7 @@ function gameOver(reason = 'collision') {
             document.head.appendChild(style);
         }
         
-        // Preload additional sounds that might be needed for restart
-        setTimeout(() => {
-            soundManager.ensureLoaded('levelUp');
-            soundManager.ensureLoaded('powerUp');
-            soundManager.ensureLoaded('background');
-            // Reduce loading time for better test performance
-            if (window.location.href.includes('test') || window.location.href.includes('localhost:3000')) {
-                baseGameSpeed = 50; // Make tests run faster
-                INTERPOLATION_STEPS = 4; // Reduce animation steps for tests
-            }
-        }, 1000);
+        // All sounds are already preloaded
         
         finalScoreDisplay.textContent = `Score: ${score} (Best: ${highestScore})`;
         finalLevelDisplay.textContent = `Level: ${level}`;
@@ -2347,6 +2348,16 @@ function shakeScreen(intensity, duration) {
     requestAnimationFrame(shake);
 }
 
+// Array to store decorative elements
+let decorativeElements = [];
+
+// Define decorative element types
+const DECORATIVE_TYPES = [
+    { name: 'crystal', color: '#9C27B0', size: [20, 40] },
+    { name: 'rock', color: '#607D8B', size: [15, 30] },
+    { name: 'flower', color: '#E91E63', size: [10, 25] }
+];
+
 function initBackgroundElements() {
     backgroundElements = [];
     
@@ -2365,6 +2376,60 @@ function initBackgroundElements() {
             backgroundElements.push(element);
         }
     });
+    
+    // Initialize decorative elements across the map
+    generateDecorativeElements();
+}
+
+// Generate decorative elements throughout the map
+function generateDecorativeElements() {
+    decorativeElements = [];
+    const MAX_ELEMENTS = 40; // Limited for performance
+    
+    // Generate a few paths across the map
+    const pathCount = 3;
+    
+    for (let p = 0; p < pathCount; p++) {
+        // Create a curving path with elements
+        const startX = Math.floor(Math.random() * GRID_SIZE);
+        const startY = Math.floor(Math.random() * GRID_SIZE);
+        let x = startX;
+        let y = startY;
+        
+        // Generate a random angle for this path
+        const baseAngle = Math.random() * Math.PI * 2;
+        
+        // Each path has a number of segments
+        const segmentCount = 15; // Limited for performance
+        
+        for (let i = 0; i < segmentCount && decorativeElements.length < MAX_ELEMENTS; i++) {
+            // Select random element type
+            const typeIndex = Math.floor(Math.random() * DECORATIVE_TYPES.length);
+            const type = DECORATIVE_TYPES[typeIndex];
+            
+            // Add element with variation
+            decorativeElements.push({
+                x: x * CELL_SIZE,
+                y: y * CELL_SIZE,
+                type: type.name,
+                color: type.color,
+                size: Math.random() * (type.size[1] - type.size[0]) + type.size[0],
+                rotation: Math.random() * Math.PI,
+                opacity: 0.4 + Math.random() * 0.4
+            });
+            
+            // Move position with some randomness for a natural path
+            const angle = baseAngle + (Math.random() - 0.5) * 0.8;
+            const distance = 10 + Math.random() * 20;
+            
+            x = Math.floor(x + Math.cos(angle) * distance / CELL_SIZE);
+            y = Math.floor(y + Math.sin(angle) * distance / CELL_SIZE);
+            
+            // Keep within grid bounds
+            x = Math.max(0, Math.min(GRID_SIZE - 1, x));
+            y = Math.max(0, Math.min(GRID_SIZE - 1, y));
+        }
+    }
 }
 
 function drawEnhancedBackground() {
@@ -2377,6 +2442,133 @@ function drawEnhancedBackground() {
     gradient.addColorStop(1, '#060614');
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Draw the texts at fixed positions in the world coordinates
+    ctx.save();
+    
+    // Apply camera transformation to place texts at fixed world positions
+    ctx.translate(-Math.floor(camera.x), -Math.floor(camera.y));
+    
+    // "Hippo Penny" text at multiple locations
+    ctx.globalAlpha = 0.05;
+    ctx.font = 'bold 80px Arial';
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    
+    // Center Hippo Penny
+    let hippoPennyX = 200 * CELL_SIZE;
+    let hippoPennyY = 200 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(hippoPennyX, hippoPennyY);
+    ctx.rotate(Math.PI / 30);
+    ctx.fillText('Hippo Penny', 0, 0);
+    ctx.restore();
+    
+    // Top-left Hippo Penny
+    hippoPennyX = 75 * CELL_SIZE;
+    hippoPennyY = 75 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(hippoPennyX, hippoPennyY);
+    ctx.rotate(Math.PI / 20);
+    ctx.fillText('Hippo Penny', 0, 0);
+    ctx.restore();
+    
+    // Bottom-right Hippo Penny
+    hippoPennyX = 325 * CELL_SIZE;
+    hippoPennyY = 325 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(hippoPennyX, hippoPennyY);
+    ctx.rotate(-Math.PI / 25);
+    ctx.fillText('Hippo Penny', 0, 0);
+    ctx.restore();
+    
+    // "Grok" text at top-left area of the map
+    ctx.globalAlpha = 0.04;
+    ctx.font = 'bold 60px Arial';
+    ctx.fillStyle = '#8A2BE2'; // Blue-violet color
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    const grokX = 50 * CELL_SIZE;
+    const grokY = 50 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(grokX, grokY);
+    ctx.rotate(-Math.PI / 40);
+    ctx.fillText('Grok', 0, 0);
+    ctx.restore();
+    
+    // "Pepsi" text at bottom-left area of the map
+    ctx.globalAlpha = 0.05;
+    ctx.font = 'bold 70px Arial';
+    ctx.fillStyle = '#0000FF'; // Blue color
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'bottom';
+    const pepsiX = 100 * CELL_SIZE;
+    const pepsiY = 300 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(pepsiX, pepsiY);
+    ctx.rotate(Math.PI / 45);
+    ctx.fillText('Pepsi', 0, 0);
+    ctx.restore();
+    
+    // "Suika" text at middle-right area of the map
+    ctx.globalAlpha = 0.045;
+    ctx.font = 'bold 65px Arial';
+    ctx.fillStyle = '#50C878'; // Emerald green color
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    const suikaX = 300 * CELL_SIZE;
+    const suikaY = 200 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(suikaX, suikaY);
+    ctx.rotate(-Math.PI / 30);
+    ctx.fillText('Suika', 0, 0);
+    ctx.restore();
+    
+    // "Wacky Wisher" text at bottom-right area of the map
+    ctx.globalAlpha = 0.05;
+    ctx.font = 'italic bold 45px Arial';
+    ctx.fillStyle = '#FF6347'; // Tomato color
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'bottom';
+    const wackyX = 350 * CELL_SIZE;
+    const wackyY = 350 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(wackyX, wackyY);
+    ctx.rotate(Math.PI / 25);
+    ctx.fillText('Wacky Wisher', 0, 0);
+    ctx.restore();
+    
+    // "Wacky Warper" text at top-center area of the map
+    ctx.globalAlpha = 0.04;
+    ctx.font = 'italic bold 50px Arial';
+    ctx.fillStyle = '#FF1493'; // Deep pink color
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+    const warperX = 200 * CELL_SIZE;
+    const warperY = 75 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(warperX, warperY);
+    ctx.rotate(Math.PI / 35);
+    ctx.fillText('Wacky Warper', 0, 0);
+    ctx.restore();
+    
+    // "McDonald" text at top-right area of the map
+    ctx.globalAlpha = 0.04;
+    ctx.font = 'bold 50px Arial';
+    ctx.fillStyle = '#FFD700'; // Gold color
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'top';
+    const mcdonaldX = 350 * CELL_SIZE;
+    const mcdonaldY = 50 * CELL_SIZE;
+    ctx.save();
+    ctx.translate(mcdonaldX, mcdonaldY);
+    ctx.rotate(Math.PI / 35);
+    ctx.fillText('McDonald', 0, 0);
+    ctx.restore();
+    
+    // Restore the context to remove translation
+    ctx.restore();
     
     // Add subtle pulsing to background
     const pulseIntensity = 0.03 * Math.sin(Date.now() / 3000);
@@ -2458,35 +2650,53 @@ function drawEnhancedBackground() {
         ctx.restore();
     });
     
-    // Add enhanced grid pattern that shifts with camera
+    // Draw cosmic web pattern with swirling lines and connecting nodes
     ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
     ctx.lineWidth = 1;
     
-    const gridStep = 100;
-    const offsetX = -camera.x * 0.1 % gridStep;
-    const offsetY = -camera.y * 0.1 % gridStep;
+    // Create a pseudo-random pattern that appears consistent when scrolling
+    const seed = Math.floor(camera.x * 0.01) + Math.floor(camera.y * 0.01) * 100;
+    const gridSize = 180;
+    const offsetX = -camera.x * 0.1 % gridSize;
+    const offsetY = -camera.y * 0.1 % gridSize;
     
-    // Create hexagonal grid pattern instead of square
-    const hexHeight = gridStep;
-    const hexWidth = gridStep * 0.866; // cos(30°) * 2 * height
-    
-    for (let y = -hexHeight; y < canvas.height + hexHeight; y += hexHeight * 0.75) {
-        const rowOffset = Math.floor(y / (hexHeight * 0.75)) % 2 === 0 ? 0 : hexWidth * 0.5;
-        for (let x = -hexWidth; x < canvas.width + hexWidth; x += hexWidth) {
-            ctx.beginPath();
-            for (let i = 0; i < 6; i++) {
-                const angle = 2 * Math.PI / 6 * i;
-                const hx = x + rowOffset + offsetX + hexWidth * 0.5 * Math.cos(angle);
-                const hy = y + offsetY + hexHeight * 0.5 * Math.sin(angle);
-                if (i === 0) {
-                    ctx.moveTo(hx, hy);
-                } else {
-                    ctx.lineTo(hx, hy);
-                }
-            }
-            ctx.closePath();
-            ctx.stroke();
+    // Draw flowing cosmic web threads
+    for (let i = 0; i < 10; i++) {
+        const loopSeed = (seed + i * 123) % 1000;
+        ctx.beginPath();
+        
+        // Create flowing curves that move through the viewport
+        let x = ((loopSeed * 7) % canvas.width) + offsetX;
+        let y = ((loopSeed * 13) % canvas.height) + offsetY;
+        ctx.moveTo(x, y);
+        
+        // Add curved segments to create flowing lines
+        for (let j = 0; j < 5; j++) {
+            const nextX = x + Math.sin((loopSeed + j * 50) / 100) * 100;
+            const nextY = y + Math.cos((loopSeed + j * 70) / 100) * 100;
+            const cpX1 = x + Math.sin((loopSeed + j * 20) / 100) * 50;
+            const cpY1 = y + Math.cos((loopSeed + j * 30) / 100) * 50;
+            const cpX2 = nextX - Math.sin((loopSeed + j * 40) / 100) * 50;
+            const cpY2 = nextY - Math.cos((loopSeed + j * 60) / 100) * 50;
+            
+            ctx.bezierCurveTo(cpX1, cpY1, cpX2, cpY2, nextX, nextY);
+            x = nextX;
+            y = nextY;
         }
+        ctx.stroke();
+    }
+    
+    // Add connection nodes at intersections
+    for (let i = 0; i < 15; i++) {
+        const nodeSeed = (seed + i * 321) % 1000;
+        const x = ((nodeSeed * 11) % canvas.width) + offsetX;
+        const y = ((nodeSeed * 17) % canvas.height) + offsetY;
+        const size = 1 + (nodeSeed % 3);
+        
+        ctx.beginPath();
+        ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
+        ctx.fill();
     }
 }
 
@@ -3149,7 +3359,7 @@ function updatePlayersCount() {
 startBtn.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("Start button clicked");
-    soundManager.play('menuClick');
+    soundManager.play('menuSelect');
     startScreen.style.display = 'none';
     canvas.style.display = 'block';
     if (!gameRunning) {
@@ -3159,7 +3369,7 @@ startBtn.addEventListener('click', function(e) {
 });
 
 restartBtn.addEventListener('click', () => {
-    soundManager.play('menuClick');
+    soundManager.play('menuSelect');
     gameOverScreen.style.display = 'none';
     initGame();
 });
@@ -3697,6 +3907,7 @@ function showHungerWarning() {
     }
     
     const warning = document.createElement('div');
+    warning.className = 'temp-game-element'; // Add class for easy cleanup
     warning.textContent = 'HUNGRY!';
     warning.style.position = 'absolute';
     warning.style.top = '50%';
@@ -3713,6 +3924,7 @@ function showHungerWarning() {
     
     // Add a subtle screen vignette effect when hungry
     const vignette = document.createElement('div');
+    vignette.className = 'temp-game-element'; // Add class for easy cleanup
     vignette.style.position = 'absolute';
     vignette.style.top = '0';
     vignette.style.left = '0';
@@ -3727,14 +3939,25 @@ function showHungerWarning() {
     let opacity = 0.9;
     const fadeInterval = setInterval(() => {
         opacity -= 0.05;
-        warning.style.opacity = opacity;
-        vignette.style.opacity = opacity;
+        if (warning && document.body.contains(warning)) {
+            warning.style.opacity = opacity;
+        }
+        if (vignette && document.body.contains(vignette)) {
+            vignette.style.opacity = opacity;
+        }
         if (opacity <= 0) {
             clearInterval(fadeInterval);
-            document.body.removeChild(warning);
-            document.body.removeChild(vignette);
+            if (warning && document.body.contains(warning)) {
+                document.body.removeChild(warning);
+            }
+            if (vignette && document.body.contains(vignette)) {
+                document.body.removeChild(vignette);
+            }
         }
     }, 50);
+    
+    // Store the interval ID so we can clear it during cleanup
+    warning.fadeIntervalId = fadeInterval;
     
     // Add screen shake effect for critical hunger
     if (hungerTimer < HUNGER_WARNING_THRESHOLD * 0.5) {
@@ -4215,16 +4438,143 @@ document.head.appendChild(mobileControlsStyle);
 // Call the detection function when the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initSettings();
-    
-    // Fast initialization for tests
-    if (window.location.href.includes('test') || window.location.href.includes('localhost:3000')) {
-        console.log("Test environment detected, using faster initialization");
-        baseGameSpeed = 50; // Make tests run faster
-        INTERPOLATION_STEPS = 4; // Reduce animation steps for tests
-    }
 });
 
 // The click handler for startBtn is already defined earlier in the file
+
+// Draw decorative elements that are within the viewport
+function drawDecorativeElements() {
+    // Only process elements that could be visible
+    for (const element of decorativeElements) {
+        // Skip if element is outside viewport
+        if (element.x + element.size < camera.x || 
+            element.x > camera.x + VIEWPORT_WIDTH ||
+            element.y + element.size < camera.y || 
+            element.y > camera.y + VIEWPORT_HEIGHT) {
+            continue;
+        }
+        
+        // Draw based on element type
+        switch(element.type) {
+            case 'crystal':
+                drawCrystal(element);
+                break;
+            case 'rock':
+                drawRock(element);
+                break;
+            case 'flower':
+                drawFlower(element);
+                break;
+        }
+    }
+}
+
+// Draw a crystal formation
+function drawCrystal(element) {
+    ctx.save();
+    ctx.translate(element.x + element.size/2, element.y + element.size/2);
+    ctx.rotate(element.rotation);
+    
+    // Draw crystal shape
+    ctx.fillStyle = `rgba(${hexToRgb(element.color)}, ${element.opacity})`;
+    ctx.beginPath();
+    
+    // Simple crystal shape (hexagonal)
+    for (let i = 0; i < 6; i++) {
+        const angle = (i / 6) * Math.PI * 2;
+        const x = Math.cos(angle) * element.size/2;
+        const y = Math.sin(angle) * element.size/2;
+        
+        if (i === 0) {
+            ctx.moveTo(x, y);
+        } else {
+            ctx.lineTo(x, y);
+        }
+    }
+    
+    ctx.closePath();
+    ctx.fill();
+    
+    // Add highlight
+    ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    
+    ctx.restore();
+}
+
+// Draw a rock formation
+function drawRock(element) {
+    ctx.save();
+    ctx.translate(element.x + element.size/2, element.y + element.size/2);
+    ctx.rotate(element.rotation);
+    
+    // Draw rock shape (irregular oval)
+    ctx.fillStyle = `rgba(${hexToRgb(element.color)}, ${element.opacity})`;
+    ctx.beginPath();
+    
+    // Draw an irregular boulder shape
+    const points = 7;
+    for (let i = 0; i < points; i++) {
+        const angle = (i / points) * Math.PI * 2;
+        const radius = element.size/2 * (0.8 + Math.sin(i * 3) * 0.2);
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+        
+        if (i === 0) {
+            ctx.moveTo(x, y);
+        } else {
+            ctx.lineTo(x, y);
+        }
+    }
+    
+    ctx.closePath();
+    ctx.fill();
+    
+    // Add shadow
+    ctx.shadowColor = 'rgba(0,0,0,0.2)';
+    ctx.shadowBlur = 5;
+    ctx.shadowOffsetX = 3;
+    ctx.shadowOffsetY = 3;
+    
+    ctx.restore();
+}
+
+// Draw a flower formation
+function drawFlower(element) {
+    ctx.save();
+    ctx.translate(element.x + element.size/2, element.y + element.size/2);
+    
+    // Draw flower petals
+    const petalCount = 5;
+    const petalLength = element.size / 2;
+    const innerRadius = element.size / 6;
+    
+    for (let i = 0; i < petalCount; i++) {
+        const angle = (i / petalCount) * Math.PI * 2 + element.rotation;
+        
+        // Draw petal
+        ctx.fillStyle = `rgba(${hexToRgb(element.color)}, ${element.opacity})`;
+        ctx.beginPath();
+        ctx.ellipse(
+            Math.cos(angle) * petalLength/2, 
+            Math.sin(angle) * petalLength/2,
+            petalLength, 
+            petalLength/3,
+            angle,
+            0, Math.PI * 2
+        );
+        ctx.fill();
+    }
+    
+    // Draw center
+    ctx.fillStyle = `rgba(255, 255, 150, ${element.opacity + 0.2})`;
+    ctx.beginPath();
+    ctx.arc(0, 0, innerRadius, 0, Math.PI * 2);
+    ctx.fill();
+    
+    ctx.restore();
+}
 
 function getPowerUpIcon(type) {
     switch (type) {
@@ -4234,4 +4584,3 @@ function getPowerUpIcon(type) {
         default: return '✨';
     }
 }
-// Add a new maze-like structure

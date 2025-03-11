@@ -28,7 +28,7 @@ feature_row:
   - image_path: /assets/images/snake/snake.png
     alt: "Classic Snake Game With Multiplayers"
     title: "Classic Snake Game With online players"
-    excerpt: "Remastered classic snake game, but now online, you can please alone or with massive multi players on web! Vibe coding with AI! Want to add anything to the game, send us a message; We will be happy to do so!"
+    excerpt: "Remastered classic snake game, but now online, you can please alone or with massive multi players on web! Want to add anything to the game, send us a message; We will be happy to do so!"
     url:  /games/snake/
     btn_class: "btn--primary"
     btn_label: "Play"

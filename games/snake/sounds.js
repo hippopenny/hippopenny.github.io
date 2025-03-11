@@ -7,37 +7,31 @@ class SoundManager {
         this.initialized = false;
         this.soundPaths = {
             'eat': 'sounds/eat.mp3',
-            'gameOver': 'sounds/gameoverFull.wav',
+            'gameOver': 'sounds/gameover.mp3',
             'powerUp': 'sounds/powerup.wav',
             'move': 'sounds/click.wav',
             'select': 'sounds/select.wav',
-            'levelUp': 'sounds/levelup.mp3',
-            'levelComplete': 'sounds/levelcomplete.mp3',
+            'levelUp': 'sounds/levelcomplete.mp3',
             'collision': 'sounds/notification.wav',
             'menuSelect': 'sounds/menuSelect.wav',
-            'menuClick': 'sounds/click.wav',
             'teleport': 'sounds/transition.wav',
             'heartbeat': 'sounds/heartbeat.mp3',
-            'background': 'sounds/backgroundMusic.wav',
-            'bonus': 'sounds/bonus.wav',
-            'ambient': 'sounds/ambient.wav'
+            'background': 'sounds/backgroundMusic.mp3',
+            'bonus': 'sounds/bonus.wav'
         };
         
         // Preload common UI sounds and background music
-        this.commonSounds = ['menuClick', 'menuSelect', 'select', 'background'];
+        this.commonSounds = ['menuSelect', 'menuSelect', 'select', 'background'];
         this.backgroundMusic = null; // Store reference to background music
     }
 
     init() {
         if (this.initialized) return;
         
-        // Preload only essential sounds initially
-        this.commonSounds.forEach(sound => {
-            this.load(sound, this.soundPaths[sound]);
-        });
-        
-        // Create mute/unmute button
-        this.createMuteButton();
+        // Preload ALL sounds for better game experience
+        for (const soundName in this.soundPaths) {
+            this.load(soundName, this.soundPaths[soundName]);
+        }
         
         this.initialized = true;
     }
@@ -170,40 +164,7 @@ class SoundManager {
         muteButton.title = this.muted ? 'Unmute' : 'Mute';
     }
     
-    // Create a mute button in the top-right corner
-    createMuteButton() {
-        // Remove existing button if any
-        const existingButton = document.getElementById('mute-button');
-        if (existingButton) {
-            existingButton.remove();
-        }
-        
-        const muteButton = document.createElement('button');
-        muteButton.id = 'mute-button';
-        muteButton.textContent = this.muted ? '🔇' : '🔊';
-        muteButton.title = this.muted ? 'Unmute' : 'Mute';
-        muteButton.style.position = 'absolute';
-        muteButton.style.top = '10px';
-        muteButton.style.right = '10px';
-        muteButton.style.fontSize = '24px';
-        muteButton.style.width = '40px';
-        muteButton.style.height = '40px';
-        muteButton.style.borderRadius = '50%';
-        muteButton.style.border = 'none';
-        muteButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-        muteButton.style.color = 'white';
-        muteButton.style.cursor = 'pointer';
-        muteButton.style.zIndex = '1002';
-        muteButton.style.display = 'flex';
-        muteButton.style.alignItems = 'center';
-        muteButton.style.justifyContent = 'center';
-        
-        muteButton.addEventListener('click', () => {
-            this.toggleMute();
-        });
-        
-        document.body.appendChild(muteButton);
-    }
+    
     
     // Set global volume
     setVolume(level) {
