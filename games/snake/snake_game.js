@@ -361,7 +361,7 @@ function toggleMinimap() {
     }
 }
 
-let socket = new WebSocket('ws://127.0.0.1:8080');
+let socket = new WebSocket('https://snake.hippopenny.com');
 
 socket.onopen = () => {
     playerId = Date.now().toString();
