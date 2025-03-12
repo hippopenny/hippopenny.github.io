@@ -36,14 +36,13 @@ const FRAME_INTERVAL = 1000 / FIXED_FRAME_RATE; // ~16.7ms between frames
 let frameAccumulator = 0;
 let interpolationAlpha = 0; // Current interpolation factor
 
-// Parallax background layers
-const BACKGROUND_LAYERS = [
-    { color: '#0d0d2a', speed: 0.05, elements: 150, size: [1, 3], type: 'star' },
-    { color: '#1a1a4f', speed: 0.1, elements: 80, size: [2, 4], type: 'star' },
-    { color: '#7251b5', speed: 0.15, elements: 40, size: [3, 6], type: 'nebula' },
-    { color: '#34346e', speed: 0.2, elements: 15, size: [80, 120], type: 'cloud' }
-];
-let backgroundElements = [];
+// Background configuration (simplified for cached approach)
+const BACKGROUND_CONFIG = {
+    baseColor: '#0f0f1a',
+    starColor: '#ffffff',
+    nebulaColors: ['#7251b5', '#34346e', '#1a1a4f']
+};
+let backgroundElements = []; // Keeping for compatibility
 
 // Wall configuration
 let WALLS = []; // Changed to let so it can be updated from server
@@ -54,6 +53,26 @@ const WALL_COLOR = '#444';
 let safeZoneActive = false;
 let safeZoneExpiry = 0;
 const SAFE_ZONE_DURATION = 7000; // Safe zone protection lasts 7 seconds
+
+const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// 1. Completely disable shadows on mobile - will be called after ctx is initialized
+function applyGraphicsSettings() {
+    if (isMobile && ctx) {
+        try {
+            // Replace ALL shadow operations with this empty function
+            const originalShadowBlur = ctx.__proto__.__lookupSetter__('shadowBlur');
+            Object.defineProperty(ctx.__proto__, 'shadowBlur', {
+                set: function(val) { /* Do nothing - shadows disabled */ },
+                get: function() { return 0; }
+            });
+        } catch (e) {
+            console.log("Failed to modify canvas shadows:", e);
+        }
+    }
+}
+// Will call this after canvas is initialized
+
 
 // Add easing function for smoother animations
 function easeInOutCubic(t) {
@@ -103,6 +122,12 @@ const MAX_PARTICLES = 15;
 
 // Function to create particles
 function createParticles(x, y, color, count, speed, size, lifetime) {
+    if (isMobile) {
+        // Either skip particles entirely or use minimal count
+        if (Math.random() > 0.5) return; // Only create 30% of particles
+        count = Math.min(2, count); // Never more than 2 particles
+    }
+
     // Limit count if we're approaching MAX_PARTICLES
     if (particles.length > MAX_PARTICLES * 0.8) {
         count = Math.min(count, 5); // Reduce particle count when near limit
@@ -171,6 +196,140 @@ function hexToRgb(hex) {
     const b = parseInt(hex.substring(4, 6), 16);
     
     return `${r}, ${g}, ${b}`;
+}
+
+// Background text cache system
+const bgTextCache = {
+    initialized: false,
+    canvases: [],
+    lastCameraX: 0,
+    lastCameraY: 0,
+};
+
+// Initialize the text canvases once
+function initBackgroundTextCache() {
+    if (bgTextCache.initialized) return;
+    
+    // Define text elements to be rendered
+    const textElements = [
+        { text: 'Hippo Penny', size: 80, color: '#ffffff', opacity: 0.3, positions: [
+            { x: 200 * CELL_SIZE, y: 200 * CELL_SIZE, rotation: Math.PI / 30 },
+            { x: 75 * CELL_SIZE, y: 75 * CELL_SIZE, rotation: Math.PI / 20 },
+            { x: 325 * CELL_SIZE, y: 325 * CELL_SIZE, rotation: -Math.PI / 25 }
+        ]},
+        { text: 'Grok', size: 80, color: '#8A2BE2', opacity: 0.35, positions: [
+            { x: 50 * CELL_SIZE, y: 50 * CELL_SIZE, rotation: -Math.PI / 40 }
+        ]},
+        { text: 'Pepsi', size: 90, color: '#0000FF', opacity: 0.35, positions: [
+            { x: 100 * CELL_SIZE, y: 300 * CELL_SIZE, rotation: Math.PI / 45 }
+        ]},
+        { text: 'Suika', size: 85, color: '#50C878', opacity: 0.35, positions: [
+            { x: 300 * CELL_SIZE, y: 200 * CELL_SIZE, rotation: -Math.PI / 30 }
+        ]},
+        { text: 'Wacky Wisher', size: 65, color: '#FF6347', opacity: 0.35, positions: [
+            { x: 350 * CELL_SIZE, y: 350 * CELL_SIZE, rotation: Math.PI / 25 }
+        ]},
+        { text: 'Wacky Warper', size: 70, color: '#FF1493', opacity: 0.35, positions: [
+            { x: 200 * CELL_SIZE, y: 75 * CELL_SIZE, rotation: Math.PI / 35 }
+        ]},
+        { text: 'McDonald', size: 70, color: '#FFD700', opacity: 0.35, positions: [
+            { x: 350 * CELL_SIZE, y: 50 * CELL_SIZE, rotation: Math.PI / 35 }
+        ]},
+        // Add a few more interesting texts
+        { text: 'Pixel Party', size: 75, color: '#9C27B0', opacity: 0.35, positions: [
+            { x: 150 * CELL_SIZE, y: 250 * CELL_SIZE, rotation: Math.PI / 25 }
+        ]},
+        { text: 'Cosmic Snake', size: 85, color: '#00BCD4', opacity: 0.35, positions: [
+            { x: 250 * CELL_SIZE, y: 150 * CELL_SIZE, rotation: -Math.PI / 20 }
+        ]},
+        { text: 'ASCII Dreams', size: 68, color: '#FF9800', opacity: 0.35, positions: [
+            { x: 370 * CELL_SIZE, y: 230 * CELL_SIZE, rotation: Math.PI / 22 }
+        ]}
+    ];
+    
+    // Create a canvas for each text position
+    textElements.forEach(element => {
+        element.positions.forEach(position => {
+            // Create canvas sized to contain the text
+            const tempCanvas = document.createElement('canvas');
+            const tempCtx = tempCanvas.getContext('2d');
+            
+            // Set canvas size based on text size (with padding)
+            const padding = element.size * 2;
+            tempCanvas.width = element.size * element.text.length + padding;
+            tempCanvas.height = element.size * 2 + padding;
+            
+            // Clear canvas with transparent background
+            tempCtx.clearRect(0, 0, tempCanvas.width, tempCanvas.height);
+            
+            // Set text properties
+            tempCtx.save();
+            tempCtx.translate(tempCanvas.width / 2, tempCanvas.height / 2);
+            tempCtx.rotate(position.rotation);
+            tempCtx.globalAlpha = element.opacity;
+            tempCtx.fillStyle = element.color;
+            tempCtx.font = `${element.size < 65 ? 'italic' : ''} bold ${element.size}px Arial`;
+            tempCtx.textAlign = 'center';
+            tempCtx.textBaseline = 'middle';
+            
+            // Draw text stroke for better visibility
+            tempCtx.strokeStyle = 'rgba(0,0,0,0.5)';
+            tempCtx.lineWidth = 3;
+            tempCtx.strokeText(element.text, 0, 0);
+            
+            // Draw text to the canvas
+            tempCtx.fillText(element.text, 0, 0);
+            
+            // Add an outer glow for better visibility
+            tempCtx.strokeStyle = element.color;
+            tempCtx.lineWidth = 1;
+            tempCtx.globalAlpha = element.opacity * 0.5;
+            tempCtx.strokeText(element.text, 0, 0);
+            
+            tempCtx.restore();
+            
+            // Store the pre-rendered text
+            bgTextCache.canvases.push({
+                canvas: tempCanvas,
+                x: position.x - tempCanvas.width / 2,
+                y: position.y - tempCanvas.height / 2,
+                width: tempCanvas.width,
+                height: tempCanvas.height
+            });
+        });
+    });
+    
+    bgTextCache.initialized = true;
+}
+
+// Function to draw background text efficiently
+function drawBackgroundText() {
+    // Initialize cache if needed
+    if (!bgTextCache.initialized) {
+        initBackgroundTextCache();
+    }
+    
+    // Draw text canvases that are visible on screen, every frame
+    ctx.save();
+    
+    // Apply camera transformation to place texts at fixed world positions
+    ctx.translate(-Math.floor(camera.x), -Math.floor(camera.y));
+    
+    bgTextCache.canvases.forEach(item => {
+        // Check if this text would be visible in the viewport
+        if (item.x + item.width < camera.x || item.x > camera.x + VIEWPORT_WIDTH ||
+            item.y + item.height < camera.y || item.y > camera.y + VIEWPORT_HEIGHT) {
+            return; // Skip drawing this text if not visible
+        }
+        
+        // Make text visible by drawing with higher opacity
+        ctx.globalAlpha = 0.3; // Increase opacity so text is more visible
+        
+        // Draw the pre-rendered text canvas
+        ctx.drawImage(item.canvas, item.x, item.y);
+    });
+    
+    ctx.restore();
 }
 
 let heatMap = [];
@@ -377,6 +536,11 @@ socket.onmessage = (event) => {
         }
         if (data.walls) {
             WALLS = data.walls; // Update walls from server
+            
+            // Rebuild wall index when walls are updated
+            if (wallIndex.initialized) {
+                wallIndex.rebuild(WALLS);
+            }
         }
         // Check if our player has a power-up from the server
         if (players[playerId] && players[playerId].activePowerUp) {
@@ -681,6 +845,9 @@ const ctx = canvas.getContext('2d');
 canvas.width = VIEWPORT_WIDTH;
 canvas.height = VIEWPORT_HEIGHT;
 
+// Now that ctx is initialized, apply graphics settings
+applyGraphicsSettings();
+
 // Initialize leaderboard when the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize mini leaderboard
@@ -700,6 +867,13 @@ function initGame() {
     if (!soundManager.initialized) {
         console.log("Initializing sound manager");
         soundManager.init();
+    }
+    
+    // Initialize wall cache and spatial index
+    wallCache.init();
+    wallIndex.init();
+    if (WALLS.length > 0) {
+        wallIndex.rebuild(WALLS);
     }
     
     // All sounds are already preloaded during sound manager initialization
@@ -1737,11 +1911,48 @@ function sendPlayerState() {
     }
 }
 
+// Function to check for food collision and handle food consumption 
+function checkAndEatFood() {
+    // Check for food collisions
+    for (let i = 0; i < foods.length; i++) {
+        const food = foods[i];
+        if (snake[0].x === food.x && snake[0].y === food.y) {
+            // Food was eaten
+            score += food.points;
+            
+            // Track significant scores
+            if (food.points >= 10) {
+                trackBestScore(food.x, food.y, food.points);
+            }
+            
+            // Restore hunger when food is eaten
+            hungerTimer = Math.min(MAX_HUNGER, hungerTimer + (food.points * 0.8));
+            updateHungerBar();
+            
+            showFoodEffect(food);
+            
+            // Notify server about the eaten food
+            if (socket.readyState === WebSocket.OPEN) {
+                socket.send(JSON.stringify({
+                    type: 'foodEaten',
+                    id: playerId,
+                    foodIndex: i
+                }));
+            }
+            
+            updateScoreAndLevel();
+            checkLevelUp();
+            
+            return true; // Food was eaten
+        }
+    }
+    return false; // No food eaten
+}
+
 function gameStep() {
     direction = nextDirection;
     
     // Calculate hunger rate based on game speed and level
-    // Increase hunger rate by 2x and scale with game speed
     const baseHungerRate = 0.2; // Reduced from 0.3 to slow down hunger depletion
     const speedFactor = baseGameSpeed / gameSpeed; // Faster game = faster hunger
     const hungerRate = baseHungerRate * speedFactor;
@@ -1770,14 +1981,13 @@ function gameStep() {
     // Always move the snake in game step
     moveSnake();
     
-    // If speed boost is active, move the snake again immediately
-    // This effectively doubles the speed of movement
+    // Check for food after first move
+    let foodEatenFirstMove = checkAndEatFood();
+    
+    // If speed boost is active, make second movement
     if (activePowerUp && activePowerUp.type === 'speed_boost') {
-        // Store whether we're going to eat food on this move
-        const willEatFood = foods.some(food => snake[0].x === food.x && snake[0].y === food.y);
-        
-        // Remove tail for the second movement unless food will be eaten
-        if (!willEatFood) {
+        // Remove tail for the second movement unless food was eaten
+        if (!foodEatenFirstMove) {
             snake.pop();
         }
         
@@ -1792,56 +2002,16 @@ function gameStep() {
         gameOver(collisionResult.reason);
         return;
     }
-        
-    // Initialize mobile controls if needed
-    detectTouchDevice();
-        
-    // Check for food collisions
-    let foodEaten = false;
     
-    // Check each food to see if the snake head collides with it
-    for (let i = 0; i < foods.length; i++) {
-        const food = foods[i];
-        if (snake[0].x === food.x && snake[0].y === food.y) {
-            // Food was eaten
-            foodEaten = true;
-            
-            // Update score and show effects
-            score += food.points;
-            
-            // Track significant scores
-            if (food.points >= 10) {
-                trackBestScore(food.x, food.y, food.points);
-            }
-            
-            // Restore hunger when food is eaten
-            hungerTimer = Math.min(MAX_HUNGER, hungerTimer + (food.points * 0.8));
-            updateHungerBar();
-            
-            showFoodEffect(food);
-            
-            // Notify server about the eaten food
-            if (socket.readyState === WebSocket.OPEN) {
-                socket.send(JSON.stringify({
-                    type: 'foodEaten',
-                    id: playerId,
-                    foodIndex: i
-                }));
-            }
-            
-            updateScoreAndLevel();
-            checkLevelUp();
-            
-            break; // Exit the loop after eating one food
-        }
+    // Check for food collisions after all movements
+    let foodEatenSecondMove = false;
+    if (activePowerUp && activePowerUp.type === 'speed_boost') {
+        foodEatenSecondMove = checkAndEatFood();
     }
     
-    if (!foodEaten) {
-        // Only remove the tail if no food was eaten
+    // Remove tail if no food was eaten in any move
+    if (!foodEatenFirstMove && !foodEatenSecondMove) {
         snake.pop();
-    } else {
-        // If food was eaten during speed boost, we don't need to grow twice
-        // The extra segment was already added by not removing the tail in the speed boost second move
     }
     
     // Update heat map with current snake position
@@ -2041,14 +2211,11 @@ function moveSnake() {
     // Check if this is a valid move for speed boosted snake
     // Speed boosted snakes still can't go through other snakes or walls
     if (activePowerUp && activePowerUp.type === 'speed_boost') {
-        // Check collision with walls
-        for (let i = 0; i < WALLS.length; i++) {
-            if (head.x === WALLS[i].x && head.y === WALLS[i].y) {
-                // Return to previous position if we'd hit a wall
-                head.x = snake[0].x;
-                head.y = snake[0].y;
-                break;
-            }
+        // Check collision with walls using spatial index
+        if (wallIndex.initialized && wallIndex.hasWall(head.x, head.y)) {
+            // Return to previous position if we'd hit a wall
+            head.x = snake[0].x;
+            head.y = snake[0].y;
         }
         
         // Check collision with other players' snakes
@@ -2104,10 +2271,14 @@ function checkCollisions() {
     
     // Check wall object collisions - invincibility can bypass this
     if (!(activePowerUp && activePowerUp.type === 'invincibility')) {
-        for (let i = 0; i < WALLS.length; i++) {
-            if (head.x === WALLS[i].x && head.y === WALLS[i].y) {
-                return {collision: true, reason: 'collision', message: 'You crashed into a wall!'};
-            }
+        // Initialize wall index if needed
+        if (!wallIndex.initialized) {
+            wallIndex.init();
+            wallIndex.rebuild(WALLS);
+        }
+        
+        if (wallIndex.hasWall(head.x, head.y)) {
+            return {collision: true, reason: 'collision', message: 'You crashed into a wall!'};
         }
     }
     
@@ -2579,25 +2750,13 @@ const DECORATIVE_TYPES = [
 ];
 
 function initBackgroundElements() {
-    backgroundElements = [];
+    // We're not using backgroundElements with the new cached background approach
+    // But we'll still initialize the text cache and decorative elements
     
-    BACKGROUND_LAYERS.forEach(layer => {
-        for (let i = 0; i < layer.elements; i++) {
-            const element = {
-                x: Math.random() * (GRID_SIZE * CELL_SIZE * 1.5) - (GRID_SIZE * CELL_SIZE * 0.25),
-                y: Math.random() * (GRID_SIZE * CELL_SIZE * 1.5) - (GRID_SIZE * CELL_SIZE * 0.25),
-                size: Math.random() * (layer.size[1] - layer.size[0]) + layer.size[0],
-                color: layer.color,
-                speed: layer.speed,
-                type: layer.type,
-                opacity: Math.random() * 0.5 + 0.5,
-                rotation: Math.random() * Math.PI * 2
-            };
-            backgroundElements.push(element);
-        }
-    });
+    // Initialize background text cache system
+    initBackgroundTextCache();
     
-    // Initialize decorative elements across the map
+    // Initialize decorative elements across the map (important for gameplay)
     generateDecorativeElements();
 }
 
@@ -2652,270 +2811,193 @@ function generateDecorativeElements() {
     }
 }
 
+// Static background canvas for caching the background
+let backgroundCache = {
+    canvas: null,
+    ctx: null,
+    lastCameraX: 0,
+    lastCameraY: 0,
+    updateInterval: 5, // Only update every 5 frames
+    frameCounter: 0,
+    patternCanvas: null,
+    patternCtx: null
+};
+
 function drawEnhancedBackground() {
-    // Base dark gradient background
-    const gradient = ctx.createRadialGradient(
-        canvas.width / 2, canvas.height / 2, 0,
-        canvas.width / 2, canvas.height / 2, canvas.width
-    );
-    gradient.addColorStop(0, '#0f0f1a');
-    gradient.addColorStop(1, '#060614');
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
-    // Draw the texts at fixed positions in the world coordinates
-    ctx.save();
-    
-    // Apply camera transformation to place texts at fixed world positions
-    ctx.translate(-Math.floor(camera.x), -Math.floor(camera.y));
-    
-    // "Hippo Penny" text at multiple locations
-    ctx.globalAlpha = 0.05;
-    ctx.font = 'bold 80px Arial';
-    ctx.fillStyle = '#ffffff';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    
-    // Center Hippo Penny
-    let hippoPennyX = 200 * CELL_SIZE;
-    let hippoPennyY = 200 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(hippoPennyX, hippoPennyY);
-    ctx.rotate(Math.PI / 30);
-    ctx.fillText('Hippo Penny', 0, 0);
-    ctx.restore();
-    
-    // Top-left Hippo Penny
-    hippoPennyX = 75 * CELL_SIZE;
-    hippoPennyY = 75 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(hippoPennyX, hippoPennyY);
-    ctx.rotate(Math.PI / 20);
-    ctx.fillText('Hippo Penny', 0, 0);
-    ctx.restore();
-    
-    // Bottom-right Hippo Penny
-    hippoPennyX = 325 * CELL_SIZE;
-    hippoPennyY = 325 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(hippoPennyX, hippoPennyY);
-    ctx.rotate(-Math.PI / 25);
-    ctx.fillText('Hippo Penny', 0, 0);
-    ctx.restore();
-    
-    // "Grok" text at top-left area of the map
-    ctx.globalAlpha = 0.04;
-    ctx.font = 'bold 60px Arial';
-    ctx.fillStyle = '#8A2BE2'; // Blue-violet color
-    ctx.textAlign = 'left';
-    ctx.textBaseline = 'top';
-    const grokX = 50 * CELL_SIZE;
-    const grokY = 50 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(grokX, grokY);
-    ctx.rotate(-Math.PI / 40);
-    ctx.fillText('Grok', 0, 0);
-    ctx.restore();
-    
-    // "Pepsi" text at bottom-left area of the map
-    ctx.globalAlpha = 0.05;
-    ctx.font = 'bold 70px Arial';
-    ctx.fillStyle = '#0000FF'; // Blue color
-    ctx.textAlign = 'left';
-    ctx.textBaseline = 'bottom';
-    const pepsiX = 100 * CELL_SIZE;
-    const pepsiY = 300 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(pepsiX, pepsiY);
-    ctx.rotate(Math.PI / 45);
-    ctx.fillText('Pepsi', 0, 0);
-    ctx.restore();
-    
-    // "Suika" text at middle-right area of the map
-    ctx.globalAlpha = 0.045;
-    ctx.font = 'bold 65px Arial';
-    ctx.fillStyle = '#50C878'; // Emerald green color
-    ctx.textAlign = 'right';
-    ctx.textBaseline = 'middle';
-    const suikaX = 300 * CELL_SIZE;
-    const suikaY = 200 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(suikaX, suikaY);
-    ctx.rotate(-Math.PI / 30);
-    ctx.fillText('Suika', 0, 0);
-    ctx.restore();
-    
-    // "Wacky Wisher" text at bottom-right area of the map
-    ctx.globalAlpha = 0.05;
-    ctx.font = 'italic bold 45px Arial';
-    ctx.fillStyle = '#FF6347'; // Tomato color
-    ctx.textAlign = 'right';
-    ctx.textBaseline = 'bottom';
-    const wackyX = 350 * CELL_SIZE;
-    const wackyY = 350 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(wackyX, wackyY);
-    ctx.rotate(Math.PI / 25);
-    ctx.fillText('Wacky Wisher', 0, 0);
-    ctx.restore();
-    
-    // "Wacky Warper" text at top-center area of the map
-    ctx.globalAlpha = 0.04;
-    ctx.font = 'italic bold 50px Arial';
-    ctx.fillStyle = '#FF1493'; // Deep pink color
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'top';
-    const warperX = 200 * CELL_SIZE;
-    const warperY = 75 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(warperX, warperY);
-    ctx.rotate(Math.PI / 35);
-    ctx.fillText('Wacky Warper', 0, 0);
-    ctx.restore();
-    
-    // "McDonald" text at top-right area of the map
-    ctx.globalAlpha = 0.04;
-    ctx.font = 'bold 50px Arial';
-    ctx.fillStyle = '#FFD700'; // Gold color
-    ctx.textAlign = 'right';
-    ctx.textBaseline = 'top';
-    const mcdonaldX = 350 * CELL_SIZE;
-    const mcdonaldY = 50 * CELL_SIZE;
-    ctx.save();
-    ctx.translate(mcdonaldX, mcdonaldY);
-    ctx.rotate(Math.PI / 35);
-    ctx.fillText('McDonald', 0, 0);
-    ctx.restore();
-    
-    // Restore the context to remove translation
-    ctx.restore();
-    
-    // Add subtle pulsing to background
-    const pulseIntensity = 0.03 * Math.sin(Date.now() / 3000);
-    
-    // Draw background elements with enhanced parallax effect
-    backgroundElements.forEach(element => {
-        // Calculate parallax position based on camera movement with enhanced effect
-        const parallaxX = element.x - (camera.x * (element.speed * (1 + pulseIntensity)));
-        const parallaxY = element.y - (camera.y * (element.speed * (1 + pulseIntensity)));
-        
-        // Skip if not in viewport
-        if (parallaxX + element.size < 0 || parallaxX > canvas.width ||
-            parallaxY + element.size < 0 || parallaxY > canvas.height) {
-            return;
-        }
-        
-        ctx.save();
-        
-        // Draw based on element type with enhanced effects
-        switch(element.type) {
-            case 'star':
-                // Add pulsing to stars
-                const starPulse = 1 + 0.2 * Math.sin(Date.now() / 1000 + element.x * element.y);
-                const starSize = element.size * starPulse;
-                
-                ctx.fillStyle = `rgba(${hexToRgb(element.color)}, ${element.opacity})`;
-                ctx.beginPath();
-                ctx.arc(parallaxX, parallaxY, starSize, 0, Math.PI * 2);
-                ctx.fill();
-                
-                // Add glow effect without using shadows
-                if (element.size > 2) {
-                    const glowColor = element.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
-                    ctx.beginPath();
-                    ctx.arc(parallaxX, parallaxY, starSize * 0.8, 0, Math.PI * 2);
-                    ctx.fillStyle = glowColor;
-                    ctx.fill();
-                }
-                break;
-                
-            case 'nebula':
-                // Create a more dynamic nebula effect
-                const nebulaGrad = ctx.createRadialGradient(
-                    parallaxX, parallaxY, 0,
-                    parallaxX, parallaxY, element.size
-                );
-                nebulaGrad.addColorStop(0, `rgba(${hexToRgb(element.color)}, ${element.opacity * (1 + pulseIntensity)})`);
-                nebulaGrad.addColorStop(1, 'rgba(0,0,0,0)');
-                    
-                ctx.fillStyle = nebulaGrad;
-                ctx.beginPath();
-                ctx.arc(parallaxX, parallaxY, element.size * (1 + pulseIntensity), 0, Math.PI * 2);
-                ctx.fill();
-                break;
-                
-            case 'cloud':
-                ctx.translate(parallaxX, parallaxY);
-                // Add slow rotation to clouds
-                const cloudRotation = element.rotation + (Date.now() / 30000);
-                ctx.rotate(cloudRotation);
-                ctx.fillStyle = `rgba(${hexToRgb(element.color)}, ${element.opacity * 0.3})`;
-                
-                // Draw cloud shape
-                ctx.beginPath();
-                for (let i = 0; i < 3; i++) {
-                    ctx.ellipse(
-                        (i - 1) * element.size * 0.3, 
-                        Math.sin(i + Date.now()/5000) * element.size * 0.1, 
-                        element.size * 0.4, 
-                        element.size * 0.2, 
-                        0, 0, Math.PI * 2
-                    );
-                }
-                ctx.fill();
-                break;
-        }
-        
-        ctx.restore();
-    });
-    
-    // Draw cosmic web pattern with swirling lines and connecting nodes
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
-    ctx.lineWidth = 1;
-    
-    // Create a pseudo-random pattern that appears consistent when scrolling
-    const seed = Math.floor(camera.x * 0.01) + Math.floor(camera.y * 0.01) * 100;
-    const gridSize = 180;
-    const offsetX = -camera.x * 0.1 % gridSize;
-    const offsetY = -camera.y * 0.1 % gridSize;
-    
-    // Draw flowing cosmic web threads
-    for (let i = 0; i < 10; i++) {
-        const loopSeed = (seed + i * 123) % 1000;
-        ctx.beginPath();
-        
-        // Create flowing curves that move through the viewport
-        let x = ((loopSeed * 7) % canvas.width) + offsetX;
-        let y = ((loopSeed * 13) % canvas.height) + offsetY;
-        ctx.moveTo(x, y);
-        
-        // Add curved segments to create flowing lines
-        for (let j = 0; j < 5; j++) {
-            const nextX = x + Math.sin((loopSeed + j * 50) / 100) * 100;
-            const nextY = y + Math.cos((loopSeed + j * 70) / 100) * 100;
-            const cpX1 = x + Math.sin((loopSeed + j * 20) / 100) * 50;
-            const cpY1 = y + Math.cos((loopSeed + j * 30) / 100) * 50;
-            const cpX2 = nextX - Math.sin((loopSeed + j * 40) / 100) * 50;
-            const cpY2 = nextY - Math.cos((loopSeed + j * 60) / 100) * 50;
-            
-            ctx.bezierCurveTo(cpX1, cpY1, cpX2, cpY2, nextX, nextY);
-            x = nextX;
-            y = nextY;
-        }
-        ctx.stroke();
+    // Initialize background cache if needed
+    if (!backgroundCache.canvas) {
+        initBackgroundCache();
     }
     
-    // Add connection nodes at intersections
-    for (let i = 0; i < 15; i++) {
-        const nodeSeed = (seed + i * 321) % 1000;
-        const x = ((nodeSeed * 11) % canvas.width) + offsetX;
-        const y = ((nodeSeed * 17) % canvas.height) + offsetY;
-        const size = 1 + (nodeSeed % 3);
+    // Only update background when camera has moved significantly or on periodic refreshes
+    const cameraDist = Math.sqrt(
+        Math.pow(backgroundCache.lastCameraX - camera.x, 2) + 
+        Math.pow(backgroundCache.lastCameraY - camera.y, 2)
+    );
+    
+    if (cameraDist > 10 || backgroundCache.frameCounter >= backgroundCache.updateInterval) {
+        updateBackgroundCache();
+        backgroundCache.frameCounter = 0;
+    } else {
+        backgroundCache.frameCounter++;
+    }
+    
+    // Draw the cached background
+    ctx.drawImage(backgroundCache.canvas, 0, 0, canvas.width, canvas.height);
+    
+    // Force initialize background text cache for big texts
+    if (!bgTextCache.initialized) {
+        initBackgroundTextCache();
+    }
+    
+    // Draw the cached background texts on top
+    drawBackgroundText();
+}
+
+function initBackgroundCache() {
+    // Create canvas for background cache
+    backgroundCache.canvas = document.createElement('canvas');
+    backgroundCache.canvas.width = canvas.width;
+    backgroundCache.canvas.height = canvas.height;
+    backgroundCache.ctx = backgroundCache.canvas.getContext('2d');
+    
+    // Create a small canvas for the repeating pattern
+    backgroundCache.patternCanvas = document.createElement('canvas');
+    backgroundCache.patternCanvas.width = 200;
+    backgroundCache.patternCanvas.height = 200;
+    backgroundCache.patternCtx = backgroundCache.patternCanvas.getContext('2d');
+    
+    // Generate the base pattern just once
+    generateBasePattern();
+    
+    // Force first update
+    updateBackgroundCache();
+}
+
+function generateBasePattern() {
+    const patternCtx = backgroundCache.patternCtx;
+    const width = backgroundCache.patternCanvas.width;
+    const height = backgroundCache.patternCanvas.height;
+    
+    // Clear the pattern canvas
+    patternCtx.fillStyle = '#060614';
+    patternCtx.fillRect(0, 0, width, height);
+    
+    // Add simple stars with reduced opacity
+    patternCtx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+    for (let i = 0; i < 40; i++) {  // Reduced from 50 to 40 stars
+        const x = Math.random() * width;
+        const y = Math.random() * height;
+        const size = Math.random() * 1.2 + 0.3;  // Reduced size range
         
-        ctx.beginPath();
-        ctx.arc(x, y, size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
-        ctx.fill();
+        patternCtx.beginPath();
+        patternCtx.arc(x, y, size, 0, Math.PI * 2);
+        patternCtx.fill();
+    }
+    
+    // Add a few brighter stars, but less bright than before
+    patternCtx.fillStyle = 'rgba(255, 255, 255, 0.5)';  // Reduced from 0.8 to 0.5
+    for (let i = 0; i < 7; i++) {  // Reduced from 10 to 7
+        const x = Math.random() * width;
+        const y = Math.random() * height;
+        const size = Math.random() * 1.5 + 0.8;  // Reduced max size
+        
+        patternCtx.beginPath();
+        patternCtx.arc(x, y, size, 0, Math.PI * 2);
+        patternCtx.fill();
+    }
+    
+    // Add simple grid lines for visual texture
+    patternCtx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
+    patternCtx.lineWidth = 1;
+    
+    // Horizontal lines
+    for (let i = 0; i < height; i += 20) {
+        patternCtx.beginPath();
+        patternCtx.moveTo(0, i);
+        patternCtx.lineTo(width, i);
+        patternCtx.stroke();
+    }
+    
+    // Vertical lines
+    for (let i = 0; i < width; i += 20) {
+        patternCtx.beginPath();
+        patternCtx.moveTo(i, 0);
+        patternCtx.lineTo(i, height);
+        patternCtx.stroke();
+    }
+}
+
+function updateBackgroundCache() {
+    const bgCtx = backgroundCache.ctx;
+    
+    // Store current camera position
+    backgroundCache.lastCameraX = camera.x;
+    backgroundCache.lastCameraY = camera.y;
+    
+    // Clear the background with slightly darker color for better contrast with stars
+    bgCtx.fillStyle = '#0c0c16';
+    bgCtx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Calculate pattern offset based on camera position for parallax effect
+    const patternOffsetX = (camera.x * 0.1) % backgroundCache.patternCanvas.width;
+    const patternOffsetY = (camera.y * 0.1) % backgroundCache.patternCanvas.height;
+    
+    // Draw tiled pattern with parallax effect
+    for (let y = -patternOffsetY; y < canvas.height; y += backgroundCache.patternCanvas.height) {
+        for (let x = -patternOffsetX; x < canvas.width; x += backgroundCache.patternCanvas.width) {
+            bgCtx.drawImage(backgroundCache.patternCanvas, x, y);
+        }
+    }
+    
+    // Draw a few larger animated elements for visual interest
+    // Reduced count and opacity for less distraction
+    const time = Date.now() / 3000;
+    const elementsCount = isMobile ? 3 : 10;  // Reduced from 5:15 to 3:10
+    
+    for (let i = 0; i < elementsCount; i++) {
+        const seed = (i * 123 + Math.floor(time)) % 1000;
+        const x = ((seed * 17) % canvas.width);
+        const y = ((seed * 13) % canvas.height);
+        const size = 25 + (seed % 25);  // Reduced size
+        
+        // Simple nebula or cloud effect with reduced opacity
+        const gradient = bgCtx.createRadialGradient(
+            x, y, 0,
+            x, y, size
+        );
+        
+        // Use different colors for variety but with reduced saturation and opacity
+        const hue = (i * 30 + time * 10) % 360;
+        gradient.addColorStop(0, `hsla(${hue}, 50%, 20%, 0.07)`);  // Reduced opacity from 0.1 to 0.07
+        gradient.addColorStop(1, 'rgba(0,0,0,0)');
+        
+        bgCtx.fillStyle = gradient;
+        bgCtx.beginPath();
+        bgCtx.arc(x, y, size, 0, Math.PI * 2);
+        bgCtx.fill();
+    }
+    
+    // Add minimal cosmic web lines (only 5 lines instead of 10)
+    bgCtx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
+    bgCtx.lineWidth = 1;
+    
+    for (let i = 0; i < 5; i++) {
+        const seed = (i * 345 + Math.floor(time * 0.5)) % 1000;
+        const startX = (seed * 7) % canvas.width;
+        const startY = (seed * 11) % canvas.height;
+        
+        bgCtx.beginPath();
+        bgCtx.moveTo(startX, startY);
+        
+        // Simpler lines - only 2 segments instead of 5
+        for (let j = 0; j < 2; j++) {
+            const endX = startX + Math.cos(seed + j) * 150;
+            const endY = startY + Math.sin(seed + j) * 150;
+            bgCtx.lineTo(endX, endY);
+        }
+        
+        bgCtx.stroke();
     }
 }
 
@@ -2923,7 +3005,100 @@ function drawEnhancedBackground() {
 
 // Wall formation functions removed - now handled by the server
 
+// Wall caching system to improve performance
+const wallCache = {
+    initialized: false,
+    canvas: null,
+    ctx: null,
+    size: CELL_SIZE,
+    init: function() {
+        if (this.initialized) return;
+        
+        // Create offscreen canvas for wall rendering
+        this.canvas = document.createElement('canvas');
+        this.canvas.width = this.size;
+        this.canvas.height = this.size;
+        this.ctx = this.canvas.getContext('2d');
+        
+        // Pre-render wall with 3D effect
+        this.ctx.fillStyle = WALL_COLOR;
+        this.ctx.fillRect(0, 0, this.size, this.size);
+        
+        // Add highlights
+        this.ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+        this.ctx.fillRect(0, 0, this.size, this.size / 4);
+        this.ctx.fillRect(0, 0, this.size / 4, this.size);
+        
+        // Add shadows
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+        this.ctx.fillRect(0, this.size - this.size / 4, this.size, this.size / 4);
+        this.ctx.fillRect(this.size - this.size / 4, 0, this.size / 4, this.size);
+        
+        this.initialized = true;
+    }
+};
+
+// Wall spatial index for faster collision detection
+const wallIndex = {
+    grid: null,
+    cellSize: 20, // Grid cell size for spatial indexing
+    initialized: false,
+    
+    init: function() {
+        if (this.initialized) return;
+        this.grid = {};
+        this.initialized = true;
+    },
+    
+    // Add a wall to the spatial index
+    add: function(x, y) {
+        const cellX = Math.floor(x / this.cellSize);
+        const cellY = Math.floor(y / this.cellSize);
+        const key = `${cellX},${cellY}`;
+        
+        if (!this.grid[key]) {
+            this.grid[key] = [];
+        }
+        this.grid[key].push({x, y});
+    },
+    
+    // Check if a position has a wall using spatial index
+    hasWall: function(x, y) {
+        const cellX = Math.floor(x / this.cellSize);
+        const cellY = Math.floor(y / this.cellSize);
+        const key = `${cellX},${cellY}`;
+        
+        if (!this.grid[key]) return false;
+        
+        for (const wall of this.grid[key]) {
+            if (wall.x === x && wall.y === y) {
+                return true;
+            }
+        }
+        return false;
+    },
+    
+    // Rebuild the index from the full wall array
+    rebuild: function(walls) {
+        this.grid = {};
+        for (const wall of walls) {
+            this.add(wall.x, wall.y);
+        }
+    }
+};
+
 function drawWalls() {
+    // Initialize wall cache if needed
+    if (!wallCache.initialized) {
+        wallCache.init();
+    }
+    
+    // Calculate visible grid range
+    const startX = Math.floor(camera.x / CELL_SIZE);
+    const startY = Math.floor(camera.y / CELL_SIZE);
+    const endX = startX + Math.ceil(VIEWPORT_WIDTH / CELL_SIZE) + 1;
+    const endY = startY + Math.ceil(VIEWPORT_HEIGHT / CELL_SIZE) + 1;
+    
     // Only draw walls that are in viewport
     for (const wall of WALLS) {
         const wallX = wall.x * CELL_SIZE;
@@ -2935,19 +3110,8 @@ function drawWalls() {
             continue;
         }
         
-        // Draw wall with 3D effect
-        ctx.fillStyle = WALL_COLOR;
-        ctx.fillRect(wallX, wallY, CELL_SIZE, CELL_SIZE);
-        
-        // Add highlights
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
-        ctx.fillRect(wallX, wallY, CELL_SIZE, CELL_SIZE / 4);
-        ctx.fillRect(wallX, wallY, CELL_SIZE / 4, CELL_SIZE);
-        
-        // Add shadows
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-        ctx.fillRect(wallX, wallY + CELL_SIZE - CELL_SIZE / 4, CELL_SIZE, CELL_SIZE / 4);
-        ctx.fillRect(wallX + CELL_SIZE - CELL_SIZE / 4, wallY, CELL_SIZE / 4, CELL_SIZE);
+        // Draw using pre-rendered wall cache
+        ctx.drawImage(wallCache.canvas, wallX, wallY);
     }
 }
 
@@ -3578,8 +3742,9 @@ function updatePlayersCount() {
 }
 
 
-startBtn.addEventListener('click', function(e) {
-    e.preventDefault();
+// Add both click and touch handlers for better mobile compatibility
+function startGameHandler(e) {
+    if (e) e.preventDefault();
     
     // Prevent starting the game if button is disabled
     if (startBtn.disabled) {
@@ -3609,12 +3774,27 @@ startBtn.addEventListener('click', function(e) {
             detectTouchDevice(); // Initialize touch controls when the game starts
         }
     }
+}
+
+// Add both regular click and touch events for the start button
+startBtn.addEventListener('click', startGameHandler);
+startBtn.addEventListener('touchend', function(e) {
+    e.preventDefault();
+    startGameHandler(e);
 });
 
-restartBtn.addEventListener('click', () => {
+function restartGameHandler(e) {
+    if (e) e.preventDefault();
     soundManager.play('menuSelect');
     gameOverScreen.style.display = 'none';
     initGame();
+}
+
+// Add both regular click and touch events for the restart button
+restartBtn.addEventListener('click', restartGameHandler);
+restartBtn.addEventListener('touchend', function(e) {
+    e.preventDefault();
+    restartGameHandler(e);
 });
 
 function checkPowerUpExpiration() {
