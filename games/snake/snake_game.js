@@ -99,7 +99,7 @@ const POWER_UP_EFFECTS = {
 // Add this after the POWER_UP_EFFECTS constant
 // Particle system for visual effects
 const particles = [];
-const MAX_PARTICLES = 50;
+const MAX_PARTICLES = 15;
 
 // Function to create particles
 function createParticles(x, y, color, count, speed, size, lifetime) {
@@ -311,7 +311,7 @@ nextLevelText.style.transform = 'translate(-50%, -50%)';
 nextLevelText.style.fontSize = '12px';
 nextLevelText.style.color = 'white';
 nextLevelText.style.textAlign = 'center';
-nextLevelText.style.textShadow = '1px 1px 2px rgba(0,0,0,0.5)';
+nextLevelText.style.fontWeight = 'bold'; // Replaced text shadow with bold for better performance
 levelProgressContainer.appendChild(nextLevelText);
 
 /* Power-Up Status Display */
@@ -361,7 +361,7 @@ function toggleMinimap() {
     }
 }
 
-let socket = new WebSocket('https://snake.hippopenny.com');
+let socket = new WebSocket('https://snakeserver.hippopenny.com');
 
 socket.onopen = () => {
     playerId = Date.now().toString();
@@ -780,7 +780,15 @@ function initGame() {
 }
 
 function renderFrame(timestamp) {
-    if (!gameRunning) return;
+    if (!gameRunning) {
+        // If game is not running but we have death effects, render them
+        if (deathEffects.overlay || deathEffects.icon || deathEffects.particles.length > 0) {
+            drawDeathEffects();
+            animationFrameId = requestAnimationFrame(renderFrame);
+            return;
+        }
+        return;
+    }
     
     // Store animation frame ID so it can be properly cancelled if needed
     animationFrameId = requestAnimationFrame(renderFrame);
@@ -801,6 +809,97 @@ function renderFrame(timestamp) {
     // Draw with interpolation factor
     draw(interpolationAlpha);
 }
+
+// Function to draw death effects without creating DOM elements
+function drawDeathEffects() {
+    const now = Date.now();
+    
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Draw overlay
+    if (deathEffects.overlay) {
+        const elapsed = now - deathEffects.overlay.startTime;
+        const progress = Math.min(1, elapsed / deathEffects.overlay.duration);
+        
+        if (progress >= 1) {
+            deathEffects.overlay = null;
+        } else {
+            // Draw radial gradient
+            const gradient = ctx.createRadialGradient(
+                canvas.width / 2, canvas.height / 2, canvas.width * 0.1,
+                canvas.width / 2, canvas.height / 2, canvas.width
+            );
+            
+            gradient.addColorStop(0, 'transparent');
+            gradient.addColorStop(0.3, 'transparent');
+            gradient.addColorStop(1, deathEffects.overlay.color);
+            
+            ctx.globalAlpha = progress;
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.globalAlpha = 1;
+        }
+    }
+    
+    // Draw icon
+    if (deathEffects.icon) {
+        const elapsed = now - deathEffects.icon.startTime;
+        const progress = Math.min(1, elapsed / deathEffects.icon.duration);
+        
+        if (progress >= 1) {
+            deathEffects.icon = null;
+        } else {
+            // Calculate scale with easing
+            const easeOutBack = (x) => {
+                const c1 = 1.70158;
+                const c3 = c1 + 1;
+                return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2);
+            };
+            
+            const scale = progress < 0.6 ? 
+                          easeOutBack(progress / 0.6) * deathEffects.icon.targetScale : 
+                          deathEffects.icon.targetScale;
+            
+            ctx.font = `${100 * scale}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(deathEffects.icon.text, canvas.width / 2, canvas.height / 2);
+        }
+    }
+    
+    // Draw particles
+    for (let i = deathEffects.particles.length - 1; i >= 0; i--) {
+        const p = deathEffects.particles[i];
+        const elapsed = now - p.startTime;
+        
+        if (elapsed >= p.life) {
+            deathEffects.particles.splice(i, 1);
+            continue;
+        }
+        
+        const progress = elapsed / p.life;
+        const opacity = 1 - progress;
+        const size = p.size * (1 - progress * 0.7);
+        
+        // Update position
+        p.x += p.vx;
+        p.y += p.vy;
+        
+        // Draw
+        ctx.globalAlpha = opacity;
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    
+    ctx.globalAlpha = 1;
+}
+
+// Arrays to store canvas-based effects
+const powerUpAnimations = [];
+const shockwaves = [];
 
 function draw(alpha = 1) {
     // Update camera position with interpolation factor
@@ -897,8 +996,23 @@ function draw(alpha = 1) {
         drawSafeZone();
     }
     
+    // Draw canvas-based score animations
+    drawScoreAnimations();
+    
+    // Draw canvas-based power-up animations
+    drawPowerUpAnimations();
+    
+    // Draw canvas-based shockwave effects
+    drawShockwaves();
+    
     // Restore canvas state
     ctx.restore();
+    
+    // Draw canvas-based warnings (in screen space, not world space)
+    drawCanvasWarnings();
+    
+    // Draw vignette effect if active
+    drawVignetteEffect();
     
     // Update minimap and mini leaderboard
     if (minimapVisible) {
@@ -911,6 +1025,152 @@ function draw(alpha = 1) {
     if (gameRunning && !animationFrameId) {
         // We don't need to request a new frame here as it's handled by renderFrame
     }
+}
+
+// Function to draw canvas-based score animations
+function drawScoreAnimations() {
+    const now = Date.now();
+    
+    // Filter and draw score animations
+    for (let i = scoreAnimations.length - 1; i >= 0; i--) {
+        const anim = scoreAnimations[i];
+        const elapsed = now - anim.startTime;
+        const progress = Math.min(1, elapsed / anim.duration);
+        
+        if (progress >= 1) {
+            scoreAnimations.splice(i, 1);
+            continue;
+        }
+        
+        const yOffset = -20 * Math.sin(progress * Math.PI);
+        const scale = 1 + 0.5 * Math.sin(progress * Math.PI / 2);
+        const opacity = 1 - progress;
+        
+        ctx.save();
+        ctx.globalAlpha = opacity;
+        ctx.font = `bold ${20 * scale}px Arial`;
+        ctx.fillStyle = anim.color;
+        ctx.textAlign = 'center';
+        ctx.fillText(`+${anim.points}`, anim.x + CELL_SIZE/2, anim.y + yOffset);
+        ctx.restore();
+    }
+}
+
+// Function to draw canvas-based power-up animations
+function drawPowerUpAnimations() {
+    const now = Date.now();
+    
+    for (let i = powerUpAnimations.length - 1; i >= 0; i--) {
+        const anim = powerUpAnimations[i];
+        const elapsed = now - anim.startTime;
+        const progress = Math.min(1, elapsed / anim.duration);
+        
+        if (progress >= 1) {
+            powerUpAnimations.splice(i, 1);
+            continue;
+        }
+        
+        const yOffset = -40 * progress;
+        const scale = 1 + Math.sin(progress * Math.PI) * 0.5;
+        const opacity = 1 - progress;
+        
+        ctx.save();
+        ctx.globalAlpha = opacity;
+        ctx.font = `bold ${18 * scale}px Arial`;
+        ctx.fillStyle = anim.color;
+        ctx.textAlign = 'center';
+        ctx.fillText(anim.text, anim.x + CELL_SIZE/2, anim.y + yOffset);
+        ctx.restore();
+    }
+}
+
+// Function to draw canvas-based shockwave effects
+function drawShockwaves() {
+    const now = Date.now();
+    
+    for (let i = shockwaves.length - 1; i >= 0; i--) {
+        const wave = shockwaves[i];
+        const elapsed = now - wave.startTime;
+        const progress = Math.min(1, elapsed / wave.duration);
+        
+        if (progress >= 1) {
+            shockwaves.splice(i, 1);
+            continue;
+        }
+        
+        const size = wave.maxSize * progress;
+        const opacity = 1 - progress;
+        
+        ctx.save();
+        ctx.globalAlpha = opacity;
+        ctx.strokeStyle = wave.color;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(wave.x, wave.y, size/2, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.restore();
+    }
+}
+
+// Function to draw canvas-based hunger warnings
+function drawCanvasWarnings() {
+    const now = Date.now();
+    ctx.save();
+    
+    for (let i = canvasWarnings.length - 1; i >= 0; i--) {
+        const warning = canvasWarnings[i];
+        const elapsed = now - warning.startTime;
+        const progress = Math.min(1, elapsed / warning.duration);
+        
+        if (progress >= 1) {
+            canvasWarnings.splice(i, 1);
+            continue;
+        }
+        
+        const opacity = 0.9 - progress * 0.9;
+        const scale = 1 + 0.2 * Math.sin(progress * Math.PI);
+        
+        ctx.globalAlpha = opacity;
+        ctx.font = `bold ${36 * scale}px Arial`;
+        ctx.fillStyle = warning.color;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(warning.text, canvas.width/2, canvas.height/2);
+    }
+    
+    ctx.restore();
+}
+
+// Function to draw vignette effect on canvas
+function drawVignetteEffect() {
+    if (!currentVignette) return;
+    
+    const now = Date.now();
+    const elapsed = now - currentVignette.startTime;
+    const progress = Math.min(1, elapsed / currentVignette.duration);
+    
+    if (progress >= 1) {
+        currentVignette = null;
+        return;
+    }
+    
+    const opacity = 0.5 - progress * 0.5;
+    
+    ctx.save();
+    
+    // Create radial gradient for vignette
+    const gradient = ctx.createRadialGradient(
+        canvas.width/2, canvas.height/2, 0,
+        canvas.width/2, canvas.height/2, canvas.width/2
+    );
+    
+    gradient.addColorStop(0, 'transparent');
+    gradient.addColorStop(0.7, `rgba(244, 67, 54, ${opacity * 0.1})`);
+    gradient.addColorStop(1, `rgba(244, 67, 54, ${opacity})`);
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
 }
 
 function drawFood(food) {
@@ -938,9 +1198,7 @@ function drawFood(food) {
     
     // Add glow effect for power-up foods
     if (food.powerUp) {
-        ctx.shadowColor = food.color;
-        ctx.shadowBlur = 10 + 5 * Math.sin(Date.now() / 300);
-        
+        // Draw highlight without shadow for better performance
         ctx.beginPath();
         ctx.arc(
             food.x * CELL_SIZE + CELL_SIZE / 2,
@@ -953,8 +1211,19 @@ function drawFood(food) {
         ctx.lineWidth = 2;
         ctx.stroke();
         
-        ctx.shadowColor = 'transparent';
-        ctx.shadowBlur = 0;
+        // Add a second layer for glow-like effect without shadows
+        const glowColor = food.color.replace('rgb', 'rgba').replace(')', ', 0.5)');
+        ctx.strokeStyle = glowColor;
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(
+            food.x * CELL_SIZE + CELL_SIZE / 2,
+            food.y * CELL_SIZE + CELL_SIZE / 2,
+            size * 1.4,
+            0,
+            Math.PI * 2
+        );
+        ctx.stroke();
     }
     
     // Draw countdown
@@ -1584,6 +1853,9 @@ function gameStep() {
     detectTouchDevice();
 }
 
+// Canvas-based score animations
+const scoreAnimations = [];
+
 function showFoodEffect(food) {
     // Create particles for food consumption
     createParticles(
@@ -1603,18 +1875,15 @@ function showFoodEffect(food) {
         soundManager.play('eat');
     }
     
-    // Display score effect with bounce animation
-    const effectDiv = document.createElement('div');
-    effectDiv.textContent = `+${food.points}`;
-    effectDiv.style.position = 'absolute';
-    effectDiv.style.left = `${food.x * CELL_SIZE}px`;
-    effectDiv.style.top = `${food.y * CELL_SIZE}px`;
-    effectDiv.style.color = food.color;
-    effectDiv.style.fontSize = '20px';
-    effectDiv.style.fontWeight = 'bold';
-    effectDiv.style.pointerEvents = 'none';
-    effectDiv.style.textShadow = '0 0 5px rgba(0,0,0,0.7)';
-    document.body.appendChild(effectDiv);
+    // Add to canvas score animations instead of creating DOM elements
+    scoreAnimations.push({
+        x: food.x * CELL_SIZE,
+        y: food.y * CELL_SIZE,
+        points: food.points,
+        color: food.color,
+        startTime: Date.now(),
+        duration: 1000
+    });
 
     // Activate power-up if the food has one
     if (food.powerUp) {
@@ -1630,29 +1899,7 @@ function showFoodEffect(food) {
         updatePowerUpStatus();
     }
     
-    const startTime = Date.now();
-    const animDuration = 1000;
-    
-    function animateScore() {
-        const elapsed = Date.now() - startTime;
-        const progress = Math.min(1, elapsed / animDuration);
-        const yOffset = -20 * Math.sin(progress * Math.PI);
-        const scale = 1 + 0.5 * Math.sin(progress * Math.PI / 2);
-        
-        effectDiv.style.transform = `translateY(${yOffset}px) scale(${scale})`;
-        effectDiv.style.opacity = 1 - progress;
-        
-        if (progress < 1) {
-            requestAnimationFrame(animateScore);
-        } else {
-            document.body.removeChild(effectDiv);
-        }
-    }
-    
-    requestAnimationFrame(animateScore);
-    
     if (food.powerUp) {
-        const powerUpEffect = document.createElement('div');
         let powerUpName = '';
         let powerUpColor = '';
         
@@ -1671,18 +1918,27 @@ function showFoodEffect(food) {
                 break;
         }
         
-        powerUpEffect.textContent = powerUpName;
-        powerUpEffect.style.position = 'absolute';
-        powerUpEffect.style.left = `${food.x * CELL_SIZE}px`;
-        powerUpEffect.style.top = `${(food.y * CELL_SIZE) - 20}px`;
-        powerUpEffect.style.color = powerUpColor;
-        powerUpEffect.style.fontSize = '18px';
-        powerUpEffect.style.fontWeight = 'bold';
-        powerUpEffect.style.pointerEvents = 'none';
-        powerUpEffect.style.textShadow = '0 0 10px rgba(0,0,0,0.7)';
-        document.body.appendChild(powerUpEffect);
+        // Add canvas-based power-up text animation
+        powerUpAnimations.push({
+            text: powerUpName,
+            x: food.x * CELL_SIZE,
+            y: (food.y * CELL_SIZE) - 20,
+            color: powerUpColor,
+            startTime: Date.now(),
+            duration: 1500
+        });
         
-        // NEW: Enhanced particle explosion for power-up activation
+        // Add canvas-based shockwave effect
+        shockwaves.push({
+            x: food.x * CELL_SIZE + CELL_SIZE/2,
+            y: food.y * CELL_SIZE + CELL_SIZE/2,
+            color: powerUpColor,
+            startTime: Date.now(),
+            maxSize: 100,
+            duration: 800
+        });
+        
+        // Enhanced particle explosion for power-up activation
         createParticles(
             food.x,
             food.y,
@@ -1693,74 +1949,29 @@ function showFoodEffect(food) {
             1200
         );
         
-        // NEW: Create a shockwave effect
-        const shockwave = document.createElement('div');
-        shockwave.style.position = 'absolute';
-        shockwave.style.left = `${food.x * CELL_SIZE + CELL_SIZE/2}px`;
-        shockwave.style.top = `${food.y * CELL_SIZE + CELL_SIZE/2}px`;
-        shockwave.style.width = '10px';
-        shockwave.style.height = '10px';
-        shockwave.style.borderRadius = '50%';
-        shockwave.style.backgroundColor = 'transparent';
-        shockwave.style.border = `2px solid ${powerUpColor}`;
-        shockwave.style.transform = 'translate(-50%, -50%)';
-        shockwave.style.pointerEvents = 'none';
-        shockwave.style.zIndex = '999';
-        document.body.appendChild(shockwave);
-        
-        // Animate shockwave
-        const swStartTime = Date.now();
-        const swDuration = 800;
-        
-        function animateShockwave() {
-            const elapsed = Date.now() - swStartTime;
-            const progress = Math.min(1, elapsed / swDuration);
-            const size = 100 * progress;
-            
-            shockwave.style.width = `${size}px`;
-            shockwave.style.height = `${size}px`;
-            shockwave.style.opacity = 1 - progress;
-            
-            if (progress < 1) {
-                requestAnimationFrame(animateShockwave);
-            } else {
-                document.body.removeChild(shockwave);
-            }
-        }
-        
-        requestAnimationFrame(animateShockwave);
-        
         // Add screen shake for power-up activation
         shakeScreen(10, 500);
-        
-        const puStartTime = Date.now();
-        const puAnimDuration = 1500;
-        
-        function animatePowerUp() {
-            const elapsed = Date.now() - puStartTime;
-            const progress = Math.min(1, elapsed / puAnimDuration);
-            const yOffset = -40 * progress;
-            const scale = 1 + Math.sin(progress * Math.PI) * 0.5;
-            
-            powerUpEffect.style.transform = `translateY(${yOffset}px) scale(${scale})`;
-            powerUpEffect.style.opacity = 1 - progress;
-            
-            if (progress < 1) {
-                requestAnimationFrame(animatePowerUp);
-            } else {
-                document.body.removeChild(powerUpEffect);
-            }
-        }
-        
-        requestAnimationFrame(animatePowerUp);
     }
 }
 
 // Update heat map with current positions of all snakes
+// Counter to reduce heat map update frequency
+let heatMapUpdateCounter = 0;
+const HEAT_MAP_UPDATE_INTERVAL = 10; // Update every 10 frames for better performance
+
+// Update heat map with current positions of all snakes
 function updateHeatMap() {
+    // Only update every few frames for better performance
+    if (heatMapUpdateCounter < HEAT_MAP_UPDATE_INTERVAL) {
+        heatMapUpdateCounter++;
+        return;
+    }
+    
+    heatMapUpdateCounter = 0;
+    
     // Decay all heat values
-    for (let x = 0; x < GRID_SIZE; x++) {
-        for (let y = 0; y < GRID_SIZE; y++) {
+    for (let x = 0; x < GRID_SIZE; x += 4) {   // Skip every 4 cells for better performance
+        for (let y = 0; y < GRID_SIZE; y += 4) {
             if (heatMap[x][y] > 0) {
                 heatMap[x][y] *= HEAT_DECAY;
                 if (heatMap[x][y] < 0.1) heatMap[x][y] = 0;
@@ -1770,9 +1981,11 @@ function updateHeatMap() {
     
     // Add heat for current player's snake
     snake.forEach((segment, index) => {
-        const heatValue = index === 0 ? HEAT_MAX : HEAT_MAX * 0.7;
-        if (segment.x >= 0 && segment.x < GRID_SIZE && segment.y >= 0 && segment.y < GRID_SIZE) {
-            heatMap[segment.x][segment.y] = heatValue;
+        if (index % 3 === 0) {  // Process every third segment for performance
+            const heatValue = index === 0 ? HEAT_MAX : HEAT_MAX * 0.7;
+            if (segment.x >= 0 && segment.x < GRID_SIZE && segment.y >= 0 && segment.y < GRID_SIZE) {
+                heatMap[segment.x][segment.y] = heatValue;
+            }
         }
     });
     
@@ -1780,9 +1993,11 @@ function updateHeatMap() {
     for (const id in players) {
         if (id !== playerId && players[id].snake) {
             players[id].snake.forEach((segment, index) => {
-                const heatValue = index === 0 ? HEAT_MAX * 0.8 : HEAT_MAX * 0.5;
-                if (segment.x >= 0 && segment.x < GRID_SIZE && segment.y >= 0 && segment.y < GRID_SIZE) {
-                    heatMap[segment.x][segment.y] = Math.max(heatMap[segment.x][segment.y], heatValue);
+                if (index % 3 === 0) {  // Process every third segment for performance
+                    const heatValue = index === 0 ? HEAT_MAX * 0.8 : HEAT_MAX * 0.5;
+                    if (segment.x >= 0 && segment.x < GRID_SIZE && segment.y >= 0 && segment.y < GRID_SIZE) {
+                        heatMap[segment.x][segment.y] = Math.max(heatMap[segment.x][segment.y], heatValue);
+                    }
                 }
             });
         }
@@ -2180,43 +2395,48 @@ function gameOver(reason = 'collision') {
 }
 
 // Death effect functions
+// Store death effects for canvas-based rendering
+const deathEffects = {
+    overlay: null,
+    icon: null,
+    particles: []
+};
+
 function createHungerDeathEffect() {
-    // Create a hunger death overlay effect
-    const overlay = document.createElement('div');
-    overlay.className = 'death-overlay temp-game-element';
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.background = 'radial-gradient(circle, transparent 30%, rgba(255, 152, 0, 0.3) 70%)';
-    overlay.style.zIndex = '1000';
-    overlay.style.opacity = '0';
-    document.body.appendChild(overlay);
+    // Create canvas-based death effect
+    deathEffects.overlay = {
+        type: 'hunger',
+        startTime: Date.now(),
+        duration: 2000,
+        color: 'rgba(255, 152, 0, 0.3)'
+    };
     
-    // Create hunger icon in the center
-    const icon = document.createElement('div');
-    icon.className = 'death-icon temp-game-element';
-    icon.innerHTML = '💔';
-    icon.style.position = 'fixed';
-    icon.style.top = '50%';
-    icon.style.left = '50%';
-    icon.style.transform = 'translate(-50%, -50%) scale(0)';
-    icon.style.fontSize = '100px';
-    icon.style.zIndex = '1001';
-    document.body.appendChild(icon);
+    deathEffects.icon = {
+        text: '💔',
+        startTime: Date.now(),
+        duration: 2000,
+        scale: 0,
+        targetScale: 2
+    };
     
-    // Animate
-    setTimeout(() => {
-        overlay.style.transition = 'opacity 0.5s ease-in';
-        overlay.style.opacity = '1';
-        
-        icon.style.transition = 'transform 0.5s ease-out';
-        icon.style.transform = 'translate(-50%, -50%) scale(2)';
-        
-        // Shake screen effect
-        shakeScreen(10, 500);
-    }, 100);
+    // Add particles
+    for (let i = 0; i < 20; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 1 + Math.random() * 2;
+        deathEffects.particles.push({
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            color: '#FF9800',
+            size: 5 + Math.random() * 10,
+            life: 1500 + Math.random() * 500,
+            startTime: Date.now()
+        });
+    }
+    
+    // Shake screen effect
+    shakeScreen(10, 500);
 }
 
 function createCollisionEffect() {
@@ -2599,14 +2819,13 @@ function drawEnhancedBackground() {
                 ctx.arc(parallaxX, parallaxY, starSize, 0, Math.PI * 2);
                 ctx.fill();
                 
-                // Add glow to brighter stars
+                // Add glow effect without using shadows
                 if (element.size > 2) {
-                    ctx.shadowColor = element.color;
-                    ctx.shadowBlur = starSize * 2;
+                    const glowColor = element.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
                     ctx.beginPath();
-                    ctx.arc(parallaxX, parallaxY, starSize * 0.5, 0, Math.PI * 2);
+                    ctx.arc(parallaxX, parallaxY, starSize * 0.8, 0, Math.PI * 2);
+                    ctx.fillStyle = glowColor;
                     ctx.fill();
-                    ctx.shadowBlur = 0;
                 }
                 break;
                 
@@ -2948,14 +3167,16 @@ function drawSafeZone() {
         ctx.fillStyle = `rgba(150, 255, 150, ${0.7 * remainingTime})`;
         ctx.fill();
         
-        // Add glow effect
-        ctx.shadowColor = 'rgba(76, 255, 80, 0.8)';
-        ctx.shadowBlur = 10;
+        // Draw glowing particle without shadows
         ctx.beginPath();
-        ctx.arc(x, y, particleSize * 0.6, 0, Math.PI * 2);
+        ctx.arc(x, y, particleSize * 0.8, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(150, 255, 150, 0.6)';
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(x, y, particleSize * 0.4, 0, Math.PI * 2);
         ctx.fillStyle = 'rgba(200, 255, 200, 0.8)';
         ctx.fill();
-        ctx.shadowBlur = 0;
         
         // Connect with glowing lines to center
         ctx.beginPath();
@@ -2972,15 +3193,13 @@ function drawSafeZone() {
     ctx.font = 'bold 24px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-    ctx.shadowBlur = 5;
     ctx.fillText(
         `SAFE ZONE: ${Math.ceil(remainingTime * SAFE_ZONE_DURATION / 1000)}s`,
         centerX * CELL_SIZE + CELL_SIZE/2,
         centerY * CELL_SIZE - SAFE_ZONE_RADIUS * CELL_SIZE * 0.5
     );
     
-    // Draw 'SAFE HAVEN' text in a stylish way
+    // Draw 'SAFE HAVEN' text in a simplified way without shadows
     ctx.font = 'bold 32px Arial';
     ctx.fillStyle = `rgba(150, 255, 180, ${0.7 * remainingTime + 0.3 * Math.sin(time * 2)})`;
     ctx.fillText(
@@ -2989,7 +3208,7 @@ function drawSafeZone() {
         centerY * CELL_SIZE
     );
     
-    // Additional text
+    // Additional text - simplified
     ctx.font = 'bold 18px Arial';
     ctx.fillStyle = `rgba(255, 255, 255, ${0.7 * remainingTime + 0.2 * Math.sin(time * 3 + Math.PI)})`;
     ctx.fillText(
@@ -2998,9 +3217,7 @@ function drawSafeZone() {
         centerY * CELL_SIZE + CELL_SIZE * 5
     );
     
-    ctx.shadowBlur = 0;
-    
-    // Draw a decorative compass-like design in the center
+    // Simplified compass-like design for better performance
     const compassRadius = SAFE_ZONE_RADIUS * CELL_SIZE * 0.2;
     
     // Draw compass circle
@@ -3016,8 +3233,8 @@ function drawSafeZone() {
     ctx.lineWidth = 2;
     ctx.stroke();
     
-    // Draw compass directions
-    const directions = 8;
+    // Draw fewer compass directions for better performance
+    const directions = 4; // Reduced from 8 to 4
     for (let i = 0; i < directions; i++) {
         const angle = (i / directions) * Math.PI * 2;
         const x1 = centerX * CELL_SIZE + CELL_SIZE/2 + Math.cos(angle) * compassRadius * 0.7;
@@ -3265,16 +3482,21 @@ function updateMinimap() {
         // Just draw the head with a larger dot for visibility
         minimapCtx.fillStyle = isCurrentPlayer ? '#4CAF50' : '#3F51B5';
         
-        // Enlarged player indicators
+        // Enlarged player indicators with bigger dots
         minimapCtx.beginPath();
         minimapCtx.arc(
             head.x * minimapScale,
             head.y * minimapScale,
-            isCurrentPlayer ? 3 : 2, // Fixed size regardless of scale
+            isCurrentPlayer ? 5 : 4, // Increased from 3/2 to 5/4 for better visibility
             0,
             Math.PI * 2
         );
         minimapCtx.fill();
+        
+        // Add outline to further improve visibility
+        minimapCtx.strokeStyle = isCurrentPlayer ? '#FFFFFF' : '#AAAAFF';
+        minimapCtx.lineWidth = 1;
+        minimapCtx.stroke();
     }
     
     // Draw foods with better visibility
@@ -3328,16 +3550,16 @@ function updateMinimap() {
         minimapCtx.arc(
             head.x * minimapScale,
             head.y * minimapScale,
-            4, // Larger indicator for player
+            6, // Increased from 4 to 6 for larger indicator for player
             0,
             Math.PI * 2
         );
         minimapCtx.fill();
         
-        // Add pulsing effect
+        // Add pulsing effect with larger pulse
         minimapCtx.strokeStyle = 'rgba(76, 175, 80, 0.7)';
-        minimapCtx.lineWidth = 1;
-        const pulseSize = 4 + Math.sin(Date.now() / 200) * 2;
+        minimapCtx.lineWidth = 1.5; // Increased from 1 to 1.5
+        const pulseSize = 6 + Math.sin(Date.now() / 200) * 3; // Increased from 4+2 to 6+3
         minimapCtx.beginPath();
         minimapCtx.arc(
             head.x * minimapScale,
@@ -3358,13 +3580,34 @@ function updatePlayersCount() {
 
 startBtn.addEventListener('click', function(e) {
     e.preventDefault();
+    
+    // Prevent starting the game if button is disabled
+    if (startBtn.disabled) {
+        return;
+    }
+    
     console.log("Start button clicked");
     soundManager.play('menuSelect');
-    startScreen.style.display = 'none';
-    canvas.style.display = 'block';
-    if (!gameRunning) {
-        initGame();
-        detectTouchDevice(); // Initialize touch controls when the game starts
+    
+    // If assets aren't loaded yet, show loading screen first then start game
+    if (!gameAssetsLoaded) {
+        showLoadingScreen(function() {
+            // This callback runs when loading is complete
+            startScreen.style.display = 'none'; // Hide start screen
+            canvas.style.display = 'block';
+            if (!gameRunning) {
+                initGame();
+                detectTouchDevice(); // Initialize touch controls when the game starts
+            }
+        });
+    } else {
+        // Assets already loaded, start game immediately
+        startScreen.style.display = 'none';
+        canvas.style.display = 'block';
+        if (!gameRunning) {
+            initGame();
+            detectTouchDevice(); // Initialize touch controls when the game starts
+        }
     }
 });
 
@@ -3449,7 +3692,7 @@ function updatePowerUpIndicator() {
     powerUpIndicator.style.padding = '10px 20px';
     powerUpIndicator.style.borderRadius = '10px';
     powerUpIndicator.style.color = 'white';
-    powerUpIndicator.style.textShadow = '2px 2px 4px rgba(0,0,0,0.7)';
+    powerUpIndicator.style.fontWeight = 'bold'; // Replaced text shadow with bold for better performance
     
     if (timeLeft <= 3) {
         powerUpIndicator.style.animation = 'pulse 0.5s infinite alternate';
@@ -3766,7 +4009,7 @@ function showSnakeEatenEffect(otherPlayerId, points) {
     messageDiv.style.color = '#FF5722';
     messageDiv.style.fontSize = '36px';
     messageDiv.style.fontWeight = 'bold';
-    messageDiv.style.textShadow = '0 0 10px rgba(255,87,34,0.7)';
+    messageDiv.style.fontWeight = 'bold'; // Replaced text shadow with bold for better performance
     messageDiv.style.pointerEvents = 'none';
     document.body.appendChild(messageDiv);
     
@@ -3894,6 +4137,10 @@ function updateHungerBar() {
     }
 }
 
+// Store canvas-based warnings for rendering
+const canvasWarnings = [];
+let currentVignette = null;
+
 function showHungerWarning() {
     // Make warnings more frequent as hunger decreases
     const warningProbability = (HUNGER_WARNING_THRESHOLD - hungerTimer) / HUNGER_WARNING_THRESHOLD;
@@ -3906,58 +4153,20 @@ function showHungerWarning() {
         soundManager.play('heartbeat', { volume: 0.3 + (1 - hungerTimer / HUNGER_WARNING_THRESHOLD) * 0.7 });
     }
     
-    const warning = document.createElement('div');
-    warning.className = 'temp-game-element'; // Add class for easy cleanup
-    warning.textContent = 'HUNGRY!';
-    warning.style.position = 'absolute';
-    warning.style.top = '50%';
-    warning.style.left = '50%';
-    warning.style.transform = 'translate(-50%, -50%)';
-    warning.style.color = '#F44336';
-    warning.style.fontSize = '36px'; // Increased from 32px
-    warning.style.fontWeight = 'bold';
-    warning.style.textShadow = '0 0 15px rgba(244, 67, 54, 0.8)'; // Enhanced glow
-    warning.style.opacity = '0.9'; // Increased from 0.8
-    warning.style.pointerEvents = 'none';
-    warning.style.zIndex = '1000';
-    document.body.appendChild(warning);
+    // Instead of creating DOM elements, add a canvas warning
+    canvasWarnings.push({
+        text: 'HUNGRY!',
+        startTime: Date.now(),
+        duration: 500,
+        color: '#F44336'
+    });
     
-    // Add a subtle screen vignette effect when hungry
-    const vignette = document.createElement('div');
-    vignette.className = 'temp-game-element'; // Add class for easy cleanup
-    vignette.style.position = 'absolute';
-    vignette.style.top = '0';
-    vignette.style.left = '0';
-    vignette.style.width = '100%';
-    vignette.style.height = '100%';
-    vignette.style.boxShadow = 'inset 0 0 150px rgba(244, 67, 54, 0.3)';
-    vignette.style.pointerEvents = 'none';
-    vignette.style.zIndex = '999';
-    document.body.appendChild(vignette);
-    
-    // Animate and remove the warning and vignette
-    let opacity = 0.9;
-    const fadeInterval = setInterval(() => {
-        opacity -= 0.05;
-        if (warning && document.body.contains(warning)) {
-            warning.style.opacity = opacity;
-        }
-        if (vignette && document.body.contains(vignette)) {
-            vignette.style.opacity = opacity;
-        }
-        if (opacity <= 0) {
-            clearInterval(fadeInterval);
-            if (warning && document.body.contains(warning)) {
-                document.body.removeChild(warning);
-            }
-            if (vignette && document.body.contains(vignette)) {
-                document.body.removeChild(vignette);
-            }
-        }
-    }, 50);
-    
-    // Store the interval ID so we can clear it during cleanup
-    warning.fadeIntervalId = fadeInterval;
+    // Set vignette effect that will be drawn directly on canvas
+    currentVignette = {
+        startTime: Date.now(),
+        duration: 500,
+        color: 'rgba(244, 67, 54, 0.1)'
+    };
     
     // Add screen shake effect for critical hunger
     if (hungerTimer < HUNGER_WARNING_THRESHOLD * 0.5) {
@@ -4028,19 +4237,18 @@ function drawMagnetOrbits(x, y) {
         const orbitX = (x * CELL_SIZE + CELL_SIZE / 2) + orbitRadius * Math.cos(angle);
         const orbitY = (y * CELL_SIZE + CELL_SIZE / 2) + orbitRadius * Math.sin(angle);
         
-        // Draw larger, more visible orbiting particles
+        // Draw orbiting particles without glow effect for better performance
         ctx.fillStyle = POWER_UP_EFFECTS.magnet.visualEffect;
         ctx.beginPath();
         ctx.arc(orbitX, orbitY, 4, 0, Math.PI * 2);
         ctx.fill();
         
-        // Add glow effect
-        ctx.shadowColor = POWER_UP_EFFECTS.magnet.visualEffect;
-        ctx.shadowBlur = 8;
+        // Add a second layer for glow-like effect without shadow
+        const glowColor = POWER_UP_EFFECTS.magnet.visualEffect.replace(')', ', 0.4)').replace('rgb', 'rgba');
+        ctx.fillStyle = glowColor;
         ctx.beginPath();
-        ctx.arc(orbitX, orbitY, 3, 0, Math.PI * 2);
+        ctx.arc(orbitX, orbitY, 6, 0, Math.PI * 2);
         ctx.fill();
-        ctx.shadowBlur = 0;
         
         // Connect particles to snake head with faint lines
         ctx.strokeStyle = `rgba(255, 235, 59, 0.4)`;
@@ -4435,10 +4643,317 @@ mobileControlsStyle.textContent += `
 `;
 document.head.appendChild(mobileControlsStyle);
 
+// Global loading state
+let gameAssetsLoaded = false;
+
+// Cache frequently accessed DOM elements
+const domElements = {
+    startScreen: null,
+    canvas: null,
+    startBtn: null,
+    gameOverScreen: null,
+    levelUpScreen: null,
+    restartBtn: null,
+    scoreDisplay: null,
+    levelDisplay: null,
+    speedDisplay: null,
+    playersCountDisplay: null,
+    finalScoreDisplay: null,
+    finalLevelDisplay: null,
+    newLevelDisplay: null,
+    minimapCanvas: null,
+    minimapCtx: null,
+    bestScoresCanvas: null,
+    bestScoresCtx: null,
+    powerUpIndicator: null,
+    powerUpStatus: null,
+    powerUpCountdownContainer: null,
+    powerUpCountdownBar: null,
+    joystickContainer: null,
+    mobileMenuContainer: null,
+    heartContainer: null,
+    hungerClock: null,
+    heartIcon: null
+};
+
 // Call the detection function when the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    // Cache all DOM elements for better performance
+    cacheDomElements();
+    
+    // Initialize settings
     initSettings();
+    
+    // Show loading screen
+    showLoadingScreen();
+    
+    // Disable the start button until loading is complete
+    domElements.startBtn.disabled = true;
+    domElements.startBtn.style.opacity = "0.5";
+    domElements.startBtn.style.cursor = "not-allowed";
 });
+
+// Cache all DOM elements for better performance
+function cacheDomElements() {
+    domElements.startScreen = document.getElementById('start-screen');
+    domElements.canvas = document.getElementById('game-canvas');
+    domElements.startBtn = document.getElementById('start-btn');
+    domElements.gameOverScreen = document.getElementById('game-over');
+    domElements.levelUpScreen = document.getElementById('level-up');
+    domElements.restartBtn = document.getElementById('restart-btn');
+    domElements.scoreDisplay = document.getElementById('score');
+    domElements.levelDisplay = document.getElementById('level');
+    domElements.speedDisplay = document.getElementById('speed');
+    domElements.playersCountDisplay = document.getElementById('players-count');
+    domElements.finalScoreDisplay = document.getElementById('final-score');
+    domElements.finalLevelDisplay = document.getElementById('final-level');
+    domElements.newLevelDisplay = document.getElementById('new-level');
+    domElements.minimapCanvas = document.getElementById('minimap');
+    domElements.minimapCtx = domElements.minimapCanvas ? domElements.minimapCanvas.getContext('2d') : null;
+    domElements.bestScoresCanvas = document.getElementById('bestscores');
+    domElements.bestScoresCtx = domElements.bestScoresCanvas ? domElements.bestScoresCanvas.getContext('2d') : null;
+    domElements.powerUpIndicator = document.getElementById('power-up-indicator');
+    domElements.powerUpStatus = document.getElementById('power-up-status');
+    domElements.powerUpCountdownContainer = document.getElementById('power-up-countdown-container');
+    domElements.powerUpCountdownBar = document.getElementById('power-up-countdown-bar');
+    domElements.joystickContainer = document.getElementById('joystick-container');
+    domElements.mobileMenuContainer = document.getElementById('mobile-menu');
+    domElements.heartContainer = document.getElementById('heart-container');
+    domElements.hungerClock = document.getElementById('hunger-clock');
+    domElements.heartIcon = document.getElementById('heart-icon');
+    
+    // Initialize any missing UI elements that will be needed
+    initMissingElements();
+}
+
+// Initialize any UI elements that aren't in the HTML yet
+function initMissingElements() {
+    if (!domElements.powerUpIndicator) {
+        domElements.powerUpIndicator = document.createElement('div');
+        domElements.powerUpIndicator.id = 'power-up-indicator';
+        document.body.appendChild(domElements.powerUpIndicator);
+        styleElement(domElements.powerUpIndicator, {
+            position: 'absolute',
+            top: '10px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            padding: '5px 10px',
+            borderRadius: '5px',
+            fontWeight: 'bold',
+            display: 'none',
+            zIndex: '1000'
+        });
+    }
+    
+    if (!domElements.powerUpStatus) {
+        domElements.powerUpStatus = document.createElement('div');
+        domElements.powerUpStatus.id = 'power-up-status';
+        document.body.appendChild(domElements.powerUpStatus);
+        styleElement(domElements.powerUpStatus, {
+            position: 'absolute',
+            top: '10px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            padding: '10px 20px',
+            borderRadius: '10px',
+            color: 'white',
+            fontFamily: 'Arial, sans-serif',
+            fontSize: '20px',
+            fontWeight: 'bold',
+            zIndex: '1000',
+            border: '2px solid white',
+            boxShadow: '0 0 15px rgba(255, 255, 255, 0.5)',
+            display: 'none'
+        });
+    }
+    
+    // Add other elements as needed
+}
+
+// Helper function to set multiple styles at once
+function styleElement(element, styles) {
+    for (const property in styles) {
+        element.style[property] = styles[property];
+    }
+}
+
+// Show loading screen function
+function showLoadingScreen(callback) {
+    // Hide start screen immediately when showing loading screen
+    const startScreen = document.getElementById('start-screen');
+    if (startScreen) {
+        startScreen.style.display = 'none';
+    }
+    
+    // Create loading screen container
+    const loadingScreen = document.createElement('div');
+    loadingScreen.id = 'loading-screen';
+    loadingScreen.style.position = 'fixed';
+    loadingScreen.style.top = '0';
+    loadingScreen.style.left = '0';
+    loadingScreen.style.width = '100%';
+    loadingScreen.style.height = '100%';
+    loadingScreen.style.backgroundColor = '#0a0a1a';
+    loadingScreen.style.display = 'flex';
+    loadingScreen.style.flexDirection = 'column';
+    loadingScreen.style.justifyContent = 'center';
+    loadingScreen.style.alignItems = 'center';
+    loadingScreen.style.zIndex = '10000';
+    document.body.appendChild(loadingScreen);
+
+    // Create snake logo
+    const snakeLogo = document.createElement('div');
+    snakeLogo.style.fontSize = '42px';
+    snakeLogo.style.color = '#4CAF50';
+    snakeLogo.style.fontWeight = 'bold';
+    snakeLogo.style.marginBottom = '30px';
+    snakeLogo.style.fontWeight = 'bold';
+    snakeLogo.innerHTML = 'Snake Game';
+    loadingScreen.appendChild(snakeLogo);
+
+    // Create loading animation - snake
+    const snakeAnimation = document.createElement('div');
+    snakeAnimation.style.display = 'flex';
+    snakeAnimation.style.alignItems = 'center';
+    snakeAnimation.style.justifyContent = 'center';
+    snakeAnimation.style.marginBottom = '40px';
+    loadingScreen.appendChild(snakeAnimation);
+
+    // Create snake segments
+    const segmentCount = 5;
+    const segments = [];
+    for (let i = 0; i < segmentCount; i++) {
+        const segment = document.createElement('div');
+        segment.style.width = '20px';
+        segment.style.height = '20px';
+        segment.style.borderRadius = '50%';
+        segment.style.backgroundColor = i === 0 ? '#4CAF50' : '#8BC34A';
+        segment.style.margin = '0 5px';
+        segment.style.transform = 'scale(0.8)';
+        segment.style.opacity = '0.8';
+        segment.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+        snakeAnimation.appendChild(segment);
+        segments.push(segment);
+    }
+    
+    // Animate snake segments
+    let currentIndex = 0;
+    let snakeAnimationInterval = null;
+    const animateSnake = () => {
+        segments.forEach((segment, i) => {
+            // Reset all segments
+            segment.style.transform = 'scale(0.8)';
+            segment.style.opacity = '0.8';
+        });
+        // Highlight current segment
+        if (segments[currentIndex]) {
+            segments[currentIndex].style.transform = 'scale(1.2)';
+            segments[currentIndex].style.opacity = '1';
+        }
+        currentIndex = (currentIndex + 1) % segmentCount;
+    };
+
+    snakeAnimationInterval = setInterval(animateSnake, 300);
+    animateSnake(); // Start immediately
+
+    // Create loading text
+    const loadingText = document.createElement('div');
+    loadingText.id = 'loading-text';
+    loadingText.style.color = '#ffffff';
+    loadingText.style.fontSize = '18px';
+    loadingText.style.marginBottom = '10px';
+    loadingText.textContent = 'Loading...';
+    loadingScreen.appendChild(loadingText);
+
+    // Create progress bar container
+    const progressContainer = document.createElement('div');
+    progressContainer.style.width = '200px';
+    progressContainer.style.height = '10px';
+    progressContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+    progressContainer.style.borderRadius = '5px';
+    progressContainer.style.overflow = 'hidden';
+    loadingScreen.appendChild(progressContainer);
+
+    // Create progress bar
+    const progressBar = document.createElement('div');
+    progressBar.id = 'loading-progress';
+    progressBar.style.width = '0%';
+    progressBar.style.height = '100%';
+    progressBar.style.backgroundColor = '#4CAF50';
+    progressBar.style.borderRadius = '5px';
+    progressBar.style.transition = 'width 0.3s ease';
+    progressContainer.appendChild(progressBar);
+
+    // Use actual asset loading progress
+    let progress = 0;
+    let totalAssets = Object.keys(soundManager.soundPaths).length;
+    let loadedAssets = 0;
+    
+    // Set up a listener for asset loading progress
+    window.addEventListener('assetLoaded', () => {
+        loadedAssets++;
+        progress = Math.min(100, (loadedAssets / totalAssets) * 100);
+        progressBar.style.width = `${progress}%`;
+        loadingText.textContent = `Loading... ${Math.floor(progress)}%`;
+        
+        if (loadedAssets >= totalAssets) {
+            // All assets loaded
+            completeLoading();
+        }
+    });
+    
+    // Start the asset loading
+    soundManager.init();
+    
+    // Set a timeout to ensure we don't wait forever
+    const loadingTimeout = setTimeout(() => {
+        if (progress < 100) {
+            console.log("Loading taking too long, proceeding anyway");
+            completeLoading();
+        }
+    }, 10000); // 10 second timeout
+    
+    // Function to handle completion of loading
+    function completeLoading() {
+        clearTimeout(loadingTimeout);
+        
+        // When loading is complete
+        loadingText.textContent = 'Ready!';
+        if (snakeAnimationInterval) {
+            clearInterval(snakeAnimationInterval);
+        }
+        
+        // Set the global loading state to true
+        gameAssetsLoaded = true;
+        
+        const transitionDelay = 500;
+        
+        setTimeout(() => {
+            // Fade out loading screen
+            loadingScreen.style.transition = 'opacity 0.5s ease';
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+                if (document.body.contains(loadingScreen)) {
+                    document.body.removeChild(loadingScreen);
+                }
+                
+                // Re-enable the start button
+                startBtn.disabled = false;
+                startBtn.style.opacity = "1";
+                startBtn.style.cursor = "pointer";
+                
+                // Execute callback if provided
+                if (typeof callback === 'function') {
+                    callback();
+                }
+            }, 500);
+        }, transitionDelay);
+    }
+
+    // Start progress updates
+    setTimeout(updateProgress, 500);
+}
 
 // The click handler for startBtn is already defined earlier in the file
 
@@ -4531,11 +5046,10 @@ function drawRock(element) {
     ctx.closePath();
     ctx.fill();
     
-    // Add shadow
-    ctx.shadowColor = 'rgba(0,0,0,0.2)';
-    ctx.shadowBlur = 5;
-    ctx.shadowOffsetX = 3;
-    ctx.shadowOffsetY = 3;
+    // Add dark edge instead of shadow
+    ctx.strokeStyle = 'rgba(0,0,0,0.3)';
+    ctx.lineWidth = 2;
+    ctx.stroke();
     
     ctx.restore();
 }

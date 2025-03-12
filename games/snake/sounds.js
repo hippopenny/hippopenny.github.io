@@ -28,22 +28,102 @@ class SoundManager {
     init() {
         if (this.initialized) return;
         
-        // Preload ALL sounds for better game experience
-        for (const soundName in this.soundPaths) {
-            this.load(soundName, this.soundPaths[soundName]);
+        // Track loading progress
+        let loadedCount = 0;
+        const totalSounds = Object.keys(this.soundPaths).length;
+        
+        // Update loading progress in UI
+        const updateLoadingProgress = () => {
+            loadedCount++;
+            const progress = (loadedCount / totalSounds) * 100;
+            const loadingProgress = document.getElementById('loading-progress');
+            if (loadingProgress) {
+                loadingProgress.style.width = `${progress}%`;
+            }
+            const loadingText = document.getElementById('loading-text');
+            if (loadingText) {
+                loadingText.textContent = `Loading sounds... ${Math.floor(progress)}%`;
+            }
+            
+            // If all sounds are loaded, set global loaded state
+            if (loadedCount >= totalSounds && typeof window.gameAssetsLoaded !== 'undefined') {
+                window.gameAssetsLoaded = true;
+            }
+        };
+        
+        // Preload only essential sounds for initial startup
+        const essentialSounds = ['menuSelect', 'select', 'move'];
+        
+        // Load essential sounds immediately
+        for (const soundName of essentialSounds) {
+            if (this.soundPaths[soundName]) {
+                this.load(soundName, this.soundPaths[soundName], updateLoadingProgress);
+            }
         }
+        
+        // Load remaining sounds after a delay
+        setTimeout(() => {
+            for (const soundName in this.soundPaths) {
+                // Skip already loaded sounds
+                if (essentialSounds.includes(soundName)) continue;
+                this.load(soundName, this.soundPaths[soundName], updateLoadingProgress);
+            }
+        }, 500);
         
         this.initialized = true;
     }
     
     // Load a sound from file
-    load(name, path) {
+    load(name, path, callback) {
         const audio = new Audio(path);
         audio.volume = this.volume;
         this.sounds[name] = audio;
         
         // Preload audio
         audio.load();
+        
+        // Set a flag to track if callback was already called
+        let callbackFired = false;
+        
+        // Add event listener for when loading completes
+        audio.addEventListener('canplaythrough', () => {
+            if (!callbackFired && callback) {
+                callbackFired = true;
+                callback();
+                
+                // Dispatch a custom event to notify the loading screen
+                window.dispatchEvent(new CustomEvent('assetLoaded', { 
+                    detail: { sound: name } 
+                }));
+            }
+        }, { once: true });
+        
+        // Handle audio loading errors
+        audio.addEventListener('error', () => {
+            console.warn(`Error loading sound: ${name}`);
+            if (!callbackFired && callback) {
+                callbackFired = true;
+                callback();
+                
+                // Dispatch an asset loaded event even on error so we don't hang the loading screen
+                window.dispatchEvent(new CustomEvent('assetLoaded', { 
+                    detail: { sound: name, error: true } 
+                }));
+            }
+        });
+        
+        // Fallback in case the event doesn't fire
+        setTimeout(() => {
+            if (!callbackFired && callback) {
+                callbackFired = true;
+                callback();
+                
+                // Dispatch an asset loaded event for the fallback case
+                window.dispatchEvent(new CustomEvent('assetLoaded', { 
+                    detail: { sound: name, fallback: true } 
+                }));
+            }
+        }, 3000);
         
         return audio;
     }
