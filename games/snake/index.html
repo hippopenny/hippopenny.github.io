@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2D Snake Game</title>
+    <title>Snake Vibe</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.2/nipplejs.min.js"></script>
     <style>
         body {
@@ -13,6 +13,10 @@
             background-color: #000;
             font-family: Arial, sans-serif;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         
         #game-container {
@@ -71,14 +75,23 @@
         
         #start-btn, #restart-btn {
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 15px 30px;
+            font-size: 20px;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             pointer-events: auto;
+            min-width: 200px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            align-self: center;
+        }
+        
+        #start-btn:hover, #restart-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
         }
         
         #start-btn:hover, #restart-btn:hover {
@@ -87,27 +100,37 @@
         
         #start-screen {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            max-width: 90%;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(10, 10, 30, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(76, 175, 80, 0.5);
             z-index: 100;
         }
         
         #start-screen h1 {
-            font-size: 48px;
-            margin-bottom: 30px;
+            font-size: 42px;
+            margin-bottom: 25px;
+            text-align: center;
         }
         
         #instructions {
-            margin: 20px;
+            margin: 15px 0;
             text-align: center;
-            max-width: 600px;
+            width: 100%;
+        }
+        
+        #instructions p {
+            margin: 8px 0;
+            font-size: 15px;
         }
         
         #player-list {
@@ -181,8 +204,8 @@
         
         #bestscores-container {
             position: absolute;
-            bottom: 20px;
-            left: 190px;
+            top: 60px;
+            right: 20px;
             width: 150px;
             z-index: 10;
         }
@@ -262,7 +285,7 @@
         <canvas id="game-canvas" style="display: none;"></canvas>
         
         <div id="start-screen">
-            <h1>2D Snake Game</h1>
+            <h1>Snake Vibe</h1>
             <div id="instructions">
                 <p>Use arrow keys or WASD to control the snake.</p>
                 <p>Reach higher scores to level up and increase difficulty!</p>
@@ -270,7 +293,9 @@
                 <p>Press 'M' to toggle minimap.</p>
                 <p>Press 'L' to toggle leaderboard.</p>
             </div>
-            <button id="start-btn">Start Game</button>
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <button id="start-btn">Start Game</button>
+            </div>
         </div>
         
         <div id="ui-overlay">
