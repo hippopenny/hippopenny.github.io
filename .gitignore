@@ -2,5 +2,6 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.jekyll-serve-4000.log
 .env
 vendor
