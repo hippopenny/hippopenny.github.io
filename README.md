@@ -1,5 +1,9 @@
 Hippo Penny
 
+## Character Content
+
+Character content workflow and sourcing rules are documented in [`CHARACTER_CONTENT_WORKFLOW.md`](C:/hippopenny/hippopenny.github.io/CHARACTER_CONTENT_WORKFLOW.md).
+
 Building your site locally
 Open Terminal.
 

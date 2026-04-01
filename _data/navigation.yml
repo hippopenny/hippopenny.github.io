@@ -1,6 +1,8 @@
 main:
   - title: "News"
     url: /
+  - title: "Characters"
+    url: /characters/
   - title: "Scores"
     url: /meta-score/
   # - title: "Top picks"

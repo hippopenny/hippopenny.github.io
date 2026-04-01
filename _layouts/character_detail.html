@@ -1,0 +1,211 @@
+---
+layout: single
+---
+{% assign game = site.data.character_games[page.game] %}
+{% assign related = site.characters | where: 'game', page.game | where_exp: 'item', 'item.url != page.url' | sort: 'title' %}
+{% assign page_segments = page.url | split: '/' %}
+{% assign banner_id = page_segments[3] %}
+{% assign pull_test_url = '/pulls/' | append: page.game | append: '/?banner=' | append: banner_id %}
+<div class="character-shell" style="--guide-accent: {{ game.accent }};">
+  {% include character-guide-styles.html accent=game.accent %}
+
+  <!-- ① Hero — full-bleed character art, verdict at a glance -->
+  <section class="guide-hero">
+    <div class="guide-hero__media" style="background-image: url('{{ page.teaser | default: game.teaser | relative_url }}');"></div>
+    <div class="guide-hero__content">
+      <span class="guide-kicker">{{ game.title }}</span>
+      <h1 class="guide-title">{{ page.character }}</h1>
+      <p class="guide-subtitle">{{ page.tagline }}</p>
+
+      <div class="guide-pill-row">
+        <span class="guide-pill">{{ page.role }}</span>
+        <span class="guide-pill">{{ page.combat_type }}</span>
+        {% if page.weapon_or_path %}<span class="guide-pill">{{ page.weapon_or_path }}</span>{% endif %}
+        <span class="guide-rating" data-rating="{{ page.pull_rating }}">Pull: <strong>{{ page.pull_rating }}</strong></span>
+      </div>
+
+      <div class="guide-stats">
+        <div class="guide-stat">
+          <span>Verdict</span>
+          <strong>{{ page.quick_verdict }}</strong>
+        </div>
+        <div class="guide-stat">
+          <span>Investment</span>
+          <strong>{{ page.investment }}</strong>
+        </div>
+        <div class="guide-stat">
+          <span>Best mode</span>
+          <strong>{{ page.mode_focus }}</strong>
+        </div>
+      </div>
+
+      <div class="guide-actions">
+        <a class="btn btn--primary" href="{{ pull_test_url | relative_url }}">Test Banner</a>
+        <a class="btn btn--primary" href="{{ page.app_cta_url | default: game.app_url | relative_url }}">{{ page.app_cta_label | default: game.app_name }}</a>
+        <a class="btn btn--inverse" href="{{ page.hub_url | default: '/characters/' | append: page.game | append: '/' | relative_url }}">{{ game.short_title }} Hub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ② Quick take + banner status -->
+  <section class="guide-section">
+    <p style="font-size:1.02rem; line-height:1.6; color:var(--guide-text); margin:0 0 0.8rem;">{{ page.quick_take }}</p>
+    <div class="guide-live-grid">
+      <div class="guide-live-card">
+        <span class="guide-kicker">{{ game.short_title }} right now</span>
+        <h3>{{ game.latest_snapshot.snapshot_title }}</h3>
+        <p class="guide-live-row"><span class="guide-live-label">Live:</span>{{ game.latest_snapshot.live_now }}</p>
+        <p class="guide-live-row"><span class="guide-live-label">Next:</span>{{ game.latest_snapshot.next_up }}</p>
+      </div>
+    </div>
+    {% if page.image_source_label and page.image_source_url %}
+    <p class="guide-character-meta" style="margin-top:0.7rem;">Image: <a href="{{ page.image_source_url }}">{{ page.image_source_label }}</a> · Updated for: {{ page.updated_for }}</p>
+    {% endif %}
+  </section>
+
+  {% if page.quick_tricks %}
+  <!-- ③ Quick tips -->
+  <section class="guide-section">
+    <h2>Quick Tips</h2>
+    <div class="guide-trick-grid">
+      {% for trick in page.quick_tricks %}
+      <article class="guide-trick-card">
+        <p>{{ trick }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ④ Strengths & Weaknesses (merged with common mistakes) -->
+  <section class="guide-section">
+    <div class="guide-grid">
+      <div>
+        <h2 style="color:#7bff9b;">Strengths</h2>
+        <ul class="guide-list guide-strengths-list">
+          {% for item in page.strengths %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h2 style="color:#ff7070;">Weaknesses</h2>
+        <ul class="guide-list guide-weaknesses-list">
+          {% for item in page.weaknesses %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% if page.common_mistakes %}
+        <h2 style="color:#ff7070; margin-top:0.9rem;">Common Mistakes</h2>
+        <ul class="guide-list guide-mistake-list">
+          {% for item in page.common_mistakes %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑤ Build & Teams (all practical info in one panel) -->
+  <section class="guide-section">
+    <h2>Build & Teams</h2>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>Build Priority</h3>
+        <p>{{ page.build_priority }}</p>
+      </div>
+      <div class="guide-card">
+        <h3>Gear Focus</h3>
+        <p>{{ page.gearing }}</p>
+      </div>
+      <div class="guide-card">
+        <h3>Premium Team</h3>
+        <p>{{ page.premium_team }}</p>
+      </div>
+      <div class="guide-card">
+        <h3>Budget Team</h3>
+        <p>{{ page.budget_team }}</p>
+      </div>
+    </div>
+    {% if page.rotation_trick %}
+    <p style="margin-top:0.8rem;"><strong style="color:#fff;">Rotation tip:</strong> {{ page.rotation_trick }}</p>
+    {% endif %}
+    {% if page.upgrade_order %}
+    <p style="margin-top:0.5rem;"><strong style="color:#fff;">Upgrade order:</strong> {{ page.upgrade_order }}</p>
+    {% endif %}
+    {% if page.dupe_value %}
+    <p style="margin-top:0.5rem;"><strong style="color:#fff;">Dupes:</strong> {{ page.dupe_value }}</p>
+    {% endif %}
+  </section>
+
+  <!-- ⑥ Verdict -->
+  <section class="guide-section guide-verdict-section">
+    <h2>Verdict</h2>
+    <p style="font-size:1rem; line-height:1.6;">{{ page.verdict }}</p>
+    <div class="guide-actions" style="margin-top:1rem;">
+      <a class="btn btn--primary" href="{{ pull_test_url | relative_url }}">Test {{ page.character }}'s Banner</a>
+      <a class="btn btn--primary" href="{{ page.app_cta_url | default: game.app_url | relative_url }}">{{ page.app_cta_label | default: game.app_name }}</a>
+    </div>
+  </section>
+
+  <div class="guide-ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8172357380640839"
+         data-ad-slot="3049671934"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  {% if page.gallery %}
+  <!-- ⑦ Gallery -->
+  <section class="guide-section">
+    <h2>{{ page.character }}</h2>
+    <div class="guide-gallery">
+      {% for item in page.gallery %}
+      <figure class="guide-gallery-item">
+        {% if item.url %}
+          {% assign gallery_href = item.url | relative_url %}
+        {% else %}
+          {% assign gallery_href = item.src | relative_url %}
+        {% endif %}
+        <a href="{{ gallery_href }}"
+           class="guide-gallery-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="{% if item.url %}Open link:{% else %}Open full image:{% endif %} {{ item.label | escape }}">
+          <img src="{{ item.src | relative_url }}" alt="{{ page.character }} — {{ item.label }}" loading="lazy">
+          <span class="guide-gallery-caption">{{ item.label }}</span>
+        </a>
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ⑧ Related characters -->
+  {% if related.size > 0 %}
+  <section class="guide-section">
+    <h2>More {{ game.short_title }} Characters</h2>
+    <div class="guide-character-grid">
+      {% for item in related limit: 3 %}
+      <a class="guide-character-card" href="{{ item.url | relative_url }}">
+        <div class="guide-card-thumb">
+          <img src="{{ item.teaser | relative_url }}" alt="{{ item.character }}" loading="lazy">
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-pill-row">
+            <span class="guide-pill">{{ item.role }}</span>
+            <span class="guide-rating" data-rating="{{ item.pull_rating }}">{{ item.pull_rating }}</span>
+          </div>
+          <h3>{{ item.character }}</h3>
+          <p>{{ item.quick_take | strip_html | truncate: 100 }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="guide-section guide-subscription">
+    <h2>Stay Updated</h2>
+    <p>Get banner alerts, new guides, and patch notes — no spam.</p>
+    {% include subscription-form.html %}
+  </section>
+</div>

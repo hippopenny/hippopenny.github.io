@@ -1,0 +1,89 @@
+---
+layout: single
+---
+<div class="character-shell" style="--guide-accent: #37c6ff;">
+  {% include character-guide-styles.html accent='#37c6ff' %}
+
+  <section class="guide-hero">
+    <div class="guide-hero__media" style="background-image: url('{{ page.header.overlay_image | default: '/assets/images/offrail/bannerfixlongsize.png' | relative_url }}');"></div>
+    <div class="guide-hero__content">
+      <span class="guide-kicker">Character Guides</span>
+      <h1 class="guide-title">{{ page.title }}</h1>
+      <p class="guide-subtitle">{{ page.excerpt }}</p>
+
+      <div class="guide-stats">
+        <div class="guide-stat">
+          <span>Games</span>
+          <strong>{{ site.data.character_games | size }}</strong>
+        </div>
+        <div class="guide-stat">
+          <span>Guides</span>
+          <strong>{{ site.characters.size }} characters</strong>
+        </div>
+        <div class="guide-stat">
+          <span>Updated</span>
+          <strong>{{ site.data.character_games['genshin-impact'].latest_snapshot.verified_at }}</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if content and content != empty %}
+  <section class="guide-section guide-intro">
+    {{ content }}
+  </section>
+  {% endif %}
+
+  <!-- Game cards — one per game -->
+  <section class="guide-section">
+    <h2>Pick Your Game</h2>
+    <div class="guide-character-grid">
+      {% for game_hash in site.data.character_games %}
+      {% assign game_id = game_hash[0] %}
+      {% assign game = game_hash[1] %}
+      {% assign count = site.characters | where: 'game', game_id | size %}
+      <a class="guide-character-card" href="{{ '/characters/' | append: game_id | append: '/' | relative_url }}">
+        <div class="guide-card-thumb">
+          <img src="{{ game.teaser | relative_url }}" alt="{{ game.title }}" loading="lazy">
+        </div>
+        <div class="guide-card-body">
+          <span class="guide-kicker">{{ game.short_title }}</span>
+          <h3>{{ game.title }}</h3>
+          <p class="guide-character-meta">{{ count }} character guides</p>
+          <p>{{ game.description | truncate: 120 }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Live snapshot — what's happening right now in each game -->
+  <section class="guide-section">
+    <h2>What's Live Now</h2>
+    <div class="guide-live-grid">
+      {% for game_hash in site.data.character_games %}
+      {% assign game = game_hash[1] %}
+      {% assign snapshot = game.latest_snapshot %}
+      <div class="guide-live-card">
+        <span class="guide-kicker">{{ game.short_title }}</span>
+        <h3>{{ snapshot.snapshot_title }}</h3>
+        <p class="guide-live-row"><span class="guide-live-label">Live:</span>{{ snapshot.live_now }}</p>
+        <p class="guide-live-row"><span class="guide-live-label">Next:</span>{{ snapshot.next_up }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Pull simulators -->
+  <section class="guide-cta">
+    <div>
+      <h2>Pull Simulators</h2>
+      <p>Test banner odds before you spend — pity, 50/50, and featured rates for every game.</p>
+    </div>
+    <div class="guide-actions">
+      <a class="btn btn--primary" href="{{ '/pulls/genshin-impact/' | relative_url }}">Genshin</a>
+      <a class="btn btn--primary" href="{{ '/pulls/honkai-star-rail/' | relative_url }}">HSR</a>
+      <a class="btn btn--primary" href="{{ '/pulls/wuthering-waves/' | relative_url }}">Wuwa</a>
+    </div>
+  </section>
+</div>

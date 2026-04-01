@@ -183,6 +183,9 @@ kramdown:
 
 # Collections
 collections:
+  characters:
+    output: true
+    permalink: /characters/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -218,6 +221,15 @@ defaults:
       author_profile: false
       share: true
       related: true
+  # _characters
+  - scope:
+      path: ""
+      type: characters
+    values:
+      layout: character_detail
+      author_profile: false
+      share: false
+      related: false
 
 
 # Sass/SCSS

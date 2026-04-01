@@ -8,6 +8,8 @@ header:
   actions:
   - label: "Learn more"
     url: /wackywarper/
+  - label: "Character Guides"
+    url: /characters/
 
   # video:
   #   id: aR5jUDr-NdU
@@ -161,12 +163,23 @@ feature_row3:
     url:  /wackywarper/
     btn_class: "btn--primary"
     btn_label: "Learn more"
+
+feature_row4:
+  - image_path: /assets/images/offrail/firefly-2.png
+    alt: "Character guides for Genshin Impact Honkai Star Rail and Wuthering Waves at Hippo Penny"
+    title: "Character Guides for Genshin, HSR, and Wuwa"
+    excerpt: "Quick verdicts, build advice, team ideas, and upgrade priorities for the biggest characters in Genshin Impact, Honkai: Star Rail, and Wuthering Waves."
+    url: /characters/
+    btn_class: "btn--primary"
+    btn_label: "Explore Guides"
     
 ---
 
 {% include feature_row type="left" %}
 
 {% include video id="jtfOkVV6Alo" provider="youtube" %}
+
+{% include feature_row id="feature_row4" type="left" %}
 
 {% include feature_row id="feature_row3" type="left" %}
 

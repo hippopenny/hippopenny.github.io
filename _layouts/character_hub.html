@@ -1,0 +1,105 @@
+---
+layout: single
+---
+{% assign game = site.data.character_games[page.game] %}
+{% assign characters = site.characters | where: 'game', page.game | sort: 'title' %}
+{% assign pull_test_url = '/pulls/' | append: page.game | append: '/' %}
+<div class="character-shell" style="--guide-accent: {{ game.accent }};">
+  {% include character-guide-styles.html accent=game.accent %}
+
+  <section class="guide-hero">
+    <div class="guide-hero__media" style="background-image: url('{{ page.header.overlay_image | default: game.teaser | relative_url }}');"></div>
+    <div class="guide-hero__content">
+      <span class="guide-kicker">{{ game.short_title }} Characters</span>
+      <h1 class="guide-title">{{ page.title }}</h1>
+      <p class="guide-subtitle">{{ page.excerpt | default: game.description }}</p>
+
+      <div class="guide-stats">
+        <div class="guide-stat">
+          <span>Guides</span>
+          <strong>{{ characters.size }} characters</strong>
+        </div>
+        <div class="guide-stat">
+          <span>Updated</span>
+          <strong>{{ game.latest_snapshot.verified_at }}</strong>
+        </div>
+        <div class="guide-stat">
+          <span>Current patch</span>
+          <strong>{{ game.latest_snapshot.snapshot_title }}</strong>
+        </div>
+      </div>
+
+      <div class="guide-actions">
+        <a class="btn btn--primary" href="{{ pull_test_url | relative_url }}">Pull Simulator</a>
+        <a class="btn btn--primary" href="{{ game.app_url | relative_url }}">{{ game.app_name }}</a>
+        <a class="btn btn--inverse" href="{{ '/characters/' | relative_url }}">All Games</a>
+      </div>
+    </div>
+  </section>
+
+  {% if content and content != empty %}
+  <section class="guide-section guide-intro">
+    {{ content }}
+  </section>
+  {% endif %}
+
+  <!-- Character grid — the main event -->
+  <section class="guide-section">
+    <h2>Character Guides</h2>
+    <div class="guide-character-grid">
+      {% for character in characters %}
+      <a class="guide-character-card" href="{{ character.url | relative_url }}">
+        <div class="guide-card-thumb">
+          <img src="{{ character.teaser | relative_url }}" alt="{{ character.character }}" loading="lazy">
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-pill-row">
+            <span class="guide-pill">{{ character.role }}</span>
+            <span class="guide-rating" data-rating="{{ character.pull_rating }}">{{ character.pull_rating }}</span>
+          </div>
+          <h3>{{ character.character }}</h3>
+          <p class="guide-character-meta">{{ character.combat_type }}{% if character.weapon_or_path %} · {{ character.weapon_or_path }}{% endif %}</p>
+          <p>{{ character.quick_take | strip_html | truncate: 100 }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Banner status -->
+  <section class="guide-section">
+    <h2>What's Live</h2>
+    <div class="guide-live-grid">
+      <div class="guide-live-card">
+        <p class="guide-live-row"><span class="guide-live-label">Live now:</span>{{ game.latest_snapshot.live_now }}</p>
+        <p class="guide-live-row"><span class="guide-live-label">Next up:</span>{{ game.latest_snapshot.next_up }}</p>
+        <p class="guide-live-row"><span class="guide-live-label">Meta watch:</span>{{ game.latest_snapshot.meta_watch }}</p>
+        <p class="guide-character-meta" style="margin-top:0.5rem;">{{ game.latest_snapshot.source_note }}</p>
+        <ul class="guide-source-list">
+          {% for source in game.latest_snapshot.sources %}
+          <li><a href="{{ source.url }}">{{ source.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="guide-actions" style="margin-top:0.8rem;">
+      <a class="btn btn--primary" href="{{ pull_test_url | relative_url }}">Open Pull Simulator</a>
+    </div>
+  </section>
+
+  <div class="guide-ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8172357380640839"
+         data-ad-slot="3049671934"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <section class="guide-section guide-subscription">
+    <h2>Stay Updated</h2>
+    <p>Get banner alerts and new {{ game.short_title }} guides — no spam.</p>
+    {% include subscription-form.html %}
+  </section>
+</div>
