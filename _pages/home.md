@@ -26,7 +26,7 @@ header:
 
 
 
-feature_row:    
+feature_row:
   - image_path: /assets/images/wackywisher/1.png
     alt: "Wacky Wisher all new Silly Wisher for Genshin Impact plus Genlatro Balatro"
     title: "Wacky Wisher: New Silly Genshin Wisher plus Free Balatro"
