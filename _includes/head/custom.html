@@ -1,10 +1,13 @@
 <!-- start custom head snippets -->
 
 {% if page.url contains '/characters/' or page.url contains '/pulls/' %}
-  <!-- Targeted AdSense + rewarded ads only on character-guide and pull pages -->
+  <!-- Same AdSense loader; /characters/ → Auto ads only. /pulls/ → rewarded API (second script below); optional adbreak test in dev. -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8172357380640839"
        crossorigin="anonymous"
-       {% unless jekyll.environment == 'production' %}data-adbreak-test="on"{% endunless %}></script>
+       {% if page.url contains '/pulls/' %}{% unless jekyll.environment == 'production' %}data-adbreak-test="on"{% endunless %}{% endif %}></script>
+{% endif %}
+
+{% if page.url contains '/pulls/' %}
   <script>
     window.adsbygoogle = window.adsbygoogle || [];
     window.adBreak = window.adBreak || function(config) {
