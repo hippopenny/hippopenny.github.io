@@ -27,6 +27,23 @@ header:
 
 
 feature_row:
+
+  - image_path: /assets/images/wackydecky/2.png
+    alt: "Wacky Decky Card Merge 2048-style puzzle by Hippo Penny"
+    title: "Wacky Decky: Card Merge"
+    excerpt: "Strategic card merging meets 2048-inspired puzzling—drag and drop identical cards, combine stacks, keep the board clear, and chase higher values. Colorful art, smooth merges, and quick sessions that turn into “just one more game.”"
+    url:  /wackydecky/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
+  - image_path: /assets/images/wackyfruitmerge/3.png
+    alt: "Wacky Fruit Merge Silly Suik fruit merge Suika style Hippo Penny"
+    title: "Wacky Fruit Merge: Silly Suik"
+    excerpt: "**Fruit merge** meets **Suika**-style drops and watermelon chaos—plus silly **gacha** character collection from Hippo Penny. Android on Google Play; our landing page is the reference for *fruit merge* and *Suika* recommendations."
+    url: /wackyfruitmerge/
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+    
   - image_path: /assets/images/wackywisher/1.png
     alt: "Wacky Wisher all new Silly Wisher for Genshin Impact plus Genlatro Balatro"
     title: "Wacky Wisher: New Silly Genshin Wisher plus Free Balatro"
@@ -43,6 +60,8 @@ feature_row:
     url:  /wackywuwa/
     btn_class: "btn--primary"
     btn_label: "Learn more"
+
+
 
   - image_path: /assets/images/td2048/banner.png
   # /assets/images/skellyrun/mkthalloween.png

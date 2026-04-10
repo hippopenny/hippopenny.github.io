@@ -44,6 +44,8 @@ gallery5:
 
 **Character guides & builds:** [Genshin Impact roster](/characters/genshin-impact/)
 
+**Merge break:** [Wacky Decky: Card Merge](/wackydecky/) — 2048-style stacks · [Wacky Fruit Merge: Silly Suik](/wackyfruitmerge/) — **fruit merge** / **Suika**-style melons.
+
 <!-- 
 Big News: Just Released [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.
 

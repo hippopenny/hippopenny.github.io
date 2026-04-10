@@ -37,11 +37,14 @@ gallery4:
 
 🔥🔥🔥 New Silly Wisher: [Wacky Wisher](/wackywisher) 🔥🔥🔥
 
+**Merge break:** [Wacky Decky: Card Merge](/wackydecky/) — stack cards · [Wacky Fruit Merge](/wackyfruitmerge/) — **fruit merge** / **Suika** energy.
+
+
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)
 
 
-Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by *10x*. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to check out for Honkai Star Rail, or [Wacky Wuwa](/wackywuwa) for Wuthering Waves fan. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
+Silly Wisher promises to inject a hefty dose of humor into your Genshin Impact obsession, mixing the beloved wish system from Genshin Impact with meme sauce. But hold onto your hats—there’s a new game in town, Wacky Warper, that takes all the fun of Silly Wisher and cranks it up by *10x*. With character dressing, chatting, and an ever-growing list of hilarious mini-games, [Wacky Warper](/wackywarper) is something you’ll definitely want to check out for Honkai Star Rail, or [Wacky Wuwa](/wackywuwa) for Wuthering Waves fan. Want a break from gacha odds altogether? Try [Wacky Decky: Card Merge](/wackydecky/) — merge cards, chase high scores, no pity system in sight. But we’ll save the full reveal for later. Now, back to the business of Silly Wisher.
 
 
 Download New Silly Wisher
@@ -69,7 +72,7 @@ The game starts you off with enough resources to make 90 wishes, perfect for div
 
 **Characters and Banners**
 
-This game has all the characters, from obscure 4-star weapons to coveted 5-star characters, all in ridiculous forms. It updates frequently, so there’s always something new to pull. It’s like a never-ending parade of hilarity. And if pulling characters isn’t enough, you can mix them using the gene splicing feature. The results are often as horrifying as they are hilarious.
+This game has all the characters, from obscure 4-star weapons to coveted 5-star characters, all in ridiculous forms. It updates frequently, so there’s always something new to pull. It’s like a never-ending parade of hilarity. And if pulling characters isn’t enough, you can mix them using the gene splicing feature. The results are often as horrifying as they are hilarious. For pull priorities, builds, and team ideas on the live game roster, see [Genshin Impact character guides](/characters/genshin-impact/).
 
 {% include gallery id="gallery1" %}
 
