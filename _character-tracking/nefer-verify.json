@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-04-02T07:11:52.110Z",
+  "filters": {
+    "onlyGame": "genshin-impact",
+    "onlySlug": "nefer"
+  },
+  "totals": {
+    "folders": 1,
+    "images": 4,
+    "suspiciousImages": 2,
+    "mismatchFiles": 0
+  },
+  "suspicious": [
+    {
+      "game": "genshin-impact",
+      "slug": "nefer",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "nefer",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    }
+  ]
+}

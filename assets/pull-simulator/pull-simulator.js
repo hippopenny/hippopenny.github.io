@@ -1,7 +1,5 @@
 import { SIMULATOR_CONFIGS } from "./pull-simulator-config.js";
-
-const STORAGE_PREFIX = "hippo-pull-simulator/v1";
-const FALLBACK_AD_SECONDS = 10;
+import { mergePersistedPullState, storageKeyForConfig } from "./pull-simulator-storage.js";
 
 function chooseRandom(items) {
   return items[Math.floor(Math.random() * items.length)];
@@ -27,6 +25,7 @@ class PullSimulator {
     this.state = this.loadState();
     this.lastPullCount = 0;
     this.adModalCleanup = null;
+    this.rewardRequestPending = false;
     this.renderShell();
     this.bindEvents();
     this.renderAll();
@@ -40,7 +39,7 @@ class PullSimulator {
   }
 
   get storageKey() {
-    return `${STORAGE_PREFIX}:${this.config.key}`;
+    return storageKeyForConfig(this.config.key);
   }
 
   get currency() {
@@ -58,8 +57,12 @@ class PullSimulator {
   loadState() {
     const requestedBannerId = this.getRequestedBannerId();
     const c = this.config.currency;
+    const bannerIds = new Set(this.config.banners.map((b) => b.id));
+    const firstBannerId = this.config.banners[0]?.id;
+    let chosen = requestedBannerId || firstBannerId;
+    if (!bannerIds.has(chosen)) chosen = firstBannerId;
     const fallback = {
-      activeBannerId: requestedBannerId || this.config.banners[0].id,
+      activeBannerId: chosen,
       pity5: 0,
       pity4: 0,
       featuredGuarantee: false,
@@ -75,21 +78,10 @@ class PullSimulator {
       const raw = window.localStorage.getItem(this.storageKey);
       if (!raw) return fallback;
       const parsed = JSON.parse(raw);
-      const merged = {
-        ...fallback,
-        ...parsed,
-        activeBannerId: requestedBannerId || parsed.activeBannerId || fallback.activeBannerId,
-        rarityCounts: { ...fallback.rarityCounts, ...(parsed.rarityCounts || {}) },
-        inventory: parsed.inventory || {},
-        premiumCurrency:
-          typeof parsed.premiumCurrency === "number"
-            ? parsed.premiumCurrency
-            : fallback.premiumCurrency,
-        lastAdRewardAt:
-          parsed.lastAdRewardAt === null || typeof parsed.lastAdRewardAt === "number"
-            ? parsed.lastAdRewardAt
-            : fallback.lastAdRewardAt
-      };
+      let merged = mergePersistedPullState(fallback, parsed, requestedBannerId);
+      if (!bannerIds.has(merged.activeBannerId)) {
+        merged = { ...merged, activeBannerId: fallback.activeBannerId };
+      }
       return merged;
     } catch {
       return fallback;
@@ -129,12 +121,22 @@ class PullSimulator {
     this.root.classList.add("pull-shell");
     this.root.style.setProperty("--pull-accent", this.config.accent);
 
-    const bannerTabs = this.config.banners
-      .map((b) => `<button class="pull-tab" data-banner-id="${b.id}" type="button">${escapeHtml(b.name)}</button>`)
+    const bannerOptions = this.config.banners
+      .map(
+        (b) =>
+          `<option value="${escapeHtml(b.id)}">${escapeHtml(b.name)} — ${escapeHtml(b.label)}</option>`
+      )
       .join("");
 
     this.root.innerHTML = `
-      <nav class="pull-tab-bar" data-role="tab-bar">${bannerTabs}</nav>
+      <div class="pull-banner-toolbar">
+        <label class="pull-banner-select-label">
+          <span class="pull-banner-select-kicker">Featured character</span>
+          <select class="pull-banner-select" data-role="banner-select" aria-label="Choose featured banner">
+            ${bannerOptions}
+          </select>
+        </label>
+      </div>
 
       <section class="pull-banner-hero" data-role="banner-hero"></section>
 
@@ -162,7 +164,7 @@ class PullSimulator {
             <ins class="adsbygoogle"
                  style="display:block;width:100%;min-height:100px;"
                  data-ad-client="ca-pub-8172357380640839"
-                 data-ad-slot="3049671934"
+                 data-ad-slot="4576513797"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
           </div>
@@ -177,7 +179,7 @@ class PullSimulator {
       </section>
     `;
 
-    this.tabBar = this.root.querySelector('[data-role="tab-bar"]');
+    this.bannerSelect = this.root.querySelector('[data-role="banner-select"]');
     this.bannerHero = this.root.querySelector('[data-role="banner-hero"]');
     this.statsNode = this.root.querySelector('[data-role="stats"]');
     this.latestResultsNode = this.root.querySelector('[data-role="latest-results"]');
@@ -228,10 +230,8 @@ class PullSimulator {
   }
 
   bindEvents() {
-    this.tabBar.addEventListener("click", (e) => {
-      const tab = e.target.closest("[data-banner-id]");
-      if (!tab) return;
-      this.state.activeBannerId = tab.dataset.bannerId;
+    this.bannerSelect.addEventListener("change", () => {
+      this.state.activeBannerId = this.bannerSelect.value;
       this.persist();
       this.renderAll();
     });
@@ -354,25 +354,61 @@ class PullSimulator {
 
   onWatchAdClick() {
     const remaining = this.getAdCooldownRemainingMs();
-    if (remaining > 0) return;
+    if (remaining > 0 || this.rewardRequestPending) return;
 
+    let settled = false;
+    const settle = () => {
+      this.rewardRequestPending = false;
+    };
     const grant = () => {
+      if (settled) return;
+      settled = true;
+      settle();
       this.state.premiumCurrency += this.currency.adRewardAmount;
       this.state.lastAdRewardAt = Date.now();
       this.persist();
       this.renderAll();
       this.closeAdModal();
     };
+    const completeWithoutReward = (message) => {
+      if (settled) return;
+      settled = true;
+      settle();
+      this.renderAll();
+      this.openRewardMessageModal(message);
+    };
+
+    this.rewardRequestPending = true;
+    this.renderAll();
 
     if (typeof window.hippopennyPullSimulatorShowRewardedAd === "function") {
       try {
-        window.hippopennyPullSimulatorShowRewardedAd(() => grant());
+        window.hippopennyPullSimulatorShowRewardedAd({
+          placementName: `${this.config.key}_pull_reward`,
+          onViewed: () => grant(),
+          onDismissed: () => {
+            completeWithoutReward({
+              title: "Reward Incomplete",
+              body: "The ad was closed before it finished, so no bonus currency was granted."
+            });
+          },
+          onUnavailable: (status) => {
+            if (status === "dismissed") {
+              completeWithoutReward({
+                title: "Reward Incomplete",
+                body: "The ad was closed before it finished, so no bonus currency was granted."
+              });
+              return;
+            }
+            this.openRewardUnavailableModal(status);
+          }
+        });
       } catch {
-        this.openFallbackAdModal(grant);
+        this.openRewardUnavailableModal("error");
       }
       return;
     }
-    this.openFallbackAdModal(grant);
+    this.openRewardUnavailableModal("notReady");
   }
 
   closeAdModal() {
@@ -382,7 +418,7 @@ class PullSimulator {
     }
   }
 
-  openFallbackAdModal(onReward) {
+  openRewardMessageModal({ title, body }) {
     this.closeAdModal();
     const overlay = document.createElement("div");
     overlay.className = "pull-ad-modal-overlay";
@@ -390,64 +426,66 @@ class PullSimulator {
     overlay.setAttribute("aria-modal", "true");
     overlay.innerHTML = `
       <div class="pull-ad-modal">
-        <h3 class="pull-ad-modal__title">Reward</h3>
-        <p class="pull-ad-modal__text">When you integrate a rewarded provider, assign <code>window.hippopennyPullSimulatorShowRewardedAd</code> to skip this step. Otherwise wait, then claim.</p>
-        <div class="pull-ad-modal__ad" data-role="modal-ad" aria-hidden="true"></div>
-        <p class="pull-ad-modal__timer" data-role="timer"></p>
-        <button type="button" class="pull-btn pull-btn--hero pull-ad-modal__claim" data-role="claim" disabled>Claim ${formatNum(this.currency.adRewardAmount)} ${escapeHtml(this.currency.premiumName)}</button>
-        <button type="button" class="pull-btn pull-btn--secondary pull-ad-modal__close" data-role="close">Close</button>
+        <h3 class="pull-ad-modal__title">${escapeHtml(title)}</h3>
+        <p class="pull-ad-modal__text">${escapeHtml(body)}</p>
+        <button type="button" class="pull-btn pull-btn--hero pull-ad-modal__claim" data-role="close">OK</button>
       </div>
     `;
     document.body.appendChild(overlay);
 
-    const claimBtn = overlay.querySelector('[data-role="claim"]');
-    const timerEl = overlay.querySelector('[data-role="timer"]');
-    const modalAd = overlay.querySelector('[data-role="modal-ad"]');
-    modalAd.innerHTML = `<div class="pull-ad-modal__placeholder">Rewarded ad slot</div>`;
-
-    let left = FALLBACK_AD_SECONDS;
-    timerEl.textContent = `Available in ${left}s…`;
-    const interval = window.setInterval(() => {
-      left -= 1;
-      if (left <= 0) {
-        window.clearInterval(interval);
-        claimBtn.disabled = false;
-        timerEl.textContent = "You can claim now.";
-      } else {
-        timerEl.textContent = `Available in ${left}s…`;
-      }
-    }, 1000);
-
     const finish = () => {
-      window.clearInterval(interval);
       overlay.remove();
     };
 
-    claimBtn.addEventListener("click", () => {
-      if (claimBtn.disabled) return;
-      onReward();
-      finish();
-    });
-    overlay.querySelector('[data-role="close"]').addEventListener("click", () => {
-      window.clearInterval(interval);
-      overlay.remove();
-    });
+    overlay.querySelector('[data-role="close"]').addEventListener("click", finish);
     overlay.addEventListener("click", (e) => {
-      if (e.target === overlay) {
-        window.clearInterval(interval);
-        overlay.remove();
-      }
+      if (e.target === overlay) finish();
     });
 
     this.adModalCleanup = () => {
-      window.clearInterval(interval);
-      overlay.remove();
+      finish();
     };
+  }
+
+  openRewardUnavailableModal(status) {
+    const messages = {
+      notReady: {
+        title: "Reward Not Ready",
+        body: "The rewarded ad is still loading. Give it a moment and try again."
+      },
+      noAdPreloaded: {
+        title: "Reward Unavailable",
+        body: "No rewarded ad is ready right now. Please try again in a bit."
+      },
+      frequencyCapped: {
+        title: "Reward Cooling Down",
+        body: "Rewarded ads are temporarily capped right now. Please try again later."
+      },
+      dismissed: {
+        title: "Reward Incomplete",
+        body: "The ad was dismissed before completion, so no reward was granted."
+      },
+      error: {
+        title: "Reward Unavailable",
+        body: "The rewarded ad could not be shown right now. Please try again later."
+      },
+      timeout: {
+        title: "Reward Timed Out",
+        body: "The rewarded ad took too long to load. Please try again."
+      },
+      other: {
+        title: "Reward Unavailable",
+        body: "A rewarded ad is not available right now. Please try again later."
+      }
+    };
+
+    const message = messages[status] || messages.other;
+    this.openRewardMessageModal(message);
   }
 
   renderAll() {
     this.syncBannerQuery();
-    this.renderTabs();
+    this.syncBannerSelect();
     this.renderBannerHero();
     this.renderStats();
     this.renderLatestResults();
@@ -463,10 +501,11 @@ class PullSimulator {
     window.history.replaceState({}, "", url);
   }
 
-  renderTabs() {
-    this.tabBar.querySelectorAll(".pull-tab").forEach((tab) => {
-      tab.classList.toggle("is-active", tab.dataset.bannerId === this.activeBanner.id);
-    });
+  syncBannerSelect() {
+    if (!this.bannerSelect) return;
+    if (this.bannerSelect.value !== this.activeBanner.id) {
+      this.bannerSelect.value = this.activeBanner.id;
+    }
   }
 
   renderBannerHero() {
@@ -484,13 +523,15 @@ class PullSimulator {
     const can1 = this.canAfford(1);
     const can10 = this.canAfford(10);
     const cdLeft = this.getAdCooldownRemainingMs();
-    const adDisabled = cdLeft > 0;
+    const adDisabled = cdLeft > 0 || this.rewardRequestPending;
     const adLabel = adDisabled
-      ? `Ad (${this.formatCooldown(cdLeft)})`
+      ? (this.rewardRequestPending
+          ? "Checking reward..."
+          : `Ad (${this.formatCooldown(cdLeft)})`)
       : `Watch ad (+${formatNum(cur.adRewardAmount)})`;
 
     this.bannerHero.innerHTML = `
-      <div class="pull-banner-hero__media" style="background-image:url('${banner.image}')"></div>
+      <div class="pull-banner-hero__media" style="background-image:url('${banner.image || ""}')"></div>
       <div class="pull-banner-hero__content">
         <div class="pull-wallet" data-role="wallet">
           <div class="pull-wallet__row">
@@ -599,12 +640,17 @@ class PullSimulator {
       guideUrl: this.config.guideHubUrl,
       tag: "Standard"
     }));
-    const entries = [...bannerRows, ...standardRows].sort((a, b) => b.count - a.count);
+    const entries = [...bannerRows, ...standardRows].filter((e) => e.count > 0).sort((a, b) => b.count - a.count);
+
+    if (!entries.length) {
+      this.inventoryNode.innerHTML = `<li>No rate-ups in inventory yet — keep pulling.</li>`;
+      return;
+    }
 
     this.inventoryNode.innerHTML = entries
       .map((e) => {
         const tag = e.tag ? ` <span class="pull-inv-tag">${escapeHtml(e.tag)}</span>` : "";
-        return `<li><strong>${escapeHtml(e.name)}</strong> ×${e.count}${tag} <a href="${e.guideUrl}">guides</a></li>`;
+        return `<li><strong>${escapeHtml(e.name)}</strong> ×${e.count}${tag} <a href="${e.guideUrl}">guide</a></li>`;
       })
       .join("");
   }

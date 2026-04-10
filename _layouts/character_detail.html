@@ -2,7 +2,7 @@
 layout: single
 ---
 {% assign game = site.data.character_games[page.game] %}
-{% assign related = site.characters | where: 'game', page.game | where_exp: 'item', 'item.url != page.url' | sort: 'title' %}
+{% assign related = site.characters | where: 'game', page.game | where_exp: 'item', 'item.url != page.url' | where_exp: 'item', 'item.draft_guide != true' | sort: 'title' %}
 {% assign page_segments = page.url | split: '/' %}
 {% assign banner_id = page_segments[3] %}
 {% assign pull_test_url = '/pulls/' | append: page.game | append: '/?banner=' | append: banner_id %}
@@ -66,7 +66,7 @@ layout: single
   {% if page.quick_tricks %}
   <!-- ③ Quick tips -->
   <section class="guide-section">
-    <h2>Quick Tips</h2>
+    <h2>Instant Tech</h2>
     <div class="guide-trick-grid">
       {% for trick in page.quick_tricks %}
       <article class="guide-trick-card">
@@ -103,7 +103,7 @@ layout: single
 
   <!-- ⑤ Build & Teams (all practical info in one panel) -->
   <section class="guide-section">
-    <h2>Build & Teams</h2>
+    <h2>Build Plan</h2>
     <div class="guide-grid">
       <div class="guide-card">
         <h3>Build Priority</h3>
@@ -147,7 +147,7 @@ layout: single
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-8172357380640839"
-         data-ad-slot="3049671934"
+         data-ad-slot="4576513797"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -155,9 +155,10 @@ layout: single
 
   {% if page.gallery %}
   <!-- ⑦ Gallery -->
-  <section class="guide-section">
-    <h2>{{ page.character }}</h2>
-    <div class="guide-gallery">
+  <section class="guide-section guide-section--gallery">
+    <h2 class="guide-gallery-heading">Art &amp; splash gallery</h2>
+    <p class="guide-gallery-lead">Key art, wish splashes, and promo shots for {{ page.character }} — tap any card to open the wiki page.</p>
+    <div class="guide-gallery guide-gallery--lush">
       {% for item in page.gallery %}
       <figure class="guide-gallery-item">
         {% if item.url %}
@@ -205,7 +206,7 @@ layout: single
 
   <section class="guide-section guide-subscription">
     <h2>Stay Updated</h2>
-    <p>Get banner alerts, new guides, and patch notes — no spam.</p>
+    <p>Get banner alerts, new guides, and patch notes without signing up for inbox damage over time.</p>
     {% include subscription-form.html %}
   </section>
 </div>

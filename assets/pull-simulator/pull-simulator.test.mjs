@@ -3,6 +3,11 @@
  */
 import assert from "assert";
 import { SIMULATOR_CONFIGS } from "./pull-simulator-config.js";
+import {
+  mergePersistedPullState,
+  storageKeyForConfig,
+  STORAGE_PREFIX
+} from "./pull-simulator-storage.js";
 
 function resolveRarity(state, pity, randoms) {
   let i = 0;
@@ -88,5 +93,79 @@ assert.strictEqual(resolveRarity({ pity5: 79, pity4: 0 }, wu, []), 5, "WuWa hard
 const ob = pickOffBannerStandard(SIMULATOR_CONFIGS["genshin-impact"], "furina");
 assert.ok(ob.pick && ob.pick !== "Furina", "off-banner is from standard pool not featured");
 assert.strictEqual(ob.stdSize, 7);
+
+// --- Storage key + merge (localStorage contract)
+assert.strictEqual(
+  storageKeyForConfig("genshin-impact"),
+  `${STORAGE_PREFIX}:genshin-impact`,
+  "per-game isolated storage key"
+);
+
+const baseFallback = {
+  activeBannerId: "furina",
+  pity5: 0,
+  pity4: 0,
+  featuredGuarantee: false,
+  totalPulls: 0,
+  recentResults: [],
+  inventory: {},
+  rarityCounts: { 5: 0, 4: 0, 3: 0 },
+  premiumCurrency: 1600,
+  lastAdRewardAt: null
+};
+
+assert.strictEqual(
+  mergePersistedPullState(baseFallback, { activeBannerId: "nahida" }, "furina").activeBannerId,
+  "furina",
+  "?banner= in URL overrides stored tab"
+);
+
+assert.strictEqual(
+  mergePersistedPullState(baseFallback, { activeBannerId: "nahida" }, null).activeBannerId,
+  "nahida",
+  "stored tab used when no URL override"
+);
+
+assert.strictEqual(
+  mergePersistedPullState(baseFallback, { premiumCurrency: "oops" }, null).premiumCurrency,
+  1600,
+  "non-numeric premiumCurrency falls back"
+);
+
+assert.deepStrictEqual(
+  mergePersistedPullState(baseFallback, { rarityCounts: { 5: 2 } }, null).rarityCounts,
+  { 5: 2, 4: 0, 3: 0 },
+  "partial rarityCounts merge with defaults"
+);
+
+assert.strictEqual(
+  mergePersistedPullState(baseFallback, { lastAdRewardAt: "bad" }, null).lastAdRewardAt,
+  null,
+  "invalid lastAdRewardAt falls back"
+);
+
+assert.strictEqual(
+  mergePersistedPullState(baseFallback, { lastAdRewardAt: 1_700_000_000_000 }, null).lastAdRewardAt,
+  1_700_000_000_000,
+  "numeric lastAdRewardAt kept"
+);
+
+const roundTrip = JSON.parse(
+  JSON.stringify(
+    mergePersistedPullState(
+      baseFallback,
+      {
+        pity5: 40,
+        premiumCurrency: 5000,
+        inventory: { Furina: 1 },
+        lastAdRewardAt: null
+      },
+      null
+    )
+  )
+);
+assert.strictEqual(roundTrip.pity5, 40);
+assert.strictEqual(roundTrip.inventory.Furina, 1);
+assert.strictEqual(roundTrip.premiumCurrency, 5000);
 
 console.log("pull-simulator.test.mjs: all assertions passed.");

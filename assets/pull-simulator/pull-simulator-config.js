@@ -1,8 +1,14 @@
+import {
+  GENSHIN_BANNERS,
+  HSR_BANNERS,
+  WUWA_BANNERS
+} from "./pull-simulator-banners.generated.js";
+
 export const SIMULATOR_CONFIGS = {
   "genshin-impact": {
     key: "genshin-impact",
     title: "Genshin Impact Pull Test",
-    subtitle: "Fan-style banner pulls for Arlecchino, Furina, and Nahida.",
+    subtitle: "Fan-style featured banners for the full playable roster — pick a character, test pity, and jump to their guide.",
     accent: "#37c6ff",
     backdrop: "/assets/images/wackywisher/4.png",
     guideHubUrl: "/characters/genshin-impact/",
@@ -11,8 +17,8 @@ export const SIMULATOR_CONFIGS = {
       ticketName: "Intertwined Fate",
       costPerWish: 160,
       startingAmount: 1600,
-      adRewardAmount: 7200,
-      adCooldownMs: 6 * 60 * 60 * 1000
+      adRewardAmount: 320,
+      adCooldownMs: 0
     },
     pity: {
       fiveStarHard: 90,
@@ -22,32 +28,7 @@ export const SIMULATOR_CONFIGS = {
       featuredWinRate: 0.5,
       fourStarFloorFiveStarRate: 0.06
     },
-    banners: [
-      {
-        id: "arlecchino",
-        name: "Arlecchino",
-        label: "Pyro Parade",
-        image: "/assets/images/wackywisher/2.png",
-        guideUrl: "/characters/genshin-impact/arlecchino/",
-        blurb: "Aggressive on-field DPS banner with a selfish carry payoff."
-      },
-      {
-        id: "furina",
-        name: "Furina",
-        label: "Hydro Encore",
-        image: "/assets/images/wackywisher/1.png",
-        guideUrl: "/characters/genshin-impact/furina/",
-        blurb: "High-value support banner with strong account-scaling appeal."
-      },
-      {
-        id: "nahida",
-        name: "Nahida",
-        label: "Dendro Spark",
-        image: "/assets/images/wackywisher/3.png",
-        guideUrl: "/characters/genshin-impact/nahida/",
-        blurb: "Low-friction reaction support banner for broad roster value."
-      }
-    ],
+    banners: GENSHIN_BANNERS,
     standardFiveStarPool: [
       { id: "std-diluc", name: "Diluc", image: null },
       { id: "std-jean", name: "Jean", image: null },
@@ -71,7 +52,7 @@ export const SIMULATOR_CONFIGS = {
   "honkai-star-rail": {
     key: "honkai-star-rail",
     title: "Honkai: Star Rail Pull Test",
-    subtitle: "Fan-style warp banners for Acheron, Firefly, and Ruan Mei.",
+    subtitle: "Fan-style warps for every playable character — odds approximate live pity and 50/50.",
     accent: "#7b8cff",
     backdrop: "/assets/images/offrail/background-smaller.png",
     guideHubUrl: "/characters/honkai-star-rail/",
@@ -80,8 +61,8 @@ export const SIMULATOR_CONFIGS = {
       ticketName: "Star Rail Special Pass",
       costPerWish: 160,
       startingAmount: 1600,
-      adRewardAmount: 7200,
-      adCooldownMs: 6 * 60 * 60 * 1000
+      adRewardAmount: 320,
+      adCooldownMs: 0
     },
     pity: {
       fiveStarHard: 90,
@@ -91,32 +72,7 @@ export const SIMULATOR_CONFIGS = {
       featuredWinRate: 0.5,
       fourStarFloorFiveStarRate: 0.06
     },
-    banners: [
-      {
-        id: "acheron",
-        name: "Acheron",
-        label: "Storm Verdict",
-        image: "/assets/images/offrail/banner.png",
-        guideUrl: "/characters/honkai-star-rail/acheron/",
-        blurb: "High-ceiling premium carry banner that rewards structured teams."
-      },
-      {
-        id: "firefly",
-        name: "Firefly",
-        label: "Break Horizon",
-        image: "/assets/images/offrail/firefly-2.png",
-        guideUrl: "/characters/honkai-star-rail/firefly/",
-        blurb: "Break-focused carry banner with strong identity and higher setup needs."
-      },
-      {
-        id: "ruan-mei",
-        name: "Ruan Mei",
-        label: "Harmony Drift",
-        image: "/assets/images/offrail/ruanmei.JPG",
-        guideUrl: "/characters/honkai-star-rail/ruan-mei/",
-        blurb: "Broad account-value support banner for players chasing consistency."
-      }
-    ],
+    banners: HSR_BANNERS,
     standardFiveStarPool: [
       { id: "std-himeko", name: "Himeko", image: null },
       { id: "std-welt", name: "Welt", image: null },
@@ -139,7 +95,7 @@ export const SIMULATOR_CONFIGS = {
   "wuthering-waves": {
     key: "wuthering-waves",
     title: "Wuthering Waves Pull Test",
-    subtitle: "Fan-style convenes for Camellya, Jinhsi, and Verina.",
+    subtitle: "Fan-style convenes for all playable resonators — pity differs from HoYo titles (80 soft context).",
     accent: "#ff8a65",
     backdrop: "/assets/images/wackywuwa/banner.png",
     guideHubUrl: "/characters/wuthering-waves/",
@@ -148,8 +104,8 @@ export const SIMULATOR_CONFIGS = {
       ticketName: "Lustrous Tide",
       costPerWish: 160,
       startingAmount: 1600,
-      adRewardAmount: 7200,
-      adCooldownMs: 6 * 60 * 60 * 1000
+      adRewardAmount: 320,
+      adCooldownMs: 0
     },
     pity: {
       fiveStarHard: 80,
@@ -159,32 +115,7 @@ export const SIMULATOR_CONFIGS = {
       featuredWinRate: 0.5,
       fourStarFloorFiveStarRate: 0.06
     },
-    banners: [
-      {
-        id: "camellya",
-        name: "Camellya",
-        label: "Havoc Bloom",
-        image: "/assets/images/wackywuwa/2.jpg",
-        guideUrl: "/characters/wuthering-waves/camellya/",
-        blurb: "Premium carry banner for players ready to commit field time and resources."
-      },
-      {
-        id: "jinhsi",
-        name: "Jinhsi",
-        label: "Spectro Crown",
-        image: "/assets/images/wackywuwa/1.png",
-        guideUrl: "/characters/wuthering-waves/jinhsi/",
-        blurb: "Broad-appeal carry banner with a cleaner value proposition."
-      },
-      {
-        id: "verina",
-        name: "Verina",
-        label: "Garden Support",
-        image: "/assets/images/wackywuwa/chat.webp",
-        guideUrl: "/characters/wuthering-waves/verina/",
-        blurb: "Roster-stabilizing support banner with immediate practical value."
-      }
-    ],
+    banners: WUWA_BANNERS,
     standardFiveStarPool: [
       { id: "std-encore", name: "Encore", image: null },
       { id: "std-jianxin", name: "Jianxin", image: null },

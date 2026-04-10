@@ -1,10 +1,10 @@
 ---
 title: Arlecchino Guide
-excerpt: "Arlecchino quick verdict, build priority, teams, and practical pull value for current Genshin cycles."
+excerpt: "Arlecchino quick verdict, build plan, teams, and whether this Pyro menace is worth your pulls."
 character: Arlecchino
 game: genshin-impact
 permalink: /characters/genshin-impact/arlecchino/
-tagline: "A ruthless field-time carry for players who want direct damage and do not mind learning her risk profile."
+tagline: "A ruthless on-field demon for players who want big red numbers and do not mind living a little dangerously."
 teaser: /assets/images/characters/genshin-impact/arlecchino.jpg
 image_source_label: "Official Genshin YouTube character demo thumbnail"
 image_source_url: "https://www.youtube.com/watch?v=TnYFVP3c_bs"
@@ -15,12 +15,12 @@ combat_type: Pyro
 weapon_or_path_label: Weapon
 weapon_or_path: Polearm
 pull_rating: A
-preview_trick: "Bank her burst-ready setup before hard-committing field time."
-quick_verdict: Pull if you want an aggressive on-field carry
+preview_trick: "Preload the squad before she hits the stage and starts deleting health bars."
+quick_verdict: Pull if you want an aggressive carry who hogs the screen and earns it
 investment: Medium to High
 mode_focus: Bossing and damage-focused clears
 updated_for: Recheck on major Pyro or support additions
-quick_take: Arlecchino is a premium damage dealer with a clear job. If you want a selfish carry that rewards execution and team planning, she delivers. If you want flexibility, other pulls are easier to justify.
+quick_take: "Arlecchino does one thing and does it with zero shame: she grabs the field and starts cooking. If you want a selfish carry with boss-melter energy, she absolutely delivers. If you want a comfy flex pick, this is probably not your gremlin."
 quick_tricks:
   - "Start rotations with support skills already pre-loaded so Arlecchino can spend full windows attacking instead of swapping."
   - "Use a shield or strong sustain unit when learning her pattern to protect damage uptime."
@@ -31,13 +31,13 @@ common_mistakes:
   - "Over-investing side stats before crit balance is stable."
   - "Entering her damage window without support buffs online."
   - "Treating her like a flexible swap DPS instead of a committed field-time carry."
-build_priority: Get her main damage stats online early and make sure the team around her protects uptime. She wants offensive investment more than cute side optimizations.
-gearing: Lean into crit balance and attack-oriented damage pieces, then smooth out the rotation with the support units around her.
-premium_team: Surround her with premium buffers and resistance shred so her field time translates directly into kills rather than extended setup.
-budget_team: Use stable reaction support, a reliable defensive slot, and one damage amplifier that does not fight for field time.
+build_priority: Get her real damage stats online first and make sure the squad keeps her swing window safe. She wants raw offense and stable uptime, not cute little side quests in the stat sheet.
+gearing: Stack crit and attack like you mean it, then clean up the rotation with supports that keep her blasting instead of jogging back on stage.
+premium_team: Surround her with juiced buffers and shred so every second on field turns into actual enemy evaporating instead of extra setup homework.
+budget_team: Run steady reaction help, one reliable bodyguard, and one buffer who knows how to stay out of her lane.
 upgrade_order: Prioritize normal attack and skill investment first, then burst according to how often your rotation actually leans on it.
 dupe_value: Dupes improve her ceiling, but the base version already tells you whether you enjoy the playstyle. Pull for the play pattern first.
-verdict: Arlecchino is a strong pick for players who want a committed on-field carry with real payoff. She is not the most flexible pull in the game, but she is a very satisfying one if you like direct, aggressive DPS gameplay.
+verdict: Arlecchino is a sick pull if you want a locked-in on-field carry with real payoff and real attitude. She is not the flexible account fixer, but if your favorite hobby is pressing forward and watching bosses panic, she absolutely rules.
 app_cta_label: Wish for Pyro Chaos in Wacky Wisher
 app_cta_url: /wacky-wisher-stores/
 hub_url: /characters/genshin-impact/
@@ -47,6 +47,22 @@ gallery:
     label: "Carry mode"
   - src: /assets/images/wackywisher/4.png
     label: "Build pass"
+  - src: /assets/images/character-gallery/genshin-impact/arlecchino/01.webp
+    label: "Hero render"
+    url: "https://genshin-impact.fandom.com/wiki/Arlecchino"
+  - src: /assets/images/character-gallery/genshin-impact/arlecchino/02.webp
+    label: "Splash / card"
+    url: "https://genshin-impact.fandom.com/wiki/Arlecchino"
+  - src: /assets/images/character-gallery/genshin-impact/arlecchino/03.webp
+    label: "Wish / promo art"
+    url: "https://genshin-impact.fandom.com/wiki/Arlecchino"
+  - src: /assets/images/character-gallery/genshin-impact/arlecchino/04.webp
+    label: "In-game style shot"
+    url: "https://genshin-impact.fandom.com/wiki/Arlecchino"
+  - src: /assets/images/character-gallery/genshin-impact/arlecchino/05.webp
+    label: "Extra splash"
+    url: "https://genshin-impact.fandom.com/wiki/Arlecchino"
+
 strengths:
   - Strong on-field damage with a distinct play pattern.
   - Feels premium when supported correctly.

@@ -1,8 +1,77 @@
 <!-- start custom head snippets -->
 
-<!-- Google AdSense auto-ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8172357380640839"
-     crossorigin="anonymous"></script>
+{% if page.url contains '/characters/' or page.url contains '/pulls/' %}
+  <!-- Targeted AdSense + rewarded ads only on character-guide and pull pages -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8172357380640839"
+       crossorigin="anonymous"
+       {% unless jekyll.environment == 'production' %}data-adbreak-test="on"{% endunless %}></script>
+  <script>
+    window.adsbygoogle = window.adsbygoogle || [];
+    window.adBreak = window.adBreak || function(config) {
+      window.adsbygoogle.push(config);
+    };
+    window.adConfig = window.adConfig || function(config) {
+      window.adsbygoogle.push(config);
+    };
+
+    if (!window.__hippopennyAdPlacementConfigured) {
+      window.__hippopennyAdPlacementConfigured = true;
+      window.adConfig({
+        preloadAdBreaks: "on",
+        sound: "off"
+      });
+    }
+
+    window.hippopennyPullSimulatorShowRewardedAd =
+      window.hippopennyPullSimulatorShowRewardedAd ||
+      function(optionsOrViewed) {
+        var options =
+          typeof optionsOrViewed === "function"
+            ? { onViewed: optionsOrViewed }
+            : (optionsOrViewed || {});
+
+        if (typeof window.adBreak !== "function") {
+          if (typeof options.onUnavailable === "function") {
+            options.onUnavailable("notReady");
+          }
+          return;
+        }
+
+        window.adBreak({
+          type: "reward",
+          name: options.placementName || "pull_simulator_reward",
+          beforeAd: function() {
+            if (typeof options.beforeAd === "function") options.beforeAd();
+          },
+          afterAd: function() {
+            if (typeof options.afterAd === "function") options.afterAd();
+          },
+          beforeReward: function(showAdFn) {
+            if (typeof options.beforeReward === "function") {
+              options.beforeReward(showAdFn);
+              return;
+            }
+            showAdFn();
+          },
+          adViewed: function() {
+            if (typeof options.onViewed === "function") options.onViewed();
+          },
+          adDismissed: function() {
+            if (typeof options.onDismissed === "function") options.onDismissed();
+          },
+          adBreakDone: function(placementInfo) {
+            if (typeof options.onDone === "function") options.onDone(placementInfo);
+
+            var status = placementInfo && placementInfo.breakStatus;
+            if (status === "viewed" || status === "dismissed") return;
+            if (typeof options.onUnavailable === "function") {
+              options.onUnavailable(status || "other");
+            }
+          }
+        });
+      };
+  </script>
+{% endif %}
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">

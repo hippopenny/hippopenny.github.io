@@ -33,7 +33,48 @@
   background: var(--pull-accent);
 }
 
-/* ═══════════════ TAB BAR ═══════════════ */
+/* ═══════════════ BANNER PICKER (full roster) ═══════════════ */
+.pull-banner-toolbar {
+  margin-bottom: 0.75rem;
+}
+
+.pull-banner-select-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  border: 1px solid var(--pull-border);
+  background: var(--pull-surface);
+}
+
+.pull-banner-select-kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pull-muted);
+}
+
+.pull-banner-select {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--pull-border);
+  background: var(--pull-surface-raised);
+  color: var(--pull-text);
+  font: inherit;
+  font-weight: 600;
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+}
+
+.pull-banner-select:focus {
+  outline: 2px solid color-mix(in srgb, var(--pull-accent) 70%, transparent);
+  outline-offset: 1px;
+}
+
+/* ═══════════════ TAB BAR (legacy / unused) ═══════════════ */
 .pull-tab-bar {
   display: flex;
   gap: 0;

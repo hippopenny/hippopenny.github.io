@@ -42,6 +42,7 @@ gallery5:
 [**Partner Program**](/creator/)
 [**vTuber Models**](/vtuber/)
 
+**Character guides & builds:** [Genshin Impact roster](/characters/genshin-impact/)
 
 <!-- 
 Big News: Just Released [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.

@@ -4,8 +4,5 @@ layout: character_hub
 permalink: /characters/wuthering-waves/
 author_profile: false
 game: wuthering-waves
-excerpt: "Echo priorities, team fit, field time expectations, and which Resonators are worth your resources."
+excerpt: "Echo priorities, team fit, field-time reality checks, and which Resonators deserve your precious Wuwa resources."
 ---
-Use this hub for fast Wuwa answers on Echo setup, team fit, and which Resonators deserve your resources.
-
-Guides stay short, visual, and decision-first so players can move from question to action in minutes.

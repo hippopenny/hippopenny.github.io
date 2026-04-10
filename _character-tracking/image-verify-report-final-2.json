@@ -1,0 +1,3027 @@
+{
+  "generated_at": "2026-04-02T07:57:13.613Z",
+  "filters": {
+    "onlyGame": null,
+    "onlySlug": null
+  },
+  "totals": {
+    "folders": 241,
+    "images": 1059,
+    "suspiciousImages": 251,
+    "mismatchFiles": 0
+  },
+  "suspicious": [
+    {
+      "game": "genshin-impact",
+      "slug": "aether",
+      "file": "02.jpg",
+      "sizeKB": 476.1,
+      "detectedFormat": "unknown",
+      "extension": "jpg",
+      "dims": null,
+      "flags": [
+        "unknown-format"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "aether",
+      "file": "04.jpg",
+      "sizeKB": 745.6,
+      "detectedFormat": "unknown",
+      "extension": "jpg",
+      "dims": null,
+      "flags": [
+        "unknown-format"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "aloy",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "aloy",
+      "file": "05.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "amber",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "amber",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "baizhu",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "baizhu",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "barbara",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "barbara",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "beidou",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "beidou",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "bennett",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "bennett",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "charlotte",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "charlotte",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chasca",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chasca",
+      "file": "05.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chevreuse",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chevreuse",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chiori",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chiori",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chongyun",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "chongyun",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "citlali",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "citlali",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "clorinde",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "clorinde",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "collei",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "collei",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "columbina",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "columbina",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "columbina",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "cyno",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "cyno",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "dahlia",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "dahlia",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "dehya",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "dehya",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "dehya",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "diluc",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "diluc",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "diona",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "diona",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "eula",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "eula",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "faruzan",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "faruzan",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "freminet",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "freminet",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "gorou",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "gorou",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "hu-tao",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "hu-tao",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "iansan",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "iansan",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "iansan",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "illuga",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "illuga",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ineffa",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ineffa",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ineffa",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "jahoda",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "jahoda",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "jahoda",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "jean",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "jean",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kachina",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kachina",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kaedehara-kazuha",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kaedehara-kazuha",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kamisato-ayato",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kamisato-ayato",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "klee",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "klee",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kujou-sara",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kujou-sara",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kuki-shinobu",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "kuki-shinobu",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lauma",
+      "file": "02.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lauma",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "layla",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "layla",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lisa",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lisa",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lumine",
+      "file": "02.jpg",
+      "sizeKB": 476.1,
+      "detectedFormat": "unknown",
+      "extension": "jpg",
+      "dims": null,
+      "flags": [
+        "unknown-format"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lumine",
+      "file": "04.jpg",
+      "sizeKB": 745.6,
+      "detectedFormat": "unknown",
+      "extension": "jpg",
+      "dims": null,
+      "flags": [
+        "unknown-format"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lynette",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "lynette",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mavuika",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mavuika",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mavuika",
+      "file": "05.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mika",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mika",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mika",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mona",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "mona",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "nilou",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "nilou",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "nilou",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ningguang",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ningguang",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ororon",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "ororon",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "rosaria",
+      "file": "04.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "rosaria",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sangonomiya-kokomi",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sangonomiya-kokomi",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sangonomiya-kokomi",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sayu",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sayu",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "shenhe",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "shenhe",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "shikanoin-heizou",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "shikanoin-heizou",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sigewinne",
+      "file": "02.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sigewinne",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "sigewinne",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "skirk",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "skirk",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "tartaglia",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "tartaglia",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "tighnari",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "tighnari",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "varka",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "varka",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "venti",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "venti",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "venti",
+      "file": "05.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "wanderer",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "wanderer",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "wriothesley",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "wriothesley",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xilonen",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xilonen",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xilonen",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xingqiu",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xingqiu",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xingqiu",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xinyan",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "xinyan",
+      "file": "04.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yae-miko",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yae-miko",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yanfei",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yanfei",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yelan",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yelan",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yun-jin",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "yun-jin",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "zhongli",
+      "file": "03.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "zhongli",
+      "file": "04.webp",
+      "sizeKB": 2.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.7KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "zhongli",
+      "file": "05.webp",
+      "sizeKB": 2.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.3KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "zibai",
+      "file": "03.webp",
+      "sizeKB": 2.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.5KB)"
+      ]
+    },
+    {
+      "game": "genshin-impact",
+      "slug": "zibai",
+      "file": "04.webp",
+      "sizeKB": 2.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(2.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "acheron",
+      "file": "03.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "acheron",
+      "file": "04.webp",
+      "sizeKB": 4.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "acheron",
+      "file": "05.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "aglaea",
+      "file": "03.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "aglaea",
+      "file": "04.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "anaxa",
+      "file": "04.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "archer",
+      "file": "04.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "argenti",
+      "file": "04.webp",
+      "sizeKB": 5.6,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.6KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "argenti",
+      "file": "05.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "ashveil",
+      "file": "04.webp",
+      "sizeKB": 5.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "aventurine",
+      "file": "05.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "bailu",
+      "file": "03.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "bronya",
+      "file": "04.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "castorice",
+      "file": "03.webp",
+      "sizeKB": 5.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "cerydra",
+      "file": "04.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "cerydra",
+      "file": "05.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "cipher",
+      "file": "04.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "cipher",
+      "file": "05.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "cyrene",
+      "file": "01.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "cyrene",
+      "file": "05.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "dan-heng-permansor-terrae",
+      "file": "04.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "dr-ratio",
+      "file": "02.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "evernight",
+      "file": "02.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "evernight",
+      "file": "03.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "fu-xuan",
+      "file": "01.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "fugue",
+      "file": "04.webp",
+      "sizeKB": 5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.0KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "gepard",
+      "file": "02.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "gepard",
+      "file": "05.webp",
+      "sizeKB": 4.9,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.9KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "guinaifen",
+      "file": "04.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "guinaifen",
+      "file": "05.webp",
+      "sizeKB": 5.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "hanya",
+      "file": "01.webp",
+      "sizeKB": 1.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(1.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "hanya",
+      "file": "03.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "hanya",
+      "file": "04.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "hanya",
+      "file": "05.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "herta",
+      "file": "01.webp",
+      "sizeKB": 4.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "herta",
+      "file": "03.webp",
+      "sizeKB": 3.9,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(3.9KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "herta",
+      "file": "04.webp",
+      "sizeKB": 3.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(3.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "herta",
+      "file": "05.webp",
+      "sizeKB": 3.6,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(3.6KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "himeko",
+      "file": "02.webp",
+      "sizeKB": 4.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "himeko",
+      "file": "03.webp",
+      "sizeKB": 4.9,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.9KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "huohuo",
+      "file": "02.webp",
+      "sizeKB": 5.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "huohuo",
+      "file": "05.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "hyacine",
+      "file": "03.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "jade",
+      "file": "02.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "jade",
+      "file": "03.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "jiaoqiu",
+      "file": "03.webp",
+      "sizeKB": 5.6,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.6KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "jing-yuan",
+      "file": "05.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "jingliu",
+      "file": "04.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "kafka",
+      "file": "02.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "kafka",
+      "file": "04.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "lingsha",
+      "file": "02.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "luka",
+      "file": "02.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "luka",
+      "file": "04.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "luocha",
+      "file": "02.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "luocha",
+      "file": "03.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "luocha",
+      "file": "04.webp",
+      "sizeKB": 5.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "luocha",
+      "file": "05.webp",
+      "sizeKB": 5.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "lynx",
+      "file": "01.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "lynx",
+      "file": "03.webp",
+      "sizeKB": 4.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "lynx",
+      "file": "04.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "march-7th",
+      "file": "01.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "misha",
+      "file": "04.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "mydei",
+      "file": "04.webp",
+      "sizeKB": 5.6,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.6KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "mydei",
+      "file": "05.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "natasha",
+      "file": "05.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "pela",
+      "file": "01.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "pela",
+      "file": "02.webp",
+      "sizeKB": 5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.0KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "pela",
+      "file": "03.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "pela",
+      "file": "04.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "phainon",
+      "file": "02.webp",
+      "sizeKB": 5.9,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.9KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "phainon",
+      "file": "05.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "qingque",
+      "file": "01.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "robin",
+      "file": "02.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "ruan-mei",
+      "file": "02.webp",
+      "sizeKB": 4.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "sampo",
+      "file": "03.webp",
+      "sizeKB": 4.9,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.9KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "sparkle",
+      "file": "01.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "sushang",
+      "file": "01.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "the-dahlia",
+      "file": "01.webp",
+      "sizeKB": 5.6,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.6KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "the-dahlia",
+      "file": "02.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "the-dahlia",
+      "file": "03.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "the-herta",
+      "file": "05.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "tingyun",
+      "file": "05.webp",
+      "sizeKB": 5.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "topaz-and-numby",
+      "file": "01.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "topaz-and-numby",
+      "file": "02.webp",
+      "sizeKB": 4.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "topaz-and-numby",
+      "file": "03.webp",
+      "sizeKB": 4.2,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.2KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "topaz-and-numby",
+      "file": "05.webp",
+      "sizeKB": 3.6,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(3.6KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "tribbie",
+      "file": "02.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "tribbie",
+      "file": "04.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "tribbie",
+      "file": "05.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "welt",
+      "file": "01.webp",
+      "sizeKB": 5.8,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.8KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "welt",
+      "file": "02.webp",
+      "sizeKB": 4.1,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.1KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "welt",
+      "file": "03.webp",
+      "sizeKB": 4.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(4.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "welt",
+      "file": "05.webp",
+      "sizeKB": 5.3,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.3KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "yao-guang",
+      "file": "01.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "yao-guang",
+      "file": "05.webp",
+      "sizeKB": 5.4,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.4KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "yunli",
+      "file": "03.webp",
+      "sizeKB": 5.7,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.7KB)"
+      ]
+    },
+    {
+      "game": "honkai-star-rail",
+      "slug": "yunli",
+      "file": "05.webp",
+      "sizeKB": 5.5,
+      "detectedFormat": "webp",
+      "extension": "webp",
+      "dims": null,
+      "flags": [
+        "too-small(5.5KB)"
+      ]
+    }
+  ]
+}

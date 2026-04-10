@@ -1,0 +1,1907 @@
+{
+  "genshin-impact": {
+    "aether": {
+      "wiki_title": "Aether",
+      "element": "None",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "",
+      "wikitext_ok": true
+    },
+    "aino": {
+      "wiki_title": "Aino",
+      "element": "Hydro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "albedo": {
+      "wiki_title": "Albedo",
+      "element": "Geo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "alhaitham": {
+      "wiki_title": "Alhaitham",
+      "element": "Dendro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "aloy": {
+      "wiki_title": "Aloy",
+      "element": "Cryo",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "",
+      "wikitext_ok": true
+    },
+    "amber": {
+      "wiki_title": "Amber",
+      "element": "Pyro",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "arataki-itto": {
+      "wiki_title": "Arataki Itto",
+      "element": "Geo",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "arlecchino": {
+      "wiki_title": "Arlecchino",
+      "element": "Pyro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Snezhnaya",
+      "wikitext_ok": true
+    },
+    "baizhu": {
+      "wiki_title": "Baizhu",
+      "element": "Dendro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "barbara": {
+      "wiki_title": "Barbara",
+      "element": "Hydro",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "beidou": {
+      "wiki_title": "Beidou",
+      "element": "Electro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "bennett": {
+      "wiki_title": "Bennett",
+      "element": "Pyro",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "candace": {
+      "wiki_title": "Candace",
+      "element": "Hydro",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "charlotte": {
+      "wiki_title": "Charlotte",
+      "element": "Cryo",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "chasca": {
+      "wiki_title": "Chasca",
+      "element": "Anemo",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "chevreuse": {
+      "wiki_title": "Chevreuse",
+      "element": "Pyro",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "chiori": {
+      "wiki_title": "Chiori",
+      "element": "Geo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "chongyun": {
+      "wiki_title": "Chongyun",
+      "element": "Cryo",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "citlali": {
+      "wiki_title": "Citlali",
+      "element": "Cryo",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "clorinde": {
+      "wiki_title": "Clorinde",
+      "element": "Electro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "collei": {
+      "wiki_title": "Collei",
+      "element": "Dendro",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "columbina": {
+      "wiki_title": "Columbina",
+      "element": "Hydro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "cyno": {
+      "wiki_title": "Cyno",
+      "element": "Electro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "dahlia": {
+      "wiki_title": "Dahlia",
+      "element": "Hydro",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "dehya": {
+      "wiki_title": "Dehya",
+      "element": "Pyro",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "diluc": {
+      "wiki_title": "Diluc",
+      "element": "Pyro",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "diona": {
+      "wiki_title": "Diona",
+      "element": "Cryo",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "dori": {
+      "wiki_title": "Dori",
+      "element": "Electro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "durin": {
+      "wiki_title": "Durin",
+      "element": "Pyro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "emilie": {
+      "wiki_title": "Emilie",
+      "element": "Dendro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "escoffier": {
+      "wiki_title": "Escoffier",
+      "element": "Cryo",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "eula": {
+      "wiki_title": "Eula",
+      "element": "Cryo",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "faruzan": {
+      "wiki_title": "Faruzan",
+      "element": "Anemo",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "fischl": {
+      "wiki_title": "Fischl",
+      "element": "Electro",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "flins": {
+      "wiki_title": "Flins",
+      "element": "Electro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "freminet": {
+      "wiki_title": "Freminet",
+      "element": "Cryo",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "furina": {
+      "wiki_title": "Furina",
+      "element": "Hydro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "gaming": {
+      "wiki_title": "Gaming",
+      "element": "Pyro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "ganyu": {
+      "wiki_title": "Ganyu",
+      "element": "Cryo",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "gorou": {
+      "wiki_title": "Gorou",
+      "element": "Geo",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "hu-tao": {
+      "wiki_title": "Hu Tao",
+      "element": "Pyro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "iansan": {
+      "wiki_title": "Iansan",
+      "element": "Electro",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "ifa": {
+      "wiki_title": "Ifa",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "illuga": {
+      "wiki_title": "Illuga",
+      "element": "Geo",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "ineffa": {
+      "wiki_title": "Ineffa",
+      "element": "Electro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "jahoda": {
+      "wiki_title": "Jahoda",
+      "element": "Anemo",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "jean": {
+      "wiki_title": "Jean",
+      "element": "Anemo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "kachina": {
+      "wiki_title": "Kachina",
+      "element": "Geo",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "kaedehara-kazuha": {
+      "wiki_title": "Kaedehara Kazuha",
+      "element": "Anemo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "kaeya": {
+      "wiki_title": "Kaeya",
+      "element": "Cryo",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "kamisato-ayaka": {
+      "wiki_title": "Kamisato Ayaka",
+      "element": "Cryo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "kamisato-ayato": {
+      "wiki_title": "Kamisato Ayato",
+      "element": "Hydro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "kaveh": {
+      "wiki_title": "Kaveh",
+      "element": "Dendro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "keqing": {
+      "wiki_title": "Keqing",
+      "element": "Electro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "kinich": {
+      "wiki_title": "Kinich",
+      "element": "Dendro",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "kirara": {
+      "wiki_title": "Kirara",
+      "element": "Dendro",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "klee": {
+      "wiki_title": "Klee",
+      "element": "Pyro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "kujou-sara": {
+      "wiki_title": "Kujou Sara",
+      "element": "Electro",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "kuki-shinobu": {
+      "wiki_title": "Kuki Shinobu",
+      "element": "Electro",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "lan-yan": {
+      "wiki_title": "Lan Yan",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "lauma": {
+      "wiki_title": "Lauma",
+      "element": "Dendro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "layla": {
+      "wiki_title": "Layla",
+      "element": "Cryo",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "lisa": {
+      "wiki_title": "Lisa",
+      "element": "Electro",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "lumine": {
+      "wiki_title": "Lumine",
+      "element": "None",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "",
+      "wikitext_ok": true
+    },
+    "lynette": {
+      "wiki_title": "Lynette",
+      "element": "Anemo",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "lyney": {
+      "wiki_title": "Lyney",
+      "element": "Pyro",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "mavuika": {
+      "wiki_title": "Mavuika",
+      "element": "Pyro",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "mika": {
+      "wiki_title": "Mika",
+      "element": "Cryo",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "mona": {
+      "wiki_title": "Mona",
+      "element": "Hydro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "mualani": {
+      "wiki_title": "Mualani",
+      "element": "Hydro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "nahida": {
+      "wiki_title": "Nahida",
+      "element": "Dendro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "navia": {
+      "wiki_title": "Navia",
+      "element": "Geo",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "nefer": {
+      "wiki_title": "Nefer",
+      "element": "Dendro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Nod-Krai",
+      "wikitext_ok": true
+    },
+    "neuvillette": {
+      "wiki_title": "Neuvillette",
+      "element": "Hydro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "nilou": {
+      "wiki_title": "Nilou",
+      "element": "Hydro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "ningguang": {
+      "wiki_title": "Ningguang",
+      "element": "Geo",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "noelle": {
+      "wiki_title": "Noelle",
+      "element": "Geo",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "ororon": {
+      "wiki_title": "Ororon",
+      "element": "Electro",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "qiqi": {
+      "wiki_title": "Qiqi",
+      "element": "Cryo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "raiden-shogun": {
+      "wiki_title": "Raiden Shogun",
+      "element": "Electro",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "razor": {
+      "wiki_title": "Razor",
+      "element": "Electro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "rosaria": {
+      "wiki_title": "Rosaria",
+      "element": "Cryo",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "sangonomiya-kokomi": {
+      "wiki_title": "Sangonomiya Kokomi",
+      "element": "Hydro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "sayu": {
+      "wiki_title": "Sayu",
+      "element": "Anemo",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "sethos": {
+      "wiki_title": "Sethos",
+      "element": "Electro",
+      "weapon": "Bow",
+      "rarity": 4,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "shenhe": {
+      "wiki_title": "Shenhe",
+      "element": "Cryo",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "shikanoin-heizou": {
+      "wiki_title": "Shikanoin Heizou",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "sigewinne": {
+      "wiki_title": "Sigewinne",
+      "element": "Hydro",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "skirk": {
+      "wiki_title": "Skirk",
+      "element": "Cryo<!--",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "",
+      "wikitext_ok": true
+    },
+    "sucrose": {
+      "wiki_title": "Sucrose",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "tartaglia": {
+      "wiki_title": "Tartaglia",
+      "element": "Hydro",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Snezhnaya",
+      "wikitext_ok": true
+    },
+    "thoma": {
+      "wiki_title": "Thoma",
+      "element": "Pyro",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "tighnari": {
+      "wiki_title": "Tighnari",
+      "element": "Dendro",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "traveler": {
+      "wiki_title": "Traveler",
+      "element": "None",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "",
+      "wikitext_ok": true
+    },
+    "varesa": {
+      "wiki_title": "Varesa",
+      "element": "Electro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "varka": {
+      "wiki_title": "Varka",
+      "element": "Anemo",
+      "weapon": "Claymore",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "venti": {
+      "wiki_title": "Venti",
+      "element": "Anemo",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Mondstadt",
+      "wikitext_ok": true
+    },
+    "wanderer": {
+      "wiki_title": "Wanderer",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Sumeru",
+      "wikitext_ok": true
+    },
+    "wriothesley": {
+      "wiki_title": "Wriothesley",
+      "element": "Cryo",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Fontaine",
+      "wikitext_ok": true
+    },
+    "xiangling": {
+      "wiki_title": "Xiangling",
+      "element": "Pyro",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "xianyun": {
+      "wiki_title": "Xianyun",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "xiao": {
+      "wiki_title": "Xiao",
+      "element": "Anemo",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "xilonen": {
+      "wiki_title": "Xilonen",
+      "element": "Geo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Natlan",
+      "wikitext_ok": true
+    },
+    "xingqiu": {
+      "wiki_title": "Xingqiu",
+      "element": "Hydro",
+      "weapon": "Sword",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "xinyan": {
+      "wiki_title": "Xinyan",
+      "element": "Pyro",
+      "weapon": "Claymore",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "yae-miko": {
+      "wiki_title": "Yae Miko",
+      "element": "Electro",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "yanfei": {
+      "wiki_title": "Yanfei",
+      "element": "Pyro",
+      "weapon": "Catalyst",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "yaoyao": {
+      "wiki_title": "Yaoyao",
+      "element": "Dendro",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "yelan": {
+      "wiki_title": "Yelan",
+      "element": "Hydro",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "yoimiya": {
+      "wiki_title": "Yoimiya",
+      "element": "Pyro",
+      "weapon": "Bow",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "yumemizuki-mizuki": {
+      "wiki_title": "Yumemizuki Mizuki",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "rarity": 5,
+      "region": "Inazuma",
+      "wikitext_ok": true
+    },
+    "yun-jin": {
+      "wiki_title": "Yun Jin",
+      "element": "Geo",
+      "weapon": "Polearm",
+      "rarity": 4,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "zhongli": {
+      "wiki_title": "Zhongli",
+      "element": "Geo",
+      "weapon": "Polearm",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    },
+    "zibai": {
+      "wiki_title": "Zibai",
+      "element": "Geo",
+      "weapon": "Sword",
+      "rarity": 5,
+      "region": "Liyue",
+      "wikitext_ok": true
+    }
+  },
+  "honkai-star-rail": {
+    "acheron": {
+      "wiki_title": "Acheron",
+      "path": "Nihility",
+      "combatType": "Lightning",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "aglaea": {
+      "wiki_title": "Aglaea",
+      "path": "Remembrance",
+      "combatType": "Lightning",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "anaxa": {
+      "wiki_title": "Anaxa",
+      "path": "Erudition",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "archer": {
+      "wiki_title": "Archer",
+      "path": "The Hunt",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "argenti": {
+      "wiki_title": "Argenti",
+      "path": "Erudition",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "arlan": {
+      "wiki_title": "Arlan",
+      "path": "Destruction",
+      "combatType": "Lightning",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "ashveil": {
+      "wiki_title": "Ashveil",
+      "path": "The Hunt",
+      "combatType": "Lightning",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "asta": {
+      "wiki_title": "Asta",
+      "path": "Harmony",
+      "combatType": "Fire",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "aventurine": {
+      "wiki_title": "Aventurine",
+      "path": "Preservation",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "bailu": {
+      "wiki_title": "Bailu",
+      "path": "Abundance",
+      "combatType": "Lightning",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "black-swan": {
+      "wiki_title": "Black Swan",
+      "path": "Nihility",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "blade": {
+      "wiki_title": "Blade",
+      "path": "Destruction",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "boothill": {
+      "wiki_title": "Boothill",
+      "path": "The Hunt",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "bronya": {
+      "wiki_title": "Bronya",
+      "path": "Harmony",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "castorice": {
+      "wiki_title": "Castorice",
+      "path": "Remembrance",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "cerydra": {
+      "wiki_title": "Cerydra",
+      "path": "Harmony",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "cipher": {
+      "wiki_title": "Cipher",
+      "path": "Nihility",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "clara": {
+      "wiki_title": "Clara",
+      "path": "Destruction",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "cyrene": {
+      "wiki_title": "Cyrene",
+      "path": "Remembrance",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "dan-heng": {
+      "wiki_title": "Dan Heng",
+      "path": "The Hunt",
+      "combatType": "Wind",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "dan-heng-imbibitor-lunae": {
+      "wiki_title": "Dan Heng • Imbibitor Lunae",
+      "path": "Destruction",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "dan-heng-permansor-terrae": {
+      "wiki_title": "Dan Heng • Permansor Terrae",
+      "path": "Preservation",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "dr-ratio": {
+      "wiki_title": "Dr. Ratio",
+      "path": "The Hunt",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "evernight": {
+      "wiki_title": "Evernight",
+      "path": "Remembrance",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "feixiao": {
+      "wiki_title": "Feixiao",
+      "path": "The Hunt",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "firefly": {
+      "wiki_title": "Firefly",
+      "path": "Destruction",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "fu-xuan": {
+      "wiki_title": "Fu Xuan",
+      "path": "Preservation",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "fugue": {
+      "wiki_title": "Fugue",
+      "path": "Nihility",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "gallagher": {
+      "wiki_title": "Gallagher",
+      "path": "Abundance",
+      "combatType": "Fire",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "gepard": {
+      "wiki_title": "Gepard",
+      "path": "Preservation",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "guinaifen": {
+      "wiki_title": "Guinaifen",
+      "path": "Nihility",
+      "combatType": "Fire",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "hanya": {
+      "wiki_title": "Hanya",
+      "path": "Harmony",
+      "combatType": "Physical",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "herta": {
+      "wiki_title": "Herta",
+      "path": "Erudition",
+      "combatType": "Ice",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "himeko": {
+      "wiki_title": "Himeko",
+      "path": "Erudition",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "hook": {
+      "wiki_title": "Hook",
+      "path": "Destruction",
+      "combatType": "Fire",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "huohuo": {
+      "wiki_title": "Huohuo",
+      "path": "Abundance",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "hyacine": {
+      "wiki_title": "Hyacine",
+      "path": "Remembrance",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "hysilens": {
+      "wiki_title": "Hysilens",
+      "path": "Nihility",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "jade": {
+      "wiki_title": "Jade",
+      "path": "Erudition",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "jiaoqiu": {
+      "wiki_title": "Jiaoqiu",
+      "path": "Nihility",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "jing-yuan": {
+      "wiki_title": "Jing Yuan",
+      "path": "Erudition",
+      "combatType": "Lightning",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "jingliu": {
+      "wiki_title": "Jingliu",
+      "path": "Destruction",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "kafka": {
+      "wiki_title": "Kafka",
+      "path": "Nihility",
+      "combatType": "Lightning",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "lingsha": {
+      "wiki_title": "Lingsha",
+      "path": "Abundance",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "luka": {
+      "wiki_title": "Luka",
+      "path": "Nihility",
+      "combatType": "Physical",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "luocha": {
+      "wiki_title": "Luocha",
+      "path": "Abundance",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "lynx": {
+      "wiki_title": "Lynx",
+      "path": "Abundance",
+      "combatType": "Quantum",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "march-7th": {
+      "wiki_title": "March 7th",
+      "path": "Preservation",
+      "combatType": "Ice",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "misha": {
+      "wiki_title": "Misha",
+      "path": "Destruction",
+      "combatType": "Ice",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "moze": {
+      "wiki_title": "Moze",
+      "path": "The Hunt",
+      "combatType": "Lightning",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "mydei": {
+      "wiki_title": "Mydei",
+      "path": "Destruction",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "natasha": {
+      "wiki_title": "Natasha",
+      "path": "Abundance",
+      "combatType": "Physical",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "pela": {
+      "wiki_title": "Pela",
+      "path": "Nihility",
+      "combatType": "Ice",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "phainon": {
+      "wiki_title": "Phainon",
+      "path": "Destruction",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "qingque": {
+      "wiki_title": "Qingque",
+      "path": "Erudition",
+      "combatType": "Quantum",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "rappa": {
+      "wiki_title": "Rappa",
+      "path": "Erudition",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "robin": {
+      "wiki_title": "Robin",
+      "path": "Harmony",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "ruan-mei": {
+      "wiki_title": "Ruan Mei",
+      "path": "Harmony",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "saber": {
+      "wiki_title": "Saber",
+      "path": "Destruction",
+      "combatType": "Wind",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "sampo": {
+      "wiki_title": "Sampo",
+      "path": "Nihility",
+      "combatType": "Wind",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "seele": {
+      "wiki_title": "Seele",
+      "path": "The Hunt",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "serval": {
+      "wiki_title": "Serval",
+      "path": "Erudition",
+      "combatType": "Lightning",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "silver-wolf": {
+      "wiki_title": "Silver Wolf",
+      "path": "Nihility",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "sparkle": {
+      "wiki_title": "Sparkle",
+      "path": "Harmony",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "sunday": {
+      "wiki_title": "Sunday",
+      "path": "Harmony",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "sushang": {
+      "wiki_title": "Sushang",
+      "path": "The Hunt",
+      "combatType": "Physical",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "the-dahlia": {
+      "wiki_title": "The Dahlia",
+      "path": "Nihility",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "the-herta": {
+      "wiki_title": "The Herta",
+      "path": "Erudition",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "tingyun": {
+      "wiki_title": "Tingyun",
+      "path": "Harmony",
+      "combatType": "Lightning",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "topaz-and-numby": {
+      "wiki_title": "Topaz & Numby",
+      "path": "The Hunt",
+      "combatType": "Fire",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "trailblazer": {
+      "wiki_title": "Trailblazer",
+      "path": "Destruction",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "tribbie": {
+      "wiki_title": "Tribbie",
+      "path": "Harmony",
+      "combatType": "Quantum",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "welt": {
+      "wiki_title": "Welt",
+      "path": "Nihility",
+      "combatType": "Imaginary",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "xueyi": {
+      "wiki_title": "Xueyi",
+      "path": "Destruction",
+      "combatType": "Quantum",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "yanqing": {
+      "wiki_title": "Yanqing",
+      "path": "The Hunt",
+      "combatType": "Ice",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "yao-guang": {
+      "wiki_title": "Yao Guang",
+      "path": "Elation",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    },
+    "yukong": {
+      "wiki_title": "Yukong",
+      "path": "Harmony",
+      "combatType": "Imaginary",
+      "rarity": 4,
+      "wikitext_ok": true
+    },
+    "yunli": {
+      "wiki_title": "Yunli",
+      "path": "Destruction",
+      "combatType": "Physical",
+      "rarity": 5,
+      "wikitext_ok": true
+    }
+  },
+  "wuthering-waves": {
+    "aalto": {
+      "wiki_title": "Aalto",
+      "attribute": "Aero",
+      "weapon": "Pistols",
+      "rarity": 4,
+      "roleHint": "Concerto Efficiency",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "aemeath": {
+      "wiki_title": "Aemeath",
+      "attribute": "Fusion",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "augusta": {
+      "wiki_title": "Augusta",
+      "attribute": "Electro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "baizhi": {
+      "wiki_title": "Baizhi",
+      "attribute": "Glacio",
+      "weapon": "Rectifier",
+      "rarity": 4,
+      "roleHint": "Support and Healer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "brant": {
+      "wiki_title": "Brant",
+      "attribute": "Fusion",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "buling": {
+      "wiki_title": "Buling",
+      "attribute": "Electro",
+      "weapon": "Rectifier",
+      "rarity": 4,
+      "roleHint": "Support and Healer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "calcharo": {
+      "wiki_title": "Calcharo",
+      "attribute": "Electro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "camellya": {
+      "wiki_title": "Camellya",
+      "attribute": "Havoc",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Artificial",
+      "wikitext_ok": true
+    },
+    "cantarella": {
+      "wiki_title": "Cantarella",
+      "attribute": "Havoc",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Unclear",
+      "wikitext_ok": true
+    },
+    "carlotta": {
+      "wiki_title": "Carlotta",
+      "attribute": "Glacio",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "cartethyia": {
+      "wiki_title": "Cartethyia",
+      "attribute": "Aero",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "changli": {
+      "wiki_title": "Changli",
+      "attribute": "Fusion",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "chisa": {
+      "wiki_title": "Chisa",
+      "attribute": "Havoc",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "chixia": {
+      "wiki_title": "Chixia",
+      "attribute": "Fusion",
+      "weapon": "Pistols",
+      "rarity": 4,
+      "roleHint": "Main Damage Dealer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "ciaccona": {
+      "wiki_title": "Ciaccona",
+      "attribute": "Aero",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Unclear",
+      "wikitext_ok": true
+    },
+    "danjin": {
+      "wiki_title": "Danjin",
+      "attribute": "Havoc",
+      "weapon": "Sword",
+      "rarity": 4,
+      "roleHint": "Concerto Efficiency",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "encore": {
+      "wiki_title": "Encore",
+      "attribute": "Fusion",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "galbrena": {
+      "wiki_title": "Galbrena",
+      "attribute": "Fusion",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "iuno": {
+      "wiki_title": "Iuno",
+      "attribute": "Aero",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "jianxin": {
+      "wiki_title": "Jianxin",
+      "attribute": "Aero",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "jinhsi": {
+      "wiki_title": "Jinhsi",
+      "attribute": "Spectro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "jiyan": {
+      "wiki_title": "Jiyan",
+      "attribute": "Aero",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "lingyang": {
+      "wiki_title": "Lingyang",
+      "attribute": "Glacio",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "lumi": {
+      "wiki_title": "Lumi",
+      "attribute": "Electro",
+      "weapon": "Broadblade",
+      "rarity": 4,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "lupa": {
+      "wiki_title": "Lupa",
+      "attribute": "Fusion",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Non-congenital",
+      "wikitext_ok": true
+    },
+    "luuk-herssen": {
+      "wiki_title": "Luuk Herssen",
+      "attribute": "Spectro",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Unclear",
+      "wikitext_ok": true
+    },
+    "lynae": {
+      "wiki_title": "Lynae",
+      "attribute": "Spectro",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "mornye": {
+      "wiki_title": "Mornye",
+      "attribute": "Fusion",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "mortefi": {
+      "wiki_title": "Mortefi",
+      "attribute": "Fusion",
+      "weapon": "Pistols",
+      "rarity": 4,
+      "roleHint": "Concerto Efficiency",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "phoebe": {
+      "wiki_title": "Phoebe",
+      "attribute": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Unclear",
+      "wikitext_ok": true
+    },
+    "phrolova": {
+      "wiki_title": "Phrolova",
+      "attribute": "Havoc",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "qiuyuan": {
+      "wiki_title": "Qiuyuan",
+      "attribute": "Aero",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Unclear",
+      "wikitext_ok": true
+    },
+    "roccia": {
+      "wiki_title": "Roccia",
+      "attribute": "Havoc",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Acquired",
+      "wikitext_ok": true
+    },
+    "rover": {
+      "wiki_title": "Rover",
+      "attribute": "Multiple",
+      "weapon": "Sword",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "",
+      "wikitext_ok": true
+    },
+    "rover-aero": {
+      "wiki_title": "Rover-Aero",
+      "attribute": "Aero",
+      "weapon": "Unknown",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "",
+      "wikitext_ok": true
+    },
+    "rover-havoc": {
+      "wiki_title": "Rover-Havoc",
+      "attribute": "Havoc",
+      "weapon": "Unknown",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "",
+      "wikitext_ok": true
+    },
+    "rover-spectro": {
+      "wiki_title": "Rover-Spectro",
+      "attribute": "Spectro",
+      "weapon": "Unknown",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "",
+      "wikitext_ok": true
+    },
+    "sanhua": {
+      "wiki_title": "Sanhua",
+      "attribute": "Glacio",
+      "weapon": "Sword",
+      "rarity": 4,
+      "roleHint": "Concerto Efficiency",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "shorekeeper": {
+      "wiki_title": "Shorekeeper",
+      "attribute": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "",
+      "wikitext_ok": true
+    },
+    "sigrika": {
+      "wiki_title": "Sigrika",
+      "attribute": "Aero",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "taoqi": {
+      "wiki_title": "Taoqi",
+      "attribute": "Havoc",
+      "weapon": "Broadblade",
+      "rarity": 4,
+      "roleHint": "Support and Healer",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "verina": {
+      "wiki_title": "Verina",
+      "attribute": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Support and Healer",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "xiangli-yao": {
+      "wiki_title": "Xiangli Yao",
+      "attribute": "Electro",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "yangyang": {
+      "wiki_title": "Yangyang",
+      "attribute": "Aero",
+      "weapon": "Sword",
+      "rarity": 4,
+      "roleHint": "Concerto Efficiency",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "yinlin": {
+      "wiki_title": "Yinlin",
+      "attribute": "Electro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Congenital",
+      "wikitext_ok": true
+    },
+    "youhu": {
+      "wiki_title": "Youhu",
+      "attribute": "Glacio",
+      "weapon": "Gauntlets",
+      "rarity": 4,
+      "roleHint": "Support and Healer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "yuanwu": {
+      "wiki_title": "Yuanwu",
+      "attribute": "Electro",
+      "weapon": "Gauntlets",
+      "rarity": 4,
+      "roleHint": "Concerto Efficiency",
+      "class": "Natural",
+      "wikitext_ok": true
+    },
+    "zani": {
+      "wiki_title": "Zani",
+      "attribute": "Spectro",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "roleHint": "Main Damage Dealer",
+      "class": "Mutant",
+      "wikitext_ok": true
+    },
+    "zhezhi": {
+      "wiki_title": "Zhezhi",
+      "attribute": "Glacio",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "roleHint": "Concerto Efficiency",
+      "class": "Congenital",
+      "wikitext_ok": true
+    }
+  }
+}

@@ -65,6 +65,8 @@ gallery9:
 [**Partner Program**](/creator/)
 [**vTuber Models**](/vtuber/)
 
+**Character guides & builds:** [Honkai: Star Rail roster](/characters/honkai-star-rail/)
+
 
 
 Big News: Just Released [Wacky Wuwa](/wackywuwa), pull your characters, chat emoji 😉❤️🌹😎😂!!, create characters for others to play with, dress them up to your desire.

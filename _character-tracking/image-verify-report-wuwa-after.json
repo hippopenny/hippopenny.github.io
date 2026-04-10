@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-04-02T07:50:49.165Z",
+  "filters": {
+    "onlyGame": "wuthering-waves",
+    "onlySlug": null
+  },
+  "totals": {
+    "folders": 49,
+    "images": 135,
+    "suspiciousImages": 0,
+    "mismatchFiles": 0
+  },
+  "suspicious": []
+}

@@ -1,10 +1,10 @@
 ---
 title: Firefly Guide
-excerpt: "Firefly guide with pull verdict, break-team setup, practical rotation tips, and realistic investment expectations."
+excerpt: "Firefly guide with pull verdict, break-team setup, rotation tech, and the real account cost behind the hype."
 character: Firefly
 game: honkai-star-rail
 permalink: /characters/honkai-star-rail/firefly/
-tagline: "A high-interest carry whose appeal is strongest when the account can support her intended team shell."
+tagline: "A high-hype carry who feels incredible once the account can actually support her break-team fantasy."
 teaser: /assets/images/characters/honkai-star-rail/firefly.jpg
 image_source_label: "Official Honkai: Star Rail YouTube trailer thumbnail"
 image_source_url: "https://www.youtube.com/watch?v=eFXQqY3ia6k"
@@ -15,12 +15,12 @@ combat_type: Fire
 weapon_or_path_label: Path
 weapon_or_path: Destruction
 pull_rating: A
-preview_trick: "Build her core break shell before chasing max ceiling."
-quick_verdict: Pull if you want her signature team identity
+preview_trick: "Build the break shell first, then worry about the flashy ceiling stuff."
+quick_verdict: Pull if you want her specific break-team identity and plan to commit
 investment: Medium to High
 mode_focus: Break-oriented offense and stylish clears
 updated_for: Recheck on major break meta changes
-quick_take: Firefly is a high-interest carry with a strong identity, but she feels best when the account can support her intended team shell. The payoff is strong if you are ready to build around her.
+quick_take: Firefly is the definition of a conviction pull. The vibe is immaculate, the damage can be nasty, and the team identity is super real. But if the break shell is missing pieces, the dream gets scuffed fast.
 quick_tricks:
   - "Secure reliable break enablers first; her damage identity depends on it."
   - "Test two rotation speeds and stick with the one that avoids dead turns."
@@ -31,13 +31,13 @@ common_mistakes:
   - "Copying premium showcases without matching support units."
   - "Over-investing in side stats that do not improve her core break cycle."
   - "Using slow supports that desync her damage window."
-build_priority: Prioritize the setup that enables her intended damage windows. She feels much better once the core team pieces are online.
-gearing: Build for consistency in her core offensive pattern before chasing smaller optimizations. She rewards practical setup more than cute theorycraft detours.
-premium_team: Use the team shell that reinforces her intended damage identity and keeps action economy clean.
-budget_team: Keep expectations grounded. Budget versions should focus on enabling her basics rather than imitating the premium ceiling.
+build_priority: Prioritize whatever gets her real damage window online. She stops feeling awkward the second the core shell is built correctly.
+gearing: Build for consistency in her core break cycle before chasing tiny optimizations. She rewards practical setup way more than theorycraft side quests.
+premium_team: Use the shell that hard-commits to her break identity and keeps the turn economy squeaky clean.
+budget_team: Keep expectations grounded. Budget Firefly should aim for "functional and fun," not cosplay as a fully loaded showcase account.
 upgrade_order: Invest in the talents that directly affect her primary damage windows and rotation smoothness.
 dupe_value: Additional investment can matter, but the bigger question is whether the account can field the right supporting cast.
-verdict: Firefly is best treated as a conviction pull. If you want her playstyle and can support the team she wants, she is rewarding. If you want the widest possible account value, safer support options still exist.
+verdict: Firefly is a conviction pull and should be treated like one. If you love her playstyle and can build the team she wants, she is extremely rewarding. If you just want maximum account value per ticket, safer supports still clear this race.
 app_cta_label: Play Firefly Energy in Wacky Warper
 app_cta_url: /appstores/
 hub_url: /characters/honkai-star-rail/
@@ -47,6 +47,22 @@ gallery:
     label: "Break carry"
   - src: /assets/images/offrail/1.png
     label: "Team shell"
+  - src: /assets/images/character-gallery/honkai-star-rail/firefly/01.webp
+    label: "Hero render"
+    url: "https://honkai-star-rail.fandom.com/wiki/Firefly"
+  - src: /assets/images/character-gallery/honkai-star-rail/firefly/02.webp
+    label: "Splash / card"
+    url: "https://honkai-star-rail.fandom.com/wiki/Firefly"
+  - src: /assets/images/character-gallery/honkai-star-rail/firefly/03.webp
+    label: "Wish / promo art"
+    url: "https://honkai-star-rail.fandom.com/wiki/Firefly"
+  - src: /assets/images/character-gallery/honkai-star-rail/firefly/04.webp
+    label: "In-game style shot"
+    url: "https://honkai-star-rail.fandom.com/wiki/Firefly"
+  - src: /assets/images/character-gallery/honkai-star-rail/firefly/05.webp
+    label: "Extra splash"
+    url: "https://honkai-star-rail.fandom.com/wiki/Firefly"
+
 strengths:
   - Strong character identity and high player interest.
   - Distinct playstyle that gives the guide a clear angle.
