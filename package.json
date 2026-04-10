@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Local dev deps (e.g. pull-simulator browser E2E)",
+  "devDependencies": {
+    "playwright": "1.49.1"
+  },
+  "scripts": {
+    "test:pull-e2e": "node assets/pull-simulator/pull-simulator.e2e.mjs",
+    "character:tracking": "node scripts/character-pipeline/pipeline.mjs tracking",
+    "character:manifest": "node scripts/character-pipeline/pipeline.mjs manifest",
+    "character:scaffold": "node scripts/character-pipeline/pipeline.mjs scaffold",
+    "character:production": "node scripts/character-pipeline/production-build.mjs",
+    "character:production:guides": "node scripts/character-pipeline/production-build.mjs --guides-only",
+    "character:production:refill-guides": "node scripts/character-pipeline/production-build.mjs --guides-only --force-guides",
+    "character:enrich-images": "node scripts/character-pipeline/enrich-character-images.mjs && node scripts/character-pipeline/production-build.mjs --guides-only",
+    "image:verify": "node scripts/character-pipeline/verify-character-images.mjs",
+    "image:verify:new": "node scripts/character-pipeline/verify-character-images.mjs --only-changed",
+    "image:verify:ci": "node scripts/character-pipeline/verify-character-images.mjs --fail-on-suspicious"
+  }
+}

@@ -1,10 +1,10 @@
 ---
 title: Acheron Guide
-excerpt: "Acheron pull verdict, relic priorities, debuff team requirements, and practical build tricks for current HSR patches."
+excerpt: "Acheron pull verdict, relic priorities, debuff-team requirements, and whether your HSR account can actually unlock her nonsense."
 character: Acheron
 game: honkai-star-rail
 permalink: /characters/honkai-star-rail/acheron/
-tagline: "A premium damage carry for players who want explosive clears and are willing to build around her needs."
+tagline: "A premium lightning nuke for players who want explosive clears and are ready to build the whole squad around her."
 teaser: /assets/images/characters/honkai-star-rail/acheron.jpg
 image_source_label: "Official Honkai: Star Rail YouTube trailer thumbnail"
 image_source_url: "https://www.youtube.com/watch?v=IQQPDPAvxTg"
@@ -15,12 +15,12 @@ combat_type: Lightning
 weapon_or_path_label: Path
 weapon_or_path: Nihility
 pull_rating: S
-preview_trick: "Count debuff uptime before investing in relic luxury rolls."
-quick_verdict: Pull if you can support her team requirements
+preview_trick: "Count the debuffs before you start daydreaming about relic god-rolls."
+quick_verdict: Pull if your account can feed her the debuffs she demands
 investment: High
 mode_focus: Fast endgame clears
 updated_for: Recheck when major debuff partners shift
-quick_take: Acheron is a high-ceiling carry whose value depends on surrounding her with the right teammates. If your account can support that structure, she is an easy headline character. If not, she is expensive power.
+quick_take: Acheron is pure premium menace energy, but only if the team around her is real. With the right debuff shell, she looks outrageous. Without it, she turns into very expensive cope.
 quick_tricks:
   - "Prioritize debuff consistency over raw stat greed in early builds."
   - "Keep one sustain slot that does not break action tempo."
@@ -31,13 +31,13 @@ common_mistakes:
   - "Pulling her without enough debuff support built."
   - "Chasing signature-level relics before core traces are upgraded."
   - "Running defensive supports that slow her win condition."
-build_priority: Prioritize stats and teammates that keep her burst cycle threatening. She is at her best when the whole team is built to accelerate her win condition.
-gearing: Treat relic quality and Light Cone support as part of the pull decision. She scales sharply with real investment.
-premium_team: Pair her with premium debuffers and a sustain slot that does not slow down the team. She wants teammates that actively feed her output.
-budget_team: Use the best debuff coverage your roster can support, then accept that performance hinges on consistency more than perfect ceiling.
+build_priority: Prioritize the stats and teammates that keep her ult cycle filthy. She is strongest when the entire squad is built like a launch ramp for her nonsense.
+gearing: Treat relic quality and Light Cone support as part of the pull cost, not a cute bonus. She scales hard when the investment is real.
+premium_team: Pair her with premium debuff gremlins and a sustain slot that does not hit the brakes. She wants teammates who actively turbo-charge the murder beam.
+budget_team: Run the best debuff coverage your box can manage, then keep expectations honest. Budget Acheron lives or dies on consistency, not on dreaming about whale clips.
 upgrade_order: Her core offensive talents come first. Do not spread resources across everything equally if you want results quickly.
 dupe_value: Dupes and signature investment raise her ceiling meaningfully. That makes her powerful, but also more demanding than broad utility pulls.
-verdict: "Acheron is a premium pull with a very high ceiling, but she makes the most sense on accounts that can support her properly. If you already have the right pieces, she can feel outrageous. If not, she is harder to justify than broader support options."
+verdict: "Acheron is a monster pull when your roster already has the squad to unlock her. If the debuff shell is ready, she feels absurd. If it is not, broader supports are still the smarter no-regrets play."
 app_cta_label: Warp into Wacky Warper
 app_cta_url: /appstores/
 hub_url: /characters/honkai-star-rail/
@@ -47,6 +47,22 @@ gallery:
     label: "Character art"
   - src: /assets/images/offrail/gacha1.jpg
     label: "Site warp graphic (Hippo Penny / Offrail)"
+  - src: /assets/images/character-gallery/honkai-star-rail/acheron/01.webp
+    label: "Hero render"
+    url: "https://honkai-star-rail.fandom.com/wiki/Acheron"
+  - src: /assets/images/character-gallery/honkai-star-rail/acheron/02.webp
+    label: "Splash / card"
+    url: "https://honkai-star-rail.fandom.com/wiki/Acheron"
+  - src: /assets/images/character-gallery/honkai-star-rail/acheron/03.webp
+    label: "Wish / promo art"
+    url: "https://honkai-star-rail.fandom.com/wiki/Acheron"
+  - src: /assets/images/character-gallery/honkai-star-rail/acheron/04.webp
+    label: "In-game style shot"
+    url: "https://honkai-star-rail.fandom.com/wiki/Acheron"
+  - src: /assets/images/character-gallery/honkai-star-rail/acheron/05.webp
+    label: "Extra splash"
+    url: "https://honkai-star-rail.fandom.com/wiki/Acheron"
+
 strengths:
   - Very high damage ceiling.
   - Excellent for players targeting difficult endgame clears.

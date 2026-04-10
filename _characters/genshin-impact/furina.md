@@ -1,10 +1,10 @@
 ---
 title: Furina Guide
-excerpt: "Furina support guide with pull verdict, healer requirements, build order, and team value in the latest Genshin cycle."
+excerpt: "Furina support guide with pull verdict, healer check, build order, and why she still turbo-buffs good Genshin rosters."
 character: Furina
 game: genshin-impact
 permalink: /characters/genshin-impact/furina/
-tagline: "An account-scaling support who raises your best teams more than almost any comfort pick."
+tagline: "An account-upgrade monster who turns already-good teams into absolute nonsense."
 teaser: /assets/images/characters/genshin-impact/furina.jpg
 image_source_label: "Official Genshin YouTube character demo thumbnail"
 image_source_url: "https://www.youtube.com/watch?v=EN79SfbcvIE"
@@ -15,12 +15,12 @@ combat_type: Hydro
 weapon_or_path_label: Weapon
 weapon_or_path: Sword
 pull_rating: S
-preview_trick: "Solve burst uptime first, then scale her damage."
-quick_verdict: Pull if you want long-term account value
+preview_trick: "Fix the energy first, then let the queen start farming free damage."
+quick_verdict: Pull if you want one of the nastiest long-term account upgrades in the game
 investment: Medium
 mode_focus: Endgame teams and flexible account upgrades
 updated_for: Recheck on major support releases
-quick_take: Furina is still the kind of support that makes strong rosters feel unfair. If you already build healers and you want one premium unit to elevate multiple teams, she stays near the top of the list.
+quick_take: Furina is still the kind of support that makes a decent roster feel rich. If you already own or plan to build healers, she buffs multiple teams so hard that the account starts feeling illegal.
 quick_tricks:
   - "Treat Energy Recharge as a baseline check before chasing premium substats."
   - "Always pair her with a healer whose sustain rhythm matches your rotation length."
@@ -31,13 +31,13 @@ common_mistakes:
   - "Building for personal damage while ignoring burst consistency."
   - "Running her without dependable healing and blaming rotation damage."
   - "Using her in teams with conflicting field-time demands."
-build_priority: Prioritize enough Energy Recharge to burst on time, then stack the stats that keep her buff reliable. Her value drops fast when rotations get clunky.
-gearing: Use gear that stabilizes burst uptime first. Once her rotation is comfortable, lean into personal damage and team amplification.
-premium_team: Pair Furina with a strong healer and a carry that appreciates team-wide damage amplification. She is at her best when every slot contributes instead of forcing awkward sustain compromises.
-budget_team: Use her with a dependable healer, one stable off-field damage dealer, and a driver who benefits from consistent Hydro application.
+build_priority: Hit the Energy Recharge check first so her burst is always online, then stack the stats that keep the buff train rolling. If the rotation gets crusty, her value drops fast.
+gearing: Gear her like a smart grinder, not a highlight reel goblin. Lock uptime first, then start layering in personal damage and extra team juice.
+premium_team: Pair Furina with a real healer and a carry who loves free team-wide damage. She pops off hardest when every slot is doing work instead of forcing scuffed sustain patches.
+budget_team: Use her with a dependable healer, one steady off-field damage piece, and a driver who can actually cash in on all that Hydro chaos.
 upgrade_order: Burst first, skill second, normal attacks last unless you are committing to a niche on-field variation.
 dupe_value: Early dupes improve quality of life and ceiling, but base ownership already delivers the reason to pull her. She is not a dupe-dependent support.
-verdict: Furina remains one of the best long-term pulls in Genshin if your roster can support her healing requirement. She raises the ceiling of multiple teams and stays relevant even as your account gets stronger.
+verdict: Furina is still one of the smartest pulls in Genshin if your roster can meet the healer tax. She scales with your account, buffs a ton of teams, and keeps feeling cracked long after the honeymoon phase ends.
 app_cta_label: Try Furina Energy in Wacky Wisher
 app_cta_url: /wacky-wisher-stores/
 hub_url: /characters/genshin-impact/
@@ -47,6 +47,25 @@ gallery:
     label: "Support core"
   - src: /assets/images/wackywisher/5.png
     label: "Team scaling"
+  - src: /assets/images/character-gallery/genshin-impact/furina/01.webp
+    label: "Hero render"
+    url: "https://genshin-impact.fandom.com/wiki/Furina"
+  - src: /assets/images/character-gallery/genshin-impact/furina/02.webp
+    label: "Splash / card"
+    url: "https://genshin-impact.fandom.com/wiki/Furina"
+  - src: /assets/images/character-gallery/genshin-impact/furina/03.webp
+    label: "Wish / promo art"
+    url: "https://genshin-impact.fandom.com/wiki/Furina"
+  - src: /assets/images/character-gallery/genshin-impact/furina/04.webp
+    label: "In-game style shot"
+    url: "https://genshin-impact.fandom.com/wiki/Furina"
+  - src: /assets/images/character-gallery/genshin-impact/furina/05.jpg
+    label: "Extra splash"
+    url: "https://genshin-impact.fandom.com/wiki/Furina"
+  - src: /assets/images/character-gallery/genshin-impact/furina/05.webp
+    label: "Hero render"
+    url: "https://genshin-impact.fandom.com/wiki/Furina"
+
 strengths:
   - Extremely high team-wide damage amplification.
   - Fits a large number of serious endgame teams.

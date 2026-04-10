@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-04-02T08:04:33.698Z",
+  "filters": {
+    "onlyGame": null,
+    "onlySlug": null
+  },
+  "totals": {
+    "folders": 241,
+    "images": 799,
+    "suspiciousImages": 0,
+    "mismatchFiles": 0
+  },
+  "suspicious": []
+}

@@ -1,0 +1,1775 @@
+{
+  "generated_at": "2026-04-02",
+  "games": {
+    "genshin-impact": [
+      {
+        "wiki_title": "Aether",
+        "slug": "aether",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Aether",
+        "guide_repo_path": "_characters/genshin-impact/aether.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Aino",
+        "slug": "aino",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Aino",
+        "guide_repo_path": "_characters/genshin-impact/aino.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Albedo",
+        "slug": "albedo",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Albedo",
+        "guide_repo_path": "_characters/genshin-impact/albedo.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Alhaitham",
+        "slug": "alhaitham",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Alhaitham",
+        "guide_repo_path": "_characters/genshin-impact/alhaitham.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Aloy",
+        "slug": "aloy",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Aloy",
+        "guide_repo_path": "_characters/genshin-impact/aloy.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Amber",
+        "slug": "amber",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Amber",
+        "guide_repo_path": "_characters/genshin-impact/amber.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Arataki Itto",
+        "slug": "arataki-itto",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Arataki_Itto",
+        "guide_repo_path": "_characters/genshin-impact/arataki-itto.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Arlecchino",
+        "slug": "arlecchino",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Arlecchino",
+        "guide_repo_path": "_characters/genshin-impact/arlecchino.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Baizhu",
+        "slug": "baizhu",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Baizhu",
+        "guide_repo_path": "_characters/genshin-impact/baizhu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Barbara",
+        "slug": "barbara",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Barbara",
+        "guide_repo_path": "_characters/genshin-impact/barbara.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Beidou",
+        "slug": "beidou",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Beidou",
+        "guide_repo_path": "_characters/genshin-impact/beidou.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Bennett",
+        "slug": "bennett",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Bennett",
+        "guide_repo_path": "_characters/genshin-impact/bennett.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Candace",
+        "slug": "candace",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Candace",
+        "guide_repo_path": "_characters/genshin-impact/candace.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Charlotte",
+        "slug": "charlotte",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Charlotte",
+        "guide_repo_path": "_characters/genshin-impact/charlotte.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Chasca",
+        "slug": "chasca",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Chasca",
+        "guide_repo_path": "_characters/genshin-impact/chasca.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Chevreuse",
+        "slug": "chevreuse",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Chevreuse",
+        "guide_repo_path": "_characters/genshin-impact/chevreuse.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Chiori",
+        "slug": "chiori",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Chiori",
+        "guide_repo_path": "_characters/genshin-impact/chiori.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Chongyun",
+        "slug": "chongyun",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Chongyun",
+        "guide_repo_path": "_characters/genshin-impact/chongyun.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Citlali",
+        "slug": "citlali",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Citlali",
+        "guide_repo_path": "_characters/genshin-impact/citlali.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Clorinde",
+        "slug": "clorinde",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Clorinde",
+        "guide_repo_path": "_characters/genshin-impact/clorinde.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Collei",
+        "slug": "collei",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Collei",
+        "guide_repo_path": "_characters/genshin-impact/collei.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Columbina",
+        "slug": "columbina",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Columbina",
+        "guide_repo_path": "_characters/genshin-impact/columbina.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Cyno",
+        "slug": "cyno",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Cyno",
+        "guide_repo_path": "_characters/genshin-impact/cyno.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dahlia",
+        "slug": "dahlia",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Dahlia",
+        "guide_repo_path": "_characters/genshin-impact/dahlia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dehya",
+        "slug": "dehya",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Dehya",
+        "guide_repo_path": "_characters/genshin-impact/dehya.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Diluc",
+        "slug": "diluc",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Diluc",
+        "guide_repo_path": "_characters/genshin-impact/diluc.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Diona",
+        "slug": "diona",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Diona",
+        "guide_repo_path": "_characters/genshin-impact/diona.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dori",
+        "slug": "dori",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Dori",
+        "guide_repo_path": "_characters/genshin-impact/dori.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Durin",
+        "slug": "durin",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Durin",
+        "guide_repo_path": "_characters/genshin-impact/durin.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Emilie",
+        "slug": "emilie",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Emilie",
+        "guide_repo_path": "_characters/genshin-impact/emilie.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Escoffier",
+        "slug": "escoffier",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Escoffier",
+        "guide_repo_path": "_characters/genshin-impact/escoffier.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Eula",
+        "slug": "eula",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Eula",
+        "guide_repo_path": "_characters/genshin-impact/eula.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Faruzan",
+        "slug": "faruzan",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Faruzan",
+        "guide_repo_path": "_characters/genshin-impact/faruzan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Fischl",
+        "slug": "fischl",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Fischl",
+        "guide_repo_path": "_characters/genshin-impact/fischl.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Flins",
+        "slug": "flins",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Flins",
+        "guide_repo_path": "_characters/genshin-impact/flins.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Freminet",
+        "slug": "freminet",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Freminet",
+        "guide_repo_path": "_characters/genshin-impact/freminet.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Furina",
+        "slug": "furina",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Furina",
+        "guide_repo_path": "_characters/genshin-impact/furina.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Gaming",
+        "slug": "gaming",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Gaming",
+        "guide_repo_path": "_characters/genshin-impact/gaming.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ganyu",
+        "slug": "ganyu",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Ganyu",
+        "guide_repo_path": "_characters/genshin-impact/ganyu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Gorou",
+        "slug": "gorou",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Gorou",
+        "guide_repo_path": "_characters/genshin-impact/gorou.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Hu Tao",
+        "slug": "hu-tao",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Hu_Tao",
+        "guide_repo_path": "_characters/genshin-impact/hu-tao.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Iansan",
+        "slug": "iansan",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Iansan",
+        "guide_repo_path": "_characters/genshin-impact/iansan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ifa",
+        "slug": "ifa",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Ifa",
+        "guide_repo_path": "_characters/genshin-impact/ifa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Illuga",
+        "slug": "illuga",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Illuga",
+        "guide_repo_path": "_characters/genshin-impact/illuga.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ineffa",
+        "slug": "ineffa",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Ineffa",
+        "guide_repo_path": "_characters/genshin-impact/ineffa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jahoda",
+        "slug": "jahoda",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Jahoda",
+        "guide_repo_path": "_characters/genshin-impact/jahoda.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jean",
+        "slug": "jean",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Jean",
+        "guide_repo_path": "_characters/genshin-impact/jean.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kachina",
+        "slug": "kachina",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kachina",
+        "guide_repo_path": "_characters/genshin-impact/kachina.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kaedehara Kazuha",
+        "slug": "kaedehara-kazuha",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha",
+        "guide_repo_path": "_characters/genshin-impact/kaedehara-kazuha.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kaeya",
+        "slug": "kaeya",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kaeya",
+        "guide_repo_path": "_characters/genshin-impact/kaeya.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kamisato Ayaka",
+        "slug": "kamisato-ayaka",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka",
+        "guide_repo_path": "_characters/genshin-impact/kamisato-ayaka.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kamisato Ayato",
+        "slug": "kamisato-ayato",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayato",
+        "guide_repo_path": "_characters/genshin-impact/kamisato-ayato.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kaveh",
+        "slug": "kaveh",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kaveh",
+        "guide_repo_path": "_characters/genshin-impact/kaveh.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Keqing",
+        "slug": "keqing",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Keqing",
+        "guide_repo_path": "_characters/genshin-impact/keqing.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kinich",
+        "slug": "kinich",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kinich",
+        "guide_repo_path": "_characters/genshin-impact/kinich.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kirara",
+        "slug": "kirara",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kirara",
+        "guide_repo_path": "_characters/genshin-impact/kirara.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Klee",
+        "slug": "klee",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Klee",
+        "guide_repo_path": "_characters/genshin-impact/klee.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kujou Sara",
+        "slug": "kujou-sara",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kujou_Sara",
+        "guide_repo_path": "_characters/genshin-impact/kujou-sara.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kuki Shinobu",
+        "slug": "kuki-shinobu",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu",
+        "guide_repo_path": "_characters/genshin-impact/kuki-shinobu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lan Yan",
+        "slug": "lan-yan",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Lan_Yan",
+        "guide_repo_path": "_characters/genshin-impact/lan-yan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lauma",
+        "slug": "lauma",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Lauma",
+        "guide_repo_path": "_characters/genshin-impact/lauma.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Layla",
+        "slug": "layla",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Layla",
+        "guide_repo_path": "_characters/genshin-impact/layla.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lisa",
+        "slug": "lisa",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Lisa",
+        "guide_repo_path": "_characters/genshin-impact/lisa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lumine",
+        "slug": "lumine",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Lumine",
+        "guide_repo_path": "_characters/genshin-impact/lumine.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lynette",
+        "slug": "lynette",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Lynette",
+        "guide_repo_path": "_characters/genshin-impact/lynette.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lyney",
+        "slug": "lyney",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Lyney",
+        "guide_repo_path": "_characters/genshin-impact/lyney.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Manekin",
+        "slug": "manekin",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Manekin",
+        "guide_repo_path": "_characters/genshin-impact/manekin.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Manekina",
+        "slug": "manekina",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Manekina",
+        "guide_repo_path": "_characters/genshin-impact/manekina.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Mavuika",
+        "slug": "mavuika",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Mavuika",
+        "guide_repo_path": "_characters/genshin-impact/mavuika.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Mika",
+        "slug": "mika",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Mika",
+        "guide_repo_path": "_characters/genshin-impact/mika.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Mona",
+        "slug": "mona",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Mona",
+        "guide_repo_path": "_characters/genshin-impact/mona.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Mualani",
+        "slug": "mualani",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Mualani",
+        "guide_repo_path": "_characters/genshin-impact/mualani.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Nahida",
+        "slug": "nahida",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Nahida",
+        "guide_repo_path": "_characters/genshin-impact/nahida.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Navia",
+        "slug": "navia",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Navia",
+        "guide_repo_path": "_characters/genshin-impact/navia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Nefer",
+        "slug": "nefer",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Nefer",
+        "guide_repo_path": "_characters/genshin-impact/nefer.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Neuvillette",
+        "slug": "neuvillette",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Neuvillette",
+        "guide_repo_path": "_characters/genshin-impact/neuvillette.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Nilou",
+        "slug": "nilou",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Nilou",
+        "guide_repo_path": "_characters/genshin-impact/nilou.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ningguang",
+        "slug": "ningguang",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Ningguang",
+        "guide_repo_path": "_characters/genshin-impact/ningguang.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Noelle",
+        "slug": "noelle",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Noelle",
+        "guide_repo_path": "_characters/genshin-impact/noelle.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ororon",
+        "slug": "ororon",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Ororon",
+        "guide_repo_path": "_characters/genshin-impact/ororon.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Qiqi",
+        "slug": "qiqi",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Qiqi",
+        "guide_repo_path": "_characters/genshin-impact/qiqi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Raiden Shogun",
+        "slug": "raiden-shogun",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Raiden_Shogun",
+        "guide_repo_path": "_characters/genshin-impact/raiden-shogun.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Razor",
+        "slug": "razor",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Razor",
+        "guide_repo_path": "_characters/genshin-impact/razor.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Rosaria",
+        "slug": "rosaria",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Rosaria",
+        "guide_repo_path": "_characters/genshin-impact/rosaria.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sangonomiya Kokomi",
+        "slug": "sangonomiya-kokomi",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Kokomi",
+        "guide_repo_path": "_characters/genshin-impact/sangonomiya-kokomi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sayu",
+        "slug": "sayu",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Sayu",
+        "guide_repo_path": "_characters/genshin-impact/sayu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sethos",
+        "slug": "sethos",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Sethos",
+        "guide_repo_path": "_characters/genshin-impact/sethos.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Shenhe",
+        "slug": "shenhe",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Shenhe",
+        "guide_repo_path": "_characters/genshin-impact/shenhe.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Shikanoin Heizou",
+        "slug": "shikanoin-heizou",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou",
+        "guide_repo_path": "_characters/genshin-impact/shikanoin-heizou.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sigewinne",
+        "slug": "sigewinne",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Sigewinne",
+        "guide_repo_path": "_characters/genshin-impact/sigewinne.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Skirk",
+        "slug": "skirk",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Skirk",
+        "guide_repo_path": "_characters/genshin-impact/skirk.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sucrose",
+        "slug": "sucrose",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Sucrose",
+        "guide_repo_path": "_characters/genshin-impact/sucrose.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Tartaglia",
+        "slug": "tartaglia",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Tartaglia",
+        "guide_repo_path": "_characters/genshin-impact/tartaglia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Thoma",
+        "slug": "thoma",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Thoma",
+        "guide_repo_path": "_characters/genshin-impact/thoma.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Tighnari",
+        "slug": "tighnari",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Tighnari",
+        "guide_repo_path": "_characters/genshin-impact/tighnari.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Traveler",
+        "slug": "traveler",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler",
+        "guide_repo_path": "_characters/genshin-impact/traveler.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Traveler (Anemo)",
+        "slug": "traveler-anemo",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Anemo)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-anemo.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Traveler (Dendro)",
+        "slug": "traveler-dendro",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Dendro)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-dendro.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Traveler (Electro)",
+        "slug": "traveler-electro",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Electro)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-electro.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Traveler (Geo)",
+        "slug": "traveler-geo",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Geo)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-geo.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Traveler (Hydro)",
+        "slug": "traveler-hydro",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Hydro)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-hydro.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Traveler (Pyro)",
+        "slug": "traveler-pyro",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Pyro)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-pyro.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Traveler (Unaligned)",
+        "slug": "traveler-unaligned",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Unaligned)",
+        "guide_repo_path": "_characters/genshin-impact/traveler-unaligned.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Varesa",
+        "slug": "varesa",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Varesa",
+        "guide_repo_path": "_characters/genshin-impact/varesa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Varka",
+        "slug": "varka",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Varka",
+        "guide_repo_path": "_characters/genshin-impact/varka.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Venti",
+        "slug": "venti",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Venti",
+        "guide_repo_path": "_characters/genshin-impact/venti.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Wanderer",
+        "slug": "wanderer",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Wanderer",
+        "guide_repo_path": "_characters/genshin-impact/wanderer.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Wonderland Manekin",
+        "slug": "wonderland-manekin",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Wonderland_Manekin",
+        "guide_repo_path": "_characters/genshin-impact/wonderland-manekin.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Wriothesley",
+        "slug": "wriothesley",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Wriothesley",
+        "guide_repo_path": "_characters/genshin-impact/wriothesley.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xiangling",
+        "slug": "xiangling",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Xiangling",
+        "guide_repo_path": "_characters/genshin-impact/xiangling.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xianyun",
+        "slug": "xianyun",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Xianyun",
+        "guide_repo_path": "_characters/genshin-impact/xianyun.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xiao",
+        "slug": "xiao",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Xiao",
+        "guide_repo_path": "_characters/genshin-impact/xiao.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xilonen",
+        "slug": "xilonen",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Xilonen",
+        "guide_repo_path": "_characters/genshin-impact/xilonen.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xingqiu",
+        "slug": "xingqiu",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Xingqiu",
+        "guide_repo_path": "_characters/genshin-impact/xingqiu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xinyan",
+        "slug": "xinyan",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Xinyan",
+        "guide_repo_path": "_characters/genshin-impact/xinyan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yae Miko",
+        "slug": "yae-miko",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yae_Miko",
+        "guide_repo_path": "_characters/genshin-impact/yae-miko.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yanfei",
+        "slug": "yanfei",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yanfei",
+        "guide_repo_path": "_characters/genshin-impact/yanfei.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yaoyao",
+        "slug": "yaoyao",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yaoyao",
+        "guide_repo_path": "_characters/genshin-impact/yaoyao.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yelan",
+        "slug": "yelan",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yelan",
+        "guide_repo_path": "_characters/genshin-impact/yelan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yoimiya",
+        "slug": "yoimiya",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yoimiya",
+        "guide_repo_path": "_characters/genshin-impact/yoimiya.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yumemizuki Mizuki",
+        "slug": "yumemizuki-mizuki",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yumemizuki_Mizuki",
+        "guide_repo_path": "_characters/genshin-impact/yumemizuki-mizuki.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yun Jin",
+        "slug": "yun-jin",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Yun_Jin",
+        "guide_repo_path": "_characters/genshin-impact/yun-jin.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Zhongli",
+        "slug": "zhongli",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Zhongli",
+        "guide_repo_path": "_characters/genshin-impact/zhongli.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Zibai",
+        "slug": "zibai",
+        "wiki_url": "https://genshin-impact.fandom.com/wiki/Zibai",
+        "guide_repo_path": "_characters/genshin-impact/zibai.md",
+        "guide_exists": true
+      }
+    ],
+    "honkai-star-rail": [
+      {
+        "wiki_title": "Acheron",
+        "slug": "acheron",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Acheron",
+        "guide_repo_path": "_characters/honkai-star-rail/acheron.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Aglaea",
+        "slug": "aglaea",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Aglaea",
+        "guide_repo_path": "_characters/honkai-star-rail/aglaea.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Anaxa",
+        "slug": "anaxa",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Anaxa",
+        "guide_repo_path": "_characters/honkai-star-rail/anaxa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Archer",
+        "slug": "archer",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Archer",
+        "guide_repo_path": "_characters/honkai-star-rail/archer.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Argenti",
+        "slug": "argenti",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Argenti",
+        "guide_repo_path": "_characters/honkai-star-rail/argenti.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Arlan",
+        "slug": "arlan",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Arlan",
+        "guide_repo_path": "_characters/honkai-star-rail/arlan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ashveil",
+        "slug": "ashveil",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Ashveil",
+        "guide_repo_path": "_characters/honkai-star-rail/ashveil.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Asta",
+        "slug": "asta",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Asta",
+        "guide_repo_path": "_characters/honkai-star-rail/asta.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Aventurine",
+        "slug": "aventurine",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Aventurine",
+        "guide_repo_path": "_characters/honkai-star-rail/aventurine.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Bailu",
+        "slug": "bailu",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Bailu",
+        "guide_repo_path": "_characters/honkai-star-rail/bailu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Black Swan",
+        "slug": "black-swan",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Black_Swan",
+        "guide_repo_path": "_characters/honkai-star-rail/black-swan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Blade",
+        "slug": "blade",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Blade",
+        "guide_repo_path": "_characters/honkai-star-rail/blade.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Boothill",
+        "slug": "boothill",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Boothill",
+        "guide_repo_path": "_characters/honkai-star-rail/boothill.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Bronya",
+        "slug": "bronya",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Bronya",
+        "guide_repo_path": "_characters/honkai-star-rail/bronya.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Castorice",
+        "slug": "castorice",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Castorice",
+        "guide_repo_path": "_characters/honkai-star-rail/castorice.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Cerydra",
+        "slug": "cerydra",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Cerydra",
+        "guide_repo_path": "_characters/honkai-star-rail/cerydra.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Cipher",
+        "slug": "cipher",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Cipher",
+        "guide_repo_path": "_characters/honkai-star-rail/cipher.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Clara",
+        "slug": "clara",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Clara",
+        "guide_repo_path": "_characters/honkai-star-rail/clara.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Cyrene",
+        "slug": "cyrene",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Cyrene",
+        "guide_repo_path": "_characters/honkai-star-rail/cyrene.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dan Heng",
+        "slug": "dan-heng",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Dan_Heng",
+        "guide_repo_path": "_characters/honkai-star-rail/dan-heng.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dan Heng • Imbibitor Lunae",
+        "slug": "dan-heng-imbibitor-lunae",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Dan_Heng_%E2%80%A2_Imbibitor_Lunae",
+        "guide_repo_path": "_characters/honkai-star-rail/dan-heng-imbibitor-lunae.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dan Heng • Permansor Terrae",
+        "slug": "dan-heng-permansor-terrae",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Dan_Heng_%E2%80%A2_Permansor_Terrae",
+        "guide_repo_path": "_characters/honkai-star-rail/dan-heng-permansor-terrae.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Dr. Ratio",
+        "slug": "dr-ratio",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Dr._Ratio",
+        "guide_repo_path": "_characters/honkai-star-rail/dr-ratio.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Evernight",
+        "slug": "evernight",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Evernight",
+        "guide_repo_path": "_characters/honkai-star-rail/evernight.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Feixiao",
+        "slug": "feixiao",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Feixiao",
+        "guide_repo_path": "_characters/honkai-star-rail/feixiao.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Firefly",
+        "slug": "firefly",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Firefly",
+        "guide_repo_path": "_characters/honkai-star-rail/firefly.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Fu Xuan",
+        "slug": "fu-xuan",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Fu_Xuan",
+        "guide_repo_path": "_characters/honkai-star-rail/fu-xuan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Fugue",
+        "slug": "fugue",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Fugue",
+        "guide_repo_path": "_characters/honkai-star-rail/fugue.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Gallagher",
+        "slug": "gallagher",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Gallagher",
+        "guide_repo_path": "_characters/honkai-star-rail/gallagher.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Gepard",
+        "slug": "gepard",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Gepard",
+        "guide_repo_path": "_characters/honkai-star-rail/gepard.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Guinaifen",
+        "slug": "guinaifen",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Guinaifen",
+        "guide_repo_path": "_characters/honkai-star-rail/guinaifen.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Hanya",
+        "slug": "hanya",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Hanya",
+        "guide_repo_path": "_characters/honkai-star-rail/hanya.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Herta",
+        "slug": "herta",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Herta",
+        "guide_repo_path": "_characters/honkai-star-rail/herta.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Himeko",
+        "slug": "himeko",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Himeko",
+        "guide_repo_path": "_characters/honkai-star-rail/himeko.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Hook",
+        "slug": "hook",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Hook",
+        "guide_repo_path": "_characters/honkai-star-rail/hook.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Huohuo",
+        "slug": "huohuo",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Huohuo",
+        "guide_repo_path": "_characters/honkai-star-rail/huohuo.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Hyacine",
+        "slug": "hyacine",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Hyacine",
+        "guide_repo_path": "_characters/honkai-star-rail/hyacine.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Hysilens",
+        "slug": "hysilens",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Hysilens",
+        "guide_repo_path": "_characters/honkai-star-rail/hysilens.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jade",
+        "slug": "jade",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Jade",
+        "guide_repo_path": "_characters/honkai-star-rail/jade.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jiaoqiu",
+        "slug": "jiaoqiu",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Jiaoqiu",
+        "guide_repo_path": "_characters/honkai-star-rail/jiaoqiu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jing Yuan",
+        "slug": "jing-yuan",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Jing_Yuan",
+        "guide_repo_path": "_characters/honkai-star-rail/jing-yuan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jingliu",
+        "slug": "jingliu",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Jingliu",
+        "guide_repo_path": "_characters/honkai-star-rail/jingliu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Kafka",
+        "slug": "kafka",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Kafka",
+        "guide_repo_path": "_characters/honkai-star-rail/kafka.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lingsha",
+        "slug": "lingsha",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Lingsha",
+        "guide_repo_path": "_characters/honkai-star-rail/lingsha.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Luka",
+        "slug": "luka",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Luka",
+        "guide_repo_path": "_characters/honkai-star-rail/luka.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Luocha",
+        "slug": "luocha",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Luocha",
+        "guide_repo_path": "_characters/honkai-star-rail/luocha.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lynx",
+        "slug": "lynx",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Lynx",
+        "guide_repo_path": "_characters/honkai-star-rail/lynx.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "March 7th",
+        "slug": "march-7th",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/March_7th",
+        "guide_repo_path": "_characters/honkai-star-rail/march-7th.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Misha",
+        "slug": "misha",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Misha",
+        "guide_repo_path": "_characters/honkai-star-rail/misha.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Moze",
+        "slug": "moze",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Moze",
+        "guide_repo_path": "_characters/honkai-star-rail/moze.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Mydei",
+        "slug": "mydei",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Mydei",
+        "guide_repo_path": "_characters/honkai-star-rail/mydei.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Natasha",
+        "slug": "natasha",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Natasha",
+        "guide_repo_path": "_characters/honkai-star-rail/natasha.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Pela",
+        "slug": "pela",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Pela",
+        "guide_repo_path": "_characters/honkai-star-rail/pela.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Phainon",
+        "slug": "phainon",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Phainon",
+        "guide_repo_path": "_characters/honkai-star-rail/phainon.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Qingque",
+        "slug": "qingque",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Qingque",
+        "guide_repo_path": "_characters/honkai-star-rail/qingque.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Rappa",
+        "slug": "rappa",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Rappa",
+        "guide_repo_path": "_characters/honkai-star-rail/rappa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Robin",
+        "slug": "robin",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Robin",
+        "guide_repo_path": "_characters/honkai-star-rail/robin.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ruan Mei",
+        "slug": "ruan-mei",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Ruan_Mei",
+        "guide_repo_path": "_characters/honkai-star-rail/ruan-mei.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Saber",
+        "slug": "saber",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Saber",
+        "guide_repo_path": "_characters/honkai-star-rail/saber.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sampo",
+        "slug": "sampo",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Sampo",
+        "guide_repo_path": "_characters/honkai-star-rail/sampo.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Seele",
+        "slug": "seele",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Seele",
+        "guide_repo_path": "_characters/honkai-star-rail/seele.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Serval",
+        "slug": "serval",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Serval",
+        "guide_repo_path": "_characters/honkai-star-rail/serval.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Silver Wolf",
+        "slug": "silver-wolf",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Silver_Wolf",
+        "guide_repo_path": "_characters/honkai-star-rail/silver-wolf.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sparkle",
+        "slug": "sparkle",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Sparkle",
+        "guide_repo_path": "_characters/honkai-star-rail/sparkle.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sparxie",
+        "slug": "sparxie",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Sparxie",
+        "guide_repo_path": "_characters/honkai-star-rail/sparxie.md",
+        "guide_exists": false
+      },
+      {
+        "wiki_title": "Sunday",
+        "slug": "sunday",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Sunday",
+        "guide_repo_path": "_characters/honkai-star-rail/sunday.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sushang",
+        "slug": "sushang",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Sushang",
+        "guide_repo_path": "_characters/honkai-star-rail/sushang.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "The Dahlia",
+        "slug": "the-dahlia",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/The_Dahlia",
+        "guide_repo_path": "_characters/honkai-star-rail/the-dahlia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "The Herta",
+        "slug": "the-herta",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/The_Herta",
+        "guide_repo_path": "_characters/honkai-star-rail/the-herta.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Tingyun",
+        "slug": "tingyun",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Tingyun",
+        "guide_repo_path": "_characters/honkai-star-rail/tingyun.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Topaz & Numby",
+        "slug": "topaz-and-numby",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Topaz_%26_Numby",
+        "guide_repo_path": "_characters/honkai-star-rail/topaz-and-numby.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Trailblazer",
+        "slug": "trailblazer",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Trailblazer",
+        "guide_repo_path": "_characters/honkai-star-rail/trailblazer.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Tribbie",
+        "slug": "tribbie",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Tribbie",
+        "guide_repo_path": "_characters/honkai-star-rail/tribbie.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Welt",
+        "slug": "welt",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Welt",
+        "guide_repo_path": "_characters/honkai-star-rail/welt.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xueyi",
+        "slug": "xueyi",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Xueyi",
+        "guide_repo_path": "_characters/honkai-star-rail/xueyi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yanqing",
+        "slug": "yanqing",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Yanqing",
+        "guide_repo_path": "_characters/honkai-star-rail/yanqing.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yao Guang",
+        "slug": "yao-guang",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Yao_Guang",
+        "guide_repo_path": "_characters/honkai-star-rail/yao-guang.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yukong",
+        "slug": "yukong",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Yukong",
+        "guide_repo_path": "_characters/honkai-star-rail/yukong.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yunli",
+        "slug": "yunli",
+        "wiki_url": "https://honkai-star-rail.fandom.com/wiki/Yunli",
+        "guide_repo_path": "_characters/honkai-star-rail/yunli.md",
+        "guide_exists": true
+      }
+    ],
+    "wuthering-waves": [
+      {
+        "wiki_title": "Aalto",
+        "slug": "aalto",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Aalto",
+        "guide_repo_path": "_characters/wuthering-waves/aalto.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Aemeath",
+        "slug": "aemeath",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Aemeath",
+        "guide_repo_path": "_characters/wuthering-waves/aemeath.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Augusta",
+        "slug": "augusta",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Augusta",
+        "guide_repo_path": "_characters/wuthering-waves/augusta.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Baizhi",
+        "slug": "baizhi",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Baizhi",
+        "guide_repo_path": "_characters/wuthering-waves/baizhi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Brant",
+        "slug": "brant",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Brant",
+        "guide_repo_path": "_characters/wuthering-waves/brant.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Buling",
+        "slug": "buling",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Buling",
+        "guide_repo_path": "_characters/wuthering-waves/buling.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Calcharo",
+        "slug": "calcharo",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Calcharo",
+        "guide_repo_path": "_characters/wuthering-waves/calcharo.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Camellya",
+        "slug": "camellya",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Camellya",
+        "guide_repo_path": "_characters/wuthering-waves/camellya.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Cantarella",
+        "slug": "cantarella",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Cantarella",
+        "guide_repo_path": "_characters/wuthering-waves/cantarella.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Carlotta",
+        "slug": "carlotta",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Carlotta",
+        "guide_repo_path": "_characters/wuthering-waves/carlotta.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Cartethyia",
+        "slug": "cartethyia",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Cartethyia",
+        "guide_repo_path": "_characters/wuthering-waves/cartethyia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Changli",
+        "slug": "changli",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Changli",
+        "guide_repo_path": "_characters/wuthering-waves/changli.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Chisa",
+        "slug": "chisa",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Chisa",
+        "guide_repo_path": "_characters/wuthering-waves/chisa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Chixia",
+        "slug": "chixia",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Chixia",
+        "guide_repo_path": "_characters/wuthering-waves/chixia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Ciaccona",
+        "slug": "ciaccona",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Ciaccona",
+        "guide_repo_path": "_characters/wuthering-waves/ciaccona.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Danjin",
+        "slug": "danjin",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Danjin",
+        "guide_repo_path": "_characters/wuthering-waves/danjin.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Encore",
+        "slug": "encore",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Encore",
+        "guide_repo_path": "_characters/wuthering-waves/encore.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Galbrena",
+        "slug": "galbrena",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Galbrena",
+        "guide_repo_path": "_characters/wuthering-waves/galbrena.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Iuno",
+        "slug": "iuno",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Iuno",
+        "guide_repo_path": "_characters/wuthering-waves/iuno.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jianxin",
+        "slug": "jianxin",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Jianxin",
+        "guide_repo_path": "_characters/wuthering-waves/jianxin.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jinhsi",
+        "slug": "jinhsi",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Jinhsi",
+        "guide_repo_path": "_characters/wuthering-waves/jinhsi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Jiyan",
+        "slug": "jiyan",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Jiyan",
+        "guide_repo_path": "_characters/wuthering-waves/jiyan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lingyang",
+        "slug": "lingyang",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Lingyang",
+        "guide_repo_path": "_characters/wuthering-waves/lingyang.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lumi",
+        "slug": "lumi",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Lumi",
+        "guide_repo_path": "_characters/wuthering-waves/lumi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lupa",
+        "slug": "lupa",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Lupa",
+        "guide_repo_path": "_characters/wuthering-waves/lupa.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Luuk Herssen",
+        "slug": "luuk-herssen",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen",
+        "guide_repo_path": "_characters/wuthering-waves/luuk-herssen.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Lynae",
+        "slug": "lynae",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Lynae",
+        "guide_repo_path": "_characters/wuthering-waves/lynae.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Mornye",
+        "slug": "mornye",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Mornye",
+        "guide_repo_path": "_characters/wuthering-waves/mornye.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Mortefi",
+        "slug": "mortefi",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Mortefi",
+        "guide_repo_path": "_characters/wuthering-waves/mortefi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Phoebe",
+        "slug": "phoebe",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Phoebe",
+        "guide_repo_path": "_characters/wuthering-waves/phoebe.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Phrolova",
+        "slug": "phrolova",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Phrolova",
+        "guide_repo_path": "_characters/wuthering-waves/phrolova.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Qiuyuan",
+        "slug": "qiuyuan",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
+        "guide_repo_path": "_characters/wuthering-waves/qiuyuan.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Roccia",
+        "slug": "roccia",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Roccia",
+        "guide_repo_path": "_characters/wuthering-waves/roccia.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Rover",
+        "slug": "rover",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Rover",
+        "guide_repo_path": "_characters/wuthering-waves/rover.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Rover-Aero",
+        "slug": "rover-aero",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Rover-Aero",
+        "guide_repo_path": "_characters/wuthering-waves/rover-aero.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Rover-Havoc",
+        "slug": "rover-havoc",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Rover-Havoc",
+        "guide_repo_path": "_characters/wuthering-waves/rover-havoc.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Rover-Spectro",
+        "slug": "rover-spectro",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Rover-Spectro",
+        "guide_repo_path": "_characters/wuthering-waves/rover-spectro.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sanhua",
+        "slug": "sanhua",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Sanhua",
+        "guide_repo_path": "_characters/wuthering-waves/sanhua.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Shorekeeper",
+        "slug": "shorekeeper",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Shorekeeper",
+        "guide_repo_path": "_characters/wuthering-waves/shorekeeper.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Sigrika",
+        "slug": "sigrika",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Sigrika",
+        "guide_repo_path": "_characters/wuthering-waves/sigrika.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Taoqi",
+        "slug": "taoqi",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Taoqi",
+        "guide_repo_path": "_characters/wuthering-waves/taoqi.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Verina",
+        "slug": "verina",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Verina",
+        "guide_repo_path": "_characters/wuthering-waves/verina.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Xiangli Yao",
+        "slug": "xiangli-yao",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao",
+        "guide_repo_path": "_characters/wuthering-waves/xiangli-yao.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yangyang",
+        "slug": "yangyang",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Yangyang",
+        "guide_repo_path": "_characters/wuthering-waves/yangyang.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yinlin",
+        "slug": "yinlin",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Yinlin",
+        "guide_repo_path": "_characters/wuthering-waves/yinlin.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Youhu",
+        "slug": "youhu",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Youhu",
+        "guide_repo_path": "_characters/wuthering-waves/youhu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Yuanwu",
+        "slug": "yuanwu",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Yuanwu",
+        "guide_repo_path": "_characters/wuthering-waves/yuanwu.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Zani",
+        "slug": "zani",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Zani",
+        "guide_repo_path": "_characters/wuthering-waves/zani.md",
+        "guide_exists": true
+      },
+      {
+        "wiki_title": "Zhezhi",
+        "slug": "zhezhi",
+        "wiki_url": "https://wutheringwaves.fandom.com/wiki/Zhezhi",
+        "guide_repo_path": "_characters/wuthering-waves/zhezhi.md",
+        "guide_exists": true
+      }
+    ]
+  }
+}

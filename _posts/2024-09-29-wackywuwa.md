@@ -75,6 +75,8 @@ gallery4:
 [**Partner Program**](/creator/)
 [**vTuber Models**](/vtuber/)
 
+**Character guides & builds:** [Wuthering Waves roster](/characters/wuthering-waves/)
+
 
 
 **🎉 The Wait is Over – Welcome to Wacky Wuwa! 🎉**
