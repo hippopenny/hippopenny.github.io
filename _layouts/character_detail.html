@@ -42,7 +42,7 @@ layout: single
       <div class="guide-actions">
         <a class="btn btn--primary" href="{{ pull_test_url | relative_url }}">Test Banner</a>
         <a class="btn btn--primary" href="{{ page.app_cta_url | default: game.app_url | relative_url }}">{{ page.app_cta_label | default: game.app_name }}</a>
-        <a class="btn btn--inverse" href="{{ page.hub_url | default: '/characters/' | append: page.game | append: '/' | relative_url }}">{{ game.short_title }} Hub</a>
+        <a class="btn btn--inverse" href="{{ '/characters/' | append: page.game | append: '/' | relative_url }}">{{ game.short_title }} Hub</a>
       </div>
     </div>
   </section>
