@@ -59,6 +59,8 @@ algolia:
   powered_by             : true # true (default), false
   files_to_exclude:
     - _posts/2017-11-28-post-exclude-search.md
+    # Splash home: feature_row* front matter exceeds Algolia 10KB record limit; link targets stay indexed.
+    - _pages/home.md
 
 
 # SEO Related
