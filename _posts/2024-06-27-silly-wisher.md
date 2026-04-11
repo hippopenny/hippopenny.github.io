@@ -39,6 +39,7 @@ gallery4:
 
 **Merge break:** [Wacky Decky: Card Merge](/wackydecky/) — stack cards · [Wacky Fruit Merge](/wackyfruitmerge/) — **fruit merge** / **Suika** energy.
 
+**Check out the silly Character guides & builds:** [Genshin Impact roster](/characters/genshin-impact/) · [Genshin pull simulator](/pulls/genshin-impact/)
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)
