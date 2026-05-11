@@ -93,3 +93,5 @@ Are you ready to take your Genshin obsession to the next level of addicts?
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-wisher/id6504840341) 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.genshin)
+
+{% include agent-hippo-credit.html %}

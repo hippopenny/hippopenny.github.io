@@ -65,3 +65,5 @@ Card brain instead? [**Wacky Decky: Card Merge**](/wackydecky/). Tower brain? [*
 [**Home**](/)
 
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.suika&hl=en_US)
+
+{% include agent-hippo-credit.html %}

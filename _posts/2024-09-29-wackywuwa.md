@@ -155,6 +155,8 @@ Want to try your luck with Honkai Star Rail, play  [Wacky Warper](/wackywarper).
 
 Note: Wacky Wuwa is purely for entertainment and is not affiliated with Wuthering Waves. It's all about having a blast!
 
+{% include agent-hippo-credit.html %}
+
 
 
 <!-- **🚀 Release for Honkai Star Rail HSR 2.3**

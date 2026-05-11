@@ -93,3 +93,5 @@ Gacha break? Go merge something. Miss memes? Visit [**Wacky Wisher**](/wackywish
 
 [![AppStore](/assets/images/appstore-badge-black.svg){: width="150"}](https://apps.apple.com/us/app/wacky-decky-card-merge/id6744654502)
 [![PlayStore](/assets/images/google-play-badge.png){: width="185"}](https://play.google.com/store/apps/details?id=com.hippopenny.mergecard&hl=en_US)
+
+{% include agent-hippo-credit.html %}
