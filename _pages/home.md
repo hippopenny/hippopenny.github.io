@@ -167,14 +167,6 @@ feature_row2:
 
 
 feature_row3:
-  - image_path: /assets/images/crypthesia/1.png
-    alt: "crypthesia at hippopenny"
-    title: "Hippo Crypthesia"
-    excerpt: "A super wallet that provides a hassle-free crypto exploration experience, with noncustodial wallets, auto-compound interest, low-risk tokens, high APY, and blockchain games to play while you invest in the constantly-evolving platform."
-    url: "/crypthesia/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  
   - image_path: /assets/images/offrail/gacha1.jpg
     alt: "Wacky Warper at Hippo Penny Honkai Star Rail Silly Wisher"
     title: "Wacky Warper"
