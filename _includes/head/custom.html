@@ -1,5 +1,9 @@
 <!-- start custom head snippets -->
 
+{% if page.layout == "landing" %}
+  <link rel="stylesheet" href="/assets/css/landing.css">
+{% endif %}
+
 {% if page.url contains '/characters/' or page.url contains '/pulls/' %}
   <!-- Same AdSense loader; /characters/ → Auto ads only. /pulls/ → rewarded API (second script below); optional adbreak test in dev. -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8172357380640839"

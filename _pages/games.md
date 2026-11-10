@@ -1,8 +1,8 @@
 ---
 layout: splash
-permalink: /
+permalink: /games/
 hidden: true
-title: "Wacky Warper"
+title: "Hippo Penny Games"
 header:
   overlay_image: /assets/images/offrail/bannerfixlongsize.png
   actions:

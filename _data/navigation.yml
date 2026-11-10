@@ -1,15 +1,15 @@
 main:
-  - title: "News"
-    url: /
-  - title: "Characters"
-    url: /characters/
-  - title: "Scores"
-    url: /meta-score/
+  # - title: "News"
+  #   url: /
+  # - title: "Characters"
+  #   url: /characters/
+  # - title: "Scores"
+  #   url: /meta-score/
   # - title: "Top picks"
   #   url: /game-review/
   # - title: "QR Art"
   #   url: /qr-code/
-  - title: "Company"
-    url: /company/
+  # - title: "Company"
+  #   url: /company/
   # - title: "Support"
   #   url: /support/
