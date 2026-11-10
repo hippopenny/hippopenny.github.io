@@ -149,21 +149,6 @@ feature_row2:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-  - image_path: /assets/images/mariby-main.png
-    alt: "mariby at hippopenny"
-    title: "Mariby"
-    excerpt: "Inspired by Mario, and Kirby, Mariby follows the story of a naive prince who sets out to unite the five territories of his kingdom. With stunning graphics, open-world gameplay, and unique weapons that can transform, Mariby promises to be an epic journey that will captivate you all the way through."
-    url:  /mariby/
-    btn_class: "btn--primary"
-    btn_label: "Learn more" 
-
-  - image_path: /assets/images/hopheck/1.png
-    alt: "hop heck at hippo penny"
-    title: "Hop Heck: Can You Take the Leap?"
-    excerpt: "Hopping onto moonlit rooftops, jumping through cart, bike, trash can, banana peels, etc. Feel the heart-pounding rush of excitement as you guide Hop on this hecking thrilling adventure. My challenge for you: not to die for 5 minutes!"
-    url:  /hopheck/
-    btn_class: "btn--primary"
-    btn_label: "Learn more"  
 
 
 feature_row3:
