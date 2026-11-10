@@ -3,7 +3,7 @@ title: "Privacy Policy"
 permalink: /crypthesiaprivacypolicy/
 ---
 
-Hippo Penny ("we," "our," or "us") is dedicated to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services, including our crypto wallet app, games, and other services. By using our services, you consent to the practices described in this Privacy Policy.
+Hippo Penny ("we," "our," or "us") is dedicated to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services, including our games and other services. By using our services, you consent to the practices described in this Privacy Policy.
 
 Information We Collect
 

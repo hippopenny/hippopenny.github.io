@@ -61,13 +61,6 @@ For pitch deck inquiries, please send us an email.
 
 
 <!-- 
-### Embracing Blockchain
-We leverage blockchain technology to enhance cross-game experiences and ensure secure, transparent asset transfers. This enables players to move in-game assets across different platforms, adding value and fostering a sense of ownership and empowerment.
-
-<figure style="width: 300px" class="align-right">
-  <img src="/assets/images/company/2.png" alt="Blockchain in Gaming">
-</figure>  
-
 ### Become a Hippo Penny Creator Partner
 Help us pread more laughter from Wacky Warper to our friends, the Honkai Star Rail community, and earn a significant share of IAP revenues. Learn more [**Partner Program**](/creator/). -->
 
